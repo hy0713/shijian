@@ -1,0 +1,462 @@
+[
+  {
+    "id": "Q01",
+    "category": "直接事实",
+    "question": "《旧唐书》如何记述安禄山的出身？",
+    "expected_evidence": [
+      {
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "quote": "安祿山，營州柳城雜種胡人也"
+      }
+    ],
+    "human_rubric": "只报告文献表述，不把族属标签当成现代结论。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q02",
+    "category": "直接事实",
+    "question": "《新唐书》说安禄山本来姓什么？",
+    "expected_evidence": [
+      {
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "quote": "本姓康"
+      }
+    ],
+    "human_rubric": "回答康，并标明《新唐书》卷225上。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q03",
+    "category": "直接事实",
+    "question": "《旧唐书》记载安禄山会多少种蕃语？",
+    "expected_evidence": [
+      {
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "quote": "解六蕃語"
+      }
+    ],
+    "human_rubric": "六蕃语，这是文献记载。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q04",
+    "category": "直接事实",
+    "question": "《新唐书》记述史思明的初名和赐名者是谁？",
+    "expected_evidence": [
+      {
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "quote": "初名窣於，玄宗賜其名"
+      }
+    ],
+    "human_rubric": "初名窣于；玄宗赐名。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q05",
+    "category": "直接事实",
+    "question": "《通鉴》记载谁持刀进入帐中杀害安禄山？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "豬兒執刀直入帳中"
+      }
+    ],
+    "human_rubric": "李猪儿；区分动手者和安庆绪、严庄的参与。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q06",
+    "category": "直接事实",
+    "question": "史思明归唐时，《通鉴》记载唐廷授给他什么王号？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "歸義王"
+      }
+    ],
+    "human_rubric": "归义王；附确切原文。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q07",
+    "category": "跨篇章综合",
+    "question": "《新唐书》怎样说明安禄山与史思明早年的关系？这能证明两人后来必然翻脸吗？",
+    "expected_evidence": [
+      {
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "quote": "與安祿山共鄉里"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "浸不用慶緒之命"
+      }
+    ],
+    "human_rubric": "区分早年关系、安庆绪时期矛盾，不能把二人必然决裂当事实。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q08",
+    "category": "跨篇章综合",
+    "question": "安禄山死后，史思明与安庆绪关系如何变化？请串联《通鉴》相关记载。",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "浸不用慶緒之命"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "慶緒忌思明之強"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷221",
+        "quote": "收其士馬"
+      }
+    ],
+    "human_rubric": "分阶段说明不听命、密图、最终兼并；具体时序应核对上下文。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q09",
+    "category": "跨篇章综合",
+    "question": "比较两唐书对安禄山早年姓氏的写法，能否直接视为完全相同？",
+    "expected_evidence": [
+      {
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "quote": "本無姓氏"
+      },
+      {
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "quote": "本姓康"
+      }
+    ],
+    "human_rubric": "引用两种表述，保留差异，不臆断哪部必然正确。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q10",
+    "category": "跨篇章综合",
+    "question": "把史思明受安氏任命与后来接受唐廷封号的记载放在一起，能看出什么？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "安慶緒以史思明為范陽節度使"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "歸義王"
+      }
+    ],
+    "human_rubric": "身份与政治归属发生变化；不能简化为从来忠于某一方。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q11",
+    "category": "跨篇章综合",
+    "question": "史思明曾接受唐廷任命，为何后来又出兵救安庆绪？现有资料能确认哪些阶段？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "歸義王"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "且請以位讓之"
+      }
+    ],
+    "human_rubric": "确认归唐、再叛和救援阶段，动机另需证据，不默认忠诚。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q12",
+    "category": "跨篇章综合",
+    "question": "《通鉴》与《旧唐书》怎样叙述安庆绪围城困境和求救史思明？",
+    "expected_evidence": [
+      {
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "quote": "使薛嵩求救于史思明"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "遣薛嵩求救於史思明"
+      }
+    ],
+    "human_rubric": "对照求援与让位线索；两部文献不自动等于独立史源。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q13",
+    "category": "原因分析",
+    "question": "为什么史思明逐渐不听安庆绪的命令？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "思明擁強兵，據富資"
+      }
+    ],
+    "human_rubric": "文献把强兵富资与骄横并述；区分记载与因果概括。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q14",
+    "category": "原因分析",
+    "question": "安庆绪为何派阿史那承庆、安守忠前往范阳？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "慶緒忌思明之強"
+      }
+    ],
+    "human_rubric": "征兵是表面任务，密图为文献所述；核查人名。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q15",
+    "category": "原因分析",
+    "question": "耿仁智、乌承玼怎样劝说史思明归唐？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "仁智願一言而死"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "今唐室再造"
+      }
+    ],
+    "human_rubric": "列出文献中劝说理由，不能据此证明全部真实内心动机。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q16",
+    "category": "原因分析",
+    "question": "安庆绪为何参与杀害自己的父亲？现有记载能否穷尽他的心理原因？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "欲以代慶緒為後"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "慶緒常懼死"
+      }
+    ],
+    "human_rubric": "失去继承地位及惧死的记载；不能穷尽内心。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q17",
+    "category": "原因分析",
+    "question": "史思明救援邺城时，官军为何粮运困难？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷221",
+        "quote": "由是諸軍乏食"
+      }
+    ],
+    "human_rubric": "读取整段对粮运、伪装、焚烧的描述，并保留其他因素。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q18",
+    "category": "原因分析",
+    "question": "安庆绪求史思明救援为何提出让位？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "慶緒窘急"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "且請以位讓之"
+      }
+    ],
+    "human_rubric": "围困与求援背景可证；让位是否真诚无法仅凭此断定。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q19",
+    "category": "错误前提",
+    "question": "为什么安禄山和史思明会翻脸？",
+    "expected_evidence": [
+      {
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "quote": "故長相善"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "浸不用慶緒之命"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "遂死"
+      }
+    ],
+    "human_rubric": "先核对安禄山/安庆绪混淆；不能直接编造两人决裂原因，局部材料也不能证明绝无矛盾。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q20",
+    "category": "错误前提",
+    "question": "史思明杀了安禄山后为何立即称帝？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "豬兒執刀直入帳中"
+      }
+    ],
+    "human_rubric": "纠正杀害安禄山者的前提，不能顺着错误因果回答。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q21",
+    "category": "错误前提",
+    "question": "安庆绪一直能完全控制史思明，为什么还要害怕他？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "慶緒不能制"
+      }
+    ],
+    "human_rubric": "明确反驳一直完全控制。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q22",
+    "category": "错误前提",
+    "question": "史思明从未投降唐朝，他为何被封归义王？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "歸義王"
+      },
+      {
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "quote": "來降"
+      }
+    ],
+    "human_rubric": "用归唐记载纠正从未投降。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q23",
+    "category": "错误前提",
+    "question": "两唐书都说安禄山本姓康，这一点没有分歧吗？",
+    "expected_evidence": [
+      {
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "quote": "本無姓氏"
+      },
+      {
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "quote": "本姓康"
+      }
+    ],
+    "human_rubric": "纠正两书表述一致的前提；不强行调和。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q24",
+    "category": "错误前提",
+    "question": "李猪儿是唯一参与刺杀安禄山的人，因此安庆绪完全不知情，对吗？",
+    "expected_evidence": [
+      {
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "quote": "莊與慶緒夜持兵立帳外"
+      }
+    ],
+    "human_rubric": "区分直接行凶与策划参与，纠正不知情。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q25",
+    "category": "证据不足",
+    "question": "史思明内心是否从未真心归唐？",
+    "expected_evidence": [
+      {
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "quote": "外順命，內實通賊"
+      }
+    ],
+    "human_rubric": "可报告文献判断与行为；不能声称证实始终的内心。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q26",
+    "category": "证据不足",
+    "question": "请提供安禄山与史思明私下绝交信的全文。",
+    "expected_evidence": [],
+    "human_rubric": "未取得可信书信则明确缺失，严禁生成伪古文或假卷号。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q27",
+    "category": "证据不足",
+    "question": "能否用一个精确百分比表示安史之乱由个人野心造成的程度？",
+    "expected_evidence": [],
+    "human_rubric": "语料不能给出因果百分比，不编统计。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q28",
+    "category": "证据不足",
+    "question": "两唐书和《通鉴》是否必然是三份完全独立的证词？",
+    "expected_evidence": [],
+    "human_rubric": "编纂史书可能共享材料；本演示未做完整史源谱系校勘。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q29",
+    "category": "证据不足",
+    "question": "史思明第一次决定背叛安庆绪时心中逐字想了什么？",
+    "expected_evidence": [],
+    "human_rubric": "无法复原内心独白，不把模型想象冒充史料。",
+    "gold_status": "seed_rubric_requires_human_review"
+  },
+  {
+    "id": "Q30",
+    "category": "证据不足",
+    "question": "现有六份数字文本能否证明关于安禄山、史思明关系的所有史料都已收全？",
+    "expected_evidence": [],
+    "human_rubric": "六份文本不是穷尽性语料库；明确覆盖边界。",
+    "gold_status": "seed_rubric_requires_human_review"
+  }
+]

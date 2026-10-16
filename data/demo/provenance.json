@@ -1,0 +1,68 @@
+[
+  {
+    "page": "舊唐書/卷200上",
+    "revision_id": "2306918",
+    "source_url": "https://zh.wikisource.org/w/index.php?title=舊唐書/卷200上&oldid=2306918",
+    "fetched_at": "2026-10-16T09:25:44.564933+00:00",
+    "paragraphs": 43,
+    "characters": 8664,
+    "raw_sha256": "ca0ad74b88e14727df7c37e763b89ee52401b4b4be90be471ace03cbe3c3fcff",
+    "license": "古代原文属于公有领域；数字转录来源保留维基文库署名与链接，站点贡献适用 CC BY-SA 条款；不包含现代译注。",
+    "extraction": "mw-parser-output 中非表格 p 元素，保留原字形、标点，段间加两个换行；非影印校勘本。"
+  },
+  {
+    "page": "新唐書/卷225上",
+    "revision_id": "2606365",
+    "source_url": "https://zh.wikisource.org/w/index.php?title=新唐書/卷225上&oldid=2606365",
+    "fetched_at": "2026-10-16T09:25:45.935495+00:00",
+    "paragraphs": 55,
+    "characters": 13165,
+    "raw_sha256": "522dc21b31de1d6949706e5146b42a81f6ef1b0614b534d6b64fb7dafd82a9a4",
+    "license": "古代原文属于公有领域；数字转录来源保留维基文库署名与链接，站点贡献适用 CC BY-SA 条款；不包含现代译注。",
+    "extraction": "mw-parser-output 中非表格 p 元素，保留原字形、标点，段间加两个换行；非影印校勘本。"
+  },
+  {
+    "page": "資治通鑑/卷217",
+    "revision_id": "617834",
+    "source_url": "https://zh.wikisource.org/w/index.php?title=資治通鑑/卷217&oldid=617834",
+    "fetched_at": "2026-10-16T09:25:46.533669+00:00",
+    "paragraphs": 6,
+    "characters": 11103,
+    "raw_sha256": "a1a2efbb5c279c6d14a40ca0c070000c5590d13c72275ca95bf765cdff0173b5",
+    "license": "古代原文属于公有领域；数字转录来源保留维基文库署名与链接，站点贡献适用 CC BY-SA 条款；不包含现代译注。",
+    "extraction": "mw-parser-output 中非表格 p 元素，保留原字形、标点，段间加两个换行；非影印校勘本。"
+  },
+  {
+    "page": "資治通鑑/卷219",
+    "revision_id": "2062230",
+    "source_url": "https://zh.wikisource.org/w/index.php?title=資治通鑑/卷219&oldid=2062230",
+    "fetched_at": "2026-10-16T09:25:47.152777+00:00",
+    "paragraphs": 4,
+    "characters": 10432,
+    "raw_sha256": "6ffc686b0c16f0a39b6f332a09ca880156bf9fbaa0c681fcced617dfe092532f",
+    "license": "古代原文属于公有领域；数字转录来源保留维基文库署名与链接，站点贡献适用 CC BY-SA 条款；不包含现代译注。",
+    "extraction": "mw-parser-output 中非表格 p 元素，保留原字形、标点，段间加两个换行；非影印校勘本。"
+  },
+  {
+    "page": "資治通鑑/卷220",
+    "revision_id": "2564831",
+    "source_url": "https://zh.wikisource.org/w/index.php?title=資治通鑑/卷220&oldid=2564831",
+    "fetched_at": "2026-10-16T09:25:48.002087+00:00",
+    "paragraphs": 5,
+    "characters": 12091,
+    "raw_sha256": "b56244f70aca2fa27cc261fb174d23be127cad3f706dba859b1f52225fc78112",
+    "license": "古代原文属于公有领域；数字转录来源保留维基文库署名与链接，站点贡献适用 CC BY-SA 条款；不包含现代译注。",
+    "extraction": "mw-parser-output 中非表格 p 元素，保留原字形、标点，段间加两个换行；非影印校勘本。"
+  },
+  {
+    "page": "資治通鑑/卷221",
+    "revision_id": "982302",
+    "source_url": "https://zh.wikisource.org/w/index.php?title=資治通鑑/卷221&oldid=982302",
+    "fetched_at": "2026-10-16T09:25:49.271528+00:00",
+    "paragraphs": 5,
+    "characters": 11681,
+    "raw_sha256": "3828cb7f500438795ce059a0b6bb4c946b03438418800d42a2b3ae3664fe9759",
+    "license": "古代原文属于公有领域；数字转录来源保留维基文库署名与链接，站点贡献适用 CC BY-SA 条款；不包含现代译注。",
+    "extraction": "mw-parser-output 中非表格 p 元素，保留原字形、标点，段间加两个换行；非影印校勘本。"
+  }
+]

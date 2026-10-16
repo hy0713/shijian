@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>史鉴 · 历史资料研究</title>
+    <link rel="stylesheet" href="/static/style.css?v=3" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <span class="seal">史</span>
+        <h1>史鉴</h1>
+        <span>从问题到证据</span>
+      </div>
+      <p>安史之乱专题 · 核查前提，循证作答</p>
+    </header>
+    <main>
+      <aside class="navigation"><a class="new-study" href="/">＋ 新建研究</a>
+        <nav class="nav-links" aria-label="研究导航"><a href="#researchForm">⌕ <span>研究工作台</span></a><a href="#sources">▤ <span>文献知识库</span></a><a href="#importForm">＋ <span>导入文献</span></a></nav><h2>最近研究 <span>RECENT</span></h2>
+        <button id="refresh">刷新列表</button>
+        <div id="history"></div>
+      </aside>
+      <section class="workspace"><div class="workspace-top"><span>研究工作台</span><span>安史之乱 · 专题 01</span></div><div class="welcome"><div class="hero-mark" aria-hidden="true">鉴</div><span class="eyebrow">SHIJIAN · HISTORICAL RESEARCH</span><h2>以史为鉴，<br>让见解有据可循。</h2><p>检索原始文献，交叉核验史料。<br>从一个问题出发，抵达有出处的答案。</p></div>
+        <div id="configNotice" class="notice" hidden></div>
+        <form id="researchForm">
+          <label for="question">从一个值得追问的问题开始</label
+          ><textarea id="question" placeholder="例如：为什么安禄山和史思明会翻脸？" maxlength="1000" required>
+</textarea
+          >
+          <div class="actions">
+            <select id="mode">
+              <option value="local">本地史料</option>
+              <option value="hybrid">本地史料 + 联网</option></select
+            ><button id="start">开始研究</button
+            ><button type="button" id="cancel" disabled>请求取消</button
+            ><span id="status">尚未开始</span>
+          </div>
+        </form>
+        <div class="explore-label"><span>从这些问题开始</span><span>EXPLORE HISTORY</span></div><div class="suggestions"><button type="button" data-question="为什么安禄山和史思明会翻脸？"><small>前提核查 ↗</small>安禄山与史思明，真的翻脸了吗？</button><button type="button" data-question="请对照两唐书核查史思明与安庆绪的关系和先后时序。"><small>文献互证 ↗</small>从两唐书看史思明与安庆绪</button></div><div id="error" class="error" role="alert" hidden></div>
+        <details class="progress">
+          <summary>研究过程 <span class="muted">步骤与证据摘要</span></summary>
+          <ol id="events"></ol>
+        </details>
+        <article id="answer" aria-live="polite">
+          <div class="empty">
+            <h2>先核查前提，再讨论原因。</h2>
+            <p>
+              研究会展示检索计划、已读来源、证据缺口与引用。引用可点击查看原文及前后上下文。
+            </p>
+          </div>
+        </article>
+      </section>
+      <aside class="library"><div class="collection-mark">文 献 馆 <span>COLLECTION</span></div><div class="panel-heading"><span>文献与引证</span><span class="eyebrow">SOURCES</span></div><p class="panel-note">原始记录，是研究的起点。</p>        <hr />
+        <h2>资料库</h2>
+        <div id="sources"></div>
+        <details>
+          <summary>导入资料</summary>
+          <p>
+            支持 UTF-8 TXT / Markdown /
+            JSON。网页与上传资料先保存原文，执行索引命令后可检索。
+          </p>
+          <form id="importForm">
+            <input id="importTitle" placeholder="标题（TXT / MD 必填）" /><input
+              id="importAuthor"
+              placeholder="作者 / 编纂者"
+            /><input id="importChapter" placeholder="卷章（可空）" /><input
+              id="importUrl"
+              type="url"
+              placeholder="来源 URL（可空）"
+            /><input
+              id="file"
+              type="file"
+              accept=".txt,.md,.json"
+              required
+            /><button>保存资料</button>
+          </form>
+          <form id="pageForm">
+            <input
+              id="pageUrl"
+              type="url"
+              placeholder="网页来源 URL"
+              required
+            /><button>读取并保存网页</button>
+          </form>
+          <p>索引命令：<code>shijian reindex</code></p>
+          <pre id="importNotice"></pre>
+        </details>
+<section id="evidencePanel" hidden><button type="button" id="closeEvidence">收起引证 ×</button><div id="evidenceBody"></div></section></aside>
+    </main>
+    <footer>
+      史料需要校勘，模型辅助审核不保证史实真实。第一版聚焦安史之乱，无扫描件
+      OCR。
+    </footer>
+    <script src="/static/app.js?v=3" defer></script>
+  </body>
+</html>
+

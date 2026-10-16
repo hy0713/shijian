@@ -1,0 +1,22 @@
+[
+  {
+    "title": "安史之乱",
+    "url": "https://zh.wikipedia.org/w/index.php?title=安史之乱&oldid=94719326",
+    "revision_id": "94719326",
+    "fetched_at": "2026-10-16T09:34:47.778458+00:00",
+    "raw_sha256": "a69593c96b2a87f9444f73cb57349acbf3fdf0eded8836b33f572ff6c8677752",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "extraction": "前六个非表格正文段落，去除 sup.reference 脚注标号；不含图片。"
+  },
+  {
+    "title": "史思明",
+    "url": "https://zh.wikipedia.org/w/index.php?title=史思明&oldid=92805818",
+    "revision_id": "92805818",
+    "fetched_at": "2026-10-16T09:34:48.384856+00:00",
+    "raw_sha256": "8a29819283596e99ce24e7c3fd5bfc8f46cfecb38fd8b724fc6d78ffb5a7a93a",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "extraction": "前六个非表格正文段落，去除 sup.reference 脚注标号；不含图片。"
+  }
+]

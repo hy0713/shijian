@@ -1,0 +1,50 @@
+[project]
+name = "shijian"
+version = "0.1.0"
+description = "史鉴：证据驱动的安史之乱历史资料研究 Agent"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "fastapi==0.143.2", "uvicorn[standard]==0.54.0",
+  "sqlalchemy==2.0.54", "pymysql[rsa]==1.2.3", "alembic==1.20.0",
+  "redis==6.4.0", "pymilvus==2.6.17",
+  "langchain==1.4.6", "langgraph==1.2.15", "langchain-deepseek==1.1.1",
+  "pydantic-settings==2.16.0", "httpx==0.28.1", "beautifulsoup4==4.15.0",
+  "jieba==0.42.1", "opencc-python-reimplemented==0.1.7", "numpy==2.4.6",
+  "python-multipart==0.0.32",
+]
+
+[project.optional-dependencies]
+embedding = ["sentence-transformers==5.7.0", "torch==2.8.0"]
+
+[dependency-groups]
+dev = ["pytest==9.1.1", "pytest-asyncio==1.4.0", "ruff==0.17.1", "fakeredis==2.40.0"]
+
+[project.scripts]
+shijian = "shijian.cli:main"
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["shijian"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = ["integration: requires live MySQL Redis Milvus and embedding"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
