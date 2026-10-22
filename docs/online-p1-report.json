@@ -1,0 +1,134 @@
+{
+  "methods": {
+    "direct": {
+      "attempts": 0,
+      "recorded": 0,
+      "failed": 0,
+      "mean_elapsed_seconds": null,
+      "observed_total_tokens": null,
+      "failed_observed_tokens": null,
+      "token_usage_records": 0,
+      "mean_tokens": null,
+      "mean_tool_calls": null,
+      "mean_anchor_recall": null,
+      "anchor_questions": 0,
+      "attempted_anchor_questions": 0,
+      "anchor_recall_failures_zero": null,
+      "program_claim_checks": {
+        "valid": 0,
+        "total": 0
+      },
+      "outcomes": {},
+      "human_only": {
+        "evidence_support_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "completeness_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "premise_recognition_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        }
+      },
+      "cost": null
+    },
+    "rag": {
+      "attempts": 0,
+      "recorded": 0,
+      "failed": 0,
+      "mean_elapsed_seconds": null,
+      "observed_total_tokens": null,
+      "failed_observed_tokens": null,
+      "token_usage_records": 0,
+      "mean_tokens": null,
+      "mean_tool_calls": null,
+      "mean_anchor_recall": null,
+      "anchor_questions": 0,
+      "attempted_anchor_questions": 0,
+      "anchor_recall_failures_zero": null,
+      "program_claim_checks": {
+        "valid": 0,
+        "total": 0
+      },
+      "outcomes": {},
+      "human_only": {
+        "evidence_support_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "completeness_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "premise_recognition_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        }
+      },
+      "cost": null
+    },
+    "agent": {
+      "attempts": 2,
+      "recorded": 2,
+      "failed": 0,
+      "mean_elapsed_seconds": 28.2515,
+      "observed_total_tokens": 43664,
+      "failed_observed_tokens": null,
+      "token_usage_records": 2,
+      "mean_tokens": 21832,
+      "mean_tool_calls": 5,
+      "mean_anchor_recall": null,
+      "anchor_questions": 0,
+      "attempted_anchor_questions": 0,
+      "anchor_recall_failures_zero": null,
+      "program_claim_checks": {
+        "valid": 4,
+        "total": 4
+      },
+      "outcomes": {
+        "partial": 1,
+        "insufficient_evidence": 1
+      },
+      "human_only": {
+        "evidence_support_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "completeness_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "premise_recognition_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        }
+      },
+      "cost": null
+    }
+  },
+  "attention_cases": [
+    {
+      "question_id": "Q13",
+      "question": "《美国独立宣言》是在1776年7月4日由所有代表签完的吗？请只核查通过与签署的区别。",
+      "method": "agent",
+      "error_type": null,
+      "outcome": {
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ]
+      },
+      "file": "Q13_agent.json"
+    }
+  ],
+  "notes": [
+    "Anchor recall measures only known evidence anchors, not full recall or answer accuracy.",
+    "Program checks validate citation locations only. Model support reviews remain separate from human scores.",
+    "Single run per question, no repeated random trials or confidence intervals; no quality superiority claimed.",
+    "Human quality scores remain null until reviewed; model fees are not estimated. Configured Search/Fetch estimates are separate in metrics.web_usage."
+  ]
+}

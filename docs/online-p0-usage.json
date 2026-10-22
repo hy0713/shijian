@@ -1,0 +1,739 @@
+{
+  "scope": "Online P0 live-smoke files only; failed attempts included, task IDs deduplicated.",
+  "runs": [
+    {
+      "file": "docs/online-p0-versailles.json",
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "status": "completed",
+      "research_outcome": {
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ]
+      },
+      "counts": {
+        "model_requests": 9,
+        "external_requests": 6,
+        "input_tokens": 13850,
+        "output_tokens": 1998,
+        "total_tokens": 15848,
+        "model_usage_unknown": 0,
+        "search_requests": 3,
+        "external_billing_unknown": 1,
+        "fetch_requests": 3
+      },
+      "known_tool_estimate_cny": "0.015",
+      "model_requests": [
+        {
+          "stage": "Analysis",
+          "outcome": "returned",
+          "input_tokens": 637,
+          "total_tokens": 847,
+          "context_chars": 425,
+          "output_tokens": 210,
+          "request_number": 1,
+          "elapsed_seconds": 1.695,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 847
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 882,
+          "total_tokens": 983,
+          "context_chars": 935,
+          "output_tokens": 101,
+          "request_number": 2,
+          "elapsed_seconds": 0.661,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 1830
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 2476,
+          "total_tokens": 2782,
+          "context_chars": 5649,
+          "output_tokens": 306,
+          "request_number": 3,
+          "elapsed_seconds": 1.964,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 4612
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 2963,
+          "total_tokens": 3151,
+          "context_chars": 6248,
+          "output_tokens": 188,
+          "request_number": 4,
+          "elapsed_seconds": 1.339,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 7763
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 816,
+          "total_tokens": 1087,
+          "context_chars": 867,
+          "output_tokens": 271,
+          "request_number": 5,
+          "elapsed_seconds": 1.839,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 8850
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 1410,
+          "total_tokens": 1512,
+          "context_chars": 1672,
+          "output_tokens": 102,
+          "request_number": 6,
+          "elapsed_seconds": 0.937,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 10362
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 1694,
+          "total_tokens": 2055,
+          "context_chars": 4136,
+          "output_tokens": 361,
+          "request_number": 7,
+          "elapsed_seconds": 2.255,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 12417
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 2156,
+          "total_tokens": 2362,
+          "context_chars": 5111,
+          "output_tokens": 206,
+          "request_number": 8,
+          "elapsed_seconds": 1.152,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 14779
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 816,
+          "total_tokens": 1069,
+          "context_chars": 867,
+          "output_tokens": 253,
+          "request_number": 9,
+          "elapsed_seconds": 1.398,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 15848
+        }
+      ],
+      "external_requests": [
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 1,
+          "elapsed_seconds": 0.331,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 2,
+          "elapsed_seconds": 0.403,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "failed",
+          "billable": null,
+          "provider": "deepseek",
+          "http_status": null,
+          "request_number": 3,
+          "elapsed_seconds": 30.009,
+          "estimated_cost_cny": null
+        },
+        {
+          "kind": "fetch",
+          "outcome": "failed",
+          "billable": false,
+          "provider": "deepseek",
+          "http_status": 404,
+          "request_number": 4,
+          "elapsed_seconds": 19.232,
+          "estimated_cost_cny": "0.000"
+        },
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 5,
+          "elapsed_seconds": 0.343,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "failed",
+          "billable": false,
+          "provider": "deepseek",
+          "http_status": 404,
+          "request_number": 6,
+          "elapsed_seconds": 0.128,
+          "estimated_cost_cny": "0.000"
+        }
+      ],
+      "citations": 0,
+      "checks": {
+        "verification": "not_completed"
+      },
+      "human_review": null
+    },
+    {
+      "file": "docs/online-p0-versailles-retry.json",
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "status": "failed",
+      "research_outcome": null,
+      "counts": {
+        "model_requests": 16,
+        "external_requests": 6,
+        "input_tokens": 44664,
+        "output_tokens": 5329,
+        "total_tokens": 49993,
+        "model_usage_unknown": 0,
+        "search_requests": 2,
+        "external_billing_unknown": 1,
+        "fetch_requests": 4
+      },
+      "known_tool_estimate_cny": "0.025",
+      "model_requests": [
+        {
+          "stage": "Analysis",
+          "outcome": "returned",
+          "input_tokens": 656,
+          "total_tokens": 849,
+          "context_chars": 457,
+          "output_tokens": 193,
+          "request_number": 1,
+          "elapsed_seconds": 1.609,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 849
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 966,
+          "total_tokens": 1057,
+          "context_chars": 1121,
+          "output_tokens": 91,
+          "request_number": 2,
+          "elapsed_seconds": 1.265,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 1906
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 2769,
+          "total_tokens": 3107,
+          "context_chars": 7947,
+          "output_tokens": 338,
+          "request_number": 3,
+          "elapsed_seconds": 2.162,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 5013
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 4831,
+          "total_tokens": 5038,
+          "context_chars": 14202,
+          "output_tokens": 207,
+          "request_number": 4,
+          "elapsed_seconds": 1.229,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 10051
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 2124,
+          "total_tokens": 2480,
+          "context_chars": 4210,
+          "output_tokens": 356,
+          "request_number": 5,
+          "elapsed_seconds": 2.552,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 12531
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 5679,
+          "total_tokens": 5772,
+          "context_chars": 13156,
+          "output_tokens": 93,
+          "request_number": 6,
+          "elapsed_seconds": 1.027,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 18303
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 2247,
+          "total_tokens": 2527,
+          "context_chars": 4531,
+          "output_tokens": 280,
+          "request_number": 7,
+          "elapsed_seconds": 1.914,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 20830
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 3374,
+          "total_tokens": 3506,
+          "context_chars": 8738,
+          "output_tokens": 132,
+          "request_number": 8,
+          "elapsed_seconds": 1.455,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 24336
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 3641,
+          "total_tokens": 4025,
+          "context_chars": 8240,
+          "output_tokens": 384,
+          "request_number": 9,
+          "elapsed_seconds": 2.617,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 28361
+        },
+        {
+          "stage": "Answer",
+          "outcome": "returned",
+          "input_tokens": 4714,
+          "total_tokens": 5354,
+          "context_chars": 9311,
+          "output_tokens": 640,
+          "request_number": 10,
+          "elapsed_seconds": 3.261,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 33715
+        },
+        {
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "input_tokens": 1585,
+          "total_tokens": 1814,
+          "context_chars": 3130,
+          "output_tokens": 229,
+          "request_number": 11,
+          "elapsed_seconds": 1.731,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 35529
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 2338,
+          "total_tokens": 3160,
+          "context_chars": 4203,
+          "output_tokens": 822,
+          "request_number": 12,
+          "elapsed_seconds": 3.448,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 38689
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 1069,
+          "total_tokens": 1284,
+          "context_chars": 1054,
+          "output_tokens": 215,
+          "request_number": 13,
+          "elapsed_seconds": 1.359,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 39973
+        },
+        {
+          "stage": "Answer",
+          "outcome": "returned",
+          "input_tokens": 5164,
+          "total_tokens": 5670,
+          "context_chars": 10305,
+          "output_tokens": 506,
+          "request_number": 14,
+          "elapsed_seconds": 2.418,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 45643
+        },
+        {
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "input_tokens": 1410,
+          "total_tokens": 1599,
+          "context_chars": 2690,
+          "output_tokens": 189,
+          "request_number": 15,
+          "elapsed_seconds": 1.252,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 47242
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 2097,
+          "total_tokens": 2751,
+          "context_chars": 3654,
+          "output_tokens": 654,
+          "request_number": 16,
+          "elapsed_seconds": 2.924,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 49993
+        }
+      ],
+      "external_requests": [
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 1,
+          "elapsed_seconds": 0.379,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 2,
+          "elapsed_seconds": 0.334,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "failed",
+          "billable": null,
+          "provider": "deepseek",
+          "http_status": null,
+          "request_number": 3,
+          "elapsed_seconds": 30.001,
+          "estimated_cost_cny": null
+        },
+        {
+          "kind": "fetch",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 4,
+          "elapsed_seconds": 23.407,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 5,
+          "elapsed_seconds": 14.753,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 6,
+          "elapsed_seconds": 18.719,
+          "estimated_cost_cny": "0.005"
+        }
+      ],
+      "citations": 0,
+      "checks": {
+        "verification": "not_completed"
+      },
+      "human_review": null
+    },
+    {
+      "file": "docs/online-p0-boxer.json",
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "status": "completed",
+      "research_outcome": {
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+        "status": "partial",
+        "reasons": [
+          "部分候选表述未通过审核",
+          "提问前提未通过审核"
+        ]
+      },
+      "counts": {
+        "model_requests": 13,
+        "external_requests": 4,
+        "input_tokens": 24446,
+        "output_tokens": 5756,
+        "total_tokens": 30202,
+        "model_usage_unknown": 0,
+        "search_requests": 2,
+        "external_billing_unknown": 1,
+        "fetch_requests": 2
+      },
+      "known_tool_estimate_cny": "0.015",
+      "model_requests": [
+        {
+          "stage": "Analysis",
+          "outcome": "returned",
+          "input_tokens": 648,
+          "total_tokens": 824,
+          "context_chars": 447,
+          "output_tokens": 176,
+          "request_number": 1,
+          "elapsed_seconds": 1.474,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 824
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 941,
+          "total_tokens": 1024,
+          "context_chars": 999,
+          "output_tokens": 83,
+          "request_number": 2,
+          "elapsed_seconds": 0.913,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 1848
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 2329,
+          "total_tokens": 2626,
+          "context_chars": 3880,
+          "output_tokens": 297,
+          "request_number": 3,
+          "elapsed_seconds": 1.982,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 4474
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 4034,
+          "total_tokens": 4202,
+          "context_chars": 6762,
+          "output_tokens": 168,
+          "request_number": 4,
+          "elapsed_seconds": 1.323,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 8676
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 1719,
+          "total_tokens": 2115,
+          "context_chars": 2496,
+          "output_tokens": 396,
+          "request_number": 5,
+          "elapsed_seconds": 2.554,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 10791
+        },
+        {
+          "stage": "Answer",
+          "outcome": "returned",
+          "input_tokens": 2826,
+          "total_tokens": 3553,
+          "context_chars": 3451,
+          "output_tokens": 727,
+          "request_number": 6,
+          "elapsed_seconds": 3.025,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 14344
+        },
+        {
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "input_tokens": 1145,
+          "total_tokens": 1320,
+          "context_chars": 1630,
+          "output_tokens": 175,
+          "request_number": 7,
+          "elapsed_seconds": 1.101,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 15664
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 1862,
+          "total_tokens": 2799,
+          "context_chars": 2641,
+          "output_tokens": 937,
+          "request_number": 8,
+          "elapsed_seconds": 3.783,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 18463
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 1018,
+          "total_tokens": 1397,
+          "context_chars": 925,
+          "output_tokens": 379,
+          "request_number": 9,
+          "elapsed_seconds": 2.449,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 19860
+        },
+        {
+          "stage": "Answer",
+          "outcome": "returned",
+          "input_tokens": 4125,
+          "total_tokens": 4877,
+          "context_chars": 6160,
+          "output_tokens": 752,
+          "request_number": 10,
+          "elapsed_seconds": 3.23,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 24737
+        },
+        {
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "input_tokens": 1013,
+          "total_tokens": 1164,
+          "context_chars": 1341,
+          "output_tokens": 151,
+          "request_number": 11,
+          "elapsed_seconds": 1.223,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 25901
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 1770,
+          "total_tokens": 2891,
+          "context_chars": 2379,
+          "output_tokens": 1121,
+          "request_number": 12,
+          "elapsed_seconds": 4.228,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 28792
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 1016,
+          "total_tokens": 1410,
+          "context_chars": 918,
+          "output_tokens": 394,
+          "request_number": 13,
+          "elapsed_seconds": 2.291,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 30202
+        }
+      ],
+      "external_requests": [
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 1,
+          "elapsed_seconds": 0.449,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 2,
+          "elapsed_seconds": 0.323,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 3,
+          "elapsed_seconds": 3.698,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "failed",
+          "billable": null,
+          "provider": "deepseek",
+          "http_status": null,
+          "request_number": 4,
+          "elapsed_seconds": 30.005,
+          "estimated_cost_cny": null
+        }
+      ],
+      "citations": 2,
+      "checks": {
+        "real_model": true,
+        "mysql_milvus_sources": 14,
+        "citations_checked": 2,
+        "websocket_disconnect_did_not_cancel": true,
+        "websocket_replay": true,
+        "model_usage_events_replayed": 13,
+        "external_usage_events_replayed": 4,
+        "mode": "online",
+        "running_task_cancelled": false
+      },
+      "human_review": null
+    }
+  ],
+  "totals": {
+    "model_requests": 38,
+    "external_requests": 16,
+    "input_tokens": 82960,
+    "output_tokens": 13083,
+    "total_tokens": 96043,
+    "model_usage_unknown": 0,
+    "search_requests": 7,
+    "external_billing_unknown": 3,
+    "fetch_requests": 9
+  },
+  "known_tool_estimate_cny": "0.055",
+  "total_tool_estimate_cny": null,
+  "model_cost_cny": null,
+  "actual_account_cost_cny": null,
+  "note": "Known tool subtotal excludes unknown billing and all model fees; not an account statement."
+}

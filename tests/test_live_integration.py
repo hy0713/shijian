@@ -13,7 +13,10 @@ from sqlalchemy.orm import sessionmaker
 
 from shijian.config import settings
 from shijian.corpus import Corpus
-from shijian.db import Passage
+from shijian.db import Collection, CollectionSource, Passage, Source
+from shijian.indexing import QUEUE as INDEX_QUEUE
+from shijian.indexing import IndexStore, enqueue_index, process_index
+from shijian.schema import DocumentInput, SearchFilter
 from shijian.tasks import TaskStore, enqueue
 from shijian.vectors import Vectors
 from shijian.worker import execute_task
@@ -46,6 +49,57 @@ def test_live_mysql_keyword_aggregate_type(monkeypatch, demo_docs):
         settings.cache_clear()
 
 
+async def test_live_opt_in_snapshot_collection_and_scoped_worker(monkeypatch):
+    from uuid import uuid4
+
+    url = os.environ["TEST_DATABASE_URL"]
+    assert make_url(url).database.endswith("_test")
+    monkeypatch.setenv("DATABASE_URL", url)
+    settings.cache_clear()
+    config = settings().model_copy(update={"milvus_collection": "shijian_integration_bge_zh_v1"})
+    engine = create_engine(url, pool_pre_ping=True)
+    bus = redis.from_url(urlunsplit(urlsplit(config.redis_url)._replace(path="/1")), decode_responses=True)
+    try:
+        command.upgrade(Config("alembic.ini"), "head")
+        sf = sessionmaker(engine, expire_on_commit=False)
+        corpus = Corpus(sf, Vectors(config))
+        doc = DocumentInput(
+            title="TEST ONLY P2 snapshot fixture",
+            source_type="其他",
+            raw_text="TEST ONLY protocol fixture: 史思明 安庆绪。This is not a historical claim. "
+            + str(uuid4()),
+        )
+        sid = corpus.import_document(doc, index=False, saved=False)["source_id"]
+        assert sid not in IndexStore(sf).pending()
+        ids = corpus.page_passages(sid)
+        cid = str(uuid4())
+        with sf.begin() as s:
+            s.add(Collection(id=cid, name="TEST ONLY scoped collection"))
+            s.flush()
+            s.add(CollectionSource(collection_id=cid, source_id=sid))
+            s.get(Source, sid).saved = True
+        IndexStore(sf).request(sid)
+        assert await process_index(sid, corpus, IndexStore(sf))
+        assert corpus.import_document(doc, index=False, saved=False)["source_id"] == sid
+        assert corpus.page_passages(sid) == ids
+        store = TaskStore(sf)
+        tid = store.create(
+            "TEST ONLY P2 scoped worker", "local", collection_id=cid, embedding_key=corpus.vectors.key
+        )
+        await execute_task(tid, "p2-live-scope", config, store, bus, corpus, lambda _: ScriptedModel())
+        assert store.get(tid)["status"] == "completed"
+        assert {e["source_id"] for e in store.evidence(tid)} == {sid}
+        before = store.evidence(tid)
+        with sf.begin() as s:
+            s.get(Source, sid).saved = False
+        assert not Corpus(sf, corpus.vectors, [sid]).eligible(SearchFilter())
+        assert store.evidence(tid) == before and corpus.read(ids[0]["id"])["text"] == doc.raw_text
+    finally:
+        await bus.aclose()
+        engine.dispose()
+        settings.cache_clear()
+
+
 async def test_live_mysql_milvus_redis_idempotency_and_worker(monkeypatch, demo_docs):
     url = os.environ["TEST_DATABASE_URL"]
     assert make_url(url).drivername.startswith("mysql") and make_url(url).database.endswith("_test")
@@ -64,7 +118,18 @@ async def test_live_mysql_milvus_redis_idempotency_and_worker(monkeypatch, demo_
         sf = sessionmaker(engine, expire_on_commit=False)
         corpus = Corpus(sf, Vectors(config))
         await bus.ping()
-        first = corpus.import_document(demo_docs[0])
+        first = corpus.import_document(demo_docs[0], index=False)
+        index_store = IndexStore(sf)
+        index_store.request(first["source_id"], force=True)
+        await enqueue_index(bus, first["source_id"])
+        delivery = await bus.brpop(INDEX_QUEUE, timeout=3)
+        assert delivery and delivery[1] == first["source_id"]
+        assert await process_index(delivery[1], corpus, index_store)
+        assert not await process_index(delivery[1], corpus, index_store)
+        with sf() as s:
+            indexed = s.get(Source, first["source_id"])
+            assert indexed.index_status == "ready"
+            assert indexed.indexed_passages == indexed.index_total > 0
         assert corpus.import_document(demo_docs[0])["source_id"] == first["source_id"]
         hits = corpus.search("史思明 安庆绪")
         assert hits

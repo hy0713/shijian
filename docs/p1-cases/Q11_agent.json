@@ -1,0 +1,2589 @@
+{
+  "question_id": "Q11",
+  "category": "跨篇章综合",
+  "question": "史思明曾接受唐廷任命，为何后来又出兵救安庆绪？现有资料能确认哪些阶段？",
+  "method": "agent",
+  "mode": "local",
+  "model": "deepseek-flash",
+  "embedding": "BAAI/bge-small-zh-v1.5@7999e1d3359715c523056ef9478215996d62a620:512:cls-normalized:v1",
+  "result": {
+    "premise": {
+      "text": "提问的两个事实前提均有已读材料支持：史思明曾奉表降唐并受肃宗封赏；其后又引兵救相州之围中的安庆绪。",
+      "kind": "文献记载",
+      "citations": [
+        {
+          "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+          "quote": "遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+          "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+          "title": "舊唐書",
+          "chapter": "卷200上",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+          "start": 6241,
+          "end": 6298
+        },
+        {
+          "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+          "quote": "三月，引眾救相州，官軍敗而引退。",
+          "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+          "title": "舊唐書",
+          "chapter": "卷200上",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+          "start": 7271,
+          "end": 7287
+        }
+      ],
+      "support_review": {
+        "claim_index": 0,
+        "verdict": "支持",
+        "reason": "dc0441fe 载奉表以所管兵八万降、肃宗封归义王等；a20035a2 载三月引众救相州、官军败退。两前提均有已读原文支持。"
+      }
+    },
+    "conclusions": [
+      {
+        "text": "史思明降唐时以所管兵八万奉表归顺，肃宗封其为归义王、范阳长史、御史大夫、河北节度使；《新唐书》则称其“外顺命，内实通贼，益募兵”，即归顺带有名义性质。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6241,
+            "end": 6298
+          },
+          {
+            "evidence_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+            "quote": "然思明外順命，內實通賊，益募兵。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 9684,
+            "end": 9700
+          }
+        ],
+        "support_review": {
+          "claim_index": 1,
+          "verdict": "支持",
+          "reason": "dc0441fe 原文含八万众、归义王、范阳长史、御史大夫、河北节度使；58ca7eac 原文含“外顺命，内实通贼，益募兵”。释义与原文一致。"
+        }
+      },
+      {
+        "text": "出兵救安庆绪是安庆绪先遣使求救、史思明先遣偏师后亲率大军的两段过程；史料所载动机线索为思明畏唐廷诛戮旧叛将、并欲兼并安庆绪部众，属推断而非当事人自述。",
+        "kind": "推断",
+        "citations": [
+          {
+            "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+            "quote": "使薛嵩求救于史思明，言禪讓之禮。思明先遣李歸仁以步卒一萬、馬軍三千，先往滏陽以應。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 3344,
+            "end": 3385
+          },
+          {
+            "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+            "quote": "今尚見殺，況我本從祿山反乎！",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6838,
+            "end": 6852
+          },
+          {
+            "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+            "quote": "思明召慶緒等殺之，並有其眾。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 7287,
+            "end": 7301
+          }
+        ],
+        "support_review": {
+          "claim_index": 3,
+          "verdict": "支持",
+          "reason": "b7184b43 载薛嵩求救、思明先遣李归仁步卒一万马军三千往滏阳；a20035a2 载召庆绪等杀之并有其众；49f74fb6 载“今尚见杀，况我本从禄山反乎”。动机已标为推断，符合要求。"
+        }
+      }
+    ],
+    "events": [
+      {
+        "text": "安庆绪败后，乌承恩劝史思明降唐；思明拘阿史那承庆、斩安守忠，奉表以八万众归降，受唐封赏。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+            "quote": "及安慶緒敗，承恩說思明降唐。",
+            "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+            "title": "資治通鑑",
+            "chapter": "卷220",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+            "start": 8796,
+            "end": 8810
+          },
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6215,
+            "end": 6241
+          }
+        ],
+        "support_review": {
+          "claim_index": 4,
+          "verdict": "支持",
+          "reason": "e40c8f07 载安庆绪败后承恩说思明降唐；dc0441fe 载拘承庆、斩守忠李立节、奉表以八万众降、受封赏。各子命题均有原文支持。"
+        }
+      },
+      {
+        "text": "九节度围相州，安庆绪遣薛嵩求救，思明先遣李归仁率步骑一万三千壁滏阳，因惧官军未即进。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+            "quote": "因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6593,
+            "end": 6629
+          },
+          {
+            "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+            "quote": "安慶緒偷道求救於思明，思明懼軍威之盛，不敢進。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 7159,
+            "end": 7182
+          }
+        ],
+        "support_review": {
+          "claim_index": 6,
+          "verdict": "支持",
+          "reason": "0d425dc0 载薛嵩以厚币求救、李归仁将兵万三千壁滏阳未进；a20035a2 载思明惧军威之盛不敢进。九节度围相州亦见 a20035a2。“步骑一万三千”与“将兵万三千”一致。"
+        }
+      },
+      {
+        "text": "思明拔魏州、乾元二年正月称王，三月引众救相州，官军败退，思明诱杀安庆绪并收其众。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+            "quote": "思明于魏州北設壇，僭稱為大聖燕王，以周贄為行軍司馬。三月，引眾救相州，官軍敗而引退。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 7245,
+            "end": 7287
+          },
+          {
+            "evidence_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+            "quote": "思明勒兵入鄴城，收其士馬，以府庫賞將士，慶緒先所有州、縣及兵皆歸于思明。",
+            "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+            "title": "資治通鑑",
+            "chapter": "卷221",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+            "start": 1702,
+            "end": 1738
+          }
+        ],
+        "support_review": {
+          "claim_index": 7,
+          "verdict": "支持",
+          "reason": "a20035a2 载拔魏州、乾元二年正月一日设坛称大圣燕王、三月引众救相州官军败退、召庆绪等杀之并有其众；96658b44 载收其士马、州县及兵归思明。“诱杀”细节见 2d0b6af1 密召安太清诱之，可支持。"
+        }
+      }
+    ],
+    "disagreements": [
+      {
+        "text": "《旧唐书》记安庆绪求救时“言禅让之礼”，《新唐书》记“奉皇帝玺绶让思明”，《通鉴》则记思明先手疏“不称臣”、愿为兄弟之国；诸书对让位与结盟的具体形式叙述不一。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+            "quote": "使薛嵩求救于史思明，言禪讓之禮。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 3344,
+            "end": 3360
+          },
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "慶緒急，乃遣太清奉皇帝璽綬讓思明。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6739,
+            "end": 6756
+          },
+          {
+            "evidence_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+            "quote": "乃手疏唁慶緒而不稱臣，且曰：「願為兄弟之國，更作籓籬之援。",
+            "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+            "title": "資治通鑑",
+            "chapter": "卷221",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+            "start": 1445,
+            "end": 1474
+          }
+        ],
+        "support_review": {
+          "claim_index": 8,
+          "verdict": "支持",
+          "reason": "b7184b43 载“言禅让之礼”；b97b30db 载“遣太清奉皇帝玺绶让思明”；2d0b6af1 载手疏不称臣、愿为兄弟之国。三书叙述差异的概括与原文相符。"
+        }
+      }
+    ],
+    "limitations": [
+      "“为何”属因果解释，已读史料只提供动机线索（惧唐廷诛戮、欲并其众），无史思明本人自述，故结论3标为推断。",
+      "史思明降唐的具体月份、诏书原文及是否实际交割范阳实职，已读段落未载。",
+      "乌承恩事件与称王之间的精确时间差，已读段落未系明确年月。",
+      "三书相关段落可能同源，未做文字比对与史源考证，独立性未确认。",
+      "未穷尽史料，不能据此断言其他记载不存在。",
+      "达到研究轮数上限",
+      "有 3/10 条候选表述未通过引用或内容支持检查，已从正式回答移除。"
+    ],
+    "rejected_limitations": [],
+    "rejected_claims": [
+      {
+        "claim_index": 2,
+        "text": "唐廷用乌承恩图谋思明，思明搜得铁券与李光弼牒文后杀承恩父子及党羽二百余人，并上表请诛李光弼，双方关系由此破裂。",
+        "candidate_citations": [
+          {
+            "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+            "quote": "思明乃執承恩，索其裝囊，得鐵券及光弼牒"
+          },
+          {
+            "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+            "quote": "乃令耿仁智、張不矜修表：「請誅光弼以謝河北。若不從臣請，臣則自領兵往太原誅光弼。」"
+          }
+        ],
+        "program_errors": [],
+        "support_review": {
+          "claim_index": 2,
+          "verdict": "部分支持",
+          "reason": "a5857137 支持执承恩、搜得铁券及光弼牒、榜杀承恩父子、连坐死者二百余人；49f74fb6 支持上表请诛光弼。但“党羽二百余人”原文作“连坐死者二百余人”，且“双方关系由此破裂”为推断性表述，未在引文中明言。"
+        }
+      },
+      {
+        "claim_index": 5,
+        "text": "乌承恩事泄被杀，思明又因三司议陈希烈等死罪而惧，遂上表请诛李光弼，与唐廷决裂。",
+        "candidate_citations": [
+          {
+            "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+            "quote": "遂榜殺承恩父子，連坐死者二百餘人。"
+          },
+          {
+            "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+            "quote": "思明曰：「陳希烈已下，皆重臣，上皇棄之幸蜀，既收復天下，此輩當慰勞之。今尚見殺，況我本從祿山反乎！」"
+          }
+        ],
+        "program_errors": [],
+        "support_review": {
+          "claim_index": 5,
+          "verdict": "部分支持",
+          "reason": "a5857137 支持杀承恩父子及连坐；49f74fb6 支持因三司议陈希烈等死罪而惧并上表请诛光弼。但“事泄被杀”与“因惧而决裂”的因果连接系概括，引文未明言二者为直接因果链。"
+        }
+      },
+      {
+        "claim_index": 9,
+        "text": "《旧唐书》《新唐书》《通鉴》相关段落文字高度相似，可能共享唐代实录、国史等史源；本次未做史源考证，不能视为彼此独立的证据。",
+        "candidate_citations": [
+          {
+            "evidence_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+            "quote": "不意大王以太上皇故，將兵遠救。"
+          },
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。"
+          }
+        ],
+        "program_errors": [],
+        "support_review": {
+          "claim_index": 9,
+          "verdict": "部分支持",
+          "reason": "f2f29ba4 与 b97b30db 确见高度相似文字，可支持“文字相似、可能同源”的推断；但“共享唐代实录、国史等史源”属未考证的推测，引文本身不能支持具体史源，且已声明未做考证，故仅部分支持。"
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+        "quote": "遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 6241,
+        "end": 6298
+      },
+      {
+        "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+        "quote": "三月，引眾救相州，官軍敗而引退。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 7271,
+        "end": 7287
+      },
+      {
+        "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+        "quote": "遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 6241,
+        "end": 6298
+      },
+      {
+        "evidence_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+        "quote": "然思明外順命，內實通賊，益募兵。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 9684,
+        "end": 9700
+      },
+      {
+        "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+        "quote": "使薛嵩求救于史思明，言禪讓之禮。思明先遣李歸仁以步卒一萬、馬軍三千，先往滏陽以應。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 3344,
+        "end": 3385
+      },
+      {
+        "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+        "quote": "今尚見殺，況我本從祿山反乎！",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 6838,
+        "end": 6852
+      },
+      {
+        "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+        "quote": "思明召慶緒等殺之，並有其眾。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 7287,
+        "end": 7301
+      },
+      {
+        "evidence_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+        "quote": "及安慶緒敗，承恩說思明降唐。",
+        "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+        "start": 8796,
+        "end": 8810
+      },
+      {
+        "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+        "quote": "遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 6215,
+        "end": 6241
+      },
+      {
+        "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+        "quote": "因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 6593,
+        "end": 6629
+      },
+      {
+        "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+        "quote": "安慶緒偷道求救於思明，思明懼軍威之盛，不敢進。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 7159,
+        "end": 7182
+      },
+      {
+        "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+        "quote": "思明于魏州北設壇，僭稱為大聖燕王，以周贄為行軍司馬。三月，引眾救相州，官軍敗而引退。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 7245,
+        "end": 7287
+      },
+      {
+        "evidence_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+        "quote": "思明勒兵入鄴城，收其士馬，以府庫賞將士，慶緒先所有州、縣及兵皆歸于思明。",
+        "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+        "title": "資治通鑑",
+        "chapter": "卷221",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+        "start": 1702,
+        "end": 1738
+      },
+      {
+        "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+        "quote": "使薛嵩求救于史思明，言禪讓之禮。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 3344,
+        "end": 3360
+      },
+      {
+        "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+        "quote": "慶緒急，乃遣太清奉皇帝璽綬讓思明。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 6739,
+        "end": 6756
+      },
+      {
+        "evidence_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+        "quote": "乃手疏唁慶緒而不稱臣，且曰：「願為兄弟之國，更作籓籬之援。",
+        "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+        "title": "資治通鑑",
+        "chapter": "卷221",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+        "start": 1445,
+        "end": 1474
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "edition": "维基文库数字文本，修订 2564831，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      },
+      {
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      },
+      {
+        "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+        "title": "資治通鑑",
+        "chapter": "卷221",
+        "edition": "维基文库数字文本，修订 982302，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      },
+      {
+        "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "edition": "维基文库数字文本，修订 2062230，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      },
+      {
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      }
+    ],
+    "citation_audit": {
+      "program": [
+        {
+          "claim_index": 0,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+              "quote": "遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 6241,
+              "end": 6298
+            },
+            {
+              "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+              "quote": "三月，引眾救相州，官軍敗而引退。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 7271,
+              "end": 7287
+            }
+          ]
+        },
+        {
+          "claim_index": 1,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+              "quote": "遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 6241,
+              "end": 6298
+            },
+            {
+              "evidence_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+              "quote": "然思明外順命，內實通賊，益募兵。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 9684,
+              "end": 9700
+            }
+          ]
+        },
+        {
+          "claim_index": 2,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+              "quote": "思明乃執承恩，索其裝囊，得鐵券及光弼牒",
+              "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+              "title": "資治通鑑",
+              "chapter": "卷220",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+              "start": 9012,
+              "end": 9031
+            },
+            {
+              "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+              "quote": "乃令耿仁智、張不矜修表：「請誅光弼以謝河北。若不從臣請，臣則自領兵往太原誅光弼。」",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 6940,
+              "end": 6981
+            }
+          ]
+        },
+        {
+          "claim_index": 3,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+              "quote": "使薛嵩求救于史思明，言禪讓之禮。思明先遣李歸仁以步卒一萬、馬軍三千，先往滏陽以應。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 3344,
+              "end": 3385
+            },
+            {
+              "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+              "quote": "今尚見殺，況我本從祿山反乎！",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 6838,
+              "end": 6852
+            },
+            {
+              "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+              "quote": "思明召慶緒等殺之，並有其眾。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 7287,
+              "end": 7301
+            }
+          ]
+        },
+        {
+          "claim_index": 4,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+              "quote": "及安慶緒敗，承恩說思明降唐。",
+              "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+              "title": "資治通鑑",
+              "chapter": "卷220",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+              "start": 8796,
+              "end": 8810
+            },
+            {
+              "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+              "quote": "遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 6215,
+              "end": 6241
+            }
+          ]
+        },
+        {
+          "claim_index": 5,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+              "quote": "遂榜殺承恩父子，連坐死者二百餘人。",
+              "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+              "title": "資治通鑑",
+              "chapter": "卷220",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+              "start": 9146,
+              "end": 9163
+            },
+            {
+              "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+              "quote": "思明曰：「陳希烈已下，皆重臣，上皇棄之幸蜀，既收復天下，此輩當慰勞之。今尚見殺，況我本從祿山反乎！」",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 6803,
+              "end": 6853
+            }
+          ]
+        },
+        {
+          "claim_index": 6,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+              "quote": "因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 6593,
+              "end": 6629
+            },
+            {
+              "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+              "quote": "安慶緒偷道求救於思明，思明懼軍威之盛，不敢進。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 7159,
+              "end": 7182
+            }
+          ]
+        },
+        {
+          "claim_index": 7,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+              "quote": "思明于魏州北設壇，僭稱為大聖燕王，以周贄為行軍司馬。三月，引眾救相州，官軍敗而引退。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 7245,
+              "end": 7287
+            },
+            {
+              "evidence_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+              "quote": "思明勒兵入鄴城，收其士馬，以府庫賞將士，慶緒先所有州、縣及兵皆歸于思明。",
+              "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+              "title": "資治通鑑",
+              "chapter": "卷221",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+              "start": 1702,
+              "end": 1738
+            }
+          ]
+        },
+        {
+          "claim_index": 8,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+              "quote": "使薛嵩求救于史思明，言禪讓之禮。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 3344,
+              "end": 3360
+            },
+            {
+              "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+              "quote": "慶緒急，乃遣太清奉皇帝璽綬讓思明。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 6739,
+              "end": 6756
+            },
+            {
+              "evidence_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+              "quote": "乃手疏唁慶緒而不稱臣，且曰：「願為兄弟之國，更作籓籬之援。",
+              "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+              "title": "資治通鑑",
+              "chapter": "卷221",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+              "start": 1445,
+              "end": 1474
+            }
+          ]
+        },
+        {
+          "claim_index": 9,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+              "quote": "不意大王以太上皇故，將兵遠救。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 3775,
+              "end": 3790
+            },
+            {
+              "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+              "quote": "不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 6955,
+              "end": 6979
+            }
+          ]
+        }
+      ],
+      "content": {
+        "checks": [
+          {
+            "claim_index": 0,
+            "verdict": "支持",
+            "reason": "dc0441fe 载奉表以所管兵八万降、肃宗封归义王等；a20035a2 载三月引众救相州、官军败退。两前提均有已读原文支持。"
+          },
+          {
+            "claim_index": 1,
+            "verdict": "支持",
+            "reason": "dc0441fe 原文含八万众、归义王、范阳长史、御史大夫、河北节度使；58ca7eac 原文含“外顺命，内实通贼，益募兵”。释义与原文一致。"
+          },
+          {
+            "claim_index": 2,
+            "verdict": "部分支持",
+            "reason": "a5857137 支持执承恩、搜得铁券及光弼牒、榜杀承恩父子、连坐死者二百余人；49f74fb6 支持上表请诛光弼。但“党羽二百余人”原文作“连坐死者二百余人”，且“双方关系由此破裂”为推断性表述，未在引文中明言。"
+          },
+          {
+            "claim_index": 3,
+            "verdict": "支持",
+            "reason": "b7184b43 载薛嵩求救、思明先遣李归仁步卒一万马军三千往滏阳；a20035a2 载召庆绪等杀之并有其众；49f74fb6 载“今尚见杀，况我本从禄山反乎”。动机已标为推断，符合要求。"
+          },
+          {
+            "claim_index": 4,
+            "verdict": "支持",
+            "reason": "e40c8f07 载安庆绪败后承恩说思明降唐；dc0441fe 载拘承庆、斩守忠李立节、奉表以八万众降、受封赏。各子命题均有原文支持。"
+          },
+          {
+            "claim_index": 5,
+            "verdict": "部分支持",
+            "reason": "a5857137 支持杀承恩父子及连坐；49f74fb6 支持因三司议陈希烈等死罪而惧并上表请诛光弼。但“事泄被杀”与“因惧而决裂”的因果连接系概括，引文未明言二者为直接因果链。"
+          },
+          {
+            "claim_index": 6,
+            "verdict": "支持",
+            "reason": "0d425dc0 载薛嵩以厚币求救、李归仁将兵万三千壁滏阳未进；a20035a2 载思明惧军威之盛不敢进。九节度围相州亦见 a20035a2。“步骑一万三千”与“将兵万三千”一致。"
+          },
+          {
+            "claim_index": 7,
+            "verdict": "支持",
+            "reason": "a20035a2 载拔魏州、乾元二年正月一日设坛称大圣燕王、三月引众救相州官军败退、召庆绪等杀之并有其众；96658b44 载收其士马、州县及兵归思明。“诱杀”细节见 2d0b6af1 密召安太清诱之，可支持。"
+          },
+          {
+            "claim_index": 8,
+            "verdict": "支持",
+            "reason": "b7184b43 载“言禅让之礼”；b97b30db 载“遣太清奉皇帝玺绶让思明”；2d0b6af1 载手疏不称臣、愿为兄弟之国。三书叙述差异的概括与原文相符。"
+          },
+          {
+            "claim_index": 9,
+            "verdict": "部分支持",
+            "reason": "f2f29ba4 与 b97b30db 确见高度相似文字，可支持“文字相似、可能同源”的推断；但“共享唐代实录、国史等史源”属未考证的推测，引文本身不能支持具体史源，且已声明未做考证，故仅部分支持。"
+          },
+          {
+            "claim_index": 10,
+            "verdict": "支持",
+            "reason": "属证据缺口说明：已读史料提供惧诛、并其众等线索，无思明自述动机，标为推断合理，未夹带未证实事实。"
+          },
+          {
+            "claim_index": 11,
+            "verdict": "支持",
+            "reason": "已读段落确未载降唐具体月份、诏书原文及范阳实职交割情况，属本次未核查范围，表述克制。"
+          },
+          {
+            "claim_index": 12,
+            "verdict": "支持",
+            "reason": "已读段落中乌承恩事件与魏州称王之间无明确年月系联，说明符合已读材料状况。"
+          },
+          {
+            "claim_index": 13,
+            "verdict": "支持",
+            "reason": "属限制说明，声明未做文字比对与史源考证、独立性未确认，未断言同源结论。"
+          },
+          {
+            "claim_index": 14,
+            "verdict": "支持",
+            "reason": "属恰当的限制说明，未借缺口夹带未经原文支持的事实或绝对否定。"
+          }
+        ]
+      },
+      "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。"
+    },
+    "research_outcome": {
+      "status": "partial",
+      "reasons": [
+        "部分候选表述未通过审核",
+        "研究达到预算限制"
+      ],
+      "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+    },
+    "metrics": {
+      "rounds": 4,
+      "answer_revisions": 0,
+      "duplicate_tool_calls_avoided": 0,
+      "model_requests": [
+        {
+          "stage": "Analysis",
+          "elapsed_seconds": 2.125,
+          "context_chars": 403,
+          "total_tokens": 931
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.187,
+          "context_chars": 900,
+          "total_tokens": 1127
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 5.765,
+          "context_chars": 7880,
+          "total_tokens": 6289
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.672,
+          "context_chars": 8741,
+          "total_tokens": 6774
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 5.453,
+          "context_chars": 6550,
+          "total_tokens": 5617
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.172,
+          "context_chars": 11087,
+          "total_tokens": 8413
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 5.172,
+          "context_chars": 9927,
+          "total_tokens": 7704
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.5,
+          "context_chars": 8648,
+          "total_tokens": 6447
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 5.079,
+          "context_chars": 13110,
+          "total_tokens": 10264
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 10.031,
+          "context_chars": 14436,
+          "total_tokens": 13210
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 5.687,
+          "context_chars": 12046,
+          "total_tokens": 9550
+        }
+      ],
+      "tool_calls": 14,
+      "web_pages": 0,
+      "evidence_read": 24,
+      "elapsed_seconds": 45.25,
+      "token_usage": {
+        "deepseek-flash": {
+          "total_tokens": 76326,
+          "input_tokens": 68808,
+          "input_token_details": {
+            "cache_read": 14720
+          },
+          "output_token_details": {},
+          "output_tokens": 7518
+        }
+      },
+      "cost": null
+    }
+  },
+  "events": [
+    {
+      "type": "step",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    },
+    {
+      "type": "plan",
+      "data": {
+        "premise_status": "待核查",
+        "premise_to_check": [
+          "史思明确曾接受唐廷任命（时间、名义、是否实际归降）",
+          "史思明出兵救安庆绪确有其事（时间、规模、是否主动救援）",
+          "两事之间存在先后关系，且可构成因果追问的前提",
+          "安庆绪与史思明的关系（安禄山旧部、上下级或并立）"
+        ],
+        "subquestions": [
+          "史思明受唐任命的具体阶段与条件，史料如何记载？",
+          "史思明与唐廷关系破裂的时点与直接触发事件是什么？",
+          "史思明出兵与安庆绪求援的先后顺序，谁先发起？",
+          "相关记载出自哪些文献，是否同源（如《旧唐书》《新唐书》《资治通鉴》共用实录/国史）？"
+        ],
+        "search_queries": [
+          "史思明 归降 唐 范阳 节度使",
+          "史思明 安庆绪 救援 邺 相州",
+          "安庆绪 求援 史思明 史料",
+          "史思明 复叛 唐 时间"
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 1,
+        "summary": "史思明 归降 唐 范阳 节度使"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 2,
+        "summary": "史思明 安庆绪 救援 邺 相州"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 3,
+        "summary": "安庆绪 求援 史思明"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 4,
+        "summary": "史思明 复叛 唐 时间"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "type": "assessment",
+      "data": {
+        "sufficient": false,
+        "premise_status": "支持",
+        "gaps": [
+          "史思明降唐的具体时间、唐廷任命名义与条件，目前仅有维基百科转述，需《旧唐书》《新唐书》《资治通鉴》原文对应段落",
+          "史思明杀乌承恩复叛的时点与直接触发事件，需原文（通鉴卷220至德二载末至乾元元年）",
+          "安庆绪求援与史思明出兵的先后：旧唐书卷200上称安庆绪先求救、思明惧不敢进，三月方引众救相州；需通鉴卷221对应记载核对是否一致、是否同源",
+          "史思明出兵动机的记载层次：文献是否给出解释（如自保、争河北、并其众），还是仅有事实叙述",
+          "安庆绪与史思明关系：通鉴卷219已载安庆绪以思明为范阳节度使、封王，思明渐不用命，需确认此段与降唐、救援的衔接",
+          "《新唐书》相关本纪/传的独立记载，以判断是否与旧书、通鉴同源"
+        ],
+        "next_queries": [
+          "资治通鉴 卷220 史思明 归义王 范阳 长史 河北节度使",
+          "资治通鉴 卷220 乌承恩 思明 杀 复叛 乾元元年",
+          "旧唐书 史思明传 十三郡 八万 降 归义王",
+          "新唐书 史思明传 降唐 复叛",
+          "资治通鉴 卷221 安庆绪 求救 思明 相州 乾元元年十月"
+        ],
+        "summary": "已读证据显示：①史思明降唐确有其事——安庆绪谋除思明，思明囚阿史那承庆等，以所领十三郡、兵八万降唐（维基百科转述，待原文核实）；唐封其为归义王、范阳长史、河北节度使，并派乌承恩监视，乌承恩私策反其部下，半年后思明杀乌承恩复叛（同上，仅二手）。②通鉴卷220载乌承恩说思明降唐、李光弼阴使图之、赐阿史那承庆铁券共图思明，为唐廷一方主动施压的记载。③出兵救安庆绪：《旧唐书》卷200上载乾元元年十月九节度围相州，安庆绪\"偷道求救于思明\"，思明\"惧军威之盛，不敢进\"；十二月思明攻魏州、乾元二年正月僭称大圣燕王，三月\"引众救相州\"，官军败退后召安庆绪等杀之并其众。通鉴卷221载官军溃后思明屯邺城南、安庆绪欲闭门拒之、诸将言\"岂可复背史王\"，思明诱执庆绪。④通鉴卷219载安庆绪以思明为范阳节度使、封妫川王，思明拥强兵渐不用庆绪之命。故\"受唐任命\"与\"出兵救安庆绪\"两事均有据，先后关系成立（757年降唐→758年复叛→758年末至759年春救相州）。但\"为何\"的因果解释目前只有间接线索（唐廷密谋图之、思明自保与并吞安庆绪余众），尚无已读原文直接陈述动机；且维基百科为二手，旧书与通鉴是否同源未核。证据不足以给出确定因果结论。"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 5,
+        "summary": "e40c8f07-a8f1-4846-997e-009e76e0dcae"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+        "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "7282af8d-2eb4-4019-974d-b396cc180380",
+        "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+        "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+        "title": "資治通鑑",
+        "chapter": "卷220",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 6,
+        "summary": "a20035a2-af8e-4d82-bb38-e25be3b451ba"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "ac20e22b-fb91-402a-9a49-9bec473dee9d",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 7,
+        "summary": "2d0b6af1-286b-4265-9b61-85da4a435014"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+        "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+        "title": "資治通鑑",
+        "chapter": "卷221",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "2e4b70e4-2e2e-4b50-972c-f8077a0eb084",
+        "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+        "title": "資治通鑑",
+        "chapter": "卷221",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+        "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+        "title": "資治通鑑",
+        "chapter": "卷221",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 8,
+        "summary": "88084c97-5ed9-4800-adc0-21d1dfe8c3c5"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "88084c97-5ed9-4800-adc0-21d1dfe8c3c5",
+        "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "82421f54-ddea-486c-a9f6-1d7fb99b254d",
+        "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "f8f4172c-e783-4cc8-a508-7d467ca476fd",
+        "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+        "title": "資治通鑑",
+        "chapter": "卷219",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "type": "assessment",
+      "data": {
+        "sufficient": false,
+        "premise_status": "支持",
+        "gaps": [
+          "史思明降唐的具体时间、唐廷所授官职名义（如范阳节度使/归义王等）及降唐条件，已读证据仅见“以十三万众降朝廷”之语与乌承恩劝降事，缺正式任命诏敕或本纪记载",
+          "史思明与唐廷破裂的直接触发时点：已读证据显示乌承恩事件（李光弼密谋、铁券、簿书）为导火索，但事件发生的准确年月及唐廷事后“慰谕”是否真正修复关系，尚需本纪/纪事系年核对",
+          "史思明出兵救相州（邺）的发起方与时间：已读证据有“安庆绪偷道求救于思明”“思明惧军威之盛，不敢进”，但求救与出兵的具体月份、兵力规模、是否主动，需与《通鉴》卷221相应段落对读",
+          "史思明与安庆绪的隶属关系演变：卷219载安庆绪以思明为范阳节度使、封妫川王，思明“浸不用庆绪之命”，此点已读，但安庆绪杀父夺位后思明态度转变的记载仍缺",
+          "史源关系：《旧唐书》卷200上、《新唐书》与《通鉴》相关段落是否同源（唐实录/国史），尚未核查，影响独立证据计数"
+        ],
+        "next_queries": [
+          "史思明 降唐 归义王 范阳节度使 乾元元年",
+          "乌承恩 事 乾元元年 六月 史思明",
+          "通鉴 卷221 乾元元年 思明 降 表",
+          "安庆绪 求救 思明 乾元元年 十月 魏州",
+          "新唐书 史思明传 降唐 复叛"
+        ],
+        "summary": "已读证据可确认的链条：①史思明原为安禄山部将，安庆绪杀父夺位后以思明为范阳节度使、封妫川王，思明拥强兵“浸不用庆绪之命”（《通鉴》卷219）。②安庆绪败后，乌承恩劝思明降唐，思明“以十三万众降朝廷”，唐廷授官并赐铁券于阿史那承庆（《通鉴》卷220）。③李光弼阴使乌承恩图思明，思明搜得铁券、光弼牒及降将名单，遂杀承恩父子、囚中使，宣布“何负陛下”，并上表请诛光弼，杀耿仁智等，与唐决裂（卷220、《旧唐书》卷200上）。④乾元元年十月郭子仪等九节度围相州，安庆绪“偷道求救于思明”，思明惧官军之盛不敢进；十二月破魏州，乾元二年正月于魏州僭称大圣燕王；三月引众救相州，官军溃，思明诱杀安庆绪并其众（《旧唐书》卷200上、《通鉴》卷221）。故“受唐任命—复叛—救安庆绪”的先后关系有据，但“为何”类因果解释尚缺正式任命细节、破裂时点系年与求救/出兵月份，且史源独立性未核。"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 3
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 9,
+        "summary": "史思明 降唐 归义王 范阳节度使 乾元元年 四月"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 10,
+        "summary": "安庆绪 求救 思明 魏州 乾元元年 十月 通鉴 卷220"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "type": "assessment",
+      "data": {
+        "sufficient": false,
+        "premise_status": "支持",
+        "gaps": [
+          "史思明降唐的具体时间、唐廷所授官爵名义（如归义王、范阳节度使等）尚无已读原文证据，仅有维基摘要线索",
+          "史思明复叛的直接触发事件（乌承恩案）已读《通鉴》卷220，但该段未标明具体年月，需补读前后文确定时点",
+          "史思明出兵救安庆绪的动机与决策过程：已读材料显示安庆绪先求援、思明先惧不敢进、后因拔魏州才南下，但思明自身动机（如恐官军乘胜攻范阳、欲并其众）需原文佐证",
+          "《旧唐书》《新唐书》《通鉴》相关记载是否同源（共用实录/国史）尚未核查，不宜视为三条独立证据",
+          "安庆绪与史思明关系已读《通鉴》卷219（安庆绪任思明为范阳节度使，思明渐不用命），可支持上下级名义关系，但需确认是否足以说明并立化过程"
+        ],
+        "next_queries": [
+          "史思明 归义王 范阳节度使 至德二载 降唐",
+          "乌承恩 史思明 乾元元年 六月",
+          "史思明 救相州 恐 根本 范阳 通鉴 卷221",
+          "旧唐书 新唐书 通鉴 安禄山事迹 史源 关系"
+        ],
+        "summary": "已读证据可确认几个阶段：①《通鉴》卷219载安庆绪以史思明为范阳节度使、封妫川王，思明拥强兵渐不用庆绪之命，庆绪不能制——二人名义上下、实际并立化。②《通鉴》卷220载乌承恩说思明降唐，李光弼阴使承恩图之，思明搜得铁券与光弼牒，遂杀承恩父子，自称「以十三万众降朝廷」，表上其状而朝廷慰谕——降唐与复叛的转折点在此，但该段未标年月。③《旧唐书》卷200上载乾元元年十月九节度围相州，安庆绪「偷道求救于思明」，思明惧军威不敢进；十二月拔魏州、杀三万人；乾元二年正月僭称大圣燕王；三月引众救相州，官军败退，思明召庆绪等杀之并其众。《新唐书》卷225上、《旧唐书》另段（薛嵩以厚币求救、言禅让之礼，思明先遣李归仁赴滏阳）与之相合。故「受唐任命」与「出兵救安庆绪」两事均有已读记载，先后关系成立：降唐在前，复叛、再救安庆绪在后。但降唐的官爵名义、复叛确切年月、思明出兵动机的原文表述仍缺，且三书可能同源，尚不能判为证据充分。"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 4
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 11,
+        "summary": "b7184b43-271c-4333-9106-f61476b39f4d"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "cdc3e971-0472-454e-a79a-caeaba21c80e",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 12,
+        "summary": "65a11e72-adc4-47fa-b875-c093d22151ce"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "65a11e72-adc4-47fa-b875-c093d22151ce",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "a54434a0-829d-4222-a0ce-4fd7063dcc4c",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 13,
+        "summary": "e5daa04d-1d31-40e6-bb07-32e413fcc680"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "61bff857-6f95-46b4-a1de-3caf08fd1944",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 14,
+        "summary": "0d425dc0-cb31-4784-b618-801dadf11adb"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "919726ab-8360-4d6b-a2b2-dd63be3626fb",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "type": "assessment",
+      "data": {
+        "sufficient": true,
+        "premise_status": "支持",
+        "gaps": [
+          "史思明降唐的具体月份与诏书原文（《旧唐书》仅记封号官衔，未系月；《通鉴》卷220系于至德二载末，需核对系年）",
+          "唐廷是否正式授其范阳节度使实职、有无实际交割（《新唐书》称“外顺命，内实通贼”，暗示名义归顺）",
+          "乌承恩事件与史思明复叛的精确时间差，以及“复叛”是否以杀承恩为起点还是以乾元二年称王为起点",
+          "安庆绪求援使者（薛嵩/薛嵩携厚币）与史思明先遣李归仁、后亲率十三万众的时间层次，各书叙述次序略有出入",
+          "《旧唐书》《新唐书》《通鉴》相关段落是否同源（可能共据唐代实录/国史），需比对文字以判断独立性"
+        ],
+        "next_queries": [
+          "史思明 至德二载 十二月 降 表 归义王",
+          "乌承恩 事件 乾元元年 六月",
+          "安庆绪 薛嵩 求救 史思明 滏阳",
+          "史思明 十三万 救邺 乾元二年 三月"
+        ],
+        "summary": "已读证据可确认四个阶段。一、归顺前：安庆绪以史思明为范阳节度使，思明拥强兵、渐不用庆绪之命（《通鉴》卷219、《旧唐书》卷200上）。二、降唐：安庆绪败后，乌承恩劝降，思明拘阿史那承庆、斩安守忠，奉表以所管兵八万众降，肃宗封归义王、范阳长史、御史大夫、河北节度使（《旧唐书》卷200上）；《新唐书》称其“外顺命，内实通贼，益募兵”。三、破裂：唐廷用乌承恩图思明，思明搜得铁券与李光弼牒，杀承恩父子及党二百余人，又因三司议斩陈希烈等而惧，遂上表请诛光弼（《通鉴》卷220、《旧唐书》《新唐书》）。四、出兵救安庆绪：九节度围相州，安庆绪遣薛嵩厚币求救，思明先遣李归仁万三千壁滏阳，因惧官军未进；后拔魏州、乾元二年正月称王，三月引众救相州，官军溃，思明诱杀安庆绪并其众（《旧唐书》《新唐书》《通鉴》卷221）。故“受唐任命”与“出兵救安庆绪”两事均有据，且先后关系成立；但“为何”属因果解释，史料只提供动机线索（惧唐廷诛戮、图并其众），非当时人自述，需区分记载与推断。"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+      "passage_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+      "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷220",
+      "edition": "维基文库数字文本，修订 2564831，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+      "content_hash": "02c4772a612e09a6eda9f40dd88994e039845ba41f7d32a0131882bead03c41e",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 8747,
+      "end": 8869,
+      "text": "初，史思明以列將事來盧軍使烏知義，知義善待之。知義子承恩為信都太守，以郡降思明，思明思舊恩而全之。及安慶緒敗，承恩說思明降唐。李光弼以思明終當叛亂，而承恩為思明所親信，陰使圖之；又勸上以承恩為范陽節度副使，賜阿史那承慶鐵券，令共圖思明，上從之。",
+      "before": "太子少師房琯既失職，頗怏怏，多稱疾不朝，而賓客朝夕盈門，其黨為之揚言於朝云：「琯有文武才，宜大用。」上聞而惡之，下制數琯罪，貶幽州刺史。前祭酒劉秩貶閬州刺史，京兆尹嚴武貶巴州刺史；皆琯黨也。",
+      "after": "承恩多以私財募部曲，又數衣婦人服詣諸將營說誘之，諸將以白思明，思明疑未察。會承恩入京師，上使內侍李思敬與之俱至范陽宣慰。承恩既宣旨，思明留承恩館於府中，帷其床，伏二人於床下。承恩少子在范陽，思明使省其父。夜中，承恩密謂其子曰：「吾受命除此逆胡，當以吾為節度使。」二人於床下大呼而出。思明乃執承恩，索其裝囊，得鐵券及光弼牒，牒云：「承慶事成則付鐵券；不然，不可付也。」又得簿書數百紙，皆先從思明反者將士名。思明責之曰：「我何負於汝而為此！」承恩謝曰：「死罪，此皆李光弼之謀也。」思明乃集將佐吏民，西向大哭曰：「臣以十三萬眾降朝廷，何負陛下，而欲殺臣！」遂榜殺承恩父子，連坐死者二百餘人。承恩弟承玼免。思明囚思敬，表上其狀。上遣中使慰諭思明曰：「此非朝廷與光弼之意，皆承恩所為，殺之甚善。」",
+      "prev_id": "7282af8d-2eb4-4019-974d-b396cc180380",
+      "next_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+      "context_passages": [
+        {
+          "evidence_id": "7282af8d-2eb4-4019-974d-b396cc180380",
+          "passage_id": "7282af8d-2eb4-4019-974d-b396cc180380",
+          "start": 8650,
+          "end": 8745,
+          "text": "太子少師房琯既失職，頗怏怏，多稱疾不朝，而賓客朝夕盈門，其黨為之揚言於朝云：「琯有文武才，宜大用。」上聞而惡之，下制數琯罪，貶幽州刺史。前祭酒劉秩貶閬州刺史，京兆尹嚴武貶巴州刺史；皆琯黨也。",
+          "prev_id": "57510108-da4a-4ff4-a084-b04de37cfbb3",
+          "next_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae"
+        },
+        {
+          "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+          "passage_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+          "start": 8871,
+          "end": 9214,
+          "text": "承恩多以私財募部曲，又數衣婦人服詣諸將營說誘之，諸將以白思明，思明疑未察。會承恩入京師，上使內侍李思敬與之俱至范陽宣慰。承恩既宣旨，思明留承恩館於府中，帷其床，伏二人於床下。承恩少子在范陽，思明使省其父。夜中，承恩密謂其子曰：「吾受命除此逆胡，當以吾為節度使。」二人於床下大呼而出。思明乃執承恩，索其裝囊，得鐵券及光弼牒，牒云：「承慶事成則付鐵券；不然，不可付也。」又得簿書數百紙，皆先從思明反者將士名。思明責之曰：「我何負於汝而為此！」承恩謝曰：「死罪，此皆李光弼之謀也。」思明乃集將佐吏民，西向大哭曰：「臣以十三萬眾降朝廷，何負陛下，而欲殺臣！」遂榜殺承恩父子，連坐死者二百餘人。承恩弟承玼免。思明囚思敬，表上其狀。上遣中使慰諭思明曰：「此非朝廷與光弼之意，皆承恩所為，殺之甚善。」",
+          "prev_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+          "next_id": "ab383bc4-48fb-42d0-841a-18d68ed5102a"
+        }
+      ]
+    },
+    {
+      "evidence_id": "7282af8d-2eb4-4019-974d-b396cc180380",
+      "passage_id": "7282af8d-2eb4-4019-974d-b396cc180380",
+      "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷220",
+      "edition": "维基文库数字文本，修订 2564831，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+      "content_hash": "02c4772a612e09a6eda9f40dd88994e039845ba41f7d32a0131882bead03c41e",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 8650,
+      "end": 8745,
+      "text": "太子少師房琯既失職，頗怏怏，多稱疾不朝，而賓客朝夕盈門，其黨為之揚言於朝云：「琯有文武才，宜大用。」上聞而惡之，下制數琯罪，貶幽州刺史。前祭酒劉秩貶閬州刺史，京兆尹嚴武貶巴州刺史；皆琯黨也。",
+      "before": "",
+      "after": "初，史思明以列將事來盧軍使烏知義，知義善待之。知義子承恩為信都太守，以郡降思明，思明思舊恩而全之。及安慶緒敗，承恩說思明降唐。李光弼以思明終當叛亂，而承恩為思明所親信，陰使圖之；又勸上以承恩為范陽節度副使，賜阿史那承慶鐵券，令共圖思明，上從之。",
+      "prev_id": "57510108-da4a-4ff4-a084-b04de37cfbb3",
+      "next_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+      "passage_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+      "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷220",
+      "edition": "维基文库数字文本，修订 2564831，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+      "content_hash": "02c4772a612e09a6eda9f40dd88994e039845ba41f7d32a0131882bead03c41e",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 8871,
+      "end": 9214,
+      "text": "承恩多以私財募部曲，又數衣婦人服詣諸將營說誘之，諸將以白思明，思明疑未察。會承恩入京師，上使內侍李思敬與之俱至范陽宣慰。承恩既宣旨，思明留承恩館於府中，帷其床，伏二人於床下。承恩少子在范陽，思明使省其父。夜中，承恩密謂其子曰：「吾受命除此逆胡，當以吾為節度使。」二人於床下大呼而出。思明乃執承恩，索其裝囊，得鐵券及光弼牒，牒云：「承慶事成則付鐵券；不然，不可付也。」又得簿書數百紙，皆先從思明反者將士名。思明責之曰：「我何負於汝而為此！」承恩謝曰：「死罪，此皆李光弼之謀也。」思明乃集將佐吏民，西向大哭曰：「臣以十三萬眾降朝廷，何負陛下，而欲殺臣！」遂榜殺承恩父子，連坐死者二百餘人。承恩弟承玼免。思明囚思敬，表上其狀。上遣中使慰諭思明曰：「此非朝廷與光弼之意，皆承恩所為，殺之甚善。」",
+      "before": "初，史思明以列將事來盧軍使烏知義，知義善待之。知義子承恩為信都太守，以郡降思明，思明思舊恩而全之。及安慶緒敗，承恩說思明降唐。李光弼以思明終當叛亂，而承恩為思明所親信，陰使圖之；又勸上以承恩為范陽節度副使，賜阿史那承慶鐵券，令共圖思明，上從之。",
+      "after": "",
+      "prev_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+      "next_id": "ab383bc4-48fb-42d0-841a-18d68ed5102a",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+      "passage_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 7145,
+      "end": 7370,
+      "text": "十月，郭子儀領九節度圍相州，安慶緒偷道求救於思明，思明懼軍威之盛，不敢進。十二月，蕭華以魏州歸順，詔遣崔光遠替之。思明擊而拔其城，光遠脫身南渡。思明于魏州殺三萬人，平地流血數日，既乾元二年正月一日也。思明于魏州北設壇，僭稱為大聖燕王，以周贄為行軍司馬。三月，引眾救相州，官軍敗而引退。思明召慶緒等殺之，並有其眾。四月，僭稱大號，以周贄為相，以范陽為燕京。九月，寇汴州，節度使許叔冀合于思明，思明益振。又陷洛陽，與太尉光弼相拒。思明恣行凶暴，下無聊矣！",
+      "before": "又有使從京至，執三司議罪人狀。思明曰：「陳希烈已下，皆重臣，上皇棄之幸蜀，既收復天下，此輩當慰勞之。今尚見殺，況我本從祿山反乎！」諸將皆云：「烏承恩之前事，情狀可知，光弼尚在，憂不細也。大夫何不取諸將狀以誅光弼，以謝河北百姓！主上若不惜光弼，為大夫誅之，大夫乃安；不然，為患未已。」思明曰：「公等言是。」乃令耿仁智、張不矜修表：「請誅光弼以謝河北。若不從臣請，臣則自領兵往太原誅光弼。」不矜初以表示思明，及封入函，耿仁智盡削去之。寫表者密告思明，思明大怒，執二人於庭曰：「汝等何得負我？」命斬之。仁智事思明頗久，意欲活之，卻令召入，謂之曰：「我任使汝向三十年，今日之事，我不負汝。」仁智大呼曰：「人生固有一死，須存忠節。今大夫納邪說，為反逆之計，縱延旬月，不如早死，請速加斧鉞！」思明大怒，亂捶殺之，腦流於地。",
+      "after": "上元二年，潛遣人反說官軍曰：「洛中將士，皆幽、朔人，咸思歸。」魚朝恩以為然，告光弼及諸節度僕固懷恩、衛伯玉等：「可速出兵以討殘賊。」光弼等然之，乃出師兩道齊進。次榆林，賊委物偽遁，將士等不復設備，皆入城虜掠。賊伏兵在北邙山下，因大下，士卒咸棄甲奔散。魚朝恩、衛伯玉退保陝州，光弼、懷恩棄河陽城，退居聞喜。步兵散死者數千人，軍資器械盡為賊所有，河陽、懷州盡陷於賊。",
+      "prev_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+      "next_id": "ac20e22b-fb91-402a-9a49-9bec473dee9d",
+      "context_passages": [
+        {
+          "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+          "passage_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+          "start": 6788,
+          "end": 7143,
+          "text": "又有使從京至，執三司議罪人狀。思明曰：「陳希烈已下，皆重臣，上皇棄之幸蜀，既收復天下，此輩當慰勞之。今尚見殺，況我本從祿山反乎！」諸將皆云：「烏承恩之前事，情狀可知，光弼尚在，憂不細也。大夫何不取諸將狀以誅光弼，以謝河北百姓！主上若不惜光弼，為大夫誅之，大夫乃安；不然，為患未已。」思明曰：「公等言是。」乃令耿仁智、張不矜修表：「請誅光弼以謝河北。若不從臣請，臣則自領兵往太原誅光弼。」不矜初以表示思明，及封入函，耿仁智盡削去之。寫表者密告思明，思明大怒，執二人於庭曰：「汝等何得負我？」命斬之。仁智事思明頗久，意欲活之，卻令召入，謂之曰：「我任使汝向三十年，今日之事，我不負汝。」仁智大呼曰：「人生固有一死，須存忠節。今大夫納邪說，為反逆之計，縱延旬月，不如早死，請速加斧鉞！」思明大怒，亂捶殺之，腦流於地。",
+          "prev_id": "01c7eab4-0bcf-486c-bcb8-739deb589afa",
+          "next_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba"
+        },
+        {
+          "evidence_id": "ac20e22b-fb91-402a-9a49-9bec473dee9d",
+          "passage_id": "ac20e22b-fb91-402a-9a49-9bec473dee9d",
+          "start": 7372,
+          "end": 7553,
+          "text": "上元二年，潛遣人反說官軍曰：「洛中將士，皆幽、朔人，咸思歸。」魚朝恩以為然，告光弼及諸節度僕固懷恩、衛伯玉等：「可速出兵以討殘賊。」光弼等然之，乃出師兩道齊進。次榆林，賊委物偽遁，將士等不復設備，皆入城虜掠。賊伏兵在北邙山下，因大下，士卒咸棄甲奔散。魚朝恩、衛伯玉退保陝州，光弼、懷恩棄河陽城，退居聞喜。步兵散死者數千人，軍資器械盡為賊所有，河陽、懷州盡陷於賊。",
+          "prev_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+          "next_id": "9ba70a40-3976-4d89-b829-2038ebafedd8"
+        }
+      ]
+    },
+    {
+      "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+      "passage_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6788,
+      "end": 7143,
+      "text": "又有使從京至，執三司議罪人狀。思明曰：「陳希烈已下，皆重臣，上皇棄之幸蜀，既收復天下，此輩當慰勞之。今尚見殺，況我本從祿山反乎！」諸將皆云：「烏承恩之前事，情狀可知，光弼尚在，憂不細也。大夫何不取諸將狀以誅光弼，以謝河北百姓！主上若不惜光弼，為大夫誅之，大夫乃安；不然，為患未已。」思明曰：「公等言是。」乃令耿仁智、張不矜修表：「請誅光弼以謝河北。若不從臣請，臣則自領兵往太原誅光弼。」不矜初以表示思明，及封入函，耿仁智盡削去之。寫表者密告思明，思明大怒，執二人於庭曰：「汝等何得負我？」命斬之。仁智事思明頗久，意欲活之，卻令召入，謂之曰：「我任使汝向三十年，今日之事，我不負汝。」仁智大呼曰：「人生固有一死，須存忠節。今大夫納邪說，為反逆之計，縱延旬月，不如早死，請速加斧鉞！」思明大怒，亂捶殺之，腦流於地。",
+      "before": "",
+      "after": "十月，郭子儀領九節度圍相州，安慶緒偷道求救於思明，思明懼軍威之盛，不敢進。十二月，蕭華以魏州歸順，詔遣崔光遠替之。思明擊而拔其城，光遠脫身南渡。思明于魏州殺三萬人，平地流血數日，既乾元二年正月一日也。思明于魏州北設壇，僭稱為大聖燕王，以周贄為行軍司馬。三月，引眾救相州，官軍敗而引退。思明召慶緒等殺之，並有其眾。四月，僭稱大號，以周贄為相，以范陽為燕京。九月，寇汴州，節度使許叔冀合于思明，思明益振。又陷洛陽，與太尉光弼相拒。思明恣行凶暴，下無聊矣！",
+      "prev_id": "01c7eab4-0bcf-486c-bcb8-739deb589afa",
+      "next_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "ac20e22b-fb91-402a-9a49-9bec473dee9d",
+      "passage_id": "ac20e22b-fb91-402a-9a49-9bec473dee9d",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 7372,
+      "end": 7553,
+      "text": "上元二年，潛遣人反說官軍曰：「洛中將士，皆幽、朔人，咸思歸。」魚朝恩以為然，告光弼及諸節度僕固懷恩、衛伯玉等：「可速出兵以討殘賊。」光弼等然之，乃出師兩道齊進。次榆林，賊委物偽遁，將士等不復設備，皆入城虜掠。賊伏兵在北邙山下，因大下，士卒咸棄甲奔散。魚朝恩、衛伯玉退保陝州，光弼、懷恩棄河陽城，退居聞喜。步兵散死者數千人，軍資器械盡為賊所有，河陽、懷州盡陷於賊。",
+      "before": "十月，郭子儀領九節度圍相州，安慶緒偷道求救於思明，思明懼軍威之盛，不敢進。十二月，蕭華以魏州歸順，詔遣崔光遠替之。思明擊而拔其城，光遠脫身南渡。思明于魏州殺三萬人，平地流血數日，既乾元二年正月一日也。思明于魏州北設壇，僭稱為大聖燕王，以周贄為行軍司馬。三月，引眾救相州，官軍敗而引退。思明召慶緒等殺之，並有其眾。四月，僭稱大號，以周贄為相，以范陽為燕京。九月，寇汴州，節度使許叔冀合于思明，思明益振。又陷洛陽，與太尉光弼相拒。思明恣行凶暴，下無聊矣！",
+      "after": "",
+      "prev_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+      "next_id": "9ba70a40-3976-4d89-b829-2038ebafedd8",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+      "passage_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+      "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷221",
+      "edition": "维基文库数字文本，修订 982302，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+      "content_hash": "c1b669e5afb3bc17c637308f3d02735e755d920505503eea4a20cb1e229ba784",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 1216,
+      "end": 1630,
+      "text": "史思明審知官軍潰去，自沙河收整士眾，還屯鄴城南。安慶緒收子儀等營中糧，得六七萬石，與孫孝哲、崔乾祐謀閉門更拒思明。諸將曰：「今日豈可復背史王乎！」思明不與慶緒相聞，又不南追官軍，但日於軍中饗士。張通儒、高尚等言於慶緒曰：「史王遠來，臣等皆應迎謝。」慶緒曰：「任公暫往。」思明見之涕泣，厚禮而歸之。經三日，慶緒不至。思明密召安太清令誘之，慶緒窘蹙，不知所為，乃遣太清上表稱臣于思明，請待解甲入城，奉上璽綬。思明省表，曰：「何至如此！」因出表遍示將士，咸稱萬歲。乃手疏唁慶緒而不稱臣，且曰：「願為兄弟之國，更作籓籬之援。鼎足而立，猶或庶幾；北面之禮，固不敢受。」並封表還之。慶緒大悅，因請歃血同盟，思明許之。慶緒以三百騎詣思明營，思明令軍士擐甲執兵以待之，引慶緒及諸弟入至庭下。慶緒再拜稽首曰：「臣不克荷負，棄失兩都，久陷重圍，不意大王以太上皇之故，遠垂救援，使臣應死復生，摩頂至踵，無以報德。」思明忽震怒曰：「棄失兩都，亦何足言。",
+      "before": "子儀至河陽，將謀城守。師人相驚，又奔缺門。諸將繼至，眾及數萬，議捐東京，退保蒲、陝。都虞候張用濟曰：「蒲、陝荐饑，不如守河陽，賊至，並力拒之。」子儀從之。使都游弈使靈武韓游瑰將五百騎前趣河陽，用濟以步卒五千繼之。周摯引兵爭河陽，後至，不得入而去。用濟役所部兵築南、北兩城而守之。段秀實帥將士妻子及公私輜重自野戍渡河，待命於河清之南岸，荔非元禮至而軍焉。諸將各上表請罪，上皆不問，惟削崔圓階封，貶蘇震為濟王府長史，削銀青階。",
+      "after": "爾為人子，殺父奪其位，天地所不容！吾為太上皇討賊，豈受爾佞媚乎！」即命左右牽出，並其四弟及高尚、孫孝哲、崔乾祐皆殺之；張通儒、李庭望等悉授以官。思明勒兵入鄴城，收其士馬，以府庫賞將士，慶緒先所有州、縣及兵皆歸于思明。遣安太清將兵五千取懷州，因留鎮之。思明欲遂西略，慮根本未固，乃留其子朝義守相州，引兵還范陽。",
+      "prev_id": "2e4b70e4-2e2e-4b50-972c-f8077a0eb084",
+      "next_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+      "context_passages": [
+        {
+          "evidence_id": "2e4b70e4-2e2e-4b50-972c-f8077a0eb084",
+          "passage_id": "2e4b70e4-2e2e-4b50-972c-f8077a0eb084",
+          "start": 1003,
+          "end": 1214,
+          "text": "子儀至河陽，將謀城守。師人相驚，又奔缺門。諸將繼至，眾及數萬，議捐東京，退保蒲、陝。都虞候張用濟曰：「蒲、陝荐饑，不如守河陽，賊至，並力拒之。」子儀從之。使都游弈使靈武韓游瑰將五百騎前趣河陽，用濟以步卒五千繼之。周摯引兵爭河陽，後至，不得入而去。用濟役所部兵築南、北兩城而守之。段秀實帥將士妻子及公私輜重自野戍渡河，待命於河清之南岸，荔非元禮至而軍焉。諸將各上表請罪，上皆不問，惟削崔圓階封，貶蘇震為濟王府長史，削銀青階。",
+          "prev_id": "13196a37-f340-4c97-add6-d6cfb1cc1998",
+          "next_id": "2d0b6af1-286b-4265-9b61-85da4a435014"
+        },
+        {
+          "evidence_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+          "passage_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+          "start": 1630,
+          "end": 1784,
+          "text": "爾為人子，殺父奪其位，天地所不容！吾為太上皇討賊，豈受爾佞媚乎！」即命左右牽出，並其四弟及高尚、孫孝哲、崔乾祐皆殺之；張通儒、李庭望等悉授以官。思明勒兵入鄴城，收其士馬，以府庫賞將士，慶緒先所有州、縣及兵皆歸于思明。遣安太清將兵五千取懷州，因留鎮之。思明欲遂西略，慮根本未固，乃留其子朝義守相州，引兵還范陽。",
+          "prev_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+          "next_id": "50a1d8e8-60c4-43db-8a84-cfb3c9718099"
+        }
+      ]
+    },
+    {
+      "evidence_id": "2e4b70e4-2e2e-4b50-972c-f8077a0eb084",
+      "passage_id": "2e4b70e4-2e2e-4b50-972c-f8077a0eb084",
+      "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷221",
+      "edition": "维基文库数字文本，修订 982302，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+      "content_hash": "c1b669e5afb3bc17c637308f3d02735e755d920505503eea4a20cb1e229ba784",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 1003,
+      "end": 1214,
+      "text": "子儀至河陽，將謀城守。師人相驚，又奔缺門。諸將繼至，眾及數萬，議捐東京，退保蒲、陝。都虞候張用濟曰：「蒲、陝荐饑，不如守河陽，賊至，並力拒之。」子儀從之。使都游弈使靈武韓游瑰將五百騎前趣河陽，用濟以步卒五千繼之。周摯引兵爭河陽，後至，不得入而去。用濟役所部兵築南、北兩城而守之。段秀實帥將士妻子及公私輜重自野戍渡河，待命於河清之南岸，荔非元禮至而軍焉。諸將各上表請罪，上皆不問，惟削崔圓階封，貶蘇震為濟王府長史，削銀青階。",
+      "before": "",
+      "after": "史思明審知官軍潰去，自沙河收整士眾，還屯鄴城南。安慶緒收子儀等營中糧，得六七萬石，與孫孝哲、崔乾祐謀閉門更拒思明。諸將曰：「今日豈可復背史王乎！」思明不與慶緒相聞，又不南追官軍，但日於軍中饗士。張通儒、高尚等言於慶緒曰：「史王遠來，臣等皆應迎謝。」慶緒曰：「任公暫往。」思明見之涕泣，厚禮而歸之。經三日，慶緒不至。思明密召安太清令誘之，慶緒窘蹙，不知所為，乃遣太清上表稱臣于思明，請待解甲入城，奉上璽綬。思明省表，曰：「何至如此！」因出表遍示將士，咸稱萬歲。乃手疏唁慶緒而不稱臣，且曰：「願為兄弟之國，更作籓籬之援。鼎足而立，猶或庶幾；北面之禮，固不敢受。」並封表還之。慶緒大悅，因請歃血同盟，思明許之。慶緒以三百騎詣思明營，思明令軍士擐甲執兵以待之，引慶緒及諸弟入至庭下。慶緒再拜稽首曰：「臣不克荷負，棄失兩都，久陷重圍，不意大王以太上皇之故，遠垂救援，使臣應死復生，摩頂至踵，無以報德。」思明忽震怒曰：「棄失兩都，亦何足言。",
+      "prev_id": "13196a37-f340-4c97-add6-d6cfb1cc1998",
+      "next_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+      "passage_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+      "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷221",
+      "edition": "维基文库数字文本，修订 982302，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+      "content_hash": "c1b669e5afb3bc17c637308f3d02735e755d920505503eea4a20cb1e229ba784",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 1630,
+      "end": 1784,
+      "text": "爾為人子，殺父奪其位，天地所不容！吾為太上皇討賊，豈受爾佞媚乎！」即命左右牽出，並其四弟及高尚、孫孝哲、崔乾祐皆殺之；張通儒、李庭望等悉授以官。思明勒兵入鄴城，收其士馬，以府庫賞將士，慶緒先所有州、縣及兵皆歸于思明。遣安太清將兵五千取懷州，因留鎮之。思明欲遂西略，慮根本未固，乃留其子朝義守相州，引兵還范陽。",
+      "before": "史思明審知官軍潰去，自沙河收整士眾，還屯鄴城南。安慶緒收子儀等營中糧，得六七萬石，與孫孝哲、崔乾祐謀閉門更拒思明。諸將曰：「今日豈可復背史王乎！」思明不與慶緒相聞，又不南追官軍，但日於軍中饗士。張通儒、高尚等言於慶緒曰：「史王遠來，臣等皆應迎謝。」慶緒曰：「任公暫往。」思明見之涕泣，厚禮而歸之。經三日，慶緒不至。思明密召安太清令誘之，慶緒窘蹙，不知所為，乃遣太清上表稱臣于思明，請待解甲入城，奉上璽綬。思明省表，曰：「何至如此！」因出表遍示將士，咸稱萬歲。乃手疏唁慶緒而不稱臣，且曰：「願為兄弟之國，更作籓籬之援。鼎足而立，猶或庶幾；北面之禮，固不敢受。」並封表還之。慶緒大悅，因請歃血同盟，思明許之。慶緒以三百騎詣思明營，思明令軍士擐甲執兵以待之，引慶緒及諸弟入至庭下。慶緒再拜稽首曰：「臣不克荷負，棄失兩都，久陷重圍，不意大王以太上皇之故，遠垂救援，使臣應死復生，摩頂至踵，無以報德。」思明忽震怒曰：「棄失兩都，亦何足言。",
+      "after": "",
+      "prev_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+      "next_id": "50a1d8e8-60c4-43db-8a84-cfb3c9718099",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "88084c97-5ed9-4800-adc0-21d1dfe8c3c5",
+      "passage_id": "88084c97-5ed9-4800-adc0-21d1dfe8c3c5",
+      "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷219",
+      "edition": "维基文库数字文本，修订 2062230，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219",
+      "content_hash": "a371cd4b10bc058a0e830ff050afbe9be20069196a7b8e26d293613540e37496",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6199,
+      "end": 6311,
+      "text": "安慶緒以史思明為范陽節度使，兼領恆陽軍事，封媯川王；以牛廷介領安陽軍事；張忠志為常山太守兼團練使，鎮井陘口；餘各令歸舊任，募兵以御官軍。先是安祿山得兩京珍貨，悉輸范陽。思明擁強兵，據富資，益驕橫，浸不用慶緒之命；慶緒不能制。",
+      "before": "李光弼將敢死士出擊蔡希德，大破之，斬首七萬餘級；希德遁去。",
+      "after": "戊戌，永王璘敗死，其黨薛鏐等皆伏誅。",
+      "prev_id": "82421f54-ddea-486c-a9f6-1d7fb99b254d",
+      "next_id": "f8f4172c-e783-4cc8-a508-7d467ca476fd",
+      "context_passages": [
+        {
+          "evidence_id": "82421f54-ddea-486c-a9f6-1d7fb99b254d",
+          "passage_id": "82421f54-ddea-486c-a9f6-1d7fb99b254d",
+          "start": 6168,
+          "end": 6197,
+          "text": "李光弼將敢死士出擊蔡希德，大破之，斬首七萬餘級；希德遁去。",
+          "prev_id": "48363c7f-74a6-47d9-a97d-dc38f8d777b5",
+          "next_id": "88084c97-5ed9-4800-adc0-21d1dfe8c3c5"
+        },
+        {
+          "evidence_id": "f8f4172c-e783-4cc8-a508-7d467ca476fd",
+          "passage_id": "f8f4172c-e783-4cc8-a508-7d467ca476fd",
+          "start": 6313,
+          "end": 6331,
+          "text": "戊戌，永王璘敗死，其黨薛鏐等皆伏誅。",
+          "prev_id": "88084c97-5ed9-4800-adc0-21d1dfe8c3c5",
+          "next_id": "1f5ca641-99ff-4c01-af8b-9c5979b992f4"
+        }
+      ]
+    },
+    {
+      "evidence_id": "82421f54-ddea-486c-a9f6-1d7fb99b254d",
+      "passage_id": "82421f54-ddea-486c-a9f6-1d7fb99b254d",
+      "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷219",
+      "edition": "维基文库数字文本，修订 2062230，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219",
+      "content_hash": "a371cd4b10bc058a0e830ff050afbe9be20069196a7b8e26d293613540e37496",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6168,
+      "end": 6197,
+      "text": "李光弼將敢死士出擊蔡希德，大破之，斬首七萬餘級；希德遁去。",
+      "before": "",
+      "after": "安慶緒以史思明為范陽節度使，兼領恆陽軍事，封媯川王；以牛廷介領安陽軍事；張忠志為常山太守兼團練使，鎮井陘口；餘各令歸舊任，募兵以御官軍。先是安祿山得兩京珍貨，悉輸范陽。思明擁強兵，據富資，益驕橫，浸不用慶緒之命；慶緒不能制。",
+      "prev_id": "48363c7f-74a6-47d9-a97d-dc38f8d777b5",
+      "next_id": "88084c97-5ed9-4800-adc0-21d1dfe8c3c5",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "f8f4172c-e783-4cc8-a508-7d467ca476fd",
+      "passage_id": "f8f4172c-e783-4cc8-a508-7d467ca476fd",
+      "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+      "title": "資治通鑑",
+      "author": "司馬光等編纂",
+      "source_type": "历史文献",
+      "chapter": "卷219",
+      "edition": "维基文库数字文本，修订 2062230，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219",
+      "content_hash": "a371cd4b10bc058a0e830ff050afbe9be20069196a7b8e26d293613540e37496",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6313,
+      "end": 6331,
+      "text": "戊戌，永王璘敗死，其黨薛鏐等皆伏誅。",
+      "before": "安慶緒以史思明為范陽節度使，兼領恆陽軍事，封媯川王；以牛廷介領安陽軍事；張忠志為常山太守兼團練使，鎮井陘口；餘各令歸舊任，募兵以御官軍。先是安祿山得兩京珍貨，悉輸范陽。思明擁強兵，據富資，益驕橫，浸不用慶緒之命；慶緒不能制。",
+      "after": "",
+      "prev_id": "88084c97-5ed9-4800-adc0-21d1dfe8c3c5",
+      "next_id": "1f5ca641-99ff-4c01-af8b-9c5979b992f4",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+      "passage_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 3263,
+      "end": 3495,
+      "text": "九月，肅宗遣郭子儀等九節度率步騎二十萬攻之，以魚朝恩為軍容使。初，子儀之列陳也，使善射者三千人伏於壘垣內。明日接戰，子儀麾其屬偽奔，慶緒逐之，伏者齊發，賊黨大潰。使薛嵩求救于史思明，言禪讓之禮。思明先遣李歸仁以步卒一萬、馬軍三千，先往滏陽以應。及至滏陽，子儀之圍已固，築城穿壕各三重，樓櫓之盛，古所未有。又引水以灌城下，城中水泉大上，井皆滿溢。以安太清代乾祐為都知兵馬使。思明南攻魏州，節度使崔光遠南走，思明據其城數日，即乾元二年正月一日也。思明偽稱燕王，立年號。",
+      "before": "十月，賊將尹子奇攻陷睢陽郡，殺張巡、姚摐等。王師乘勝至陝郡，賊懼，令嚴莊傾其驍勇而來拒。廣平王遣副元帥郭子儀等與賊戰于陝西曲沃，大破之於新店，逐北二十里，斬首十餘萬，伏屍三十里。嚴莊奔至東京，告慶緒，慶緒率其餘眾奔河北，保鄴郡。嚴莊至河內，南來歸順。賊將阿史那承慶等麾下三萬餘人，悉奔恆、趙、范陽。從慶緒者，唯疲卒一千三百而已。偽中書令張通儒秉政，改相州為成安府，署置百官。旬日之內，賊將各以眾至者六萬餘，凶威復振。偽青、齊節度能元皓獨率眾歸順，明年，改乾元元年，偽德州刺史王暕、貝州刺史宇文寬等皆歸順，河北諸軍各以城守累月，賊使蔡希德、安太清急擊，復陷於賊，虜之以歸，臠食其肉。其下潛謀歸順者眾矣，賊皆易置之，以縱屠戮，人心始離。又不親政事，繕治亭沼樓船，為長夜之飲。高尚等各不相葉。蔡希德兵最銳，性剛直，張通儒譖而縊殺之，三軍冤痛不為用。以崔乾祐為天下兵馬使，權領中外兵。乾祐性愎戾，士卒不附。",
+      "after": "慶緒自十月被圍至二月，城中人相食，米斗錢七萬餘，鼠一頭直數千，馬食隤牆麥鞬及馬糞濯而飼之。思明引眾來救，三月六日，子儀等戰敗，遂解圍而南，斷河陽橋以守谷水。思明領其眾營于鄴縣南。慶緒使收子儀等營中糧，尚六七萬石，復與孫孝哲、乾祐謀閉門自守，議更拒思明。諸將曰「今日安可更背史王乎！」張通儒、高尚、平冽謂慶緒曰：「史王遠來，臣等皆合迎謝。」對曰：「任公暫往見思明。」思明與之涕泗，厚其禮，復命歸城。經三日，慶緒不至。思明密召安太清令誘之。慶緒不獲已，以三百騎詣思明。思明引入，令三軍擐甲執兵待之。及諸弟領至於庭，再拜稽首曰：「臣不克負荷，棄失兩都，久陷重圍，不意大王以太上皇故，將兵遠救。」思明曰：「棄失兩都，用兵不利，亦何事也！爾為人子，殺汝父以求位，庸非大逆乎？吾為太上皇討賊。」即牽出，並其四弟及高尚、孫孝哲、崔乾祐，皆縊殺之。",
+      "prev_id": "cdc3e971-0472-454e-a79a-caeaba21c80e",
+      "next_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+      "context_passages": [
+        {
+          "evidence_id": "cdc3e971-0472-454e-a79a-caeaba21c80e",
+          "passage_id": "cdc3e971-0472-454e-a79a-caeaba21c80e",
+          "start": 2862,
+          "end": 3261,
+          "text": "十月，賊將尹子奇攻陷睢陽郡，殺張巡、姚摐等。王師乘勝至陝郡，賊懼，令嚴莊傾其驍勇而來拒。廣平王遣副元帥郭子儀等與賊戰于陝西曲沃，大破之於新店，逐北二十里，斬首十餘萬，伏屍三十里。嚴莊奔至東京，告慶緒，慶緒率其餘眾奔河北，保鄴郡。嚴莊至河內，南來歸順。賊將阿史那承慶等麾下三萬餘人，悉奔恆、趙、范陽。從慶緒者，唯疲卒一千三百而已。偽中書令張通儒秉政，改相州為成安府，署置百官。旬日之內，賊將各以眾至者六萬餘，凶威復振。偽青、齊節度能元皓獨率眾歸順，明年，改乾元元年，偽德州刺史王暕、貝州刺史宇文寬等皆歸順，河北諸軍各以城守累月，賊使蔡希德、安太清急擊，復陷於賊，虜之以歸，臠食其肉。其下潛謀歸順者眾矣，賊皆易置之，以縱屠戮，人心始離。又不親政事，繕治亭沼樓船，為長夜之飲。高尚等各不相葉。蔡希德兵最銳，性剛直，張通儒譖而縊殺之，三軍冤痛不為用。以崔乾祐為天下兵馬使，權領中外兵。乾祐性愎戾，士卒不附。",
+          "prev_id": "2219199f-7557-4318-a0b2-792f297f84ad",
+          "next_id": "b7184b43-271c-4333-9106-f61476b39f4d"
+        },
+        {
+          "evidence_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+          "passage_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+          "start": 3497,
+          "end": 3863,
+          "text": "慶緒自十月被圍至二月，城中人相食，米斗錢七萬餘，鼠一頭直數千，馬食隤牆麥鞬及馬糞濯而飼之。思明引眾來救，三月六日，子儀等戰敗，遂解圍而南，斷河陽橋以守谷水。思明領其眾營于鄴縣南。慶緒使收子儀等營中糧，尚六七萬石，復與孫孝哲、乾祐謀閉門自守，議更拒思明。諸將曰「今日安可更背史王乎！」張通儒、高尚、平冽謂慶緒曰：「史王遠來，臣等皆合迎謝。」對曰：「任公暫往見思明。」思明與之涕泗，厚其禮，復命歸城。經三日，慶緒不至。思明密召安太清令誘之。慶緒不獲已，以三百騎詣思明。思明引入，令三軍擐甲執兵待之。及諸弟領至於庭，再拜稽首曰：「臣不克負荷，棄失兩都，久陷重圍，不意大王以太上皇故，將兵遠救。」思明曰：「棄失兩都，用兵不利，亦何事也！爾為人子，殺汝父以求位，庸非大逆乎？吾為太上皇討賊。」即牽出，並其四弟及高尚、孫孝哲、崔乾祐，皆縊殺之。",
+          "prev_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+          "next_id": "c0d3a4d7-e762-41d7-b341-5b98a4f20f5b"
+        }
+      ]
+    },
+    {
+      "evidence_id": "cdc3e971-0472-454e-a79a-caeaba21c80e",
+      "passage_id": "cdc3e971-0472-454e-a79a-caeaba21c80e",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 2862,
+      "end": 3261,
+      "text": "十月，賊將尹子奇攻陷睢陽郡，殺張巡、姚摐等。王師乘勝至陝郡，賊懼，令嚴莊傾其驍勇而來拒。廣平王遣副元帥郭子儀等與賊戰于陝西曲沃，大破之於新店，逐北二十里，斬首十餘萬，伏屍三十里。嚴莊奔至東京，告慶緒，慶緒率其餘眾奔河北，保鄴郡。嚴莊至河內，南來歸順。賊將阿史那承慶等麾下三萬餘人，悉奔恆、趙、范陽。從慶緒者，唯疲卒一千三百而已。偽中書令張通儒秉政，改相州為成安府，署置百官。旬日之內，賊將各以眾至者六萬餘，凶威復振。偽青、齊節度能元皓獨率眾歸順，明年，改乾元元年，偽德州刺史王暕、貝州刺史宇文寬等皆歸順，河北諸軍各以城守累月，賊使蔡希德、安太清急擊，復陷於賊，虜之以歸，臠食其肉。其下潛謀歸順者眾矣，賊皆易置之，以縱屠戮，人心始離。又不親政事，繕治亭沼樓船，為長夜之飲。高尚等各不相葉。蔡希德兵最銳，性剛直，張通儒譖而縊殺之，三軍冤痛不為用。以崔乾祐為天下兵馬使，權領中外兵。乾祐性愎戾，士卒不附。",
+      "before": "",
+      "after": "九月，肅宗遣郭子儀等九節度率步騎二十萬攻之，以魚朝恩為軍容使。初，子儀之列陳也，使善射者三千人伏於壘垣內。明日接戰，子儀麾其屬偽奔，慶緒逐之，伏者齊發，賊黨大潰。使薛嵩求救于史思明，言禪讓之禮。思明先遣李歸仁以步卒一萬、馬軍三千，先往滏陽以應。及至滏陽，子儀之圍已固，築城穿壕各三重，樓櫓之盛，古所未有。又引水以灌城下，城中水泉大上，井皆滿溢。以安太清代乾祐為都知兵馬使。思明南攻魏州，節度使崔光遠南走，思明據其城數日，即乾元二年正月一日也。思明偽稱燕王，立年號。",
+      "prev_id": "2219199f-7557-4318-a0b2-792f297f84ad",
+      "next_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+      "passage_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 3497,
+      "end": 3863,
+      "text": "慶緒自十月被圍至二月，城中人相食，米斗錢七萬餘，鼠一頭直數千，馬食隤牆麥鞬及馬糞濯而飼之。思明引眾來救，三月六日，子儀等戰敗，遂解圍而南，斷河陽橋以守谷水。思明領其眾營于鄴縣南。慶緒使收子儀等營中糧，尚六七萬石，復與孫孝哲、乾祐謀閉門自守，議更拒思明。諸將曰「今日安可更背史王乎！」張通儒、高尚、平冽謂慶緒曰：「史王遠來，臣等皆合迎謝。」對曰：「任公暫往見思明。」思明與之涕泗，厚其禮，復命歸城。經三日，慶緒不至。思明密召安太清令誘之。慶緒不獲已，以三百騎詣思明。思明引入，令三軍擐甲執兵待之。及諸弟領至於庭，再拜稽首曰：「臣不克負荷，棄失兩都，久陷重圍，不意大王以太上皇故，將兵遠救。」思明曰：「棄失兩都，用兵不利，亦何事也！爾為人子，殺汝父以求位，庸非大逆乎？吾為太上皇討賊。」即牽出，並其四弟及高尚、孫孝哲、崔乾祐，皆縊殺之。",
+      "before": "九月，肅宗遣郭子儀等九節度率步騎二十萬攻之，以魚朝恩為軍容使。初，子儀之列陳也，使善射者三千人伏於壘垣內。明日接戰，子儀麾其屬偽奔，慶緒逐之，伏者齊發，賊黨大潰。使薛嵩求救于史思明，言禪讓之禮。思明先遣李歸仁以步卒一萬、馬軍三千，先往滏陽以應。及至滏陽，子儀之圍已固，築城穿壕各三重，樓櫓之盛，古所未有。又引水以灌城下，城中水泉大上，井皆滿溢。以安太清代乾祐為都知兵馬使。思明南攻魏州，節度使崔光遠南走，思明據其城數日，即乾元二年正月一日也。思明偽稱燕王，立年號。",
+      "after": "",
+      "prev_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+      "next_id": "c0d3a4d7-e762-41d7-b341-5b98a4f20f5b",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "65a11e72-adc4-47fa-b875-c093d22151ce",
+      "passage_id": "65a11e72-adc4-47fa-b875-c093d22151ce",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 10095,
+      "end": 10218,
+      "text": "既又欲貸死，復召責曰：「仁智事我三十年，今日我忘爾邪？」仁智怒曰：「人固有死，大夫納邪說，再圖反，我雖生不如死！」思明怒，捶殺之。九節度圍相州急，慶緒間道求救，思明懼王師，未敢進。俄而蕭華舉魏州歸天子，崔光遠代守，思明乃引兵擊魏，拔之，殺數萬人。",
+      "before": "然思明外順命，內實通賊，益募兵。帝知之，以其常事承恩父知義，冀其無嫌，即擢承恩為河北節度副大使，使圖思明。承恩至范陽，羸服夜過諸將，陰諗以謀，諸將返以告思明，疑未有以驗。會承恩與思敬奏事還，思明留館之，幃所寢床，伏二人焉。承恩子入見，因留臥。夜半，語其子曰：「吾受命除此逆胡。」二人白思明，乃執承恩，探衣囊得賜阿史那承慶鐵券及光弼牒，又得薄紙書數番，皆當誅將士姓名。賊大詬曰：「我何負於爾，至是邪！」故答曰：「此太尉光弼謀，上不知也。」思明召官吏於廷，西向哭曰：「臣赤心不負國，何至殺臣？」因搒殺承恩父子及支黨二百餘人，囚思敬以聞。帝遣使諭曰：「事出承恩，非朕與光弼意。」又聞三司議陳希烈等死，思明懼曰：「希烈等皆大臣，上皇棄而西，既復位，此等宜見勞，返殺之，況我本從祿山反乎？」諸將皆勸賊表天子誅光弼。思明使耿仁智、張不矜上疏請斬光弼，不然，且攻太原。疏入於函，仁智輒易去。左右密白思明，執二人曰：「若負我邪！」命斬之。",
+      "after": "乾元二年正月朔，築壇，僭稱大聖周王，建元應天，以周贄為司馬；救相州，卻王師，殺慶緒，並其眾，欲遂西略，虞根本未固，即留朝義守相州，自引還。夏四月，更國號大燕，建元順天，自稱應天皇帝。妻辛為皇后，以朝義為懷王，周贄為相，李歸仁為將；號范陽為燕京，洛陽周京，長安秦京。更以州為郡，鑄「順天得一」錢。欲郊及藉田，聘儒生講制度。或上書言：「北有兩蕃，西有二都，勝負未可知，而為太平事，難矣。」思明不悅，遂祠祀上帝。是日大風，不能郊。",
+      "prev_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+      "next_id": "a54434a0-829d-4222-a0ce-4fd7063dcc4c",
+      "context_passages": [
+        {
+          "evidence_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+          "passage_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+          "start": 9684,
+          "end": 10095,
+          "text": "然思明外順命，內實通賊，益募兵。帝知之，以其常事承恩父知義，冀其無嫌，即擢承恩為河北節度副大使，使圖思明。承恩至范陽，羸服夜過諸將，陰諗以謀，諸將返以告思明，疑未有以驗。會承恩與思敬奏事還，思明留館之，幃所寢床，伏二人焉。承恩子入見，因留臥。夜半，語其子曰：「吾受命除此逆胡。」二人白思明，乃執承恩，探衣囊得賜阿史那承慶鐵券及光弼牒，又得薄紙書數番，皆當誅將士姓名。賊大詬曰：「我何負於爾，至是邪！」故答曰：「此太尉光弼謀，上不知也。」思明召官吏於廷，西向哭曰：「臣赤心不負國，何至殺臣？」因搒殺承恩父子及支黨二百餘人，囚思敬以聞。帝遣使諭曰：「事出承恩，非朕與光弼意。」又聞三司議陳希烈等死，思明懼曰：「希烈等皆大臣，上皇棄而西，既復位，此等宜見勞，返殺之，況我本從祿山反乎？」諸將皆勸賊表天子誅光弼。思明使耿仁智、張不矜上疏請斬光弼，不然，且攻太原。疏入於函，仁智輒易去。左右密白思明，執二人曰：「若負我邪！」命斬之。",
+          "prev_id": "882f9e8a-d869-4353-9dbe-8653a1c9ce4e",
+          "next_id": "65a11e72-adc4-47fa-b875-c093d22151ce"
+        },
+        {
+          "evidence_id": "a54434a0-829d-4222-a0ce-4fd7063dcc4c",
+          "passage_id": "a54434a0-829d-4222-a0ce-4fd7063dcc4c",
+          "start": 10220,
+          "end": 10432,
+          "text": "乾元二年正月朔，築壇，僭稱大聖周王，建元應天，以周贄為司馬；救相州，卻王師，殺慶緒，並其眾，欲遂西略，虞根本未固，即留朝義守相州，自引還。夏四月，更國號大燕，建元順天，自稱應天皇帝。妻辛為皇后，以朝義為懷王，周贄為相，李歸仁為將；號范陽為燕京，洛陽周京，長安秦京。更以州為郡，鑄「順天得一」錢。欲郊及藉田，聘儒生講制度。或上書言：「北有兩蕃，西有二都，勝負未可知，而為太平事，難矣。」思明不悅，遂祠祀上帝。是日大風，不能郊。",
+          "prev_id": "65a11e72-adc4-47fa-b875-c093d22151ce",
+          "next_id": "a725e32a-ef77-4304-ac1e-12350040204e"
+        }
+      ]
+    },
+    {
+      "evidence_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+      "passage_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 9684,
+      "end": 10095,
+      "text": "然思明外順命，內實通賊，益募兵。帝知之，以其常事承恩父知義，冀其無嫌，即擢承恩為河北節度副大使，使圖思明。承恩至范陽，羸服夜過諸將，陰諗以謀，諸將返以告思明，疑未有以驗。會承恩與思敬奏事還，思明留館之，幃所寢床，伏二人焉。承恩子入見，因留臥。夜半，語其子曰：「吾受命除此逆胡。」二人白思明，乃執承恩，探衣囊得賜阿史那承慶鐵券及光弼牒，又得薄紙書數番，皆當誅將士姓名。賊大詬曰：「我何負於爾，至是邪！」故答曰：「此太尉光弼謀，上不知也。」思明召官吏於廷，西向哭曰：「臣赤心不負國，何至殺臣？」因搒殺承恩父子及支黨二百餘人，囚思敬以聞。帝遣使諭曰：「事出承恩，非朕與光弼意。」又聞三司議陳希烈等死，思明懼曰：「希烈等皆大臣，上皇棄而西，既復位，此等宜見勞，返殺之，況我本從祿山反乎？」諸將皆勸賊表天子誅光弼。思明使耿仁智、張不矜上疏請斬光弼，不然，且攻太原。疏入於函，仁智輒易去。左右密白思明，執二人曰：「若負我邪！」命斬之。",
+      "before": "",
+      "after": "既又欲貸死，復召責曰：「仁智事我三十年，今日我忘爾邪？」仁智怒曰：「人固有死，大夫納邪說，再圖反，我雖生不如死！」思明怒，捶殺之。九節度圍相州急，慶緒間道求救，思明懼王師，未敢進。俄而蕭華舉魏州歸天子，崔光遠代守，思明乃引兵擊魏，拔之，殺數萬人。",
+      "prev_id": "882f9e8a-d869-4353-9dbe-8653a1c9ce4e",
+      "next_id": "65a11e72-adc4-47fa-b875-c093d22151ce",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "a54434a0-829d-4222-a0ce-4fd7063dcc4c",
+      "passage_id": "a54434a0-829d-4222-a0ce-4fd7063dcc4c",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 10220,
+      "end": 10432,
+      "text": "乾元二年正月朔，築壇，僭稱大聖周王，建元應天，以周贄為司馬；救相州，卻王師，殺慶緒，並其眾，欲遂西略，虞根本未固，即留朝義守相州，自引還。夏四月，更國號大燕，建元順天，自稱應天皇帝。妻辛為皇后，以朝義為懷王，周贄為相，李歸仁為將；號范陽為燕京，洛陽周京，長安秦京。更以州為郡，鑄「順天得一」錢。欲郊及藉田，聘儒生講制度。或上書言：「北有兩蕃，西有二都，勝負未可知，而為太平事，難矣。」思明不悅，遂祠祀上帝。是日大風，不能郊。",
+      "before": "既又欲貸死，復召責曰：「仁智事我三十年，今日我忘爾邪？」仁智怒曰：「人固有死，大夫納邪說，再圖反，我雖生不如死！」思明怒，捶殺之。九節度圍相州急，慶緒間道求救，思明懼王師，未敢進。俄而蕭華舉魏州歸天子，崔光遠代守，思明乃引兵擊魏，拔之，殺數萬人。",
+      "after": "",
+      "prev_id": "65a11e72-adc4-47fa-b875-c093d22151ce",
+      "next_id": "a725e32a-ef77-4304-ac1e-12350040204e",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+      "passage_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 5878,
+      "end": 5920,
+      "text": "安慶緒為王師所敗，投鄴郡，其下蕃、漢兵三萬人，初不知所從，思明擊殺三千人，然後降之。",
+      "before": "自祿山陷兩京，常以駱駝運兩京御府珍寶于范陽，不知紀極。由是恣其逆謀。思明轉驕，不用慶緒之命。",
+      "after": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。判官耿仁智，忠謀之士，謂思明曰：「大夫崇重，人不敢言，仁智請一言而死。」思明曰：「試言之。」對曰：「大夫久事祿山，祿山兵權若此，誰敢不服！如大夫比者，逼於凶威耳，固亦無罪。今聞孝感皇帝聰明勇智，有少康、周宣之略，大夫發使輸誠，必開懷見納，此轉禍為福之上策也。」思明曰：「善。」承慶等以五千騎至范陽，思明悉眾介胄以逆之。眾且數萬，去之一里，使謂之曰：「相公及王遠至，將士等不勝喜躍。此皆邊兵怯懦，頗懼相公之來，莫敢進也。請弛弓以安之。」從之。思明遂以承慶、守忠入內廳，飲樂之。別令諸將於其所分收其甲仗。其諸郡兵皆給糧，恣歸之，欲留者分隸諸營。遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使，朝義已下並為列卿，秀岩雲中太守，以其男如岳等七人為大官。",
+      "prev_id": "61bff857-6f95-46b4-a1de-3caf08fd1944",
+      "next_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+      "context_passages": [
+        {
+          "evidence_id": "61bff857-6f95-46b4-a1de-3caf08fd1944",
+          "passage_id": "61bff857-6f95-46b4-a1de-3caf08fd1944",
+          "start": 5830,
+          "end": 5876,
+          "text": "自祿山陷兩京，常以駱駝運兩京御府珍寶于范陽，不知紀極。由是恣其逆謀。思明轉驕，不用慶緒之命。",
+          "prev_id": "450dc5f6-b71a-47d0-aeb7-fadb24081428",
+          "next_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680"
+        },
+        {
+          "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+          "passage_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+          "start": 5922,
+          "end": 6327,
+          "text": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。判官耿仁智，忠謀之士，謂思明曰：「大夫崇重，人不敢言，仁智請一言而死。」思明曰：「試言之。」對曰：「大夫久事祿山，祿山兵權若此，誰敢不服！如大夫比者，逼於凶威耳，固亦無罪。今聞孝感皇帝聰明勇智，有少康、周宣之略，大夫發使輸誠，必開懷見納，此轉禍為福之上策也。」思明曰：「善。」承慶等以五千騎至范陽，思明悉眾介胄以逆之。眾且數萬，去之一里，使謂之曰：「相公及王遠至，將士等不勝喜躍。此皆邊兵怯懦，頗懼相公之來，莫敢進也。請弛弓以安之。」從之。思明遂以承慶、守忠入內廳，飲樂之。別令諸將於其所分收其甲仗。其諸郡兵皆給糧，恣歸之，欲留者分隸諸營。遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使，朝義已下並為列卿，秀岩雲中太守，以其男如岳等七人為大官。",
+          "prev_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+          "next_id": "3606b8d0-41ee-446d-bf50-5832a24354e0"
+        }
+      ]
+    },
+    {
+      "evidence_id": "61bff857-6f95-46b4-a1de-3caf08fd1944",
+      "passage_id": "61bff857-6f95-46b4-a1de-3caf08fd1944",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 5830,
+      "end": 5876,
+      "text": "自祿山陷兩京，常以駱駝運兩京御府珍寶于范陽，不知紀極。由是恣其逆謀。思明轉驕，不用慶緒之命。",
+      "before": "",
+      "after": "安慶緒為王師所敗，投鄴郡，其下蕃、漢兵三萬人，初不知所從，思明擊殺三千人，然後降之。",
+      "prev_id": "450dc5f6-b71a-47d0-aeb7-fadb24081428",
+      "next_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+      "passage_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 5922,
+      "end": 6327,
+      "text": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。判官耿仁智，忠謀之士，謂思明曰：「大夫崇重，人不敢言，仁智請一言而死。」思明曰：「試言之。」對曰：「大夫久事祿山，祿山兵權若此，誰敢不服！如大夫比者，逼於凶威耳，固亦無罪。今聞孝感皇帝聰明勇智，有少康、周宣之略，大夫發使輸誠，必開懷見納，此轉禍為福之上策也。」思明曰：「善。」承慶等以五千騎至范陽，思明悉眾介胄以逆之。眾且數萬，去之一里，使謂之曰：「相公及王遠至，將士等不勝喜躍。此皆邊兵怯懦，頗懼相公之來，莫敢進也。請弛弓以安之。」從之。思明遂以承慶、守忠入內廳，飲樂之。別令諸將於其所分收其甲仗。其諸郡兵皆給糧，恣歸之，欲留者分隸諸營。遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使，朝義已下並為列卿，秀岩雲中太守，以其男如岳等七人為大官。",
+      "before": "安慶緒為王師所敗，投鄴郡，其下蕃、漢兵三萬人，初不知所從，思明擊殺三千人，然後降之。",
+      "after": "",
+      "prev_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+      "next_id": "3606b8d0-41ee-446d-bf50-5832a24354e0",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+      "passage_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6429,
+      "end": 6711,
+      "text": "乾元元年秋九月，帝詔郭子儀率九節度兵凡二十萬討慶緒，攻衛州，遂度河，師背水壁而待。慶緒遣安太清拒戰，聞衛州已圍，則鼓而南，作三軍：乾祐將上軍，雄俊、王福德佐之；田承嗣將下軍，榮敬佐之；慶緒自將中軍，孫孝哲、薛嵩佐之。既戰，王師偽卻，慶緒逐之，遇伏而潰慶。緒走，獲其弟慶和，斬於京師。子儀引軍躡賊，戰愁思崗，賊復敗，自是銳兵盡矣。因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進，而王師圍已固，築浚城隍三周，決安陽水灌城。城中棧而處，糧盡，易口以食，米鬥錢七萬餘，一鼠錢數千，屑松飼馬，隤墻取麥稭，濯糞取芻，城中欲降不得。賊更以太清代乾佑將。",
+      "before": "慶緒懼人之貳己，設壇加載書、血與群臣盟。然承慶等十餘人送密款，有詔以承慶為太保、定襄郡王，守忠左羽林軍大將軍、歸德郡王，從禮太傅、順義郡王，蔡希德德州刺史，李廷讓邢州刺史，苻敬超洺州刺史，楊宗太子左諭德，任瑗明州刺史，獨孤允陳州刺史，楊日休洋州刺史，恭榮光岐陽令；自裨校等，數數為國間賊。而慶緒治宮室、觀榭、塘沼，泛樓舡為水嬉，長夜飲。通儒等爭權不能一，凡有建白，眾共訾沮之。希德最有謀，剛狷，謀殺慶緒為內應，通儒以它事斬之，麾下數千皆亡去。希德素得士，舉軍恨嘆。慶緒以乾祐為天下兵馬使，權震中外，愎悍少恩，士不附。",
+      "after": "於是思明有眾十三萬，三分其軍趨鄴。明年三月，營安陽。慶緒急，乃遣太清奉皇帝璽綬讓思明。思明以書示軍中，鹹呼萬歲，乃約慶緒為兄弟，還其書，慶緒大悅。王師不利，九節度奔還，子儀斷河陽橋，戍谷水。思明進屯鄴南。慶緒收官軍餘餉，尚十餘萬石。召孝哲等謀拒思明，諸將皆曰：「今日安得復背史王乎？」通儒、尚、洌皆請自往謝思明，慶緒許諾。思明見，為流涕，厚禮遣還。三日，慶緒未出，思明請慶緒歃血盟，不得已，以五百騎詣思明軍。先此，思明令軍中擐甲待，慶緒至，再拜伏地謝曰：「臣不克負荷，棄兩都，陷重圍，不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。」思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。慶緒數目周萬誌，萬誌進曰：「慶緒為君矣，宜賜死。」乃並四弟縊。又誅尚、孝哲、乾祐，殊而膊之。思明改葬祿山以王禮，偽謚燕剌王。祿山父子僭位凡三年而滅。",
+      "prev_id": "919726ab-8360-4d6b-a2b2-dd63be3626fb",
+      "next_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+      "context_passages": [
+        {
+          "evidence_id": "919726ab-8360-4d6b-a2b2-dd63be3626fb",
+          "passage_id": "919726ab-8360-4d6b-a2b2-dd63be3626fb",
+          "start": 6169,
+          "end": 6427,
+          "text": "慶緒懼人之貳己，設壇加載書、血與群臣盟。然承慶等十餘人送密款，有詔以承慶為太保、定襄郡王，守忠左羽林軍大將軍、歸德郡王，從禮太傅、順義郡王，蔡希德德州刺史，李廷讓邢州刺史，苻敬超洺州刺史，楊宗太子左諭德，任瑗明州刺史，獨孤允陳州刺史，楊日休洋州刺史，恭榮光岐陽令；自裨校等，數數為國間賊。而慶緒治宮室、觀榭、塘沼，泛樓舡為水嬉，長夜飲。通儒等爭權不能一，凡有建白，眾共訾沮之。希德最有謀，剛狷，謀殺慶緒為內應，通儒以它事斬之，麾下數千皆亡去。希德素得士，舉軍恨嘆。慶緒以乾祐為天下兵馬使，權震中外，愎悍少恩，士不附。",
+          "prev_id": "ad236830-3f4a-46f5-a734-fd58442757be",
+          "next_id": "0d425dc0-cb31-4784-b618-801dadf11adb"
+        },
+        {
+          "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+          "passage_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+          "start": 6713,
+          "end": 7101,
+          "text": "於是思明有眾十三萬，三分其軍趨鄴。明年三月，營安陽。慶緒急，乃遣太清奉皇帝璽綬讓思明。思明以書示軍中，鹹呼萬歲，乃約慶緒為兄弟，還其書，慶緒大悅。王師不利，九節度奔還，子儀斷河陽橋，戍谷水。思明進屯鄴南。慶緒收官軍餘餉，尚十餘萬石。召孝哲等謀拒思明，諸將皆曰：「今日安得復背史王乎？」通儒、尚、洌皆請自往謝思明，慶緒許諾。思明見，為流涕，厚禮遣還。三日，慶緒未出，思明請慶緒歃血盟，不得已，以五百騎詣思明軍。先此，思明令軍中擐甲待，慶緒至，再拜伏地謝曰：「臣不克負荷，棄兩都，陷重圍，不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。」思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。慶緒數目周萬誌，萬誌進曰：「慶緒為君矣，宜賜死。」乃並四弟縊。又誅尚、孝哲、乾祐，殊而膊之。思明改葬祿山以王禮，偽謚燕剌王。祿山父子僭位凡三年而滅。",
+          "prev_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+          "next_id": "36ea468b-4869-4780-8c15-bd6cbb8d99a8"
+        }
+      ]
+    },
+    {
+      "evidence_id": "919726ab-8360-4d6b-a2b2-dd63be3626fb",
+      "passage_id": "919726ab-8360-4d6b-a2b2-dd63be3626fb",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6169,
+      "end": 6427,
+      "text": "慶緒懼人之貳己，設壇加載書、血與群臣盟。然承慶等十餘人送密款，有詔以承慶為太保、定襄郡王，守忠左羽林軍大將軍、歸德郡王，從禮太傅、順義郡王，蔡希德德州刺史，李廷讓邢州刺史，苻敬超洺州刺史，楊宗太子左諭德，任瑗明州刺史，獨孤允陳州刺史，楊日休洋州刺史，恭榮光岐陽令；自裨校等，數數為國間賊。而慶緒治宮室、觀榭、塘沼，泛樓舡為水嬉，長夜飲。通儒等爭權不能一，凡有建白，眾共訾沮之。希德最有謀，剛狷，謀殺慶緒為內應，通儒以它事斬之，麾下數千皆亡去。希德素得士，舉軍恨嘆。慶緒以乾祐為天下兵馬使，權震中外，愎悍少恩，士不附。",
+      "before": "",
+      "after": "乾元元年秋九月，帝詔郭子儀率九節度兵凡二十萬討慶緒，攻衛州，遂度河，師背水壁而待。慶緒遣安太清拒戰，聞衛州已圍，則鼓而南，作三軍：乾祐將上軍，雄俊、王福德佐之；田承嗣將下軍，榮敬佐之；慶緒自將中軍，孫孝哲、薛嵩佐之。既戰，王師偽卻，慶緒逐之，遇伏而潰慶。緒走，獲其弟慶和，斬於京師。子儀引軍躡賊，戰愁思崗，賊復敗，自是銳兵盡矣。因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進，而王師圍已固，築浚城隍三周，決安陽水灌城。城中棧而處，糧盡，易口以食，米鬥錢七萬餘，一鼠錢數千，屑松飼馬，隤墻取麥稭，濯糞取芻，城中欲降不得。賊更以太清代乾佑將。",
+      "prev_id": "ad236830-3f4a-46f5-a734-fd58442757be",
+      "next_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+      "passage_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6713,
+      "end": 7101,
+      "text": "於是思明有眾十三萬，三分其軍趨鄴。明年三月，營安陽。慶緒急，乃遣太清奉皇帝璽綬讓思明。思明以書示軍中，鹹呼萬歲，乃約慶緒為兄弟，還其書，慶緒大悅。王師不利，九節度奔還，子儀斷河陽橋，戍谷水。思明進屯鄴南。慶緒收官軍餘餉，尚十餘萬石。召孝哲等謀拒思明，諸將皆曰：「今日安得復背史王乎？」通儒、尚、洌皆請自往謝思明，慶緒許諾。思明見，為流涕，厚禮遣還。三日，慶緒未出，思明請慶緒歃血盟，不得已，以五百騎詣思明軍。先此，思明令軍中擐甲待，慶緒至，再拜伏地謝曰：「臣不克負荷，棄兩都，陷重圍，不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。」思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。慶緒數目周萬誌，萬誌進曰：「慶緒為君矣，宜賜死。」乃並四弟縊。又誅尚、孝哲、乾祐，殊而膊之。思明改葬祿山以王禮，偽謚燕剌王。祿山父子僭位凡三年而滅。",
+      "before": "乾元元年秋九月，帝詔郭子儀率九節度兵凡二十萬討慶緒，攻衛州，遂度河，師背水壁而待。慶緒遣安太清拒戰，聞衛州已圍，則鼓而南，作三軍：乾祐將上軍，雄俊、王福德佐之；田承嗣將下軍，榮敬佐之；慶緒自將中軍，孫孝哲、薛嵩佐之。既戰，王師偽卻，慶緒逐之，遇伏而潰慶。緒走，獲其弟慶和，斬於京師。子儀引軍躡賊，戰愁思崗，賊復敗，自是銳兵盡矣。因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進，而王師圍已固，築浚城隍三周，決安陽水灌城。城中棧而處，糧盡，易口以食，米鬥錢七萬餘，一鼠錢數千，屑松飼馬，隤墻取麥稭，濯糞取芻，城中欲降不得。賊更以太清代乾佑將。",
+      "after": "",
+      "prev_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+      "next_id": "36ea468b-4869-4780-8c15-bd6cbb8d99a8",
+      "context_passages": []
+    }
+  ],
+  "elapsed_seconds": 45.25,
+  "automatic": {
+    "evidence_anchor_recall": {
+      "matched": 0,
+      "expected": 2,
+      "recall": 0.0,
+      "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+    },
+    "citation_program_checks": [
+      {
+        "claim_index": 0,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6241,
+            "end": 6298
+          },
+          {
+            "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+            "quote": "三月，引眾救相州，官軍敗而引退。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 7271,
+            "end": 7287
+          }
+        ]
+      },
+      {
+        "claim_index": 1,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6241,
+            "end": 6298
+          },
+          {
+            "evidence_id": "58ca7eac-6a15-4be8-9c97-38dc38003d12",
+            "quote": "然思明外順命，內實通賊，益募兵。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 9684,
+            "end": 9700
+          }
+        ]
+      },
+      {
+        "claim_index": 2,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+            "quote": "思明乃執承恩，索其裝囊，得鐵券及光弼牒",
+            "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+            "title": "資治通鑑",
+            "chapter": "卷220",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+            "start": 9012,
+            "end": 9031
+          },
+          {
+            "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+            "quote": "乃令耿仁智、張不矜修表：「請誅光弼以謝河北。若不從臣請，臣則自領兵往太原誅光弼。」",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6940,
+            "end": 6981
+          }
+        ]
+      },
+      {
+        "claim_index": 3,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+            "quote": "使薛嵩求救于史思明，言禪讓之禮。思明先遣李歸仁以步卒一萬、馬軍三千，先往滏陽以應。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 3344,
+            "end": 3385
+          },
+          {
+            "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+            "quote": "今尚見殺，況我本從祿山反乎！",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6838,
+            "end": 6852
+          },
+          {
+            "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+            "quote": "思明召慶緒等殺之，並有其眾。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 7287,
+            "end": 7301
+          }
+        ]
+      },
+      {
+        "claim_index": 4,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "e40c8f07-a8f1-4846-997e-009e76e0dcae",
+            "quote": "及安慶緒敗，承恩說思明降唐。",
+            "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+            "title": "資治通鑑",
+            "chapter": "卷220",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+            "start": 8796,
+            "end": 8810
+          },
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6215,
+            "end": 6241
+          }
+        ]
+      },
+      {
+        "claim_index": 5,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "a5857137-4edc-49b2-a24e-32e2bdb1356e",
+            "quote": "遂榜殺承恩父子，連坐死者二百餘人。",
+            "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+            "title": "資治通鑑",
+            "chapter": "卷220",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+            "start": 9146,
+            "end": 9163
+          },
+          {
+            "evidence_id": "49f74fb6-3233-4bba-a9b5-27ff937d9f80",
+            "quote": "思明曰：「陳希烈已下，皆重臣，上皇棄之幸蜀，既收復天下，此輩當慰勞之。今尚見殺，況我本從祿山反乎！」",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6803,
+            "end": 6853
+          }
+        ]
+      },
+      {
+        "claim_index": 6,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+            "quote": "因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6593,
+            "end": 6629
+          },
+          {
+            "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+            "quote": "安慶緒偷道求救於思明，思明懼軍威之盛，不敢進。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 7159,
+            "end": 7182
+          }
+        ]
+      },
+      {
+        "claim_index": 7,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "a20035a2-af8e-4d82-bb38-e25be3b451ba",
+            "quote": "思明于魏州北設壇，僭稱為大聖燕王，以周贄為行軍司馬。三月，引眾救相州，官軍敗而引退。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 7245,
+            "end": 7287
+          },
+          {
+            "evidence_id": "96658b44-eebd-4698-ad99-ff3343b2eb98",
+            "quote": "思明勒兵入鄴城，收其士馬，以府庫賞將士，慶緒先所有州、縣及兵皆歸于思明。",
+            "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+            "title": "資治通鑑",
+            "chapter": "卷221",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+            "start": 1702,
+            "end": 1738
+          }
+        ]
+      },
+      {
+        "claim_index": 8,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "b7184b43-271c-4333-9106-f61476b39f4d",
+            "quote": "使薛嵩求救于史思明，言禪讓之禮。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 3344,
+            "end": 3360
+          },
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "慶緒急，乃遣太清奉皇帝璽綬讓思明。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6739,
+            "end": 6756
+          },
+          {
+            "evidence_id": "2d0b6af1-286b-4265-9b61-85da4a435014",
+            "quote": "乃手疏唁慶緒而不稱臣，且曰：「願為兄弟之國，更作籓籬之援。",
+            "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+            "title": "資治通鑑",
+            "chapter": "卷221",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+            "start": 1445,
+            "end": 1474
+          }
+        ]
+      },
+      {
+        "claim_index": 9,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "f2f29ba4-81ec-4933-a944-bff73fa10a19",
+            "quote": "不意大王以太上皇故，將兵遠救。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 3775,
+            "end": 3790
+          },
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6955,
+            "end": 6979
+          }
+        ]
+      }
+    ]
+  },
+  "model_assisted": {
+    "support_review": {
+      "checks": [
+        {
+          "claim_index": 0,
+          "verdict": "支持",
+          "reason": "dc0441fe 载奉表以所管兵八万降、肃宗封归义王等；a20035a2 载三月引众救相州、官军败退。两前提均有已读原文支持。"
+        },
+        {
+          "claim_index": 1,
+          "verdict": "支持",
+          "reason": "dc0441fe 原文含八万众、归义王、范阳长史、御史大夫、河北节度使；58ca7eac 原文含“外顺命，内实通贼，益募兵”。释义与原文一致。"
+        },
+        {
+          "claim_index": 2,
+          "verdict": "部分支持",
+          "reason": "a5857137 支持执承恩、搜得铁券及光弼牒、榜杀承恩父子、连坐死者二百余人；49f74fb6 支持上表请诛光弼。但“党羽二百余人”原文作“连坐死者二百余人”，且“双方关系由此破裂”为推断性表述，未在引文中明言。"
+        },
+        {
+          "claim_index": 3,
+          "verdict": "支持",
+          "reason": "b7184b43 载薛嵩求救、思明先遣李归仁步卒一万马军三千往滏阳；a20035a2 载召庆绪等杀之并有其众；49f74fb6 载“今尚见杀，况我本从禄山反乎”。动机已标为推断，符合要求。"
+        },
+        {
+          "claim_index": 4,
+          "verdict": "支持",
+          "reason": "e40c8f07 载安庆绪败后承恩说思明降唐；dc0441fe 载拘承庆、斩守忠李立节、奉表以八万众降、受封赏。各子命题均有原文支持。"
+        },
+        {
+          "claim_index": 5,
+          "verdict": "部分支持",
+          "reason": "a5857137 支持杀承恩父子及连坐；49f74fb6 支持因三司议陈希烈等死罪而惧并上表请诛光弼。但“事泄被杀”与“因惧而决裂”的因果连接系概括，引文未明言二者为直接因果链。"
+        },
+        {
+          "claim_index": 6,
+          "verdict": "支持",
+          "reason": "0d425dc0 载薛嵩以厚币求救、李归仁将兵万三千壁滏阳未进；a20035a2 载思明惧军威之盛不敢进。九节度围相州亦见 a20035a2。“步骑一万三千”与“将兵万三千”一致。"
+        },
+        {
+          "claim_index": 7,
+          "verdict": "支持",
+          "reason": "a20035a2 载拔魏州、乾元二年正月一日设坛称大圣燕王、三月引众救相州官军败退、召庆绪等杀之并有其众；96658b44 载收其士马、州县及兵归思明。“诱杀”细节见 2d0b6af1 密召安太清诱之，可支持。"
+        },
+        {
+          "claim_index": 8,
+          "verdict": "支持",
+          "reason": "b7184b43 载“言禅让之礼”；b97b30db 载“遣太清奉皇帝玺绶让思明”；2d0b6af1 载手疏不称臣、愿为兄弟之国。三书叙述差异的概括与原文相符。"
+        },
+        {
+          "claim_index": 9,
+          "verdict": "部分支持",
+          "reason": "f2f29ba4 与 b97b30db 确见高度相似文字，可支持“文字相似、可能同源”的推断；但“共享唐代实录、国史等史源”属未考证的推测，引文本身不能支持具体史源，且已声明未做考证，故仅部分支持。"
+        },
+        {
+          "claim_index": 10,
+          "verdict": "支持",
+          "reason": "属证据缺口说明：已读史料提供惧诛、并其众等线索，无思明自述动机，标为推断合理，未夹带未证实事实。"
+        },
+        {
+          "claim_index": 11,
+          "verdict": "支持",
+          "reason": "已读段落确未载降唐具体月份、诏书原文及范阳实职交割情况，属本次未核查范围，表述克制。"
+        },
+        {
+          "claim_index": 12,
+          "verdict": "支持",
+          "reason": "已读段落中乌承恩事件与魏州称王之间无明确年月系联，说明符合已读材料状况。"
+        },
+        {
+          "claim_index": 13,
+          "verdict": "支持",
+          "reason": "属限制说明，声明未做文字比对与史源考证、独立性未确认，未断言同源结论。"
+        },
+        {
+          "claim_index": 14,
+          "verdict": "支持",
+          "reason": "属恰当的限制说明，未借缺口夹带未经原文支持的事实或绝对否定。"
+        }
+      ]
+    }
+  },
+  "human_review": {
+    "reviewer": null,
+    "evidence_support_0_to_2": null,
+    "completeness_0_to_2": null,
+    "premise_recognition_0_to_2": null,
+    "notes": null
+  },
+  "human_rubric": "确认归唐、再叛和救援阶段，动机另需证据，不默认忠诚。"
+}

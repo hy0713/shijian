@@ -6,7 +6,7 @@ from uuid import uuid4
 
 from langchain_core.messages import AIMessage, ToolMessage
 
-from shijian.schema import Analysis, Answer, Assessment, SupportReview
+from shijian.schema import Analysis, Answer, Assessment, QuoteReadings, SupportReview
 
 
 class ScriptedModel:
@@ -70,10 +70,32 @@ class ScriptedModel:
                     "limitations": ["这是协议测试替身，不是真实研究结果"],
                 }
             )
+        if schema is QuoteReadings:
+            return QuoteReadings(
+                readings=[
+                    {"quotation_id": q["quotation_id"], "literal_meaning": "TEST-DOUBLE literal reading"}
+                    for q in data["quotations"]
+                ]
+            )
         if schema is SupportReview:
             return SupportReview(
                 checks=[
-                    {"claim_index": row["claim_index"], "verdict": "支持", "reason": "TEST-DOUBLE"}
+                    {
+                        "claim_index": row["claim_index"],
+                        "verdict": "支持",
+                        "reason": "TEST-DOUBLE",
+                        "coverage_complete": True,
+                        "facts": [
+                            {
+                                "fragment": row["text"],
+                                "quotation_ids": row.get("quotation_ids", []),
+                                "verdict": "支持",
+                                "reason": "TEST-DOUBLE",
+                            }
+                        ]
+                        if row.get("quotation_ids")
+                        else [],
+                    }
                     for row in data["claims"]
                 ]
             )

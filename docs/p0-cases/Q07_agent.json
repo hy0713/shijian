@@ -1,0 +1,1744 @@
+{
+  "question_id": "Q07",
+  "category": "跨篇章综合",
+  "question": "《新唐书》怎样说明安禄山与史思明早年的关系？这能证明两人后来必然翻脸吗？",
+  "method": "agent",
+  "mode": "local",
+  "model": "deepseek-flash",
+  "embedding": "BAAI/bge-small-zh-v1.5@7999e1d3359715c523056ef9478215996d62a620:512:cls-normalized:v1",
+  "result": {
+    "premise": {
+      "text": "《新唐书》卷225上史思明传确有关于二人早年关系的记载：同乡里、思明生先禄山一日，故“长相善”，并同隶乌知义、同为互市郎，后俱为捉生。",
+      "kind": "文献记载",
+      "citations": [
+        {
+          "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+          "quote": "與安祿山共鄉里，生先祿山一日，故長相善。少事特進烏知義，以輕騎覘賊，多所禽馘。通六蕃譯，亦為互市郎。",
+          "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+          "title": "新唐書",
+          "chapter": "卷225上",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+          "start": 7796,
+          "end": 7846
+        },
+        {
+          "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+          "quote": "幽州節度使張守珪奇其功，表折沖，與祿山俱為捉生。",
+          "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+          "title": "新唐書",
+          "chapter": "卷225上",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+          "start": 8079,
+          "end": 8103
+        }
+      ],
+      "support_review": {
+        "claim_index": 0,
+        "verdict": "支持",
+        "reason": "所引新唐书卷225上原文含“共乡里”“生先禄山一日，故长相善”“事特进乌知义”“亦为互市郎”“与禄山俱为捉生”，各子命题均有原文对应；唯“同隶乌知义”原文作“少事特进乌知义”，属忠实释义。"
+      }
+    },
+    "conclusions": [
+      {
+        "text": "《旧唐书》卷200上史思明传有高度对应的文字（同乡里、先禄山一日生、及长相善、同为互市郎），只能提示两书可能共享史源，不能视为两份独立证据。",
+        "kind": "推断",
+        "citations": [
+          {
+            "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+            "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 4888,
+            "end": 4927
+          },
+          {
+            "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+            "quote": "又解六蕃語，與祿山同為互市郎。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 4947,
+            "end": 4962
+          }
+        ],
+        "support_review": {
+          "claim_index": 2,
+          "verdict": "支持",
+          "reason": "旧唐书卷200上原文确有“同乡里”“先禄山一日生”“及长，相善”“同为互市郎”，与新唐书文字高度对应；据此推断两书可能共享史源、不宜视为两份独立证据，属合理标注的推断，未断言确定同源。"
+        }
+      },
+      {
+        "text": "已读材料中的反目发生在安禄山死后、围绕安庆绪的权力冲突中：安庆绪“徵兵于思明，且欲图之”，思明遂拘其使者、斩安守忠而降唐；后以“为人子杀父求位”为由斩安庆绪。故早年“相善”不能证明后来必然翻脸，以之推必然反目属后见之明。",
+        "kind": "推断",
+        "citations": [
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 5922,
+            "end": 5945
+          },
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "遂拘承慶，斬守忠、李立節之首。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6215,
+            "end": 6230
+          },
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6980,
+            "end": 7027
+          }
+        ],
+        "support_review": {
+          "claim_index": 3,
+          "verdict": "支持",
+          "reason": "旧唐书载安庆绪“征兵于思明，且欲图之”，思明“拘承庆，斩守忠”；新唐书载思明以“为人子，杀父求位”斩庆绪。时序为禄山死后围绕安庆绪的冲突，与原文相符；“早年相善不能证明必然翻脸”为明确标注的推断，未由相关性断言因果。"
+        }
+      }
+    ],
+    "events": [
+      {
+        "text": "天宝初，思明从禄山讨契丹，禄山败走，思明收散卒七百归平卢，禄山握手称“吾何忧”。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+            "quote": "從祿山討契丹，祿山敗，單騎走師州",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 8169,
+            "end": 8185
+          }
+        ],
+        "support_review": {
+          "claim_index": 4,
+          "verdict": "支持",
+          "reason": "新唐书原文载“天宝初……从禄山讨契丹，禄山败，单骑走师州”，思明“逃山中……裒散卒得七百，追见禄山平卢”，禄山“握手曰：计而死矣，今故在，吾何忧”。各要素均有原文对应。"
+        }
+      },
+      {
+        "text": "安庆绪遣阿史那承庆、安守忠向史思明征兵并图谋之，思明拘承庆、斩守忠，率众降唐，受封归义王。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6273,
+            "end": 6298
+          }
+        ],
+        "support_review": {
+          "claim_index": 5,
+          "verdict": "支持",
+          "reason": "旧唐书原文载安庆绪使阿史那承庆、安守忠征兵且欲图之，思明“拘承庆，斩守忠、李立节之首”，奉表降，“肃宗大悦，封归义王”。所引证据虽只含封赏句，但同段原文含全部要素。"
+        }
+      },
+      {
+        "text": "乾元元年九月，九节度兵围安庆绪于邺，安庆绪遣薛嵩求救于史思明。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+            "quote": "因嬰鄴自固，使薛嵩以厚幣求救於史思明。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6593,
+            "end": 6612
+          }
+        ],
+        "support_review": {
+          "claim_index": 6,
+          "verdict": "支持",
+          "reason": "新唐书原文载“乾元元年秋九月，帝诏郭子仪率九节度兵凡二十万讨庆绪”，庆绪“因婴邺自固，使薛嵩以厚币求救于史思明”。围邺、遣薛嵩求救均有原文对应。"
+        }
+      },
+      {
+        "text": "史思明先与安庆绪约为兄弟，待其来营，以杀父求位之罪斩之，并缢其四弟，后改葬禄山以王礼。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "乃約慶緒為兄弟，還其書，慶緒大悅。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6769,
+            "end": 6786
+          },
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "思明改葬祿山以王禮，偽謚燕剌王。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 7073,
+            "end": 7089
+          }
+        ],
+        "support_review": {
+          "claim_index": 7,
+          "verdict": "支持",
+          "reason": "新唐书原文载“乃约庆绪为兄弟”“为人子，杀父求位……牵出斩之”“并四弟缢”“思明改葬禄山以王礼”。各要素均有原文对应。"
+        }
+      }
+    ],
+    "disagreements": [
+      {
+        "text": "两书对早年关系的记述文字相近，是否同出一源尚需史源考证，已读材料不足以判定。",
+        "kind": "无法判断",
+        "citations": [
+          {
+            "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+            "quote": "與安祿山共鄉里，生先祿山一日，故長相善。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 7796,
+            "end": 7816
+          },
+          {
+            "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+            "quote": "及長，相善，俱以驍勇聞。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 4915,
+            "end": 4927
+          }
+        ],
+        "support_review": {
+          "claim_index": 8,
+          "verdict": "支持",
+          "reason": "两书早年关系文字相近有已读原文支持；是否同出一源需史源考证、已读材料不足以判定，属恰当的“无法判断”标注，未夹带未证实结论。"
+        }
+      }
+    ],
+    "limitations": [
+      "《新唐书·安禄山传》一侧关于早年关系的原文未读到，现有早年记载均出自卷225上史思明传。",
+      "《安禄山事迹》等第三方史源未读，无法判断“同乡、同日生、长相善”是否另有独立来源。",
+      "安禄山被安庆绪所杀的具体记载未读，反目的起点只能从安庆绪图谋思明处推断。",
+      "史思明降唐后复叛的直接触发（乌承恩事件等）在已读材料中仅有“宣慰使”一句，时序链不完整。",
+      "“必然翻脸”属因果预设，史料只能显示具体冲突过程，不能证明必然性。",
+      "有 1/9 条候选表述未通过引用或内容支持检查，已从正式回答移除。"
+    ],
+    "rejected_limitations": [],
+    "rejected_claims": [
+      {
+        "claim_index": 1,
+        "text": "《新唐书》所载早年关系是“同乡、同日先后生、长相善、同僚兼上下级”，属亲密而非敌对的开端。",
+        "candidate_citations": [
+          {
+            "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+            "quote": "與安祿山共鄉里，生先祿山一日，故長相善。"
+          },
+          {
+            "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+            "quote": "思明逃山中，再閱旬，裒散卒得七百，追見祿山平盧，祿山喜，握手曰：「計而死矣，今故在，吾何憂！」"
+          }
+        ],
+        "program_errors": [],
+        "support_review": {
+          "claim_index": 1,
+          "verdict": "部分支持",
+          "reason": "“同乡、同日先后生、长相善”有原文支持；“同僚兼上下级”中“俱为捉生”“共事乌知义”可支持同僚，但“上下级”在已读原文中无明确依据（捉生并列，未载隶属关系）。所引“握手曰吾何忧”只能显示禄山对思明归来的欣喜，不能直接支持“上下级”。故不能判全支持。"
+        }
+      }
+    ],
+    "citations": [
+      {
+        "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+        "quote": "與安祿山共鄉里，生先祿山一日，故長相善。少事特進烏知義，以輕騎覘賊，多所禽馘。通六蕃譯，亦為互市郎。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 7796,
+        "end": 7846
+      },
+      {
+        "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+        "quote": "幽州節度使張守珪奇其功，表折沖，與祿山俱為捉生。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 8079,
+        "end": 8103
+      },
+      {
+        "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+        "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 4888,
+        "end": 4927
+      },
+      {
+        "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+        "quote": "又解六蕃語，與祿山同為互市郎。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 4947,
+        "end": 4962
+      },
+      {
+        "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+        "quote": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 5922,
+        "end": 5945
+      },
+      {
+        "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+        "quote": "遂拘承慶，斬守忠、李立節之首。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 6215,
+        "end": 6230
+      },
+      {
+        "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+        "quote": "思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 6980,
+        "end": 7027
+      },
+      {
+        "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+        "quote": "從祿山討契丹，祿山敗，單騎走師州",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 8169,
+        "end": 8185
+      },
+      {
+        "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+        "quote": "肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 6273,
+        "end": 6298
+      },
+      {
+        "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+        "quote": "因嬰鄴自固，使薛嵩以厚幣求救於史思明。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 6593,
+        "end": 6612
+      },
+      {
+        "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+        "quote": "乃約慶緒為兄弟，還其書，慶緒大悅。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 6769,
+        "end": 6786
+      },
+      {
+        "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+        "quote": "思明改葬祿山以王禮，偽謚燕剌王。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 7073,
+        "end": 7089
+      },
+      {
+        "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+        "quote": "與安祿山共鄉里，生先祿山一日，故長相善。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 7796,
+        "end": 7816
+      },
+      {
+        "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+        "quote": "及長，相善，俱以驍勇聞。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 4915,
+        "end": 4927
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      },
+      {
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      }
+    ],
+    "citation_audit": {
+      "program": [
+        {
+          "claim_index": 0,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+              "quote": "與安祿山共鄉里，生先祿山一日，故長相善。少事特進烏知義，以輕騎覘賊，多所禽馘。通六蕃譯，亦為互市郎。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 7796,
+              "end": 7846
+            },
+            {
+              "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+              "quote": "幽州節度使張守珪奇其功，表折沖，與祿山俱為捉生。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 8079,
+              "end": 8103
+            }
+          ]
+        },
+        {
+          "claim_index": 1,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+              "quote": "與安祿山共鄉里，生先祿山一日，故長相善。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 7796,
+              "end": 7816
+            },
+            {
+              "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+              "quote": "思明逃山中，再閱旬，裒散卒得七百，追見祿山平盧，祿山喜，握手曰：「計而死矣，今故在，吾何憂！」",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 8200,
+              "end": 8247
+            }
+          ]
+        },
+        {
+          "claim_index": 2,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+              "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 4888,
+              "end": 4927
+            },
+            {
+              "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+              "quote": "又解六蕃語，與祿山同為互市郎。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 4947,
+              "end": 4962
+            }
+          ]
+        },
+        {
+          "claim_index": 3,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+              "quote": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 5922,
+              "end": 5945
+            },
+            {
+              "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+              "quote": "遂拘承慶，斬守忠、李立節之首。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 6215,
+              "end": 6230
+            },
+            {
+              "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+              "quote": "思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 6980,
+              "end": 7027
+            }
+          ]
+        },
+        {
+          "claim_index": 4,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+              "quote": "從祿山討契丹，祿山敗，單騎走師州",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 8169,
+              "end": 8185
+            }
+          ]
+        },
+        {
+          "claim_index": 5,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+              "quote": "肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 6273,
+              "end": 6298
+            }
+          ]
+        },
+        {
+          "claim_index": 6,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+              "quote": "因嬰鄴自固，使薛嵩以厚幣求救於史思明。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 6593,
+              "end": 6612
+            }
+          ]
+        },
+        {
+          "claim_index": 7,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+              "quote": "乃約慶緒為兄弟，還其書，慶緒大悅。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 6769,
+              "end": 6786
+            },
+            {
+              "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+              "quote": "思明改葬祿山以王禮，偽謚燕剌王。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 7073,
+              "end": 7089
+            }
+          ]
+        },
+        {
+          "claim_index": 8,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+              "quote": "與安祿山共鄉里，生先祿山一日，故長相善。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 7796,
+              "end": 7816
+            },
+            {
+              "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+              "quote": "及長，相善，俱以驍勇聞。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 4915,
+              "end": 4927
+            }
+          ]
+        }
+      ],
+      "content": {
+        "checks": [
+          {
+            "claim_index": 0,
+            "verdict": "支持",
+            "reason": "所引新唐书卷225上原文含“共乡里”“生先禄山一日，故长相善”“事特进乌知义”“亦为互市郎”“与禄山俱为捉生”，各子命题均有原文对应；唯“同隶乌知义”原文作“少事特进乌知义”，属忠实释义。"
+          },
+          {
+            "claim_index": 1,
+            "verdict": "部分支持",
+            "reason": "“同乡、同日先后生、长相善”有原文支持；“同僚兼上下级”中“俱为捉生”“共事乌知义”可支持同僚，但“上下级”在已读原文中无明确依据（捉生并列，未载隶属关系）。所引“握手曰吾何忧”只能显示禄山对思明归来的欣喜，不能直接支持“上下级”。故不能判全支持。"
+          },
+          {
+            "claim_index": 2,
+            "verdict": "支持",
+            "reason": "旧唐书卷200上原文确有“同乡里”“先禄山一日生”“及长，相善”“同为互市郎”，与新唐书文字高度对应；据此推断两书可能共享史源、不宜视为两份独立证据，属合理标注的推断，未断言确定同源。"
+          },
+          {
+            "claim_index": 3,
+            "verdict": "支持",
+            "reason": "旧唐书载安庆绪“征兵于思明，且欲图之”，思明“拘承庆，斩守忠”；新唐书载思明以“为人子，杀父求位”斩庆绪。时序为禄山死后围绕安庆绪的冲突，与原文相符；“早年相善不能证明必然翻脸”为明确标注的推断，未由相关性断言因果。"
+          },
+          {
+            "claim_index": 4,
+            "verdict": "支持",
+            "reason": "新唐书原文载“天宝初……从禄山讨契丹，禄山败，单骑走师州”，思明“逃山中……裒散卒得七百，追见禄山平卢”，禄山“握手曰：计而死矣，今故在，吾何忧”。各要素均有原文对应。"
+          },
+          {
+            "claim_index": 5,
+            "verdict": "支持",
+            "reason": "旧唐书原文载安庆绪使阿史那承庆、安守忠征兵且欲图之，思明“拘承庆，斩守忠、李立节之首”，奉表降，“肃宗大悦，封归义王”。所引证据虽只含封赏句，但同段原文含全部要素。"
+          },
+          {
+            "claim_index": 6,
+            "verdict": "支持",
+            "reason": "新唐书原文载“乾元元年秋九月，帝诏郭子仪率九节度兵凡二十万讨庆绪”，庆绪“因婴邺自固，使薛嵩以厚币求救于史思明”。围邺、遣薛嵩求救均有原文对应。"
+          },
+          {
+            "claim_index": 7,
+            "verdict": "支持",
+            "reason": "新唐书原文载“乃约庆绪为兄弟”“为人子，杀父求位……牵出斩之”“并四弟缢”“思明改葬禄山以王礼”。各要素均有原文对应。"
+          },
+          {
+            "claim_index": 8,
+            "verdict": "支持",
+            "reason": "两书早年关系文字相近有已读原文支持；是否同出一源需史源考证、已读材料不足以判定，属恰当的“无法判断”标注，未夹带未证实结论。"
+          },
+          {
+            "claim_index": 9,
+            "verdict": "支持",
+            "reason": "证据缺口说明限于本次已读范围：所引早年记载均出自卷225上史思明传，未读到安禄山传一侧原文，未作绝对否定或史源断言。"
+          },
+          {
+            "claim_index": 10,
+            "verdict": "支持",
+            "reason": "说明限于《安禄山事迹》等第三方史源未读、无法判断是否有独立来源，属本次未核查范围，未夹带未证实事实。"
+          },
+          {
+            "claim_index": 11,
+            "verdict": "支持",
+            "reason": "已读材料中确无安禄山被安庆绪所杀的具体记载，说明限于已读范围，并明确将反目起点表述为推断，未夹带未证实事实。"
+          },
+          {
+            "claim_index": 12,
+            "verdict": "支持",
+            "reason": "已读材料中降唐后复叛的触发仅见“宣慰使”等零散内容，乌承恩事件未读到，说明限于本次未核查范围，未作绝对否定。"
+          },
+          {
+            "claim_index": 13,
+            "verdict": "支持",
+            "reason": "属方法论说明：史料仅显示具体冲突过程，不能证明“必然翻脸”的因果必然性，未夹带未证实史实。"
+          }
+        ]
+      },
+      "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。"
+    },
+    "research_outcome": {
+      "status": "partial",
+      "reasons": [
+        "部分候选表述未通过审核"
+      ],
+      "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+    },
+    "metrics": {
+      "rounds": 2,
+      "answer_revisions": 0,
+      "duplicate_tool_calls_avoided": 0,
+      "model_requests": [
+        {
+          "stage": "Analysis",
+          "elapsed_seconds": 2.453,
+          "context_chars": 404,
+          "total_tokens": 1042
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.203,
+          "context_chars": 1030,
+          "total_tokens": 1289
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 4.14,
+          "context_chars": 6673,
+          "total_tokens": 5495
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.063,
+          "context_chars": 7384,
+          "total_tokens": 6061
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 5.594,
+          "context_chars": 7020,
+          "total_tokens": 6079
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 7.187,
+          "context_chars": 8436,
+          "total_tokens": 8575
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 5.484,
+          "context_chars": 7697,
+          "total_tokens": 6405
+        }
+      ],
+      "tool_calls": 7,
+      "web_pages": 0,
+      "evidence_read": 12,
+      "elapsed_seconds": 27.437,
+      "token_usage": {
+        "deepseek-flash": {
+          "input_token_details": {
+            "cache_read": 4736
+          },
+          "total_tokens": 34946,
+          "input_tokens": 29784,
+          "output_tokens": 5162,
+          "output_token_details": {}
+        }
+      },
+      "cost": null
+    }
+  },
+  "events": [
+    {
+      "type": "step",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    },
+    {
+      "type": "plan",
+      "data": {
+        "premise_status": "待核查",
+        "premise_to_check": [
+          "《新唐书》确有关于安禄山与史思明早年关系的记载，且需确认具体篇目（如《逆臣传》安禄山传、史思明传）与原文表述",
+          "两人早年关系（如相识、同乡、部属或结盟）的记载是否出自《新唐书》独有史源，还是沿袭《旧唐书》《安禄山事迹》等",
+          "“后来必然翻脸”这一因果预设是否成立：需核查二人反目（如安庆绪杀安禄山后史思明降唐又叛、杀安庆绪）的具体时序与直接缘由"
+        ],
+        "subquestions": [
+          "《新唐书》安禄山传、史思明传中关于二人早年交往的原文如何表述？",
+          "这些早年关系记载的史源是什么，是否与《旧唐书》《安禄山事迹》同源？",
+          "二人关系恶化的关键事件与时序（安禄山死、安庆绪即位、史思明降唐复叛、杀安庆绪）如何？",
+          "从早年关系能否推出后来反目的必然性，还是属于后见之明的因果倒置？"
+        ],
+        "search_queries": [
+          "新唐书 安禄山传 史思明 早年 相识",
+          "新唐书 逆臣传 史思明 安禄山 同乡 部将",
+          "旧唐书 史思明传 安禄山 少 相友善",
+          "安禄山事迹 史思明 早年",
+          "史思明 杀安庆绪 时间 唐肃宗 乾元"
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 1,
+        "summary": "新唐书 安禄山传 史思明 早年 相识 同乡"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 2,
+        "summary": "旧唐书 史思明传 安禄山 少 相友善 同乡"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 3,
+        "summary": "史思明 杀安庆绪 降唐 复叛 乾元"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "type": "assessment",
+      "data": {
+        "sufficient": false,
+        "premise_status": "支持",
+        "gaps": [
+          "《新唐书》与《旧唐书》相关文字高度重合，尚未读到《安禄山事迹》等更早史源，无法判定“同乡、同日生、长相善”是否为新唐书独有或另有更早来源",
+          "尚未读到《新唐书·史思明传》中史思明杀安庆绪的直接叙述原文（仅见“约庆绪为兄弟”“为流涕”等片段），反目过程的细节链条不完整",
+          "安禄山本人之死（安庆绪与严庄弑父）在已读证据中未见原文，仅由维基百科转述，需以正史原文核实"
+        ],
+        "next_queries": [
+          "新唐书 卷225上 安庆绪 弑 禄山 严庄",
+          "安禄山事迹 卷下 史思明 杀 庆绪",
+          "资治通鉴 卷221 史思明 杀 安庆绪 邺"
+        ],
+        "summary": "《新唐书》卷225上《逆臣传》史思明部分明言：“與安祿山共鄉里，生先祿山一日，故長相善。少事特進烏知義……通六蕃譯，亦為互市郎”，即同乡、生日相邻、长大后交好，并同隶乌知义、同为互市郎。《旧唐书》卷200上文字几乎相同（“與安祿山同鄉里，先祿山一日生……及長，相善，俱以驍勇聞……與祿山同為互市郎”），可见新唐书此段沿袭旧唐书系统，非独有史源。关于后来关系：新书记安禄山反后“使思明略定河北”“留思明守范陽”，思明为其部将；安禄山死后安庆绪“以史思明領范陽”，思明“擁強兵，據富資，益驕橫，浸不用慶緒之命”（《通鉴》卷219）；安庆绪遣阿史那承庆、安守忠“徵兵於思明，且欲圖之”，思明囚之并降唐（旧书卷200上）；后思明“約慶緒為兄弟”又杀之（新书卷225上片段）。可见翻脸的直接动因是权力分配与相互猜忌（安庆绪图谋思明、思明骄横不受命），而非早年交情本身。早年“相善”只是同乡同僚的起点描述，不能推出后来必然反目；史书叙述亦未作此因果断言，属后见之明的倒推。"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 4,
+        "summary": "7b69294b-2b85-4e8e-9d5f-567417c324e1"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "cd14e149-2197-414a-8eca-206dedc1b1eb",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 5,
+        "summary": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 6,
+        "summary": "b97b30db-e4e2-4a06-8ced-b8bed80479e1"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "36ea468b-4869-4780-8c15-bd6cbb8d99a8",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 7,
+        "summary": "dc0441fe-890f-4cca-a2c4-68508d4dc69b"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "3606b8d0-41ee-446d-bf50-5832a24354e0",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "type": "assessment",
+      "data": {
+        "sufficient": true,
+        "premise_status": "支持",
+        "gaps": [
+          "《新唐书·安禄山传》一侧关于早年关系的原文尚未直接读到（现有证据均出自《新唐书》卷225上史思明传及《旧唐书》卷200上史思明传），安禄山传中的对应表述未登记",
+          "《安禄山事迹》等第三方史源未读，无法判断“同乡、同日生、长相善”是否另有独立史源或同出一源",
+          "史思明降唐后复叛的直接触发（乌承恩事件、乾元元年末再反）在已读证据中仅有“宣慰使”一句，时序链条不完整",
+          "安禄山被安庆绪所杀的具体记载（《新唐书》安禄山传部分）未读，无法核对“翻脸”起点"
+        ],
+        "next_queries": [
+          "新唐书 卷225上 安禄山传 张守珪 捉生将 史思明",
+          "安禄山事迹 史思明 同乡 同日生",
+          "旧唐书 史思明传 乌承恩 乾元 复叛",
+          "新唐书 安禄山传 庆绪 谋杀 至德二载"
+        ],
+        "summary": "已读证据显示：《新唐书》卷225上史思明传载“与安禄山共乡里，生先禄山一日，故长相善”，又载二人少时同“事特进乌知义”、同为互市郎，后“与禄山俱为捉生”（张守珪表奏）；同卷另载天宝初从禄山讨契丹，禄山败走，思明收散卒七百归，禄山“握手”称“吾何忧”，思明答以“向蚤出，随哥解地下矣”，可见早年及起兵前为同乡、同僚、上下级且关系亲密。《旧唐书》卷200上史思明传有高度对应的文字（“同乡里”“先禄山一日生”“及长，相善”“与禄山同为互市郎”），属同一史源的平行记载，不能算两份独立证据。关于“翻脸”：已读证据只显示安禄山死后，安庆绪遣阿史那承庆、安守忠“徵兵于思明，且欲图之”，思明遂拘承庆、斩守忠而降唐；其后安庆绪败走邺郡求救，思明先“约庆绪为兄弟”，待其来营则以“为人子杀父求位”为由斩之并缢其四弟，改葬禄山以王礼。即反目发生在安禄山死后、围绕安庆绪的权力与名分冲突中，直接缘由是安庆绪图谋思明及杀父夺位，而非早年关系本身。因此早年“相善”记载不能证明后来“必然翻脸”；以早年亲密推必然反目属后见之明的因果倒置，且《新唐书》叙事本身带有以“逆臣”结局回溯的道德化笔法。证据对“早年关系”与“反目过程”已基本充分，但《新唐书·安禄山传》一侧原文及《安禄山事迹》等史源尚未读，故对“是否独有史源”仍存缺口。"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+      "passage_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 7751,
+      "end": 8103,
+      "text": "史思明，寧夷州突厥種，初名窣於，玄宗賜其名。姿臒露，鳶肩傴背，廞目側鼻，寡須發，躁健譎狡。與安祿山共鄉里，生先祿山一日，故長相善。少事特進烏知義，以輕騎覘賊，多所禽馘。通六蕃譯，亦為互市郎。頃之，負官錢，無以償，將走奚。未至，為邏騎所困，欲殺之，紿曰：「我使人也，若聞殺天子使者，其國不祥，不如以我見王，王活我，功自汝得。」邏以為然，送至王所，不拜，曰：「天子使見小國君不拜，禮也。」王怒，然疑真使者，卒授館，待以禮。將還，令百人從入朝。奚有部將瑣高者，名聞國中，思明欲禽以贖罪，訹王曰：「從我者雖多，無足與見天子者，惟高材，可與至中國。」王悅，命高將帳下三百俱。既至平廬，遣謂戍主曰：「奚兵數百，外稱入朝，內實盜，請備之。」主潛師迎犒，殺其眾，囚高以獻。幽州節度使張守珪奇其功，表折沖，與祿山俱為捉生。",
+      "before": "有商胡康廉者，天寶中為安南都護，附楊國忠，官將軍。上元中，出家貲佐山南驛稟，肅宗喜其濟，許之，累試鴻臚卿。婿在賊中，有告其畔，坐誅。事連莊，繫獄，貶難江尉。京兆尹劉晏發吏防其家，莊恨之。俄詔釋罪，莊入見代宗，誣晏常矜功怨上，漏禁中事，晏遂貶雲。",
+      "after": "天寶初，累功至將軍、知平盧軍事。入奏，帝賜坐與語，奇之。問年，曰：「四十矣。」撫其背曰：「爾貴在晚，勉之！」遷大將軍、北平太守。從祿山討契丹，祿山敗，單騎走師州，殺其下左賢哥解、魚承仙自解。思明逃山中，再閱旬，裒散卒得七百，追見祿山平盧，祿山喜，握手曰：「計而死矣，今故在，吾何憂！」思明親密曰：「吾聞進退在時，向蚤出，隨哥解地下矣。」契丹取師州，守捉使劉客奴亡去，祿山使思明擊走之，表平盧兵馬使。",
+      "prev_id": "cd14e149-2197-414a-8eca-206dedc1b1eb",
+      "next_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+      "context_passages": [
+        {
+          "evidence_id": "cd14e149-2197-414a-8eca-206dedc1b1eb",
+          "passage_id": "cd14e149-2197-414a-8eca-206dedc1b1eb",
+          "start": 7627,
+          "end": 7749,
+          "text": "有商胡康廉者，天寶中為安南都護，附楊國忠，官將軍。上元中，出家貲佐山南驛稟，肅宗喜其濟，許之，累試鴻臚卿。婿在賊中，有告其畔，坐誅。事連莊，繫獄，貶難江尉。京兆尹劉晏發吏防其家，莊恨之。俄詔釋罪，莊入見代宗，誣晏常矜功怨上，漏禁中事，晏遂貶雲。",
+          "prev_id": "c9e154c2-d379-4a89-b971-381da7614870",
+          "next_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1"
+        },
+        {
+          "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+          "passage_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+          "start": 8105,
+          "end": 8304,
+          "text": "天寶初，累功至將軍、知平盧軍事。入奏，帝賜坐與語，奇之。問年，曰：「四十矣。」撫其背曰：「爾貴在晚，勉之！」遷大將軍、北平太守。從祿山討契丹，祿山敗，單騎走師州，殺其下左賢哥解、魚承仙自解。思明逃山中，再閱旬，裒散卒得七百，追見祿山平盧，祿山喜，握手曰：「計而死矣，今故在，吾何憂！」思明親密曰：「吾聞進退在時，向蚤出，隨哥解地下矣。」契丹取師州，守捉使劉客奴亡去，祿山使思明擊走之，表平盧兵馬使。",
+          "prev_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+          "next_id": "370981d3-7cab-4722-82b2-438c2662497c"
+        }
+      ]
+    },
+    {
+      "evidence_id": "cd14e149-2197-414a-8eca-206dedc1b1eb",
+      "passage_id": "cd14e149-2197-414a-8eca-206dedc1b1eb",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 7627,
+      "end": 7749,
+      "text": "有商胡康廉者，天寶中為安南都護，附楊國忠，官將軍。上元中，出家貲佐山南驛稟，肅宗喜其濟，許之，累試鴻臚卿。婿在賊中，有告其畔，坐誅。事連莊，繫獄，貶難江尉。京兆尹劉晏發吏防其家，莊恨之。俄詔釋罪，莊入見代宗，誣晏常矜功怨上，漏禁中事，晏遂貶雲。",
+      "before": "",
+      "after": "史思明，寧夷州突厥種，初名窣於，玄宗賜其名。姿臒露，鳶肩傴背，廞目側鼻，寡須發，躁健譎狡。與安祿山共鄉里，生先祿山一日，故長相善。少事特進烏知義，以輕騎覘賊，多所禽馘。通六蕃譯，亦為互市郎。頃之，負官錢，無以償，將走奚。未至，為邏騎所困，欲殺之，紿曰：「我使人也，若聞殺天子使者，其國不祥，不如以我見王，王活我，功自汝得。」邏以為然，送至王所，不拜，曰：「天子使見小國君不拜，禮也。」王怒，然疑真使者，卒授館，待以禮。將還，令百人從入朝。奚有部將瑣高者，名聞國中，思明欲禽以贖罪，訹王曰：「從我者雖多，無足與見天子者，惟高材，可與至中國。」王悅，命高將帳下三百俱。既至平廬，遣謂戍主曰：「奚兵數百，外稱入朝，內實盜，請備之。」主潛師迎犒，殺其眾，囚高以獻。幽州節度使張守珪奇其功，表折沖，與祿山俱為捉生。",
+      "prev_id": "c9e154c2-d379-4a89-b971-381da7614870",
+      "next_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+      "passage_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 8105,
+      "end": 8304,
+      "text": "天寶初，累功至將軍、知平盧軍事。入奏，帝賜坐與語，奇之。問年，曰：「四十矣。」撫其背曰：「爾貴在晚，勉之！」遷大將軍、北平太守。從祿山討契丹，祿山敗，單騎走師州，殺其下左賢哥解、魚承仙自解。思明逃山中，再閱旬，裒散卒得七百，追見祿山平盧，祿山喜，握手曰：「計而死矣，今故在，吾何憂！」思明親密曰：「吾聞進退在時，向蚤出，隨哥解地下矣。」契丹取師州，守捉使劉客奴亡去，祿山使思明擊走之，表平盧兵馬使。",
+      "before": "史思明，寧夷州突厥種，初名窣於，玄宗賜其名。姿臒露，鳶肩傴背，廞目側鼻，寡須發，躁健譎狡。與安祿山共鄉里，生先祿山一日，故長相善。少事特進烏知義，以輕騎覘賊，多所禽馘。通六蕃譯，亦為互市郎。頃之，負官錢，無以償，將走奚。未至，為邏騎所困，欲殺之，紿曰：「我使人也，若聞殺天子使者，其國不祥，不如以我見王，王活我，功自汝得。」邏以為然，送至王所，不拜，曰：「天子使見小國君不拜，禮也。」王怒，然疑真使者，卒授館，待以禮。將還，令百人從入朝。奚有部將瑣高者，名聞國中，思明欲禽以贖罪，訹王曰：「從我者雖多，無足與見天子者，惟高材，可與至中國。」王悅，命高將帳下三百俱。既至平廬，遣謂戍主曰：「奚兵數百，外稱入朝，內實盜，請備之。」主潛師迎犒，殺其眾，囚高以獻。幽州節度使張守珪奇其功，表折沖，與祿山俱為捉生。",
+      "after": "",
+      "prev_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+      "next_id": "370981d3-7cab-4722-82b2-438c2662497c",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "passage_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 4845,
+      "end": 5049,
+      "text": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "before": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+      "after": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+      "prev_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "next_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "context_passages": [
+        {
+          "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+          "passage_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+          "start": 4698,
+          "end": 4843,
+          "text": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+          "prev_id": "34f81edd-ae8e-4b0e-a69c-9e6071754fba",
+          "next_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+        },
+        {
+          "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+          "passage_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+          "start": 5051,
+          "end": 5425,
+          "text": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+          "prev_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+          "next_id": "450dc5f6-b71a-47d0-aeb7-fadb24081428"
+        }
+      ]
+    },
+    {
+      "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "passage_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 4698,
+      "end": 4843,
+      "text": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+      "before": "",
+      "after": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "prev_id": "34f81edd-ae8e-4b0e-a69c-9e6071754fba",
+      "next_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "passage_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 5051,
+      "end": 5425,
+      "text": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+      "before": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "after": "",
+      "prev_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "next_id": "450dc5f6-b71a-47d0-aeb7-fadb24081428",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+      "passage_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6713,
+      "end": 7101,
+      "text": "於是思明有眾十三萬，三分其軍趨鄴。明年三月，營安陽。慶緒急，乃遣太清奉皇帝璽綬讓思明。思明以書示軍中，鹹呼萬歲，乃約慶緒為兄弟，還其書，慶緒大悅。王師不利，九節度奔還，子儀斷河陽橋，戍谷水。思明進屯鄴南。慶緒收官軍餘餉，尚十餘萬石。召孝哲等謀拒思明，諸將皆曰：「今日安得復背史王乎？」通儒、尚、洌皆請自往謝思明，慶緒許諾。思明見，為流涕，厚禮遣還。三日，慶緒未出，思明請慶緒歃血盟，不得已，以五百騎詣思明軍。先此，思明令軍中擐甲待，慶緒至，再拜伏地謝曰：「臣不克負荷，棄兩都，陷重圍，不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。」思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。慶緒數目周萬誌，萬誌進曰：「慶緒為君矣，宜賜死。」乃並四弟縊。又誅尚、孝哲、乾祐，殊而膊之。思明改葬祿山以王禮，偽謚燕剌王。祿山父子僭位凡三年而滅。",
+      "before": "乾元元年秋九月，帝詔郭子儀率九節度兵凡二十萬討慶緒，攻衛州，遂度河，師背水壁而待。慶緒遣安太清拒戰，聞衛州已圍，則鼓而南，作三軍：乾祐將上軍，雄俊、王福德佐之；田承嗣將下軍，榮敬佐之；慶緒自將中軍，孫孝哲、薛嵩佐之。既戰，王師偽卻，慶緒逐之，遇伏而潰慶。緒走，獲其弟慶和，斬於京師。子儀引軍躡賊，戰愁思崗，賊復敗，自是銳兵盡矣。因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進，而王師圍已固，築浚城隍三周，決安陽水灌城。城中棧而處，糧盡，易口以食，米鬥錢七萬餘，一鼠錢數千，屑松飼馬，隤墻取麥稭，濯糞取芻，城中欲降不得。賊更以太清代乾佑將。",
+      "after": "初，祿山陷東京，以張萬頃為河南尹，士人宗室賴以免者眾，肅宗嘉其仁，拜濮陽太守。帝以賊國讎，惡聞其姓，京師坊裏有「安」字者，悉易之。",
+      "prev_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+      "next_id": "36ea468b-4869-4780-8c15-bd6cbb8d99a8",
+      "context_passages": [
+        {
+          "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+          "passage_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+          "start": 6429,
+          "end": 6711,
+          "text": "乾元元年秋九月，帝詔郭子儀率九節度兵凡二十萬討慶緒，攻衛州，遂度河，師背水壁而待。慶緒遣安太清拒戰，聞衛州已圍，則鼓而南，作三軍：乾祐將上軍，雄俊、王福德佐之；田承嗣將下軍，榮敬佐之；慶緒自將中軍，孫孝哲、薛嵩佐之。既戰，王師偽卻，慶緒逐之，遇伏而潰慶。緒走，獲其弟慶和，斬於京師。子儀引軍躡賊，戰愁思崗，賊復敗，自是銳兵盡矣。因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進，而王師圍已固，築浚城隍三周，決安陽水灌城。城中棧而處，糧盡，易口以食，米鬥錢七萬餘，一鼠錢數千，屑松飼馬，隤墻取麥稭，濯糞取芻，城中欲降不得。賊更以太清代乾佑將。",
+          "prev_id": "919726ab-8360-4d6b-a2b2-dd63be3626fb",
+          "next_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1"
+        },
+        {
+          "evidence_id": "36ea468b-4869-4780-8c15-bd6cbb8d99a8",
+          "passage_id": "36ea468b-4869-4780-8c15-bd6cbb8d99a8",
+          "start": 7103,
+          "end": 7168,
+          "text": "初，祿山陷東京，以張萬頃為河南尹，士人宗室賴以免者眾，肅宗嘉其仁，拜濮陽太守。帝以賊國讎，惡聞其姓，京師坊裏有「安」字者，悉易之。",
+          "prev_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+          "next_id": "a2fc2440-a444-40a7-bd0a-56bb850d102d"
+        }
+      ]
+    },
+    {
+      "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+      "passage_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6429,
+      "end": 6711,
+      "text": "乾元元年秋九月，帝詔郭子儀率九節度兵凡二十萬討慶緒，攻衛州，遂度河，師背水壁而待。慶緒遣安太清拒戰，聞衛州已圍，則鼓而南，作三軍：乾祐將上軍，雄俊、王福德佐之；田承嗣將下軍，榮敬佐之；慶緒自將中軍，孫孝哲、薛嵩佐之。既戰，王師偽卻，慶緒逐之，遇伏而潰慶。緒走，獲其弟慶和，斬於京師。子儀引軍躡賊，戰愁思崗，賊復敗，自是銳兵盡矣。因嬰鄴自固，使薛嵩以厚幣求救於史思明。思明遣李歸仁將兵萬三千壁滏陽，未進，而王師圍已固，築浚城隍三周，決安陽水灌城。城中棧而處，糧盡，易口以食，米鬥錢七萬餘，一鼠錢數千，屑松飼馬，隤墻取麥稭，濯糞取芻，城中欲降不得。賊更以太清代乾佑將。",
+      "before": "",
+      "after": "於是思明有眾十三萬，三分其軍趨鄴。明年三月，營安陽。慶緒急，乃遣太清奉皇帝璽綬讓思明。思明以書示軍中，鹹呼萬歲，乃約慶緒為兄弟，還其書，慶緒大悅。王師不利，九節度奔還，子儀斷河陽橋，戍谷水。思明進屯鄴南。慶緒收官軍餘餉，尚十餘萬石。召孝哲等謀拒思明，諸將皆曰：「今日安得復背史王乎？」通儒、尚、洌皆請自往謝思明，慶緒許諾。思明見，為流涕，厚禮遣還。三日，慶緒未出，思明請慶緒歃血盟，不得已，以五百騎詣思明軍。先此，思明令軍中擐甲待，慶緒至，再拜伏地謝曰：「臣不克負荷，棄兩都，陷重圍，不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。」思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。慶緒數目周萬誌，萬誌進曰：「慶緒為君矣，宜賜死。」乃並四弟縊。又誅尚、孝哲、乾祐，殊而膊之。思明改葬祿山以王禮，偽謚燕剌王。祿山父子僭位凡三年而滅。",
+      "prev_id": "919726ab-8360-4d6b-a2b2-dd63be3626fb",
+      "next_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "36ea468b-4869-4780-8c15-bd6cbb8d99a8",
+      "passage_id": "36ea468b-4869-4780-8c15-bd6cbb8d99a8",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 7103,
+      "end": 7168,
+      "text": "初，祿山陷東京，以張萬頃為河南尹，士人宗室賴以免者眾，肅宗嘉其仁，拜濮陽太守。帝以賊國讎，惡聞其姓，京師坊裏有「安」字者，悉易之。",
+      "before": "於是思明有眾十三萬，三分其軍趨鄴。明年三月，營安陽。慶緒急，乃遣太清奉皇帝璽綬讓思明。思明以書示軍中，鹹呼萬歲，乃約慶緒為兄弟，還其書，慶緒大悅。王師不利，九節度奔還，子儀斷河陽橋，戍谷水。思明進屯鄴南。慶緒收官軍餘餉，尚十餘萬石。召孝哲等謀拒思明，諸將皆曰：「今日安得復背史王乎？」通儒、尚、洌皆請自往謝思明，慶緒許諾。思明見，為流涕，厚禮遣還。三日，慶緒未出，思明請慶緒歃血盟，不得已，以五百騎詣思明軍。先此，思明令軍中擐甲待，慶緒至，再拜伏地謝曰：「臣不克負荷，棄兩都，陷重圍，不意大王以太上皇故，暴師遠來，臣之罪，唯王圖之。」思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。慶緒數目周萬誌，萬誌進曰：「慶緒為君矣，宜賜死。」乃並四弟縊。又誅尚、孝哲、乾祐，殊而膊之。思明改葬祿山以王禮，偽謚燕剌王。祿山父子僭位凡三年而滅。",
+      "after": "",
+      "prev_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+      "next_id": "a2fc2440-a444-40a7-bd0a-56bb850d102d",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+      "passage_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 5922,
+      "end": 6327,
+      "text": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。判官耿仁智，忠謀之士，謂思明曰：「大夫崇重，人不敢言，仁智請一言而死。」思明曰：「試言之。」對曰：「大夫久事祿山，祿山兵權若此，誰敢不服！如大夫比者，逼於凶威耳，固亦無罪。今聞孝感皇帝聰明勇智，有少康、周宣之略，大夫發使輸誠，必開懷見納，此轉禍為福之上策也。」思明曰：「善。」承慶等以五千騎至范陽，思明悉眾介胄以逆之。眾且數萬，去之一里，使謂之曰：「相公及王遠至，將士等不勝喜躍。此皆邊兵怯懦，頗懼相公之來，莫敢進也。請弛弓以安之。」從之。思明遂以承慶、守忠入內廳，飲樂之。別令諸將於其所分收其甲仗。其諸郡兵皆給糧，恣歸之，欲留者分隸諸營。遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使，朝義已下並為列卿，秀岩雲中太守，以其男如岳等七人為大官。",
+      "before": "安慶緒為王師所敗，投鄴郡，其下蕃、漢兵三萬人，初不知所從，思明擊殺三千人，然後降之。",
+      "after": "使內侍李思敬、將軍烏承恩宣慰使，令討殘賊。",
+      "prev_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+      "next_id": "3606b8d0-41ee-446d-bf50-5832a24354e0",
+      "context_passages": [
+        {
+          "evidence_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+          "passage_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+          "start": 5878,
+          "end": 5920,
+          "text": "安慶緒為王師所敗，投鄴郡，其下蕃、漢兵三萬人，初不知所從，思明擊殺三千人，然後降之。",
+          "prev_id": "61bff857-6f95-46b4-a1de-3caf08fd1944",
+          "next_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b"
+        },
+        {
+          "evidence_id": "3606b8d0-41ee-446d-bf50-5832a24354e0",
+          "passage_id": "3606b8d0-41ee-446d-bf50-5832a24354e0",
+          "start": 6327,
+          "end": 6348,
+          "text": "使內侍李思敬、將軍烏承恩宣慰使，令討殘賊。",
+          "prev_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+          "next_id": "31ccc628-8c7c-40c2-8ee7-90e2758ea3fd"
+        }
+      ]
+    },
+    {
+      "evidence_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+      "passage_id": "e5daa04d-1d31-40e6-bb07-32e413fcc680",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 5878,
+      "end": 5920,
+      "text": "安慶緒為王師所敗，投鄴郡，其下蕃、漢兵三萬人，初不知所從，思明擊殺三千人，然後降之。",
+      "before": "",
+      "after": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。判官耿仁智，忠謀之士，謂思明曰：「大夫崇重，人不敢言，仁智請一言而死。」思明曰：「試言之。」對曰：「大夫久事祿山，祿山兵權若此，誰敢不服！如大夫比者，逼於凶威耳，固亦無罪。今聞孝感皇帝聰明勇智，有少康、周宣之略，大夫發使輸誠，必開懷見納，此轉禍為福之上策也。」思明曰：「善。」承慶等以五千騎至范陽，思明悉眾介胄以逆之。眾且數萬，去之一里，使謂之曰：「相公及王遠至，將士等不勝喜躍。此皆邊兵怯懦，頗懼相公之來，莫敢進也。請弛弓以安之。」從之。思明遂以承慶、守忠入內廳，飲樂之。別令諸將於其所分收其甲仗。其諸郡兵皆給糧，恣歸之，欲留者分隸諸營。遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使，朝義已下並為列卿，秀岩雲中太守，以其男如岳等七人為大官。",
+      "prev_id": "61bff857-6f95-46b4-a1de-3caf08fd1944",
+      "next_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "3606b8d0-41ee-446d-bf50-5832a24354e0",
+      "passage_id": "3606b8d0-41ee-446d-bf50-5832a24354e0",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 6327,
+      "end": 6348,
+      "text": "使內侍李思敬、將軍烏承恩宣慰使，令討殘賊。",
+      "before": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。判官耿仁智，忠謀之士，謂思明曰：「大夫崇重，人不敢言，仁智請一言而死。」思明曰：「試言之。」對曰：「大夫久事祿山，祿山兵權若此，誰敢不服！如大夫比者，逼於凶威耳，固亦無罪。今聞孝感皇帝聰明勇智，有少康、周宣之略，大夫發使輸誠，必開懷見納，此轉禍為福之上策也。」思明曰：「善。」承慶等以五千騎至范陽，思明悉眾介胄以逆之。眾且數萬，去之一里，使謂之曰：「相公及王遠至，將士等不勝喜躍。此皆邊兵怯懦，頗懼相公之來，莫敢進也。請弛弓以安之。」從之。思明遂以承慶、守忠入內廳，飲樂之。別令諸將於其所分收其甲仗。其諸郡兵皆給糧，恣歸之，欲留者分隸諸營。遂拘承慶，斬守忠、李立節之首。李光弼使衙官敬俛招之。遂令衙官竇子昂奉表，以所管兵眾八萬人，及以偽河東節度高秀岩來降。肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使，朝義已下並為列卿，秀岩雲中太守，以其男如岳等七人為大官。",
+      "after": "",
+      "prev_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+      "next_id": "31ccc628-8c7c-40c2-8ee7-90e2758ea3fd",
+      "context_passages": []
+    }
+  ],
+  "elapsed_seconds": 27.437,
+  "automatic": {
+    "evidence_anchor_recall": {
+      "matched": 1,
+      "expected": 2,
+      "recall": 0.5,
+      "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+    },
+    "citation_program_checks": [
+      {
+        "claim_index": 0,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+            "quote": "與安祿山共鄉里，生先祿山一日，故長相善。少事特進烏知義，以輕騎覘賊，多所禽馘。通六蕃譯，亦為互市郎。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 7796,
+            "end": 7846
+          },
+          {
+            "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+            "quote": "幽州節度使張守珪奇其功，表折沖，與祿山俱為捉生。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 8079,
+            "end": 8103
+          }
+        ]
+      },
+      {
+        "claim_index": 1,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+            "quote": "與安祿山共鄉里，生先祿山一日，故長相善。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 7796,
+            "end": 7816
+          },
+          {
+            "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+            "quote": "思明逃山中，再閱旬，裒散卒得七百，追見祿山平盧，祿山喜，握手曰：「計而死矣，今故在，吾何憂！」",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 8200,
+            "end": 8247
+          }
+        ]
+      },
+      {
+        "claim_index": 2,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+            "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 4888,
+            "end": 4927
+          },
+          {
+            "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+            "quote": "又解六蕃語，與祿山同為互市郎。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 4947,
+            "end": 4962
+          }
+        ]
+      },
+      {
+        "claim_index": 3,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "慶緒使阿史那承慶、安守忠徵兵於思明，且欲圖之。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 5922,
+            "end": 5945
+          },
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "遂拘承慶，斬守忠、李立節之首。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6215,
+            "end": 6230
+          },
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "思明恚曰：「兵利不利亦何事，而為人子，殺父求位，非大逆邪？吾乃為太上皇討賊。」顧左右牽出斬之。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6980,
+            "end": 7027
+          }
+        ]
+      },
+      {
+        "claim_index": 4,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "f6b8bfd4-ac97-4e4e-aec8-fde150992f50",
+            "quote": "從祿山討契丹，祿山敗，單騎走師州",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 8169,
+            "end": 8185
+          }
+        ]
+      },
+      {
+        "claim_index": 5,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "dc0441fe-890f-4cca-a2c4-68508d4dc69b",
+            "quote": "肅宗大悅，封歸義王、范陽長史、御史大夫、河北節度使",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 6273,
+            "end": 6298
+          }
+        ]
+      },
+      {
+        "claim_index": 6,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "0d425dc0-cb31-4784-b618-801dadf11adb",
+            "quote": "因嬰鄴自固，使薛嵩以厚幣求救於史思明。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6593,
+            "end": 6612
+          }
+        ]
+      },
+      {
+        "claim_index": 7,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "乃約慶緒為兄弟，還其書，慶緒大悅。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 6769,
+            "end": 6786
+          },
+          {
+            "evidence_id": "b97b30db-e4e2-4a06-8ced-b8bed80479e1",
+            "quote": "思明改葬祿山以王禮，偽謚燕剌王。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 7073,
+            "end": 7089
+          }
+        ]
+      },
+      {
+        "claim_index": 8,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "7b69294b-2b85-4e8e-9d5f-567417c324e1",
+            "quote": "與安祿山共鄉里，生先祿山一日，故長相善。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 7796,
+            "end": 7816
+          },
+          {
+            "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+            "quote": "及長，相善，俱以驍勇聞。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 4915,
+            "end": 4927
+          }
+        ]
+      }
+    ]
+  },
+  "model_assisted": {
+    "support_review": {
+      "checks": [
+        {
+          "claim_index": 0,
+          "verdict": "支持",
+          "reason": "所引新唐书卷225上原文含“共乡里”“生先禄山一日，故长相善”“事特进乌知义”“亦为互市郎”“与禄山俱为捉生”，各子命题均有原文对应；唯“同隶乌知义”原文作“少事特进乌知义”，属忠实释义。"
+        },
+        {
+          "claim_index": 1,
+          "verdict": "部分支持",
+          "reason": "“同乡、同日先后生、长相善”有原文支持；“同僚兼上下级”中“俱为捉生”“共事乌知义”可支持同僚，但“上下级”在已读原文中无明确依据（捉生并列，未载隶属关系）。所引“握手曰吾何忧”只能显示禄山对思明归来的欣喜，不能直接支持“上下级”。故不能判全支持。"
+        },
+        {
+          "claim_index": 2,
+          "verdict": "支持",
+          "reason": "旧唐书卷200上原文确有“同乡里”“先禄山一日生”“及长，相善”“同为互市郎”，与新唐书文字高度对应；据此推断两书可能共享史源、不宜视为两份独立证据，属合理标注的推断，未断言确定同源。"
+        },
+        {
+          "claim_index": 3,
+          "verdict": "支持",
+          "reason": "旧唐书载安庆绪“征兵于思明，且欲图之”，思明“拘承庆，斩守忠”；新唐书载思明以“为人子，杀父求位”斩庆绪。时序为禄山死后围绕安庆绪的冲突，与原文相符；“早年相善不能证明必然翻脸”为明确标注的推断，未由相关性断言因果。"
+        },
+        {
+          "claim_index": 4,
+          "verdict": "支持",
+          "reason": "新唐书原文载“天宝初……从禄山讨契丹，禄山败，单骑走师州”，思明“逃山中……裒散卒得七百，追见禄山平卢”，禄山“握手曰：计而死矣，今故在，吾何忧”。各要素均有原文对应。"
+        },
+        {
+          "claim_index": 5,
+          "verdict": "支持",
+          "reason": "旧唐书原文载安庆绪使阿史那承庆、安守忠征兵且欲图之，思明“拘承庆，斩守忠、李立节之首”，奉表降，“肃宗大悦，封归义王”。所引证据虽只含封赏句，但同段原文含全部要素。"
+        },
+        {
+          "claim_index": 6,
+          "verdict": "支持",
+          "reason": "新唐书原文载“乾元元年秋九月，帝诏郭子仪率九节度兵凡二十万讨庆绪”，庆绪“因婴邺自固，使薛嵩以厚币求救于史思明”。围邺、遣薛嵩求救均有原文对应。"
+        },
+        {
+          "claim_index": 7,
+          "verdict": "支持",
+          "reason": "新唐书原文载“乃约庆绪为兄弟”“为人子，杀父求位……牵出斩之”“并四弟缢”“思明改葬禄山以王礼”。各要素均有原文对应。"
+        },
+        {
+          "claim_index": 8,
+          "verdict": "支持",
+          "reason": "两书早年关系文字相近有已读原文支持；是否同出一源需史源考证、已读材料不足以判定，属恰当的“无法判断”标注，未夹带未证实结论。"
+        },
+        {
+          "claim_index": 9,
+          "verdict": "支持",
+          "reason": "证据缺口说明限于本次已读范围：所引早年记载均出自卷225上史思明传，未读到安禄山传一侧原文，未作绝对否定或史源断言。"
+        },
+        {
+          "claim_index": 10,
+          "verdict": "支持",
+          "reason": "说明限于《安禄山事迹》等第三方史源未读、无法判断是否有独立来源，属本次未核查范围，未夹带未证实事实。"
+        },
+        {
+          "claim_index": 11,
+          "verdict": "支持",
+          "reason": "已读材料中确无安禄山被安庆绪所杀的具体记载，说明限于已读范围，并明确将反目起点表述为推断，未夹带未证实事实。"
+        },
+        {
+          "claim_index": 12,
+          "verdict": "支持",
+          "reason": "已读材料中降唐后复叛的触发仅见“宣慰使”等零散内容，乌承恩事件未读到，说明限于本次未核查范围，未作绝对否定。"
+        },
+        {
+          "claim_index": 13,
+          "verdict": "支持",
+          "reason": "属方法论说明：史料仅显示具体冲突过程，不能证明“必然翻脸”的因果必然性，未夹带未证实史实。"
+        }
+      ]
+    }
+  },
+  "human_review": {
+    "reviewer": null,
+    "evidence_support_0_to_2": null,
+    "completeness_0_to_2": null,
+    "premise_recognition_0_to_2": null,
+    "notes": null
+  },
+  "human_rubric": "区分早年关系、安庆绪时期矛盾，不能把二人必然决裂当事实。"
+}

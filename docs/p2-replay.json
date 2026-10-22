@@ -1,0 +1,131 @@
+{
+  "input_sha256": "843a04c504ac7fcb87438f788df4396dcf376097394869a7fed9e3184ab011d7",
+  "model": "deepseek-flash",
+  "protocol": "Known-case audit regression with the exact same read evidence; no new retrieval.",
+  "human_review": null,
+  "attempts": [
+    {
+      "variant": "frozen_bad_claim",
+      "status": "failed",
+      "error_type": "APIStatusError",
+      "diagnostic": null,
+      "elapsed_seconds": 18.954,
+      "usage": {
+        "deepseek-flash": {
+          "output_tokens": 3745,
+          "output_token_details": {},
+          "input_tokens": 10855,
+          "total_tokens": 14600,
+          "input_token_details": {
+            "cache_read": 2304
+          }
+        }
+      },
+      "requests": [
+        {
+          "stage": "QuoteReadings",
+          "elapsed_seconds": 2.969,
+          "context_chars": 3308,
+          "total_tokens": 2596
+        },
+        {
+          "stage": "QuoteReadings",
+          "elapsed_seconds": 1.765,
+          "context_chars": 1894,
+          "total_tokens": 1589
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 4.61,
+          "context_chars": 3756,
+          "total_tokens": 3698
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 3.906,
+          "context_chars": 2922,
+          "total_tokens": 3109
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 3.891,
+          "context_chars": 2015,
+          "total_tokens": 2478
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 1.343,
+          "context_chars": 838,
+          "total_tokens": 1130
+        },
+        {
+          "stage": "SupportReview.format_retry",
+          "elapsed_seconds": 0.454,
+          "context_chars": 1522,
+          "total_tokens": null
+        }
+      ],
+      "structured_failures": [
+        {
+          "stage": "SupportReview",
+          "reason": "schema_validation",
+          "finish_reason": "tool_calls",
+          "error_type": "ValidationError",
+          "fields": [
+            {
+              "field": [
+                "checks",
+                0,
+                "verdict"
+              ],
+              "type": "literal_error"
+            },
+            {
+              "field": [
+                "checks",
+                1,
+                "verdict"
+              ],
+              "type": "literal_error"
+            }
+          ],
+          "invalid_tool_calls": 0
+        }
+      ]
+    },
+    {
+      "variant": "frozen_bad_claim",
+      "status": "failed",
+      "error_type": "APIStatusError",
+      "diagnostic": null,
+      "elapsed_seconds": 0.39,
+      "usage": {},
+      "requests": [
+        {
+          "stage": "QuoteReadings",
+          "elapsed_seconds": 0.39,
+          "context_chars": 3308,
+          "total_tokens": null
+        }
+      ],
+      "structured_failures": []
+    },
+    {
+      "variant": "positive_control",
+      "status": "failed",
+      "error_type": "APIStatusError",
+      "diagnostic": null,
+      "elapsed_seconds": 0.406,
+      "usage": {},
+      "requests": [
+        {
+          "stage": "QuoteReadings",
+          "elapsed_seconds": 0.406,
+          "context_chars": 3308,
+          "total_tokens": null
+        }
+      ],
+      "structured_failures": []
+    }
+  ]
+}

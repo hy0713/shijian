@@ -1,0 +1,109 @@
+{
+  "scope": "Local saved P0 runs, frozen P1 archive, saved P2 replay; not an account statement or dated charge window.",
+  "groups": {
+    "p1_direct": {
+      "records_with_usage": 30,
+      "request_metric_entries": 0,
+      "format_retry_entries": 0,
+      "input_tokens": 1275,
+      "output_tokens": 7500,
+      "total_tokens": 8775,
+      "cache_read_tokens": 0
+    },
+    "p1_rag": {
+      "records_with_usage": 30,
+      "request_metric_entries": 79,
+      "format_retry_entries": 1,
+      "input_tokens": 315251,
+      "output_tokens": 70632,
+      "total_tokens": 385883,
+      "cache_read_tokens": 101632
+    },
+    "p1_agent": {
+      "records_with_usage": 30,
+      "request_metric_entries": 284,
+      "format_retry_entries": 1,
+      "input_tokens": 1166563,
+      "output_tokens": 156203,
+      "total_tokens": 1322766,
+      "cache_read_tokens": 313088
+    },
+    "p0-acceptance": {
+      "records_with_usage": 5,
+      "request_metric_entries": 47,
+      "format_retry_entries": 0,
+      "input_tokens": 191676,
+      "output_tokens": 27543,
+      "total_tokens": 219219,
+      "cache_read_tokens": 48768
+    },
+    "p0-after": {
+      "records_without_usage": 2,
+      "records_with_usage": 3,
+      "request_metric_entries": 29,
+      "format_retry_entries": 0,
+      "input_tokens": 108126,
+      "output_tokens": 15628,
+      "total_tokens": 123754,
+      "cache_read_tokens": 23936
+    },
+    "p0-before": {
+      "records_without_usage": 5
+    },
+    "p0-before-live": {
+      "records_with_usage": 5,
+      "request_metric_entries": 0,
+      "format_retry_entries": 0,
+      "input_tokens": 241296,
+      "output_tokens": 20684,
+      "total_tokens": 261980,
+      "cache_read_tokens": 76032
+    },
+    "p0-final": {
+      "records_with_usage": 5,
+      "request_metric_entries": 50,
+      "format_retry_entries": 1,
+      "input_tokens": 203765,
+      "output_tokens": 28473,
+      "total_tokens": 232238,
+      "cache_read_tokens": 61696
+    },
+    "p0-release": {
+      "records_with_usage": 5,
+      "request_metric_entries": 43,
+      "format_retry_entries": 0,
+      "input_tokens": 167971,
+      "output_tokens": 27201,
+      "total_tokens": 195172,
+      "cache_read_tokens": 41344
+    },
+    "p2_saved_replay": {
+      "records_with_usage": 1,
+      "request_metric_entries": 7,
+      "format_retry_entries": 1,
+      "input_tokens": 10855,
+      "output_tokens": 3745,
+      "total_tokens": 14600,
+      "cache_read_tokens": 2304,
+      "records_without_usage": 2
+    }
+  },
+  "totals": {
+    "records_with_usage": 114,
+    "request_metric_entries": 539,
+    "format_retry_entries": 4,
+    "input_tokens": 2406778,
+    "output_tokens": 357609,
+    "total_tokens": 2764387,
+    "cache_read_tokens": 668800,
+    "records_without_usage": 9
+  },
+  "actual_cost": null,
+  "limitations": [
+    "Unrecorded probes, interrupted requests and production MySQL tasks are not included.",
+    "Request arrays were not saved in some older runs; their tokens are included if available.",
+    "Failed/timeout requests without returned usage may have additional provider-side usage.",
+    "Cannot attribute a six-yuan recharge without provider billing times, rates and other key consumers.",
+    "No current-price estimate is substituted for historical account deductions."
+  ]
+}

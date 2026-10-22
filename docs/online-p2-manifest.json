@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-10-21T14:14:00.625900+00:00",
+  "image": "sha256:e3e7d5f077220cdd42dfb457c86b104594ec3bb67338d5b94e20464f396d79ee",
+  "migration": "0003",
+  "build": "Offline incremental build with existing locked dependencies and project wheel reinstall; not clean build.",
+  "delivery_sha256": {
+    "shijian/api.py": "944529061a8c8037a3f4ce83d3b39f7c4c2cedb83270b7933e3db777c06bb2f4",
+    "shijian/db.py": "ad327addb621884c75ee5bae4f22d50abbcb8951248a7b57f82bfbafd92b62a5",
+    "shijian/schema.py": "0bfaf9267d97c444ee24b6a1f5ffc681f65c3522ba64159c683b588174a8127b",
+    "shijian/corpus.py": "28670fa07b1a901968aad8e523d3799e98d888e873858a8c1259b308ec78db8e",
+    "shijian/tasks.py": "90c6b3ff6b7a70cc8389f19acc824b6f245e1538a4f9b771150a2e6297885508",
+    "shijian/worker.py": "e4b2882ee1c33c99fe25b86b6fa43e7ac315996be120835d42c8ef24fb900764",
+    "shijian/indexing.py": "54ed22b1c3b8d648c11e799c191b468c5ce9bfa7d4d29b54e020c9fdc6e38b65",
+    "shijian/cli.py": "f56025fabb17a9d91d208275f6a06f32bfc02869a2adb2757fe202bcf08243a1",
+    "shijian/agent.py": "eb193f5ba1735da125aa13246c3bb7b77a813497ccc496ae9cf3a8c194e2ed21",
+    "shijian/static/app.js": "aa31512122e6aacf0af878a14c4aecf95ccd397fea9845bd314e0f14b7705274",
+    "shijian/static/style.css": "cb5c7430898cd068e8852594a91cb74e92e93386222210f3f5e41216b3863738",
+    "shijian/static/index.html": "27c38980c2e76d80008d9399869a0e5731219191981cdfe070d8ddbc6aec5176",
+    "migrations/versions/0003_collections.py": "cc8a6962d61a8097daa3a47fc2c23b27a0b49c42d683815d0399f96eb259215c",
+    "tests/test_online_p2.py": "9ab739bdd006e3056e9a23064b3db6034870d077180c12f86ead62354421af84",
+    "tests/test_live_integration.py": "ab81d5b3c8e4bfd1f46b5f27f2d14e51db322e3de497748d82f0e9765dad9217",
+    "scripts/online_p2_smoke.py": "37f382990294843cbd13be9c33eaa35e72393bd545533729f86fa06f85dbf067",
+    "README.md": "e8ac21272ecb20849b76a451b0b46668c71322384006249d891d8a84d2357e55",
+    "docs/corpus-strategy.md": "938de46e5607c844cea40889bfc42394f9bf18f3082bf817261406ac97f6ccc9",
+    "docs/online-p2-verification.md": "df8153350547f7477a5f0f9646a2433cffe96a830387a6cd6051d00e5decaaf7",
+    "uv.lock": "9f221e00bd3410fea2021627a450fbad00eb3ba1a6e9f7f9527df3881524ca86"
+  },
+  "tests": {
+    "passed": 126,
+    "failures": 0,
+    "seconds": 50.994,
+    "real_infrastructure_tests": 3
+  },
+  "version_note": "Full Python suite preceded only the final JS scope-loading submission guard and CSS adjustments; final JS syntax, lint and browser reload checked separately.",
+  "production": {
+    "preserved_sources": 16,
+    "preserved_tasks": 20,
+    "collections": [
+      {
+        "id": "6e9642a7-35b0-40d0-bbd9-2298156c361f",
+        "name": "近代条约 · 证据与时序",
+        "sources": 2,
+        "tasks": 1
+      }
+    ],
+    "no_new_research_tasks": true,
+    "old_sources_saved": true,
+    "old_task_scopes_null": true,
+    "source_ids_and_hashes_preserved": true
+  },
+  "paid_requests": {
+    "model": 0,
+    "search": 0,
+    "fetch": 0,
+    "model_tokens": 0
+  },
+  "browser": {
+    "topic_create_filter": true,
+    "source_and_task_membership": true,
+    "evidence_highlight_and_bookmark": true,
+    "research_scope_selection": true,
+    "no_console_errors_or_warnings_observed": true,
+    "paid_task_not_submitted": true
+  },
+  "not_verified": [
+    "New real DeepSeek answer quality",
+    "Full 30-question cross-topic comparison",
+    "Independent human scores",
+    "Mobile viewport-specific browser regression",
+    "Clean image build"
+  ]
+}

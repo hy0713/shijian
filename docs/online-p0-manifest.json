@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-20",
+  "image": "sha256:a5346166e891b688e7de1864502659856250f1983025ac566970cb3de7f7df30",
+  "build": "Offline incremental build with locked dependencies and forced project wheel reinstall; clean build not rerun.",
+  "code_sha256": {
+    "shijian/agent.py": "e227633e5481bbedb07a2923251ffb52c93eb5a661b4e639f0ee9f46a2b315e3",
+    "shijian/deepseek_web.py": "a2ce8bb542b87b3081001673c019e3b9fc2701008efc8f6e2a6ec76ac6e911a3",
+    "shijian/config.py": "49015800e72e271bc60c2424f413b585138449f6f9a31c82d64de6564377159b",
+    "shijian/schema.py": "2e17a318da3bdaf8a13a484307b33a580207213bfc038034bf99de54095c7380",
+    "shijian/worker.py": "3c10aceb60b11bb513bab2a917629a279d5d5d6a5105c88dd464cda0fcd86656",
+    "shijian/api.py": "43095ae95c56f8e08f4eb1d336c8f429afe06d16b7c90ef44a805fd3739b9c10",
+    "shijian/web.py": "e683a98d8b27f0450393c4df5c7050cd12152420bde9208163f664984fa339a7",
+    "shijian/static/app.js": "e177dea9c7b9befa5f79d0843c962cf6d2f665f0df7cc58bccdd4ff16abba62a",
+    "shijian/static/index.html": "071fb5ea4192e2a87227e03fd70cb1d326a901679697bf0eacd09a18268a360a",
+    "Dockerfile": "3755691a693cfa7a843632d548cad10052b624a1527f26bc781bc8b5e8d15f62",
+    "uv.lock": "9f221e00bd3410fea2021627a450fbad00eb3ba1a6e9f7f9527df3881524ca86"
+  },
+  "tests": {
+    "full_suite": {
+      "passed": 111,
+      "failed": 0,
+      "seconds": 42.88,
+      "includes_real_infrastructure_tests": 2,
+      "paid_services": "Test doubles only"
+    },
+    "after_fee_display_adjustment": {
+      "passed": 20,
+      "failed": 0,
+      "seconds": 2.08
+    },
+    "ruff": "passed",
+    "javascript_syntax": "passed"
+  },
+  "original_sources_preserved": [
+    {
+      "source_id": "ca03dcd5-f741-4ef6-95cf-0d0a148e39b5",
+      "title": "資治通鑒 (胡三省音注)/卷222",
+      "content_hash": "abace16222c803c653a77a3f6021b94265fa0c6d019869ac41df2bf3b919c693"
+    },
+    {
+      "source_id": "e61fafcc-fbf7-4baa-ab88-802cf3ce796a",
+      "title": "資治通鑑",
+      "content_hash": "93813be40d4711f9432362c1beac17b87fdd26d3a0bd7cdc037fe5a78d638717"
+    },
+    {
+      "source_id": "a5f2be10-d182-4911-9746-85a726cafbd3",
+      "title": "資治通鑑",
+      "content_hash": "810d826511e85edc50db672a0ae5bc8e02c437280792d2d832c3f6223943a90e"
+    },
+    {
+      "source_id": "31d76dfe-ef7c-4a36-987c-655298b1ef87",
+      "title": "维基百科：史思明",
+      "content_hash": "c5ed74facc87e51c422066f63de03d48e534ca7cc8a6b723d726fe786da7fa94"
+    },
+    {
+      "source_id": "71eb9e41-661d-4924-a8ab-ae85951f6adc",
+      "title": "维基百科：安史之乱",
+      "content_hash": "f9a5915b9a5dc8b865ac3885f1c932231129d566239dec1f2463a97a58c33427"
+    },
+    {
+      "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+      "title": "資治通鑑",
+      "content_hash": "c1b669e5afb3bc17c637308f3d02735e755d920505503eea4a20cb1e229ba784"
+    },
+    {
+      "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+      "title": "資治通鑑",
+      "content_hash": "02c4772a612e09a6eda9f40dd88994e039845ba41f7d32a0131882bead03c41e"
+    },
+    {
+      "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+      "title": "資治通鑑",
+      "content_hash": "a371cd4b10bc058a0e830ff050afbe9be20069196a7b8e26d293613540e37496"
+    },
+    {
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde"
+    },
+    {
+      "source_id": "4366fe87-797b-4f14-b5d1-895bd2d5389d",
+      "title": "資治通鑑",
+      "content_hash": "f984e2486d530e27f2ff6dfb9e378a9d53c6332dd56cba4a8ed97015b562ebdd"
+    },
+    {
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8"
+    }
+  ],
+  "source_check": {
+    "original_count": 11,
+    "current_count": 15,
+    "all_original_ids_titles_hashes_unchanged": true
+  },
+  "runtime": {
+    "installed_matches_source": {
+      "agent.py": true,
+      "deepseek_web.py": true,
+      "config.py": true,
+      "schema.py": true,
+      "worker.py": true,
+      "static/app.js": true,
+      "static/index.html": true
+    },
+    "provider": "deepseek",
+    "limits": {
+      "search": 3,
+      "fetch": 4,
+      "rounds": 4,
+      "model_requests": 16,
+      "observed_tokens": 60000
+    },
+    "model_ready": true,
+    "web_ready": true
+  },
+  "services": [
+    {
+      "service": "api",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "etcd",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "index-worker",
+      "state": "running",
+      "health": ""
+    },
+    {
+      "service": "milvus",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "minio",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "mysql",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "redis",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "worker",
+      "state": "running",
+      "health": ""
+    }
+  ],
+  "checks": {
+    "no_active_tasks": true,
+    "saved_markdown_export": true,
+    "browser_highlight": true,
+    "browser_usage_replay": true
+  },
+  "real_runs": [
+    "online-p0-versailles.json",
+    "online-p0-versailles-retry.json",
+    "online-p0-boxer.json"
+  ],
+  "human_review": null,
+  "not_verified": [
+    "Full no-cache Docker build",
+    "Broad ancient/modern/world history answer quality",
+    "Final budget-recovery fix against a new paid over-budget run",
+    "All downstream redirects performed by DeepSeek Fetch",
+    "Actual account charges and timeout billing"
+  ]
+}

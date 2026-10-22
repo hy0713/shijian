@@ -1,0 +1,35 @@
+{
+  "additional_model_failure": {
+    "task_id": "ffbc1797-4bc7-4909-b97e-efbd6f29f09a",
+    "status": "failed",
+    "error": "研究失败（ValueError）；请检查服务连接和模型配置，修复后新建任务"
+  },
+  "sources": [
+    {
+      "source_id": "a5f2be10-d182-4911-9746-85a726cafbd3",
+      "chapter": "卷218",
+      "index_status": "ready",
+      "indexed_passages": 97,
+      "raw_sha256": "0c4ab35d6f2f64e7a1f194d30a0f818a97ca417604ccee8cbb172f6038f0bbdd",
+      "original_preserved": true,
+      "duplicate_same_source": true
+    },
+    {
+      "source_id": "e61fafcc-fbf7-4baa-ab88-802cf3ce796a",
+      "chapter": "卷222",
+      "index_status": "ready",
+      "indexed_passages": 157,
+      "raw_sha256": "6956b6afc8ff2110ffb42d39d27b4ab5b7ccce5a3d4b094ee9ef0d34dbfb270b",
+      "original_preserved": true,
+      "duplicate_same_source": true
+    }
+  ],
+  "library_sources": 11,
+  "filtered_retrieval_found_expected_original": true,
+  "disconnected_browser_task": {
+    "task_id": "1c0200c6-0bae-4f5d-95aa-f14a424937ab",
+    "status": "completed",
+    "replayed_events": 42,
+    "final_snapshot": true
+  }
+}

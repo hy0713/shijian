@@ -11,3 +11,5 @@ data/uploads/
 eval/runs/
 !eval/runs/.gitkeep
 *.db
+
+data/evaluations/

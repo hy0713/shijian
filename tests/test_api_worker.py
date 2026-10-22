@@ -7,6 +7,7 @@ from sqlalchemy.exc import OperationalError
 
 from shijian import api
 from shijian.config import Settings
+from shijian.model import ModelOutputError
 from shijian.tasks import TaskStore
 from shijian.worker import execute_task
 from tests.fakes import ScriptedModel
@@ -53,6 +54,25 @@ async def test_model_balance_failure_is_actionable_and_not_completed(sf, corpus)
     assert task["status"] == "failed" and task["result"] is None
     assert "HTTP 402" in task["error"] and "余额不足" in task["error"]
     assert "secret" not in task["error"]
+    await bus.aclose()
+
+
+async def test_model_output_failure_has_specific_recovery_message(sf, corpus):
+    store = TaskStore(sf)
+    bus = fakeredis.aioredis.FakeRedis(decode_responses=True)
+
+    class InvalidOutputModel(ScriptedModel):
+        async def choose(self, messages, tools):
+            raise ModelOutputError("TEST-ONLY private provider body")
+
+    tid = store.create("TEST structured output failure", "local")
+    await execute_task(
+        tid, "output-test", Settings(_env_file=None), store, bus, corpus, lambda _: InvalidOutputModel()
+    )
+    task = store.get(tid)
+    assert task["status"] == "failed" and task["result"] is None
+    assert "结构化校验" in task["error"] and "缩小问题" in task["error"]
+    assert "private provider" not in task["error"]
     await bus.aclose()
 
 
@@ -121,6 +141,8 @@ def test_hybrid_missing_search_and_durable_pending_when_redis_down(monkeypatch, 
         deepseek_api_key="TEST-ONLY",
         deepseek_base_url="https://api.deepseek.com",
         deepseek_model="TEST-ONLY",
+        search_provider="tavily",
+        search_api_key="",
     )
     monkeypatch.setattr(api, "settings", lambda: config)
 
@@ -133,6 +155,8 @@ def test_hybrid_missing_search_and_durable_pending_when_redis_down(monkeypatch, 
 
     with TestClient(api.app) as client:
         response = client.post("/api/tasks", json={"question": "测试联网配置", "mode": "hybrid"})
+        assert response.status_code == 503 and "SEARCH_API_KEY" in response.json()["detail"]
+        response = client.post("/api/tasks", json={"question": "测试默认全网配置"})
         assert response.status_code == 503 and "SEARCH_API_KEY" in response.json()["detail"]
         client.app.state.bus = DownBus()
         response = client.post("/api/tasks", json={"question": "测试持久化补投", "mode": "local"})

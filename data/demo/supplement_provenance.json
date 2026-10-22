@@ -1,0 +1,26 @@
+{
+  "retrieved_at": "2026-10-20T07:00:00.357793+00:00",
+  "sources": [
+    {
+      "title": "資治通鑑/卷218",
+      "source_url": "https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7218&oldid=1996147",
+      "revision": 1996147,
+      "characters": 12160,
+      "raw_sha256": "0c4ab35d6f2f64e7a1f194d30a0f818a97ca417604ccee8cbb172f6038f0bbdd",
+      "api": "https://zh.wikisource.org/w/rest.php/v1/page/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7218/with_html",
+      "extraction": "受限 fetch_json 取得 HTML，经 extract_html 去除脚本、样式和导航标签后转为文本；原文未繁简转换，保留页内导航和许可说明。",
+      "rights": "按需取得的单页快照；Creative Commons Attribution-Share Alike 4.0。保留固定修订链接；文本未独立校勘，不自动视为事件当时的一手记录。"
+    },
+    {
+      "title": "資治通鑑/卷222",
+      "source_url": "https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7222&oldid=982271",
+      "revision": 982271,
+      "characters": 11753,
+      "raw_sha256": "6956b6afc8ff2110ffb42d39d27b4ab5b7ccce5a3d4b094ee9ef0d34dbfb270b",
+      "api": "https://zh.wikisource.org/w/rest.php/v1/page/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7222/with_html",
+      "extraction": "受限 fetch_json 取得 HTML，经 extract_html 去除脚本、样式和导航标签后转为文本；原文未繁简转换，保留页内导航和许可说明。",
+      "rights": "按需取得的单页快照；Creative Commons Attribution-Share Alike 4.0。保留固定修订链接；文本未独立校勘，不自动视为事件当时的一手记录。"
+    }
+  ],
+  "evaluation_notice": "2026-10-20 三方案评测固定原有八份资料；这两卷在评测结束后才导入，不纳入该批次。"
+}

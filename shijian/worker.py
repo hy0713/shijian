@@ -9,7 +9,8 @@ from shijian.agent import ResearchAgent
 from shijian.config import settings
 from shijian.corpus import Corpus
 from shijian.db import sessions
-from shijian.model import ResearchModel
+from shijian.model import ModelBudgetExceeded, ModelOutputError, ResearchModel
+from shijian.schema import SearchFilter
 from shijian.tasks import QUEUE, Cancelled, TaskStore, enqueue
 from shijian.vectors import Vectors
 
@@ -43,12 +44,27 @@ async def execute_task(task_id, owner, config, store, bus, corpus, model_factory
     heartbeat_job = asyncio.create_task(heartbeat())
     task = {"mode": "local"}
     model = None
+    agent = None
+    scope_error = None
     try:
         task = await asyncio.to_thread(store.get, task_id)
-        if task["mode"] == "hybrid" and not config.search_api_key.get_secret_value():
-            raise ValueError("联网模式缺少 SEARCH_API_KEY")
+        if task["mode"] in {"online", "hybrid"} and (error := config.web_error()):
+            raise ValueError(error)
+        scoped = (
+            corpus
+            if task["source_ids"] is None
+            else Corpus(corpus.sessions, corpus.vectors, task["source_ids"])
+        )
+        if task["source_ids"] is not None and set(task["source_ids"]) != set(scoped.eligible(SearchFilter())):
+            scope_error = "本次固定范围中的资料已取消收藏或索引未就绪；请恢复资料后重试，未调用模型。"
+            raise ValueError(scope_error)
         model = model_factory(config)
-        agent = ResearchAgent(config, model, corpus, emit, boundary, remember)
+
+        async def report_usage(record):
+            await emit("model_usage", record)
+
+        model.on_usage = report_usage
+        agent = ResearchAgent(config, model, scoped, emit, boundary, remember)
         result = await agent.run(task["question"], task["mode"])
         await boundary()
         await asyncio.to_thread(store.finish, task_id, owner, "completed", result)
@@ -61,16 +77,44 @@ async def execute_task(task_id, owner, config, store, bus, corpus, model_factory
         log.error(
             "task_failed task=%s error_type=%s http_status=%s", task_id, type(exc).__name__, http_status
         )
+        if model is not None:
+            await emit(
+                "diagnostic",
+                {
+                    "error_type": type(exc).__name__,
+                    "structured_failures": getattr(model, "structured_failures", []),
+                    "model_requests": getattr(model, "request_metrics", []),
+                    "token_usage": model.usage(),
+                    "external_requests": agent.external_requests if agent else [],
+                    "web_usage": agent.web_usage() if agent else None,
+                },
+            )
         message = (
             (
-                "模型服务返回 HTTP 402：账户余额不足，请补充余额后新建研究任务。"
+                "已达到本任务的模型调用或已观测 Token 上限，已停止继续调用。已读证据保留；请缩小问题后再研究。"
+                if isinstance(exc, ModelBudgetExceeded)
+                else None
+            )
+            or (
+                "外部服务返回 HTTP 402：账户余额不足，请补充余额后新建研究任务。"
                 if http_status == 402
                 else None
             )
+            or (
+                "外部服务返回 HTTP 401：密钥无效，请检查对应模型或搜索服务配置。"
+                if http_status == 401
+                else None
+            )
+            or (
+                "模型输出未通过结构化校验，已用尽本任务的格式修正预算。请缩小问题后重新研究；已读证据保留。"
+                if isinstance(exc, ModelOutputError)
+                else None
+            )
+            or scope_error
             or config.model_error()
             or (
-                "联网模式缺少 SEARCH_API_KEY"
-                if task["mode"] == "hybrid" and not config.search_api_key.get_secret_value()
+                config.web_error()
+                if task["mode"] in {"online", "hybrid"} and not config.web_ready()
                 else f"研究失败（{type(exc).__name__}）；请检查服务连接和模型配置，修复后新建任务"
             )
         )

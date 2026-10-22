@@ -1,0 +1,1118 @@
+{
+  "question_id": "Q01",
+  "category": "直接事实",
+  "question": "《旧唐书》如何记述安禄山的出身？",
+  "method": "agent",
+  "mode": "local",
+  "model": "deepseek-flash",
+  "embedding": "BAAI/bge-small-zh-v1.5@7999e1d3359715c523056ef9478215996d62a620:512:cls-normalized:v1",
+  "result": {
+    "premise": {
+      "text": "今本《旧唐书》卷二百上（列传第一百五十上）确有安禄山传，传首即叙其族属、父母与早年经历。",
+      "kind": "文献记载",
+      "citations": [
+        {
+          "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+          "quote": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+          "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+          "title": "舊唐書",
+          "chapter": "卷200上",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+          "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+          "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+          "title": "舊唐書",
+          "chapter": "卷200上",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+          "start": 23,
+          "end": 47
+        }
+      ],
+      "support_review": {
+        "claim_index": 0,
+        "verdict": "支持",
+        "reason": "证据2dc1ab60为卷200上目录行，列“安禄山子庆绪”等；40a1936f为卷200上安禄山传正文首段，起首即叙其族属、父母、名字由来及早孤随母等早年经历，与claim相符。"
+      }
+    },
+    "conclusions": [
+      {
+        "text": "《旧唐书》称安禄山为营州柳城“杂种胡人”，本无姓氏，名轧荦山；其母阿史德氏为突厥巫师，以卜为业，突厥语称斗战为“轧荦山”，故以为名。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 23,
+            "end": 79
+          }
+        ],
+        "support_review": {
+          "claim_index": 1,
+          "verdict": "支持",
+          "reason": "引文逐项对应：营州柳城杂种胡人、本无姓氏、名轧荦山、母阿史德氏为突厥巫师以卜为业、突厥呼斗战为轧荦山遂以名之，均为原文忠实释义。"
+        }
+      },
+      {
+        "text": "《旧唐书》记其少孤，随母在突厥中，将军安波至之兄延偃娶其母；开元初与将军安道买之子一同逃出突厥，年十余岁与兄及延偃相携而出，相约与思顺等结为兄弟，冒姓为安。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 79,
+            "end": 119
+          },
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 135,
+            "end": 185
+          }
+        ],
+        "support_review": {
+          "claim_index": 2,
+          "verdict": "支持",
+          "reason": "两段引文分别支持少孤随母在突厥中、安波至兄延偃妻其母、开元初与安道买男俱逃出突厥、年十余岁与兄及延偃相携而出、约与思顺等为兄弟冒姓安。claim中“将军安波至之兄延偃”与原文“将军安波至兄延偃”一致，未添加未支持内容。"
+        }
+      },
+      {
+        "text": "《旧唐书》后文另载其盗羊事发、张守珪欲棒杀而释之，令与史思明同捉生，拔为偏将并养为子，属其早年经历的后段。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+            "quote": "祿山盜羊事覺，守珪剝坐，欲棒殺之",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 200,
+            "end": 216
+          },
+          {
+            "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+            "quote": "令與鄉人史思明同捉生，行必克獲，拔為偏將。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 253,
+            "end": 274
+          }
+        ],
+        "support_review": {
+          "claim_index": 3,
+          "verdict": "支持",
+          "reason": "引文载盗羊事觉、守珪剥坐欲棒杀之而释之、令与乡人史思明同捉生、拔为偏将、遂养为子；该段紧接前段（prev_id为安禄山传首段），称其为早年经历后段属合理定位。"
+        }
+      }
+    ],
+    "events": [],
+    "disagreements": [
+      {
+        "text": "《新唐书》叙其族属作“营州柳城胡也，本姓康”，与《旧唐书》“杂种胡人”“本无姓氏”的表述不同；两书是否同源未经史源考证，此处仅为文本对照。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+            "quote": "安祿山，營州柳城胡也，本姓康。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 0,
+            "end": 15
+          },
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 23,
+            "end": 47
+          }
+        ],
+        "support_review": {
+          "claim_index": 4,
+          "verdict": "支持",
+          "reason": "《新唐书》“营州柳城胡也，本姓康”与《旧唐书》“杂种胡人”“本无姓氏”确为不同表述；claim已明确仅作文本对照、未作史源考证，未越出证据。"
+        }
+      },
+      {
+        "text": "《新唐书》增出祷于轧荦山而生、生时有光照穹庐及张仁愿搜庐帐等情节，并称其母“为觋”、随母嫁“安延偃”，为《旧唐书》所无或表述不同。",
+        "kind": "文献记载",
+        "citations": [
+          {
+            "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+            "quote": "母阿史德，為覡，居突厥中，禱子於軋犖山，虜所謂鬥戰神者，既而妊。及生，有光照穹廬，野獸盡鳴，望氣者言其祥。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 15,
+            "end": 68
+          }
+        ],
+        "support_review": {
+          "claim_index": 5,
+          "verdict": "支持",
+          "reason": "《新唐书》引文含祷于轧荦山而生、生时有光照穹庐、望气者言祥、张仁愿遣搜庐帐、母“为觋”、随母嫁“安延偃”等情节；《旧唐书》相应段落无祷生、光照、张仁愿搜帐等，且作“突厥巫师”“妻其母”，称“为《旧唐书》所无或表述不同”成立。"
+        }
+      }
+    ],
+    "limitations": [
+      "仅据已读段落可确认《旧唐书》卷二百上，所用底本/点校本版本信息未见于证据。",
+      "《资治通鉴》相关记述未阅读，异同比较仅及《新唐书》。",
+      "《旧唐书》《新唐书》是否共享史源未作考证，故差异只作文本层面表述，不作史实判定。",
+      "《旧唐书》所载“杂种胡”“本无姓氏”等为史臣叙述，非安禄山自述，其族属实指未可据此确定。"
+    ],
+    "rejected_limitations": [],
+    "rejected_claims": [],
+    "citations": [
+      {
+        "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+        "quote": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 0,
+        "end": 21
+      },
+      {
+        "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+        "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 23,
+        "end": 47
+      },
+      {
+        "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+        "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 23,
+        "end": 79
+      },
+      {
+        "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+        "quote": "少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 79,
+        "end": 119
+      },
+      {
+        "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+        "quote": "年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 135,
+        "end": 185
+      },
+      {
+        "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+        "quote": "祿山盜羊事覺，守珪剝坐，欲棒殺之",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 200,
+        "end": 216
+      },
+      {
+        "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+        "quote": "令與鄉人史思明同捉生，行必克獲，拔為偏將。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 253,
+        "end": 274
+      },
+      {
+        "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+        "quote": "安祿山，營州柳城胡也，本姓康。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+        "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "start": 23,
+        "end": 47
+      },
+      {
+        "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+        "quote": "母阿史德，為覡，居突厥中，禱子於軋犖山，虜所謂鬥戰神者，既而妊。及生，有光照穹廬，野獸盡鳴，望氣者言其祥。",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "start": 15,
+        "end": 68
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      },
+      {
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+        "source_type": "历史文献",
+        "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+      }
+    ],
+    "citation_audit": {
+      "program": [
+        {
+          "claim_index": 0,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+              "quote": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 0,
+              "end": 21
+            },
+            {
+              "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+              "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 23,
+              "end": 47
+            }
+          ]
+        },
+        {
+          "claim_index": 1,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+              "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 23,
+              "end": 79
+            }
+          ]
+        },
+        {
+          "claim_index": 2,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+              "quote": "少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 79,
+              "end": 119
+            },
+            {
+              "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+              "quote": "年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 135,
+              "end": 185
+            }
+          ]
+        },
+        {
+          "claim_index": 3,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+              "quote": "祿山盜羊事覺，守珪剝坐，欲棒殺之",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 200,
+              "end": 216
+            },
+            {
+              "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+              "quote": "令與鄉人史思明同捉生，行必克獲，拔為偏將。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 253,
+              "end": 274
+            }
+          ]
+        },
+        {
+          "claim_index": 4,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+              "quote": "安祿山，營州柳城胡也，本姓康。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 0,
+              "end": 15
+            },
+            {
+              "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+              "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 23,
+              "end": 47
+            }
+          ]
+        },
+        {
+          "claim_index": 5,
+          "valid": true,
+          "errors": [],
+          "citations": [
+            {
+              "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+              "quote": "母阿史德，為覡，居突厥中，禱子於軋犖山，虜所謂鬥戰神者，既而妊。及生，有光照穹廬，野獸盡鳴，望氣者言其祥。",
+              "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+              "title": "新唐書",
+              "chapter": "卷225上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+              "start": 15,
+              "end": 68
+            }
+          ]
+        }
+      ],
+      "content": {
+        "checks": [
+          {
+            "claim_index": 0,
+            "verdict": "支持",
+            "reason": "证据2dc1ab60为卷200上目录行，列“安禄山子庆绪”等；40a1936f为卷200上安禄山传正文首段，起首即叙其族属、父母、名字由来及早孤随母等早年经历，与claim相符。"
+          },
+          {
+            "claim_index": 1,
+            "verdict": "支持",
+            "reason": "引文逐项对应：营州柳城杂种胡人、本无姓氏、名轧荦山、母阿史德氏为突厥巫师以卜为业、突厥呼斗战为轧荦山遂以名之，均为原文忠实释义。"
+          },
+          {
+            "claim_index": 2,
+            "verdict": "支持",
+            "reason": "两段引文分别支持少孤随母在突厥中、安波至兄延偃妻其母、开元初与安道买男俱逃出突厥、年十余岁与兄及延偃相携而出、约与思顺等为兄弟冒姓安。claim中“将军安波至之兄延偃”与原文“将军安波至兄延偃”一致，未添加未支持内容。"
+          },
+          {
+            "claim_index": 3,
+            "verdict": "支持",
+            "reason": "引文载盗羊事觉、守珪剥坐欲棒杀之而释之、令与乡人史思明同捉生、拔为偏将、遂养为子；该段紧接前段（prev_id为安禄山传首段），称其为早年经历后段属合理定位。"
+          },
+          {
+            "claim_index": 4,
+            "verdict": "支持",
+            "reason": "《新唐书》“营州柳城胡也，本姓康”与《旧唐书》“杂种胡人”“本无姓氏”确为不同表述；claim已明确仅作文本对照、未作史源考证，未越出证据。"
+          },
+          {
+            "claim_index": 5,
+            "verdict": "支持",
+            "reason": "《新唐书》引文含祷于轧荦山而生、生时有光照穹庐、望气者言祥、张仁愿遣搜庐帐、母“为觋”、随母嫁“安延偃”等情节；《旧唐书》相应段落无祷生、光照、张仁愿搜帐等，且作“突厥巫师”“妻其母”，称“为《旧唐书》所无或表述不同”成立。"
+          },
+          {
+            "claim_index": 6,
+            "verdict": "支持",
+            "reason": "已读证据确为《旧唐书》卷200上内容，证据中未出现底本或点校本版本信息，缺口说明限于本次核查范围，未夹带未证实事实。"
+          },
+          {
+            "claim_index": 7,
+            "verdict": "支持",
+            "reason": "本次证据仅涉《旧唐书》《新唐书》，无《资治通鉴》段落，说明限于未阅读范围，表述恰当。"
+          },
+          {
+            "claim_index": 8,
+            "verdict": "支持",
+            "reason": "两书文字相近但未作史源考证，claim仅保留文本层面差异、不作史实判定，符合限制说明要求。"
+          },
+          {
+            "claim_index": 9,
+            "verdict": "支持",
+            "reason": "“杂种胡”“本无姓氏”确系《旧唐书》史臣叙述语，非安禄山自述；由此指出族属实指不能据以确定，属合理的方法论限制，未夹带未证实事实。"
+          }
+        ]
+      },
+      "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。"
+    },
+    "research_outcome": {
+      "status": "answered",
+      "reasons": [],
+      "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+    },
+    "metrics": {
+      "rounds": 2,
+      "answer_revisions": 0,
+      "duplicate_tool_calls_avoided": 0,
+      "model_requests": [
+        {
+          "stage": "Analysis",
+          "elapsed_seconds": 1.687,
+          "context_chars": 384,
+          "total_tokens": 845
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.031,
+          "context_chars": 765,
+          "total_tokens": 1018
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 3.516,
+          "context_chars": 4649,
+          "total_tokens": 4080
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 0.766,
+          "context_chars": 5255,
+          "total_tokens": 4412
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 4.406,
+          "context_chars": 2734,
+          "total_tokens": 2775
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 5.641,
+          "context_chars": 3944,
+          "total_tokens": 4808
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 4.344,
+          "context_chars": 4652,
+          "total_tokens": 3961
+        }
+      ],
+      "tool_calls": 4,
+      "web_pages": 0,
+      "evidence_read": 5,
+      "elapsed_seconds": 32.656,
+      "token_usage": {
+        "deepseek-flash": {
+          "input_token_details": {
+            "cache_read": 4608
+          },
+          "total_tokens": 21899,
+          "input_tokens": 18112,
+          "output_tokens": 3787,
+          "output_token_details": {}
+        }
+      },
+      "cost": null
+    }
+  },
+  "events": [
+    {
+      "type": "step",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    },
+    {
+      "type": "plan",
+      "data": {
+        "premise_status": "无明显预设",
+        "premise_to_check": [
+          "《旧唐书》确有安禄山传并载其出身（族属、父母、早年经历）",
+          "所据版本为今本《旧唐书》（后晋刘昫等撰），需注明卷次与版本"
+        ],
+        "subquestions": [
+          "《旧唐书·安禄山传》原文如何叙述其族属、父母与早年身世？",
+          "该记述与《新唐书》《资治通鉴》所载是否同源或有差异？"
+        ],
+        "search_queries": [
+          "旧唐书 安禄山传 原文 营州 柳城 杂种胡",
+          "旧唐书 卷二百 安禄山 出身 母 突厥",
+          "新唐书 安禄山传 出身 比较"
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 1,
+        "summary": "旧唐书 安禄山传 营州柳城 杂种胡 母 突厥"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "search_corpus",
+        "call_number": 2,
+        "summary": "安禄山 本无姓氏 母阿史德氏 突厥 巫 轧荦山"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "type": "assessment",
+      "data": {
+        "sufficient": false,
+        "premise_status": "支持",
+        "gaps": [
+          "《旧唐书》卷200上安禄山传的版本信息（所用底本/点校本）未在证据中登记，无法注明具体版本",
+          "《旧唐书》原文未载其父名与族属细节（仅称“杂种胡”“本无姓氏”），若需追问父系族属，需另据《新唐书》等，但属他书而非《旧唐书》",
+          "《资治通鉴》安禄山出身段（约卷214）尚未读到原文，无法完成与《新唐书》的同源/差异比对"
+        ],
+        "next_queries": [
+          "资治通鉴 卷214 安禄山 本姓康 阿史德 轧荦山",
+          "旧唐书 点校本 卷二百上 安禄山 版本 中华书局"
+        ],
+        "summary": "已读《旧唐书》卷200上《安禄山传》原文（passage 40a1936f）：安禄山，营州柳城杂种胡人，本无姓氏，名轧荦山；母阿史德氏为突厥巫师，以卜为业，突厥称斗战为“轧荦山”，故名之；少孤，随母在突厥中，将军安波至兄延偃妻其母；开元初与将军安道买之子俱逃出突厥，年十余岁与兄及延偃相携而出，相约与思顺等为兄弟，冒姓安；及长解六蕃语，为互市牙郎。同卷史思明传（b6fd53c8）可佐证“营州”“互市郎”“解六蕃语”等背景。对照《新唐书》卷225上（427815ed）：称“营州柳城胡也，本姓康”，母阿史德为觋，祷于轧荦山神而生，随母嫁虏将安延偃，冒姓安更名禄山——与《旧唐书》“本无姓氏”“杂种胡”有差异，且增神异出生叙事。故《旧唐书》确有安禄山传并载其出身，前提成立；但版本信息与《通鉴》比对仍缺。"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 3,
+        "summary": "40a1936f-d173-4e90-a3b2-5dbf922850db"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      }
+    },
+    {
+      "type": "tool",
+      "data": {
+        "name": "read_passage",
+        "call_number": 4,
+        "summary": "427815ed-c80d-48c6-97c5-a66969568ca4"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "source",
+      "data": {
+        "evidence_id": "2bc14b6d-9419-4cb3-9683-0486a6e0bd0a",
+        "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+        "title": "新唐書",
+        "chapter": "卷225上",
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "type": "assessment",
+      "data": {
+        "sufficient": true,
+        "premise_status": "支持",
+        "gaps": [
+          "《旧唐书》卷200上安禄山传的版本信息（所用底本/点校本）未在证据中注明，仅可确认卷次",
+          "《资治通鉴》相关记述尚未阅读，二书异同的比较仅限《新唐书》，未及《通鉴》",
+          "《旧唐书》与《新唐书》是否同源（是否共据唐代实录/国史）未作史源考察，故差异只能表述为文本差异而非史料来源差异"
+        ],
+        "next_queries": [
+          "资治通鉴 卷二百一十四 安禄山 营州柳城 杂种胡",
+          "旧唐书 点校本 中华书局 1975 卷200上 安禄山传 版本",
+          "安禄山 出身 康姓 粟特 研究 史源 实录"
+        ],
+        "summary": "已读《旧唐书》卷200上（列传第一百五十上，安禄山、安庆绪、高尚、孙孝哲、史思明、史朝义）安禄山传开篇原文：称其为\"营州柳城杂种胡人也，本无姓氏，名轧荦山\"；母阿史德氏为突厥巫师，以卜为业；突厥称斗战为\"轧荦山\"，故名；少孤，随母在突厥中，将军安波至兄延偃妻其母；开元初与将军安道买之子俱逃出突厥，年十余岁与兄及延偃相携而出，相约与思顺等为兄弟，冒姓安；长而解六蕃语，为互市牙郎。后文另载张守珪欲棒杀之而释之、令与史思明同捉生、拔为偏将、养为子。故\"《旧唐书》有安禄山传并载其出身\"这一前提成立。对照已读《新唐书》卷225上：作\"营州柳城胡也，本姓康\"，母阿史德\"为觋\"，祷于轧荦山而生，并增\"有光照穹庐\"等神异及张仁愿搜庐帐事，随母嫁\"安延偃\"，冒姓安更名禄山。二者在族属表述（杂种胡/胡、本无姓氏/本姓康）、母之身份（巫师/觋）、神异情节详略上存在文本差异；但《通鉴》尚未阅读，且二书是否同源未考，故差异仅可作文献记载层面的对照，不作史实判定。"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "type": "step",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+      "passage_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 23,
+      "end": 185,
+      "text": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。道買次男貞節為嵐州別駕，收穫之。年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+      "before": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+      "after": "二十年，張守珪為幽州節度，祿山盜羊事覺，守珪剝坐，欲棒殺之，大呼曰：「大夫不欲滅兩蕃耶？何為打殺祿山！」守珪見其肥白，壯其言而釋之。令與鄉人史思明同捉生，行必克獲，拔為偏將。常嫌其肥，以守珪威風素高，畏懼不敢飽食。以驍勇聞，遂養為子。",
+      "prev_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+      "next_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+      "context_passages": [
+        {
+          "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+          "passage_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+          "start": 0,
+          "end": 21,
+          "text": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+          "prev_id": null,
+          "next_id": "40a1936f-d173-4e90-a3b2-5dbf922850db"
+        },
+        {
+          "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+          "passage_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+          "start": 187,
+          "end": 304,
+          "text": "二十年，張守珪為幽州節度，祿山盜羊事覺，守珪剝坐，欲棒殺之，大呼曰：「大夫不欲滅兩蕃耶？何為打殺祿山！」守珪見其肥白，壯其言而釋之。令與鄉人史思明同捉生，行必克獲，拔為偏將。常嫌其肥，以守珪威風素高，畏懼不敢飽食。以驍勇聞，遂養為子。",
+          "prev_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+          "next_id": "0af30f41-f983-42ca-913d-bf3ac02cff1d"
+        }
+      ]
+    },
+    {
+      "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+      "passage_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 0,
+      "end": 21,
+      "text": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+      "before": "",
+      "after": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。道買次男貞節為嵐州別駕，收穫之。年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+      "prev_id": null,
+      "next_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+      "passage_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 187,
+      "end": 304,
+      "text": "二十年，張守珪為幽州節度，祿山盜羊事覺，守珪剝坐，欲棒殺之，大呼曰：「大夫不欲滅兩蕃耶？何為打殺祿山！」守珪見其肥白，壯其言而釋之。令與鄉人史思明同捉生，行必克獲，拔為偏將。常嫌其肥，以守珪威風素高，畏懼不敢飽食。以驍勇聞，遂養為子。",
+      "before": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。道買次男貞節為嵐州別駕，收穫之。年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+      "after": "",
+      "prev_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+      "next_id": "0af30f41-f983-42ca-913d-bf3ac02cff1d",
+      "context_passages": []
+    },
+    {
+      "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+      "passage_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 0,
+      "end": 192,
+      "text": "安祿山，營州柳城胡也，本姓康。母阿史德，為覡，居突厥中，禱子於軋犖山，虜所謂鬥戰神者，既而妊。及生，有光照穹廬，野獸盡鳴，望氣者言其祥。范陽節度使張仁願遣搜廬帳，欲盡殺之，匿而免。母以神所命，遂字軋犖山。少孤，隨母嫁虜將安延偃。開元初，偃攜以歸國，與將軍安道買亡子偕來，得依其家，故道買子安節厚德偃，約兩家子為兄弟，乃冒姓安，更名祿山。及長，忮忍多智，善億測人情，通六蕃語，為互市郎。",
+      "before": "",
+      "after": "張守珪節度幽州，祿山盜羊而獲，守珪將殺之，呼曰：「公不欲滅兩蕃邪？何殺我？」守珪壯其語，又見偉而皙，釋之，與史思明俱為捉生。知山川水泉處，嘗以五騎禽契丹數十人，守珪異之，稍益其兵，有討輒克，拔為偏將。守珪醜其肥，由是不敢飽，因養為子。後以平盧兵馬使擢特進、幽州節度副使。",
+      "prev_id": null,
+      "next_id": "2bc14b6d-9419-4cb3-9683-0486a6e0bd0a",
+      "context_passages": [
+        {
+          "evidence_id": "2bc14b6d-9419-4cb3-9683-0486a6e0bd0a",
+          "passage_id": "2bc14b6d-9419-4cb3-9683-0486a6e0bd0a",
+          "start": 194,
+          "end": 329,
+          "text": "張守珪節度幽州，祿山盜羊而獲，守珪將殺之，呼曰：「公不欲滅兩蕃邪？何殺我？」守珪壯其語，又見偉而皙，釋之，與史思明俱為捉生。知山川水泉處，嘗以五騎禽契丹數十人，守珪異之，稍益其兵，有討輒克，拔為偏將。守珪醜其肥，由是不敢飽，因養為子。後以平盧兵馬使擢特進、幽州節度副使。",
+          "prev_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+          "next_id": "dda83eb6-02a4-4228-971f-f271953a602a"
+        }
+      ]
+    },
+    {
+      "evidence_id": "2bc14b6d-9419-4cb3-9683-0486a6e0bd0a",
+      "passage_id": "2bc14b6d-9419-4cb3-9683-0486a6e0bd0a",
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "author": "歐陽修、宋祁等奉敕撰",
+      "source_type": "历史文献",
+      "chapter": "卷225上",
+      "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "start": 194,
+      "end": 329,
+      "text": "張守珪節度幽州，祿山盜羊而獲，守珪將殺之，呼曰：「公不欲滅兩蕃邪？何殺我？」守珪壯其語，又見偉而皙，釋之，與史思明俱為捉生。知山川水泉處，嘗以五騎禽契丹數十人，守珪異之，稍益其兵，有討輒克，拔為偏將。守珪醜其肥，由是不敢飽，因養為子。後以平盧兵馬使擢特進、幽州節度副使。",
+      "before": "安祿山，營州柳城胡也，本姓康。母阿史德，為覡，居突厥中，禱子於軋犖山，虜所謂鬥戰神者，既而妊。及生，有光照穹廬，野獸盡鳴，望氣者言其祥。范陽節度使張仁願遣搜廬帳，欲盡殺之，匿而免。母以神所命，遂字軋犖山。少孤，隨母嫁虜將安延偃。開元初，偃攜以歸國，與將軍安道買亡子偕來，得依其家，故道買子安節厚德偃，約兩家子為兄弟，乃冒姓安，更名祿山。及長，忮忍多智，善億測人情，通六蕃語，為互市郎。",
+      "after": "",
+      "prev_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+      "next_id": "dda83eb6-02a4-4228-971f-f271953a602a",
+      "context_passages": []
+    }
+  ],
+  "elapsed_seconds": 32.656,
+  "automatic": {
+    "evidence_anchor_recall": {
+      "matched": 1,
+      "expected": 1,
+      "recall": 1.0,
+      "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+    },
+    "citation_program_checks": [
+      {
+        "claim_index": 0,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+            "quote": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 0,
+            "end": 21
+          },
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 23,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "claim_index": 1,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 23,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "claim_index": 2,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 79,
+            "end": 119
+          },
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 135,
+            "end": 185
+          }
+        ]
+      },
+      {
+        "claim_index": 3,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+            "quote": "祿山盜羊事覺，守珪剝坐，欲棒殺之",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 200,
+            "end": 216
+          },
+          {
+            "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+            "quote": "令與鄉人史思明同捉生，行必克獲，拔為偏將。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 253,
+            "end": 274
+          }
+        ]
+      },
+      {
+        "claim_index": 4,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+            "quote": "安祿山，營州柳城胡也，本姓康。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 0,
+            "end": 15
+          },
+          {
+            "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+            "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "start": 23,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "claim_index": 5,
+        "valid": true,
+        "errors": [],
+        "citations": [
+          {
+            "evidence_id": "427815ed-c80d-48c6-97c5-a66969568ca4",
+            "quote": "母阿史德，為覡，居突厥中，禱子於軋犖山，虜所謂鬥戰神者，既而妊。及生，有光照穹廬，野獸盡鳴，望氣者言其祥。",
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "start": 15,
+            "end": 68
+          }
+        ]
+      }
+    ]
+  },
+  "model_assisted": {
+    "support_review": {
+      "checks": [
+        {
+          "claim_index": 0,
+          "verdict": "支持",
+          "reason": "证据2dc1ab60为卷200上目录行，列“安禄山子庆绪”等；40a1936f为卷200上安禄山传正文首段，起首即叙其族属、父母、名字由来及早孤随母等早年经历，与claim相符。"
+        },
+        {
+          "claim_index": 1,
+          "verdict": "支持",
+          "reason": "引文逐项对应：营州柳城杂种胡人、本无姓氏、名轧荦山、母阿史德氏为突厥巫师以卜为业、突厥呼斗战为轧荦山遂以名之，均为原文忠实释义。"
+        },
+        {
+          "claim_index": 2,
+          "verdict": "支持",
+          "reason": "两段引文分别支持少孤随母在突厥中、安波至兄延偃妻其母、开元初与安道买男俱逃出突厥、年十余岁与兄及延偃相携而出、约与思顺等为兄弟冒姓安。claim中“将军安波至之兄延偃”与原文“将军安波至兄延偃”一致，未添加未支持内容。"
+        },
+        {
+          "claim_index": 3,
+          "verdict": "支持",
+          "reason": "引文载盗羊事觉、守珪剥坐欲棒杀之而释之、令与乡人史思明同捉生、拔为偏将、遂养为子；该段紧接前段（prev_id为安禄山传首段），称其为早年经历后段属合理定位。"
+        },
+        {
+          "claim_index": 4,
+          "verdict": "支持",
+          "reason": "《新唐书》“营州柳城胡也，本姓康”与《旧唐书》“杂种胡人”“本无姓氏”确为不同表述；claim已明确仅作文本对照、未作史源考证，未越出证据。"
+        },
+        {
+          "claim_index": 5,
+          "verdict": "支持",
+          "reason": "《新唐书》引文含祷于轧荦山而生、生时有光照穹庐、望气者言祥、张仁愿遣搜庐帐、母“为觋”、随母嫁“安延偃”等情节；《旧唐书》相应段落无祷生、光照、张仁愿搜帐等，且作“突厥巫师”“妻其母”，称“为《旧唐书》所无或表述不同”成立。"
+        },
+        {
+          "claim_index": 6,
+          "verdict": "支持",
+          "reason": "已读证据确为《旧唐书》卷200上内容，证据中未出现底本或点校本版本信息，缺口说明限于本次核查范围，未夹带未证实事实。"
+        },
+        {
+          "claim_index": 7,
+          "verdict": "支持",
+          "reason": "本次证据仅涉《旧唐书》《新唐书》，无《资治通鉴》段落，说明限于未阅读范围，表述恰当。"
+        },
+        {
+          "claim_index": 8,
+          "verdict": "支持",
+          "reason": "两书文字相近但未作史源考证，claim仅保留文本层面差异、不作史实判定，符合限制说明要求。"
+        },
+        {
+          "claim_index": 9,
+          "verdict": "支持",
+          "reason": "“杂种胡”“本无姓氏”确系《旧唐书》史臣叙述语，非安禄山自述；由此指出族属实指不能据以确定，属合理的方法论限制，未夹带未证实事实。"
+        }
+      ]
+    }
+  },
+  "human_review": {
+    "reviewer": null,
+    "evidence_support_0_to_2": null,
+    "completeness_0_to_2": null,
+    "premise_recognition_0_to_2": null,
+    "notes": null
+  },
+  "human_rubric": "只报告文献表述，不把族属标签当成现代结论。"
+}

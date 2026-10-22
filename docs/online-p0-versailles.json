@@ -1,0 +1,960 @@
+{
+  "task": {
+    "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+    "question": "《凡尔赛条约》是在1919年还是1920年签署？请区分签署与生效，最多两条结论及必要引文，找到直接记载后停止补查。",
+    "mode": "online",
+    "status": "completed",
+    "cancel_requested": false,
+    "created_at": "2026-10-20T12:57:33Z",
+    "updated_at": "2026-10-20T12:58:37Z",
+    "error": null,
+    "result": {
+      "events": [],
+      "metrics": {
+        "cost": null,
+        "rounds": 4,
+        "web_pages": 3,
+        "web_usage": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 3,
+          "search_attempts": 3,
+          "recorded_requests": 6,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "tool_calls": 8,
+        "token_usage": {
+          "deepseek-flash": {
+            "input_tokens": 13850,
+            "total_tokens": 15848,
+            "output_tokens": 1998,
+            "input_token_details": {
+              "cache_read": 4608
+            },
+            "output_token_details": {}
+          }
+        },
+        "evidence_read": 0,
+        "model_requests": [
+          {
+            "stage": "Analysis",
+            "outcome": "returned",
+            "input_tokens": 637,
+            "total_tokens": 847,
+            "context_chars": 425,
+            "output_tokens": 210,
+            "request_number": 1,
+            "elapsed_seconds": 1.695,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 847
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 882,
+            "total_tokens": 983,
+            "context_chars": 935,
+            "output_tokens": 101,
+            "request_number": 2,
+            "elapsed_seconds": 0.661,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 1830
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 2476,
+            "total_tokens": 2782,
+            "context_chars": 5649,
+            "output_tokens": 306,
+            "request_number": 3,
+            "elapsed_seconds": 1.964,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 4612
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 2963,
+            "total_tokens": 3151,
+            "context_chars": 6248,
+            "output_tokens": 188,
+            "request_number": 4,
+            "elapsed_seconds": 1.339,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 7763
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 816,
+            "total_tokens": 1087,
+            "context_chars": 867,
+            "output_tokens": 271,
+            "request_number": 5,
+            "elapsed_seconds": 1.839,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 8850
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 1410,
+            "total_tokens": 1512,
+            "context_chars": 1672,
+            "output_tokens": 102,
+            "request_number": 6,
+            "elapsed_seconds": 0.937,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 10362
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 1694,
+            "total_tokens": 2055,
+            "context_chars": 4136,
+            "output_tokens": 361,
+            "request_number": 7,
+            "elapsed_seconds": 2.255,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 12417
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 2156,
+            "total_tokens": 2362,
+            "context_chars": 5111,
+            "output_tokens": 206,
+            "request_number": 8,
+            "elapsed_seconds": 1.152,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 14779
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 816,
+            "total_tokens": 1069,
+            "context_chars": 867,
+            "output_tokens": 253,
+            "request_number": 9,
+            "elapsed_seconds": 1.398,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 15848
+          }
+        ],
+        "elapsed_seconds": 64.724,
+        "answer_revisions": 0,
+        "external_requests": [
+          {
+            "kind": "search",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 1,
+            "elapsed_seconds": 0.331,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "search",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 2,
+            "elapsed_seconds": 0.403,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "fetch",
+            "outcome": "failed",
+            "billable": null,
+            "provider": "deepseek",
+            "http_status": null,
+            "request_number": 3,
+            "elapsed_seconds": 30.009,
+            "estimated_cost_cny": null
+          },
+          {
+            "kind": "fetch",
+            "outcome": "failed",
+            "billable": false,
+            "provider": "deepseek",
+            "http_status": 404,
+            "request_number": 4,
+            "elapsed_seconds": 19.232,
+            "estimated_cost_cny": "0.000"
+          },
+          {
+            "kind": "search",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 5,
+            "elapsed_seconds": 0.343,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "fetch",
+            "outcome": "failed",
+            "billable": false,
+            "provider": "deepseek",
+            "http_status": 404,
+            "request_number": 6,
+            "elapsed_seconds": 0.128,
+            "estimated_cost_cny": "0.000"
+          }
+        ],
+        "structured_failures": [],
+        "duplicate_tool_calls_avoided": 0
+      },
+      "premise": {
+        "kind": "无法判断",
+        "text": "当前证据尚不能可靠确认提问前提。",
+        "citations": []
+      },
+      "sources": [],
+      "citations": [],
+      "conclusions": [],
+      "limitations": [
+        "达到研究轮数上限",
+        "有 1/1 条候选表述未通过引用或内容支持检查，已从正式回答移除。",
+        "现有证据不足以形成通过核查的核心结论。"
+      ],
+      "disagreements": [],
+      "citation_audit": {
+        "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。",
+        "content": {
+          "checks": []
+        },
+        "program": [
+          {
+            "valid": true,
+            "errors": [],
+            "citations": [],
+            "claim_index": 0
+          }
+        ],
+        "literal_readings": []
+      },
+      "rejected_claims": [
+        {
+          "text": "未取得可核查的已读证据，暂无法判断。",
+          "claim_index": 0,
+          "program_errors": [],
+          "support_review": null,
+          "candidate_citations": []
+        }
+      ],
+      "research_outcome": {
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ]
+      },
+      "rejected_limitations": [
+        {
+          "text": "未取得已读证据，不使用模型记忆补齐答案。",
+          "support_review": null
+        }
+      ]
+    }
+  },
+  "evidence": [],
+  "events": [
+    {
+      "event_id": 491,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "status",
+      "time": "2026-10-20T12:57:33Z",
+      "data": {
+        "status": "pending"
+      }
+    },
+    {
+      "event_id": 492,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "status",
+      "time": "2026-10-20T12:57:33Z",
+      "data": {
+        "status": "running"
+      }
+    },
+    {
+      "event_id": 493,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:57:33Z",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    },
+    {
+      "event_id": 494,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:57:34Z",
+      "data": {
+        "stage": "Analysis",
+        "outcome": "returned",
+        "input_tokens": 637,
+        "total_tokens": 847,
+        "context_chars": 425,
+        "output_tokens": 210,
+        "request_number": 1,
+        "elapsed_seconds": 1.695,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 847
+      }
+    },
+    {
+      "event_id": 495,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "plan",
+      "time": "2026-10-20T12:57:34Z",
+      "data": {
+        "subquestions": [
+          "《凡尔赛条约》正式签署的日期是哪一天？",
+          "《凡尔赛条约》依其条款何时生效（生效条件为何、何时满足）？"
+        ],
+        "premise_status": "无明显预设",
+        "search_queries": [
+          "Treaty of Versailles signed 28 June 1919 signature",
+          "Treaty of Versailles came into force date Article 440",
+          "凡尔赛条约 签署 1919年6月28日 生效"
+        ],
+        "premise_to_check": [
+          "《凡尔赛条约》的签署日期与生效日期是否为不同时间点",
+          "条约文本或官方记录中是否分别载明签署日与生效（生效条件满足）日"
+        ]
+      }
+    },
+    {
+      "event_id": 496,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:57:34Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "event_id": 497,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:57:35Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 882,
+        "total_tokens": 983,
+        "context_chars": 935,
+        "output_tokens": 101,
+        "request_number": 2,
+        "elapsed_seconds": 0.661,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 1830
+      }
+    },
+    {
+      "event_id": 498,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool",
+      "time": "2026-10-20T12:57:35Z",
+      "data": {
+        "name": "search_web",
+        "summary": "Treaty of Versailles signed 28 June 1919 came into force Article 440",
+        "call_number": 1
+      }
+    },
+    {
+      "event_id": 499,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "external_usage",
+      "time": "2026-10-20T12:57:35Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 0,
+          "search_attempts": 1,
+          "recorded_requests": 1,
+          "estimated_tool_cost_cny": "0.005",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 1,
+        "elapsed_seconds": 0.331,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 500,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool",
+      "time": "2026-10-20T12:57:35Z",
+      "data": {
+        "name": "search_web",
+        "summary": "凡尔赛条约 1919年6月28日 签署 生效 1920年1月10日",
+        "call_number": 2
+      }
+    },
+    {
+      "event_id": 501,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "external_usage",
+      "time": "2026-10-20T12:57:36Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 0,
+          "search_attempts": 2,
+          "recorded_requests": 2,
+          "estimated_tool_cost_cny": "0.010",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 2,
+        "elapsed_seconds": 0.403,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 502,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:57:36Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 503,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:57:38Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 2476,
+        "total_tokens": 2782,
+        "context_chars": 5649,
+        "output_tokens": 306,
+        "request_number": 3,
+        "elapsed_seconds": 1.964,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 4612
+      }
+    },
+    {
+      "event_id": 504,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "assessment",
+      "time": "2026-10-20T12:57:38Z",
+      "data": {
+        "gaps": [
+          "尚未阅读任何原文：现有仅为搜索摘要，不能作为证据",
+          "需读条约第440条原文，确认生效条件（德国批准书交存及第一份议定书）与生效日期",
+          "需读条约签署页/序言，确认签署日期为1919年6月28日"
+        ],
+        "summary": "目前仅有搜索摘要，均未登记为证据。摘要线索一致指向：签署于1919年6月28日，生效于1920年1月10日（依第440条，自第一份批准书交存议定书作成之日起生效）。但按规则摘要不算证据，须先阅读条约原文（第440条及签署页）后方可判定前提与充分性。",
+        "sufficient": false,
+        "next_queries": [
+          "Treaty of Versailles Article 440 text \"come into force\" first proces-verbal",
+          "Treaty of Peace with Germany signature June 28 1919 preamble text",
+          "凡尔赛条约 第440条 生效 1920年1月10日 原文"
+        ],
+        "premise_status": "未确定"
+      }
+    },
+    {
+      "event_id": 505,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:57:38Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "event_id": 506,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:57:39Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 2963,
+        "total_tokens": 3151,
+        "context_chars": 6248,
+        "output_tokens": 188,
+        "request_number": 4,
+        "elapsed_seconds": 1.339,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 7763
+      }
+    },
+    {
+      "event_id": 507,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool",
+      "time": "2026-10-20T12:57:39Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://babel.hathitrust.org/cgi/ssd?id=hvd.32044109641258%3Bpage%3Dssd%3Bview%3Dplaintext%3Bseq%3D759%3Bnum%3D737",
+        "call_number": 3
+      }
+    },
+    {
+      "event_id": 508,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "external_usage",
+      "time": "2026-10-20T12:58:09Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "failed",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 1,
+          "search_attempts": 2,
+          "recorded_requests": 3,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": null,
+        "provider": "deepseek",
+        "http_status": null,
+        "request_number": 3,
+        "elapsed_seconds": 30.009,
+        "estimated_cost_cny": null
+      }
+    },
+    {
+      "event_id": 509,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool_error",
+      "time": "2026-10-20T12:58:09Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "fetch_page 调用失败（TimeoutError），请改写查询或说明缺口",
+        "error_type": "TimeoutError"
+      }
+    },
+    {
+      "event_id": 510,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool",
+      "time": "2026-10-20T12:58:09Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://beta.bailii.org/uk/other/UKTS/1919/TS0004.html",
+        "call_number": 4
+      }
+    },
+    {
+      "event_id": 511,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "external_usage",
+      "time": "2026-10-20T12:58:29Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "failed",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 2,
+          "search_attempts": 2,
+          "recorded_requests": 4,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": false,
+        "provider": "deepseek",
+        "http_status": 404,
+        "request_number": 4,
+        "elapsed_seconds": 19.232,
+        "estimated_cost_cny": "0.000"
+      }
+    },
+    {
+      "event_id": 512,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool_error",
+      "time": "2026-10-20T12:58:29Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "DeepSeek fetch 返回 HTTP 404；未取得可用资料",
+        "error_type": "WebAPIError"
+      }
+    },
+    {
+      "event_id": 513,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:58:29Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 514,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:58:31Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 816,
+        "total_tokens": 1087,
+        "context_chars": 867,
+        "output_tokens": 271,
+        "request_number": 5,
+        "elapsed_seconds": 1.839,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 8850
+      }
+    },
+    {
+      "event_id": 515,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "assessment",
+      "time": "2026-10-20T12:58:31Z",
+      "data": {
+        "gaps": [
+          "尚无任何已读证据（evidence_id 为空），无法确认签署日期",
+          "尚无条约文本条款（如第440条）关于生效条件与生效日期的原文记载",
+          "需区分签署日与生效日两个不同时间点"
+        ],
+        "summary": "当前未取得任何已读史料，仅有待查线索。问题要求区分签署与生效：需先读到条约签署记录（签署日）与条约文本中生效条款（生效条件及满足日期）的原文，才能判断\"1919年还是1920年\"这一二选一前提是否成立。下一步优先检索并阅读条约原文/官方记录。",
+        "sufficient": false,
+        "next_queries": [
+          "Treaty of Versailles signed 28 June 1919 signature",
+          "Treaty of Versailles came into force Article 440",
+          "凡尔赛条约 签署 1919年6月28日 生效"
+        ],
+        "premise_status": "未确定"
+      }
+    },
+    {
+      "event_id": 516,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:58:31Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 3
+      }
+    },
+    {
+      "event_id": 517,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:58:32Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 1410,
+        "total_tokens": 1512,
+        "context_chars": 1672,
+        "output_tokens": 102,
+        "request_number": 6,
+        "elapsed_seconds": 0.937,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 10362
+      }
+    },
+    {
+      "event_id": 518,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool",
+      "time": "2026-10-20T12:58:32Z",
+      "data": {
+        "name": "search_web",
+        "summary": "\"Treaty of Versailles\" \"Article 440\" \"first procès-verbal\" \"come into force\"",
+        "call_number": 5
+      }
+    },
+    {
+      "event_id": 519,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "external_usage",
+      "time": "2026-10-20T12:58:32Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 2,
+          "search_attempts": 3,
+          "recorded_requests": 5,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 5,
+        "elapsed_seconds": 0.343,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 520,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool",
+      "time": "2026-10-20T12:58:32Z",
+      "data": {
+        "name": "search_web",
+        "summary": "UK Treaty Series No. 4 (1919) Treaty of Peace Versailles date of signature in force",
+        "call_number": 6
+      }
+    },
+    {
+      "event_id": 521,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool_error",
+      "time": "2026-10-20T12:58:32Z",
+      "data": {
+        "name": "search_web",
+        "message": "已达到搜索次数上限，请阅读已有候选或说明缺口",
+        "error_type": "FetchError"
+      }
+    },
+    {
+      "event_id": 522,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:58:32Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 523,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:58:35Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 1694,
+        "total_tokens": 2055,
+        "context_chars": 4136,
+        "output_tokens": 361,
+        "request_number": 7,
+        "elapsed_seconds": 2.255,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 12417
+      }
+    },
+    {
+      "event_id": 524,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "assessment",
+      "time": "2026-10-20T12:58:35Z",
+      "data": {
+        "gaps": [
+          "尚未阅读任何原文：现有仅为搜索摘要，未登记 evidence_id，不能作为证据",
+          "签署日期（1919年6月28日）缺少已读原文直接记载",
+          "生效日期（1920年1月10日首次批准书交存议定书）仅有摘要线索，需读原文确认 Article 440 上下文"
+        ],
+        "summary": "目前仅有搜索摘要，均未阅读原文，故不能判定证据充分。摘要线索显示：条约第440条规定，德国与三个主要协约国批准后即作成首次批准书交存议定书，自该议定书之日起条约在已批准各方之间生效；另有摘要称首次议定书于1920年1月10日下午4:15作成。签署日期（1919年6月28日）尚无已读原文支持。下一步应优先阅读 HathiTrust 注释本与 Wikisource 条约正文第440条页面，取得签署与生效的直接记载后即停止。",
+        "sufficient": false,
+        "next_queries": [
+          "Treaty of Peace Versailles signature 28 June 1919 preamble text",
+          "Article 440 Treaty of Versailles procès-verbal January 10 1920 come into force",
+          "凡尔赛条约 1919年6月28日 签署 1920年1月10日 生效"
+        ],
+        "premise_status": "未确定"
+      }
+    },
+    {
+      "event_id": 525,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:58:35Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 4
+      }
+    },
+    {
+      "event_id": 526,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:58:36Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 2156,
+        "total_tokens": 2362,
+        "context_chars": 5111,
+        "output_tokens": 206,
+        "request_number": 8,
+        "elapsed_seconds": 1.152,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 14779
+      }
+    },
+    {
+      "event_id": 527,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool",
+      "time": "2026-10-20T12:58:36Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://en.wikisource.org/wiki/Page%3ATreaty_of_Peace_-_Versailles_(1919)_Ottawa.djvu/170",
+        "call_number": 7
+      }
+    },
+    {
+      "event_id": 528,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "external_usage",
+      "time": "2026-10-20T12:58:36Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "failed",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 3,
+          "search_attempts": 3,
+          "recorded_requests": 6,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": false,
+        "provider": "deepseek",
+        "http_status": 404,
+        "request_number": 6,
+        "elapsed_seconds": 0.128,
+        "estimated_cost_cny": "0.000"
+      }
+    },
+    {
+      "event_id": 529,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool_error",
+      "time": "2026-10-20T12:58:36Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "DeepSeek fetch 返回 HTTP 404；未取得可用资料",
+        "error_type": "WebAPIError"
+      }
+    },
+    {
+      "event_id": 530,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool",
+      "time": "2026-10-20T12:58:36Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://babel.hathitrust.org/cgi/ssd?id=hvd.32044109641258%3Bpage%3Dssd%3Bview%3Dplaintext%3Bseq%3D759%3Bnum%3D737",
+        "call_number": 8
+      }
+    },
+    {
+      "event_id": 531,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "tool_error",
+      "time": "2026-10-20T12:58:36Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "此 URL 已读取，请使用已有证据",
+        "error_type": "FetchError"
+      }
+    },
+    {
+      "event_id": 532,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:58:36Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 533,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "model_usage",
+      "time": "2026-10-20T12:58:37Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 816,
+        "total_tokens": 1069,
+        "context_chars": 867,
+        "output_tokens": 253,
+        "request_number": 9,
+        "elapsed_seconds": 1.398,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 15848
+      }
+    },
+    {
+      "event_id": 534,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "assessment",
+      "time": "2026-10-20T12:58:37Z",
+      "data": {
+        "gaps": [
+          "尚无任何已读证据（evidence_id 为空），无法确认签署日期",
+          "尚无条约文本条款（如第440条）关于生效条件与生效日期的记载",
+          "需区分签署日与生效日两个不同时间点"
+        ],
+        "summary": "当前仅有检索计划，未取得任何已读证据，无法判断签署与生效日期。需先阅读条约原文（含签署页与生效条款，如第440条）或官方记录，以区分签署日与生效日。检索摘要不作为证据。",
+        "sufficient": false,
+        "next_queries": [
+          "Treaty of Versailles signed 28 June 1919 signature",
+          "Treaty of Versailles Article 440 entry into force date",
+          "凡尔赛条约 1919年6月28日 签署 生效 第440条"
+        ],
+        "premise_status": "未确定"
+      }
+    },
+    {
+      "event_id": 535,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:58:37Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 536,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "step",
+      "time": "2026-10-20T12:58:37Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 537,
+      "task_id": "d542588b-ac39-4814-95c7-587411a53219",
+      "type": "completed",
+      "time": "2026-10-20T12:58:37Z",
+      "data": {
+        "error": null,
+        "status": "completed"
+      }
+    }
+  ],
+  "checks": {
+    "verification": "not_completed"
+  }
+}

@@ -1,5 +1,4 @@
 import argparse
-import asyncio
 import json
 from pathlib import Path
 
@@ -33,9 +32,9 @@ def main():
         command.upgrade(Config("alembic.ini"), "head")
         return
     if args.command == "worker":
-        from shijian.worker import run_worker
+        from shijian.worker import main as worker_main
 
-        asyncio.run(run_worker())
+        worker_main()
         return
     config = settings()
     vectors = Vectors(config)
@@ -65,7 +64,7 @@ def main():
             print(json.dumps(corpus.import_document(doc, index=not args.metadata_only), ensure_ascii=False))
     elif args.command == "reindex":
         with sessions()() as s:
-            stmt = select(Source.id)
+            stmt = select(Source.id).where(Source.saved.is_(True))
             if not args.all:
                 stmt = stmt.where(Source.index_status != "ready")
             ids = list(s.scalars(stmt))

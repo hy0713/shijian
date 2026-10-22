@@ -1,0 +1,191 @@
+{
+  "methods": {
+    "direct": {
+      "attempts": 30,
+      "recorded": 30,
+      "failed": 0,
+      "mean_elapsed_seconds": 2.476,
+      "observed_total_tokens": 8775,
+      "failed_observed_tokens": null,
+      "token_usage_records": 30,
+      "mean_tokens": 292.5,
+      "mean_tool_calls": 0,
+      "mean_anchor_recall": 0.0,
+      "anchor_questions": 25,
+      "attempted_anchor_questions": 25,
+      "anchor_recall_failures_zero": 0.0,
+      "program_claim_checks": {
+        "valid": 0,
+        "total": 0
+      },
+      "outcomes": {
+        "not_classified": 30
+      },
+      "human_only": {
+        "evidence_support_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "completeness_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "premise_recognition_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        }
+      },
+      "cost": null
+    },
+    "rag": {
+      "attempts": 30,
+      "recorded": 30,
+      "failed": 0,
+      "mean_elapsed_seconds": 12.3167,
+      "observed_total_tokens": 385883,
+      "failed_observed_tokens": null,
+      "token_usage_records": 30,
+      "mean_tokens": 12862.7667,
+      "mean_tool_calls": 6,
+      "mean_anchor_recall": 0.3933,
+      "anchor_questions": 25,
+      "attempted_anchor_questions": 25,
+      "anchor_recall_failures_zero": 0.3933,
+      "program_claim_checks": {
+        "valid": 181,
+        "total": 182
+      },
+      "outcomes": {
+        "insufficient_evidence": 3,
+        "answered": 18,
+        "partial": 9
+      },
+      "human_only": {
+        "evidence_support_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "completeness_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "premise_recognition_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        }
+      },
+      "cost": null
+    },
+    "agent": {
+      "attempts": 30,
+      "recorded": 29,
+      "failed": 1,
+      "mean_elapsed_seconds": 30.3743,
+      "observed_total_tokens": 1322766,
+      "failed_observed_tokens": 54782,
+      "token_usage_records": 29,
+      "mean_tokens": 43723.5862,
+      "mean_tool_calls": 9.1034,
+      "mean_anchor_recall": 0.7569,
+      "anchor_questions": 24,
+      "attempted_anchor_questions": 25,
+      "anchor_recall_failures_zero": 0.7267,
+      "program_claim_checks": {
+        "valid": 223,
+        "total": 223
+      },
+      "outcomes": {
+        "partial": 22,
+        "answered": 6,
+        "insufficient_evidence": 1
+      },
+      "human_only": {
+        "evidence_support_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "completeness_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        },
+        "premise_recognition_0_to_2": {
+          "reviewed": 0,
+          "mean": null
+        }
+      },
+      "cost": null
+    }
+  },
+  "attention_cases": [
+    {
+      "question_id": "Q01",
+      "question": "《旧唐书》如何记述安禄山的出身？",
+      "method": "rag",
+      "error_type": null,
+      "outcome": {
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "file": "Q01_rag.json"
+    },
+    {
+      "question_id": "Q05",
+      "question": "《通鉴》记载谁持刀进入帐中杀害安禄山？",
+      "method": "rag",
+      "error_type": null,
+      "outcome": {
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "file": "Q05_rag.json"
+    },
+    {
+      "question_id": "Q12",
+      "question": "《通鉴》与《旧唐书》怎样叙述安庆绪围城困境和求救史思明？",
+      "method": "agent",
+      "error_type": "ValueError",
+      "outcome": null,
+      "file": "Q12_agent.json"
+    },
+    {
+      "question_id": "Q16",
+      "question": "安庆绪为何参与杀害自己的父亲？现有记载能否穷尽他的心理原因？",
+      "method": "rag",
+      "error_type": null,
+      "outcome": {
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "file": "Q16_rag.json"
+    },
+    {
+      "question_id": "Q28",
+      "question": "两唐书和《通鉴》是否必然是三份完全独立的证词？",
+      "method": "agent",
+      "error_type": null,
+      "outcome": {
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "file": "Q28_agent.json"
+    }
+  ],
+  "notes": [
+    "Anchor recall measures only known evidence anchors, not full recall or answer accuracy.",
+    "Program checks validate citation locations only. Model support reviews remain separate from human scores.",
+    "Single run per question, no repeated random trials or confidence intervals; no quality superiority claimed.",
+    "Human quality scores remain null until reviewed; no price configured, no cost estimate."
+  ]
+}

@@ -2,8 +2,9 @@ from datetime import timedelta
 from uuid import uuid4
 
 from sqlalchemy import select, update
+from sqlalchemy.orm import defer
 
-from shijian.db import Event, Task, TaskEvidence, utcnow
+from shijian.db import Collection, CollectionSource, CollectionTask, Event, Source, Task, TaskEvidence, utcnow
 
 TERMINAL = {"completed", "failed", "cancelled"}
 QUEUE = "shijian:queue"
@@ -25,18 +26,18 @@ def event_dict(event):
     }
 
 
-def task_dict(task):
+def task_dict(task, include_result=True):
     return {
         "task_id": task.id,
         "question": task.question,
         "mode": task.mode,
+        "source_ids": task.source_ids,
         "status": task.status,
         "cancel_requested": task.cancel_requested,
         "created_at": task.created_at.isoformat() + "Z",
         "updated_at": task.updated_at.isoformat() + "Z",
-        "result": task.result,
         "error": task.error,
-    }
+    } | ({"result": task.result} if include_result else {})
 
 
 class Cancelled(Exception):
@@ -47,11 +48,47 @@ class TaskStore:
     def __init__(self, sessions):
         self.sessions = sessions
 
-    def create(self, question, mode):
+    def create(self, question, mode, source_ids=None, collection_id=None, embedding_key=None):
         task_id = str(uuid4())
         with self.sessions.begin() as s:
-            s.add(Task(id=task_id, question=question, mode=mode))
+            if collection_id or source_ids is not None:
+                if mode != "local":
+                    raise ValueError("专题资料范围仅用于限定资料研究；全网研究可在结束后加入专题")
+                if collection_id and source_ids is not None:
+                    raise ValueError("不能同时指定专题和资料范围")
+                if collection_id:
+                    if not s.scalar(
+                        select(Collection).where(Collection.id == collection_id).with_for_update()
+                    ):
+                        raise LookupError("专题不存在")
+                    source_ids = list(
+                        s.scalars(
+                            select(CollectionSource.source_id).where(
+                                CollectionSource.collection_id == collection_id
+                            )
+                        )
+                    )
+                source_ids = list(dict.fromkeys(source_ids))
+                if not 1 <= len(source_ids) <= 30:
+                    raise ValueError("限定研究须选择 1–30 份资料；空专题不能回退到全库")
+                ready = list(
+                    s.scalars(
+                        select(Source.id).where(
+                            Source.id.in_(source_ids),
+                            Source.saved.is_(True),
+                            Source.index_status == "ready",
+                            Source.embedding_key == embedding_key,
+                        )
+                    )
+                )
+                if set(ready) != set(source_ids):
+                    raise ValueError(
+                        "所选资料尚未全部收藏并完成当前模型的索引；请查看索引状态或移出未就绪资料"
+                    )
+            s.add(Task(id=task_id, question=question, mode=mode, source_ids=source_ids))
             s.flush()
+            if collection_id:
+                s.add(CollectionTask(collection_id=collection_id, task_id=task_id))
             s.add(Event(task_id=task_id, type="status", data={"status": "pending"}))
         return task_id
 
@@ -62,11 +99,18 @@ class TaskStore:
                 raise LookupError("任务不存在")
             return task_dict(task)
 
-    def history(self, limit=30, offset=0):
+    def history(self, limit=30, offset=0, query=""):
         with self.sessions() as s:
             return [
-                task_dict(t)
-                for t in s.scalars(select(Task).order_by(Task.created_at.desc()).offset(offset).limit(limit))
+                task_dict(t, include_result=False)
+                for t in s.scalars(
+                    select(Task)
+                    .options(defer(Task.result))
+                    .where(Task.question.contains(query))
+                    .order_by(Task.created_at.desc())
+                    .offset(offset)
+                    .limit(limit)
+                )
             ]
 
     def pending(self):

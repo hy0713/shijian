@@ -1,0 +1,719 @@
+{
+  "task": {
+    "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+    "question": "《旧唐书》卷200上是否记载史思明和安禄山同日出生？请核对先后，只写一条核心结论及必要引文，找到直接记载即停止检索。",
+    "mode": "local",
+    "status": "failed",
+    "cancel_requested": false,
+    "created_at": "2026-10-20T12:09:14Z",
+    "updated_at": "2026-10-20T12:09:40Z",
+    "error": "模型输出未通过结构化校验，已用尽本任务的格式修正预算。请缩小问题后重新研究；已读证据保留。",
+    "result": null
+  },
+  "events": [
+    {
+      "event_id": 429,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "status",
+      "time": "2026-10-20T12:09:14Z",
+      "data": {
+        "status": "pending"
+      }
+    },
+    {
+      "event_id": 430,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "status",
+      "time": "2026-10-20T12:09:14Z",
+      "data": {
+        "status": "running"
+      }
+    },
+    {
+      "event_id": 431,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:14Z",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    },
+    {
+      "event_id": 432,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:16Z",
+      "data": {
+        "stage": "Analysis",
+        "outcome": "returned",
+        "input_tokens": 639,
+        "total_tokens": 874,
+        "context_chars": 426,
+        "output_tokens": 235,
+        "request_number": 1,
+        "elapsed_seconds": 1.638,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 874
+      }
+    },
+    {
+      "event_id": 433,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "plan",
+      "time": "2026-10-20T12:09:16Z",
+      "data": {
+        "subquestions": [
+          "《旧唐书》卷200上（列传第一百五十上）的传主是谁？",
+          "该卷史思明传或安禄山传中是否有关于出生日期（同日生）的原文？"
+        ],
+        "premise_status": "待核查",
+        "search_queries": [
+          "旧唐书 卷二百上 列传第一百五十上 史思明 原文",
+          "旧唐书 史思明传 安禄山 同日生",
+          "旧唐书 安禄山传 一日 生 史思明"
+        ],
+        "premise_to_check": [
+          "《旧唐书》卷200上是否为史思明（或安禄山）传记所在卷次",
+          "该卷是否载有二人同日出生之说",
+          "若载有，是否指同一日（同日）而非仅同年"
+        ]
+      }
+    },
+    {
+      "event_id": 434,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:16Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "event_id": 435,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:17Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 903,
+        "total_tokens": 1051,
+        "context_chars": 818,
+        "output_tokens": 148,
+        "request_number": 2,
+        "elapsed_seconds": 1.037,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 1925
+      }
+    },
+    {
+      "event_id": 436,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "tool",
+      "time": "2026-10-20T12:09:17Z",
+      "data": {
+        "name": "search_corpus",
+        "summary": "旧唐书 卷二百上 列传第一百五十上 史思明 安禄山 同日生",
+        "call_number": 1
+      }
+    },
+    {
+      "event_id": 437,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "tool",
+      "time": "2026-10-20T12:09:24Z",
+      "data": {
+        "name": "search_corpus",
+        "summary": "史思明 与安禄山同日生 一日 生",
+        "call_number": 2
+      }
+    },
+    {
+      "event_id": 438,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:24Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 439,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:26Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 3382,
+        "total_tokens": 3682,
+        "context_chars": 4555,
+        "output_tokens": 300,
+        "request_number": 3,
+        "elapsed_seconds": 1.923,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 5607
+      }
+    },
+    {
+      "event_id": 440,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "assessment",
+      "time": "2026-10-20T12:09:26Z",
+      "data": {
+        "gaps": [],
+        "summary": "核心结论：《旧唐书》卷200上（列传第一百五十上）确为史思明、安禄山等传所在卷，但所载并非\"同日出生\"，而是\"先禄山一日生\"，即史思明比安禄山早一天出生，且分属两日（除日与岁日）。原文（passage b6fd53c8，source aa0f4580，卷200上）：\"史思明，本名窣干……與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。\"故\"同日出生\"之说与该卷记载不符，前提被反驳。另卷200上目录（passage 2dc1ab60）列\"安祿山子慶緒　高尚　孫孝哲　史思明子朝義\"，可佐证卷次归属。已获直接记载，检索停止。",
+        "sufficient": false,
+        "next_queries": [],
+        "premise_status": "反驳"
+      }
+    },
+    {
+      "event_id": 441,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:26Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "event_id": 442,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:27Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 3920,
+        "total_tokens": 3979,
+        "context_chars": 4888,
+        "output_tokens": 59,
+        "request_number": 4,
+        "elapsed_seconds": 0.93,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 9586
+      }
+    },
+    {
+      "event_id": 443,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "tool",
+      "time": "2026-10-20T12:09:27Z",
+      "data": {
+        "name": "read_passage",
+        "summary": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+        "call_number": 3
+      }
+    },
+    {
+      "event_id": 444,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "source",
+      "time": "2026-10-20T12:09:27Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+      }
+    },
+    {
+      "event_id": 445,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "source",
+      "time": "2026-10-20T12:09:27Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c"
+      }
+    },
+    {
+      "event_id": 446,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "source",
+      "time": "2026-10-20T12:09:27Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20"
+      }
+    },
+    {
+      "event_id": 447,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:27Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 448,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:29Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 2007,
+        "total_tokens": 2203,
+        "context_chars": 2385,
+        "output_tokens": 196,
+        "request_number": 5,
+        "elapsed_seconds": 1.583,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 11789
+      }
+    },
+    {
+      "event_id": 449,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "assessment",
+      "time": "2026-10-20T12:09:29Z",
+      "data": {
+        "gaps": [],
+        "summary": "《旧唐书》卷200上（列传第一百五十上）确为史思明传所在卷，但原文不作\"同日生\"，而明确区分先后：史思明\"先禄山一日生，思明除日生，禄山岁日生\"——即史思明生于除夕（除日），安禄山生于次日元旦（岁日），相差一日，非同日。故\"同日出生\"之说与该卷记载不符。",
+        "sufficient": true,
+        "next_queries": [],
+        "premise_status": "反驳"
+      }
+    },
+    {
+      "event_id": 450,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:29Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 451,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:31Z",
+      "data": {
+        "stage": "Answer",
+        "outcome": "returned",
+        "input_tokens": 2928,
+        "total_tokens": 3257,
+        "context_chars": 3060,
+        "output_tokens": 329,
+        "request_number": 6,
+        "elapsed_seconds": 1.813,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 15046
+      }
+    },
+    {
+      "event_id": 452,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:33Z",
+      "data": {
+        "stage": "Answer.format_retry",
+        "outcome": "returned",
+        "input_tokens": 3228,
+        "total_tokens": 3571,
+        "context_chars": 3737,
+        "output_tokens": 343,
+        "request_number": 7,
+        "elapsed_seconds": 2.556,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 18617
+      }
+    },
+    {
+      "event_id": 453,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:33Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 454,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:34Z",
+      "data": {
+        "stage": "QuoteReadings",
+        "outcome": "returned",
+        "input_tokens": 766,
+        "total_tokens": 843,
+        "context_chars": 778,
+        "output_tokens": 77,
+        "request_number": 8,
+        "elapsed_seconds": 0.951,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 19460
+      }
+    },
+    {
+      "event_id": 455,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:38Z",
+      "data": {
+        "stage": "SupportReview",
+        "outcome": "returned",
+        "input_tokens": 1326,
+        "total_tokens": 2042,
+        "context_chars": 1450,
+        "output_tokens": 716,
+        "request_number": 9,
+        "elapsed_seconds": 3.17,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 21502
+      }
+    },
+    {
+      "event_id": 456,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:38Z",
+      "data": {
+        "step": "根据引用审核修订答案（最多一次）"
+      }
+    },
+    {
+      "event_id": 457,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "step",
+      "time": "2026-10-20T12:09:38Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 458,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "model_usage",
+      "time": "2026-10-20T12:09:40Z",
+      "data": {
+        "stage": "Answer",
+        "outcome": "returned",
+        "input_tokens": 3644,
+        "total_tokens": 4031,
+        "context_chars": 4568,
+        "output_tokens": 387,
+        "request_number": 10,
+        "elapsed_seconds": 2.146,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 25533
+      }
+    },
+    {
+      "event_id": 459,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "diagnostic",
+      "time": "2026-10-20T12:09:40Z",
+      "data": {
+        "error_type": "ModelOutputError",
+        "token_usage": {
+          "deepseek-flash": {
+            "input_tokens": 22743,
+            "total_tokens": 25533,
+            "output_tokens": 2790,
+            "input_token_details": {
+              "cache_read": 10368
+            },
+            "output_token_details": {}
+          }
+        },
+        "model_requests": [
+          {
+            "stage": "Analysis",
+            "outcome": "returned",
+            "input_tokens": 639,
+            "total_tokens": 874,
+            "context_chars": 426,
+            "output_tokens": 235,
+            "request_number": 1,
+            "elapsed_seconds": 1.638,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 874
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 903,
+            "total_tokens": 1051,
+            "context_chars": 818,
+            "output_tokens": 148,
+            "request_number": 2,
+            "elapsed_seconds": 1.037,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 1925
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 3382,
+            "total_tokens": 3682,
+            "context_chars": 4555,
+            "output_tokens": 300,
+            "request_number": 3,
+            "elapsed_seconds": 1.923,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 5607
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 3920,
+            "total_tokens": 3979,
+            "context_chars": 4888,
+            "output_tokens": 59,
+            "request_number": 4,
+            "elapsed_seconds": 0.93,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 9586
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 2007,
+            "total_tokens": 2203,
+            "context_chars": 2385,
+            "output_tokens": 196,
+            "request_number": 5,
+            "elapsed_seconds": 1.583,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 11789
+          },
+          {
+            "stage": "Answer",
+            "outcome": "returned",
+            "input_tokens": 2928,
+            "total_tokens": 3257,
+            "context_chars": 3060,
+            "output_tokens": 329,
+            "request_number": 6,
+            "elapsed_seconds": 1.813,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 15046
+          },
+          {
+            "stage": "Answer.format_retry",
+            "outcome": "returned",
+            "input_tokens": 3228,
+            "total_tokens": 3571,
+            "context_chars": 3737,
+            "output_tokens": 343,
+            "request_number": 7,
+            "elapsed_seconds": 2.556,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 18617
+          },
+          {
+            "stage": "QuoteReadings",
+            "outcome": "returned",
+            "input_tokens": 766,
+            "total_tokens": 843,
+            "context_chars": 778,
+            "output_tokens": 77,
+            "request_number": 8,
+            "elapsed_seconds": 0.951,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 19460
+          },
+          {
+            "stage": "SupportReview",
+            "outcome": "returned",
+            "input_tokens": 1326,
+            "total_tokens": 2042,
+            "context_chars": 1450,
+            "output_tokens": 716,
+            "request_number": 9,
+            "elapsed_seconds": 3.17,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 21502
+          },
+          {
+            "stage": "Answer",
+            "outcome": "returned",
+            "input_tokens": 3644,
+            "total_tokens": 4031,
+            "context_chars": 4568,
+            "output_tokens": 387,
+            "request_number": 10,
+            "elapsed_seconds": 2.146,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 25533
+          }
+        ],
+        "structured_failures": [
+          {
+            "stage": "Answer",
+            "fields": [
+              {
+                "type": "model_type",
+                "field": [
+                  "premise"
+                ]
+              },
+              {
+                "type": "missing",
+                "field": [
+                  "conclusions"
+                ]
+              },
+              {
+                "type": "missing",
+                "field": [
+                  "events"
+                ]
+              },
+              {
+                "type": "missing",
+                "field": [
+                  "disagreements"
+                ]
+              }
+            ],
+            "reason": "schema_validation",
+            "error_type": "ValidationError",
+            "enum_fields": {
+              "kind": [
+                "文献记载",
+                "后人解释",
+                "推断",
+                "无法判断"
+              ]
+            },
+            "finish_reason": "tool_calls",
+            "invalid_tool_calls": 1
+          },
+          {
+            "stage": "Answer",
+            "fields": [
+              {
+                "type": "model_type",
+                "field": [
+                  "premise"
+                ]
+              }
+            ],
+            "reason": "schema_validation",
+            "error_type": "ValidationError",
+            "enum_fields": {
+              "kind": [
+                "文献记载",
+                "后人解释",
+                "推断",
+                "无法判断"
+              ]
+            },
+            "finish_reason": "tool_calls",
+            "invalid_tool_calls": 0
+          }
+        ]
+      }
+    },
+    {
+      "event_id": 460,
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "type": "failed",
+      "time": "2026-10-20T12:09:40Z",
+      "data": {
+        "error": "模型输出未通过结构化校验，已用尽本任务的格式修正预算。请缩小问题后重新研究；已读证据保留。",
+        "status": "failed"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "end": 4843,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+      "after": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "start": 4698,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "prev_id": "34f81edd-ae8e-4b0e-a69c-9e6071754fba",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": []
+    },
+    {
+      "end": 5425,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+      "after": "",
+      "start": 5051,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "450dc5f6-b71a-47d0-aeb7-fadb24081428",
+      "prev_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": []
+    },
+    {
+      "end": 5049,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "after": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+      "start": 4845,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "prev_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": [
+        {
+          "end": 4843,
+          "text": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+          "start": 4698,
+          "next_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+          "prev_id": "34f81edd-ae8e-4b0e-a69c-9e6071754fba",
+          "passage_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+          "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c"
+        },
+        {
+          "end": 5425,
+          "text": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+          "start": 5051,
+          "next_id": "450dc5f6-b71a-47d0-aeb7-fadb24081428",
+          "prev_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+          "passage_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+          "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20"
+        }
+      ]
+    }
+  ]
+}

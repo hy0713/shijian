@@ -1,0 +1,618 @@
+{
+  "checked_at": "2026-10-19T14:13:37.610336+00:00",
+  "cases": [
+    {
+      "question_id": "Q01",
+      "question": "《旧唐书》如何记述安禄山的出身？",
+      "status": "recorded",
+      "outcome": {
+        "status": "answered",
+        "reasons": [],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 3,
+      "citations": 10,
+      "citation_integrity": true,
+      "anchor_recall": {
+        "matched": 1,
+        "expected": 1,
+        "recall": 1.0,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 4,
+      "evidence_read": 5,
+      "total_tokens": 21899,
+      "elapsed_seconds": 32.656,
+      "requests": [
+        {
+          "stage": "Analysis",
+          "elapsed_seconds": 1.687,
+          "context_chars": 384,
+          "total_tokens": 845
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.031,
+          "context_chars": 765,
+          "total_tokens": 1018
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 3.516,
+          "context_chars": 4649,
+          "total_tokens": 4080
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 0.766,
+          "context_chars": 5255,
+          "total_tokens": 4412
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 4.406,
+          "context_chars": 2734,
+          "total_tokens": 2775
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 5.641,
+          "context_chars": 3944,
+          "total_tokens": 4808
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 4.344,
+          "context_chars": 4652,
+          "total_tokens": 3961
+        }
+      ],
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    },
+    {
+      "question_id": "Q07",
+      "question": "《新唐书》怎样说明安禄山与史思明早年的关系？这能证明两人后来必然翻脸吗？",
+      "status": "recorded",
+      "outcome": {
+        "status": "partial",
+        "reasons": [
+          "部分候选表述未通过审核"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 2,
+      "citations": 14,
+      "citation_integrity": true,
+      "anchor_recall": {
+        "matched": 1,
+        "expected": 2,
+        "recall": 0.5,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 7,
+      "evidence_read": 12,
+      "total_tokens": 34946,
+      "elapsed_seconds": 27.437,
+      "requests": [
+        {
+          "stage": "Analysis",
+          "elapsed_seconds": 2.453,
+          "context_chars": 404,
+          "total_tokens": 1042
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.203,
+          "context_chars": 1030,
+          "total_tokens": 1289
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 4.14,
+          "context_chars": 6673,
+          "total_tokens": 5495
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.063,
+          "context_chars": 7384,
+          "total_tokens": 6061
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 5.594,
+          "context_chars": 7020,
+          "total_tokens": 6079
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 7.187,
+          "context_chars": 8436,
+          "total_tokens": 8575
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 5.484,
+          "context_chars": 7697,
+          "total_tokens": 6405
+        }
+      ],
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "为什么史思明逐渐不听安庆绪的命令？",
+      "status": "recorded",
+      "outcome": {
+        "status": "answered",
+        "reasons": [],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 3,
+      "citations": 15,
+      "citation_integrity": true,
+      "anchor_recall": {
+        "matched": 1,
+        "expected": 1,
+        "recall": 1.0,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 8,
+      "evidence_read": 12,
+      "total_tokens": 33534,
+      "elapsed_seconds": 26.671,
+      "requests": [
+        {
+          "stage": "Analysis",
+          "elapsed_seconds": 2.375,
+          "context_chars": 385,
+          "total_tokens": 969
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 0.796,
+          "context_chars": 959,
+          "total_tokens": 1170
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 3.812,
+          "context_chars": 7990,
+          "total_tokens": 6080
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.141,
+          "context_chars": 8490,
+          "total_tokens": 6573
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 5.485,
+          "context_chars": 6341,
+          "total_tokens": 5283
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 6.968,
+          "context_chars": 7622,
+          "total_tokens": 7718
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 5.703,
+          "context_chars": 6963,
+          "total_tokens": 5741
+        }
+      ],
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    },
+    {
+      "question_id": "Q19",
+      "question": "为什么安禄山和史思明会翻脸？",
+      "status": "recorded",
+      "outcome": {
+        "status": "partial",
+        "reasons": [
+          "部分候选表述未通过审核",
+          "提问前提未通过审核"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 3,
+      "citations": 10,
+      "citation_integrity": true,
+      "anchor_recall": {
+        "matched": 1,
+        "expected": 3,
+        "recall": 0.3333333333333333,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 10,
+      "evidence_read": 12,
+      "total_tokens": 61584,
+      "elapsed_seconds": 39.25,
+      "requests": [
+        {
+          "stage": "Analysis",
+          "elapsed_seconds": 2.719,
+          "context_chars": 382,
+          "total_tokens": 1007
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.547,
+          "context_chars": 982,
+          "total_tokens": 1312
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 4.781,
+          "context_chars": 7843,
+          "total_tokens": 6068
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.125,
+          "context_chars": 8622,
+          "total_tokens": 6722
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 3.687,
+          "context_chars": 6308,
+          "total_tokens": 5233
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 1.25,
+          "context_chars": 10441,
+          "total_tokens": 7898
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 3.469,
+          "context_chars": 9652,
+          "total_tokens": 7291
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 6.515,
+          "context_chars": 7400,
+          "total_tokens": 7361
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 4.109,
+          "context_chars": 6995,
+          "total_tokens": 5632
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 5.047,
+          "context_chars": 8074,
+          "total_tokens": 7495
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 4.485,
+          "context_chars": 6916,
+          "total_tokens": 5565
+        }
+      ],
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    },
+    {
+      "question_id": "Q25",
+      "question": "史思明内心是否从未真心归唐？",
+      "status": "recorded",
+      "outcome": {
+        "status": "partial",
+        "reasons": [
+          "研究达到预算限制"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 2,
+      "citations": 15,
+      "citation_integrity": true,
+      "anchor_recall": {
+        "matched": 0,
+        "expected": 1,
+        "recall": 0.0,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 8,
+      "evidence_read": 10,
+      "total_tokens": 43209,
+      "elapsed_seconds": 36.828,
+      "requests": [
+        {
+          "stage": "Analysis",
+          "elapsed_seconds": 2.485,
+          "context_chars": 382,
+          "total_tokens": 939
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 0.922,
+          "context_chars": 904,
+          "total_tokens": 1092
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 3.813,
+          "context_chars": 4199,
+          "total_tokens": 3589
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 0.828,
+          "context_chars": 4852,
+          "total_tokens": 3883
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 4.265,
+          "context_chars": 3456,
+          "total_tokens": 3259
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 0.797,
+          "context_chars": 6102,
+          "total_tokens": 4665
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 4.719,
+          "context_chars": 5294,
+          "total_tokens": 4489
+        },
+        {
+          "stage": "choose",
+          "elapsed_seconds": 0.86,
+          "context_chars": 5343,
+          "total_tokens": 4086
+        },
+        {
+          "stage": "Assessment",
+          "elapsed_seconds": 4.328,
+          "context_chars": 5362,
+          "total_tokens": 4569
+        },
+        {
+          "stage": "Answer",
+          "elapsed_seconds": 8.094,
+          "context_chars": 6636,
+          "total_tokens": 7035
+        },
+        {
+          "stage": "SupportReview",
+          "elapsed_seconds": 5.297,
+          "context_chars": 6992,
+          "total_tokens": 5603
+        }
+      ],
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    }
+  ],
+  "baseline_cases": [
+    {
+      "question_id": "Q01",
+      "question": "《旧唐书》如何记述安禄山的出身？",
+      "status": "recorded",
+      "outcome": {
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 0,
+      "citations": 0,
+      "citation_integrity": null,
+      "anchor_recall": {
+        "matched": 0,
+        "expected": 1,
+        "recall": 0.0,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 2,
+      "evidence_read": 0,
+      "total_tokens": 8998,
+      "elapsed_seconds": 15.531,
+      "requests": null,
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    },
+    {
+      "question_id": "Q07",
+      "question": "《新唐书》怎样说明安禄山与史思明早年的关系？这能证明两人后来必然翻脸吗？",
+      "status": "recorded",
+      "outcome": {
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 0,
+      "citations": 0,
+      "citation_integrity": null,
+      "anchor_recall": {
+        "matched": 0,
+        "expected": 2,
+        "recall": 0.0,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 2,
+      "evidence_read": 0,
+      "total_tokens": 13982,
+      "elapsed_seconds": 27.843,
+      "requests": null,
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "为什么史思明逐渐不听安庆绪的命令？",
+      "status": "recorded",
+      "outcome": {
+        "status": "partial",
+        "reasons": [
+          "研究达到预算限制"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 3,
+      "citations": 24,
+      "citation_integrity": true,
+      "anchor_recall": {
+        "matched": 1,
+        "expected": 1,
+        "recall": 1.0,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 8,
+      "evidence_read": 12,
+      "total_tokens": 118223,
+      "elapsed_seconds": 39.766,
+      "requests": null,
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    },
+    {
+      "question_id": "Q19",
+      "question": "为什么安禄山和史思明会翻脸？",
+      "status": "recorded",
+      "outcome": {
+        "status": "partial",
+        "reasons": [
+          "部分候选表述未通过审核",
+          "研究达到预算限制"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 3,
+      "citations": 14,
+      "citation_integrity": true,
+      "anchor_recall": {
+        "matched": 1,
+        "expected": 3,
+        "recall": 0.3333333333333333,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 8,
+      "evidence_read": 9,
+      "total_tokens": 103757,
+      "elapsed_seconds": 38.687,
+      "requests": null,
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    },
+    {
+      "question_id": "Q25",
+      "question": "史思明内心是否从未真心归唐？",
+      "status": "recorded",
+      "outcome": {
+        "status": "insufficient_evidence",
+        "reasons": [
+          "没有通过引用与支持审核的核心结论"
+        ],
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+      },
+      "core_claims": 0,
+      "citations": 0,
+      "citation_integrity": null,
+      "anchor_recall": {
+        "matched": 0,
+        "expected": 1,
+        "recall": 0.0,
+        "note": "小规模已知原文锚点的读取召回率；不是全语料完整召回率。"
+      },
+      "tool_calls": 2,
+      "evidence_read": 0,
+      "total_tokens": 17020,
+      "elapsed_seconds": 18.5,
+      "requests": null,
+      "human_review": {
+        "reviewer": null,
+        "evidence_support_0_to_2": null,
+        "completeness_0_to_2": null,
+        "premise_recognition_0_to_2": null,
+        "notes": null
+      },
+      "cost": null
+    }
+  ],
+  "comparison": {
+    "paired_cases": 5,
+    "before_tokens": 261980,
+    "after_tokens": 195172,
+    "token_reduction": 0.2550118329643484,
+    "note": "同一五题、同模型和语料的单次观测；需结合回答质量，不是统计显著性结论。"
+  },
+  "note": "引用完整性只检查定位，不证明内容支持。人工语义评分保持未填写，不能用模型审核替代。",
+  "baseline_reference": "Original ResearchAgent from git commit 3b8fd2c30cac156c9e23c91d916ac31d92e1397f; same configured model, corpus and default budgets; separate cold embedding load per case.",
+  "manual_semantic_acceptance": "not independently human reviewed"
+}

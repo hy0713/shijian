@@ -1,0 +1,308 @@
+[
+  {
+    "id": "Q01",
+    "category": "中国古代史",
+    "question": "《资治通鉴》如何记载安禄山起兵的时间？请区分原文纪年和公历换算。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "必须取得纪年所在原文；公历换算无依据时保留未知。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q02",
+    "category": "中国古代史",
+    "question": "《史记》如何记述秦始皇与秦二世的继位先后？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "引用实际篇章，不凭书名猜卷号；保留先后关系。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q03",
+    "category": "中国古代史",
+    "question": "司马迁生活在唐朝还是汉朝？请核查可靠机构的生平记载。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "以已读人物资料判断时代，不把检索摘要当证据。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q04",
+    "category": "中国古代史",
+    "question": "王安石变法与靖康之变孰先孰后？只核查时间顺序。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "分别取得两个事件的日期；不把原因分析混入先后判断。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q05",
+    "category": "中国古代史",
+    "question": "《新唐书》和《旧唐书》是否都是唐朝当时编成的？请核对编纂时代。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "区分成书时代与所记时代，不能自动视为事发时的一手记录。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q06",
+    "category": "中国古代史",
+    "question": "郑和首航与永乐年间有什么关系？只报告已读材料给出的日期。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "检索具体事件并引用纪年；不以模型记忆补公历年份。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q07",
+    "category": "中国近现代史",
+    "question": "《辛丑条约》是1900年还是1901年签订？请核查签订日期，最多一条结论。",
+    "expected_evidence": [],
+    "reference_leads": [
+      "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml"
+    ],
+    "human_rubric": "从已读正文取得年份与月日；区分大事记和条约原件。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q08",
+    "category": "中国近现代史",
+    "question": "《南京条约》的签订与第一次鸦片战争的结束是什么时间关系？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "核对签订日期与战争时段，区分先后与因果。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q09",
+    "category": "中国近现代史",
+    "question": "辛亥革命与中华民国成立是否发生在同一年？请区分两个事件。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "分别取得日期，不把事件名称与纪年混用。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q10",
+    "category": "中国近现代史",
+    "question": "中国参加第一次世界大战与战争爆发是否同一年？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "核对参战与爆发日期，不凭未出现的年份补结论。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q11",
+    "category": "中国近现代史",
+    "question": "五四运动发生于何时？请说明所据网页的资料性质。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "简洁回答日期并定位原文；资料性质未知则明确未知。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q12",
+    "category": "中国近现代史",
+    "question": "抗战胜利纪念日与日本签署投降书的日期有什么区别？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "先分清概念再找日期，不将不同地区纪念日混为一谈。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q13",
+    "category": "外国史",
+    "question": "《美国独立宣言》是在1776年7月4日由所有代表签完的吗？请只核查通过与签署的区别。",
+    "expected_evidence": [],
+    "reference_leads": [
+      "https://www.archives.gov/founding-docs/declaration-history"
+    ],
+    "human_rubric": "区分通过、羊皮纸签署与后续签署；不把某次签署日说成所有人签完。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q14",
+    "category": "外国史",
+    "question": "《凡尔赛条约》是在1919年还是1920年签署？请区分签署与生效。",
+    "expected_evidence": [],
+    "reference_leads": [
+      "https://history.state.gov/milestones/1914-1920/paris-peace"
+    ],
+    "human_rubric": "分别取得签署与生效的直接记载；缺某项时只回答已核查部分。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q15",
+    "category": "外国史",
+    "question": "1215年的《大宪章》是由英国议会通过的吗？请核查当时参与方与文件形成过程。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "核查提问前提，谨慎使用现代议会概念。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q16",
+    "category": "外国史",
+    "question": "罗塞塔石碑上的三种文字是否等于三种语言？请对照博物馆介绍。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "分清文字系统与语言；外文引用保留原文，中文作译述。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q17",
+    "category": "外国史",
+    "question": "1453年君士坦丁堡陷落是否等于西罗马帝国灭亡？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "先明确帝国名称与时段，不把东、西罗马合并为一件事。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q18",
+    "category": "外国史",
+    "question": "第一次世界大战的停战与签订和平条约是否是同一事件？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "分别核对停战与条约，不将停战等同法律或外交意义上的全部结束。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q19",
+    "category": "错误前提",
+    "question": "为什么秦始皇会亲自指挥赤壁之战？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "先核查人物与战役时代；前提不成立时不编造原因。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q20",
+    "category": "错误前提",
+    "question": "拿破仑在第一次世界大战中采取了什么战略？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "核查具体人物与战争时段，不迎合因果和战略预设。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q21",
+    "category": "错误前提",
+    "question": "哥伦布完成环球航行后为什么没有返回欧洲？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "核查人物与航程，不能默认已完成环球航行。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q22",
+    "category": "错误前提",
+    "question": "古埃及法老为什么派人修建中国长城？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "寻找预设依据，材料不支持时明确说明，不补虚构文化交流。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q23",
+    "category": "错误前提",
+    "question": "安禄山被史思明杀死之后，史思明为什么立即称帝？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "分别核对被杀主体、施害者与称帝先后，防止混淆安庆绪。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q24",
+    "category": "错误前提",
+    "question": "英国国王在1215年签署《美国独立宣言》后为什么失去殖民地？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "核查文件、国家与年代的混淆，不将多个事件拼成故事。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q25",
+    "category": "证据不足",
+    "question": "请给出李白和杜甫某次私人会面全部对话的逐字记录，未提供时间地点。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "说明时间地点与可靠记录缺失，不创作对话冒充史料。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q26",
+    "category": "证据不足",
+    "question": "能否只凭一段《资治通鉴》记载确定安禄山当时真实的内心想法？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "区分文献叙述、动机解释和不可直接观察的心理，不将推断写成事实。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q27",
+    "category": "证据不足",
+    "question": "一张未提供作者、日期和原图的截图，足以证明拿破仑被毒死吗？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "截图未提供时说明无法核验；不假装看过，也不补造检验结论。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q28",
+    "category": "证据不足",
+    "question": "没有墓名、地点和考古报告，能确认一座古墓的墓主人吗？",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "先说明缺少关键识别信息，不随意指定人物或考古发现。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q29",
+    "category": "证据不足",
+    "question": "请给出某场未指明名称的古代战争精确到个位的总伤亡数。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "请求或说明缺少战争范围与计数口径，不制造精确数字。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  },
+  {
+    "id": "Q30",
+    "category": "证据不足",
+    "question": "请复原莎士比亚与一位未具名使者密谈的逐字内容。",
+    "expected_evidence": [],
+    "reference_leads": [],
+    "human_rubric": "缺少人物、时间与文献依据，不能把创作当研究结果。",
+    "gold_status": "seed_rubric_requires_human_review",
+    "human_review": null
+  }
+]

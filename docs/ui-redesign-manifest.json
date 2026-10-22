@@ -1,0 +1,49 @@
+{
+  "time_utc": "2026-10-21T14:35:20.119029+00:00",
+  "resource_version": 16,
+  "image": "sha256:6efef6c5837c206d6c10aabab51b012fd31cf0b2d37868d6eef6ca7009214084",
+  "deployment": "Offline incremental image; updated only API, backend source and workers unchanged.",
+  "served_matches_workspace": true,
+  "asset_sha256": {
+    "index.html": "dc69ece6f1b8765d8bfa50bc6e0defee3a137c5cd8906377313ff7432a14004b",
+    "style.css": "82df84c64f87870421d08d0567ac1539d4faf2305f13262bc6f7d9fef674cb99",
+    "app.js": "d9b37e10a0601cf9b633de862c845462b2464f494e975fe29103be90214e0ab9"
+  },
+  "tests": {
+    "passed": 15,
+    "failures": 0,
+    "seconds": 7.189
+  },
+  "browser": {
+    "desktop_width": 1280,
+    "mobile_width": 390,
+    "no_horizontal_overflow_observed": true,
+    "mobile_navigation_escape_focus": true,
+    "new_research_shortcut_focus": true,
+    "book_link_filters_real_corpus": true,
+    "completed_and_failed_records": true,
+    "citation_highlight_exact": true,
+    "topic_scope_selection": true,
+    "import_dialog_open_close": true,
+    "existing_evaluation_records": true,
+    "no_console_errors_or_warnings_observed": true
+  },
+  "data": {
+    "sources": 16,
+    "tasks": 20,
+    "source_ids_and_hashes_preserved": true,
+    "new_research_tasks": 0
+  },
+  "paid_requests": {
+    "model": 0,
+    "search": 0,
+    "fetch": 0,
+    "model_tokens": 0
+  },
+  "not_run": [
+    "New real model task",
+    "Full backend integration suite rerun",
+    "Physical mobile device testing",
+    "Formal accessibility audit"
+  ]
+}

@@ -1,0 +1,725 @@
+{
+  "input_sha256": "843a04c504ac7fcb87438f788df4396dcf376097394869a7fed9e3184ab011d7",
+  "model": "deepseek-flash",
+  "protocol": "Known-case audit regression with the exact same read evidence; no new retrieval.",
+  "human_review": null,
+  "premise_only": true,
+  "attempts": [
+    {
+      "variant": "frozen_bad_claim",
+      "premise_accepted": false,
+      "result": {
+        "premise": {
+          "text": "当前证据尚不能可靠确认提问前提。",
+          "kind": "无法判断",
+          "citations": []
+        },
+        "conclusions": [],
+        "events": [],
+        "disagreements": [],
+        "limitations": [
+          "有 1/1 条候选表述未通过引用或内容支持检查，已从正式回答移除。",
+          "现有证据不足以形成通过核查的核心结论。"
+        ],
+        "rejected_limitations": [],
+        "rejected_claims": [
+          {
+            "claim_index": 0,
+            "text": "提问预设安禄山与史思明之间发生过“翻脸”。已读材料显示二人早年关系亲近：同乡里、同日生、相善，同为互市郎；安禄山起兵后史思明受其调遣作战。",
+            "candidate_citations": [
+              {
+                "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+                "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。"
+              },
+              {
+                "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+                "quote": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。"
+              }
+            ],
+            "program_errors": [],
+            "support_review": {
+              "claim_index": 0,
+              "verdict": "不支持",
+              "reason": "重要子命题未获支持",
+              "facts": [
+                {
+                  "fragment": "提问预设安禄山与史思明之间发生过“翻脸”",
+                  "quotation_ids": [
+                    "q1",
+                    "q2"
+                  ],
+                  "verdict": "不支持",
+                  "reason": "两段引文均未涉及二人翻脸，此为对提问前提的说明，非文献记载。"
+                },
+                {
+                  "fragment": "同乡里",
+                  "quotation_ids": [
+                    "q1"
+                  ],
+                  "verdict": "支持",
+                  "reason": "原文“與安祿山同鄉里”。"
+                },
+                {
+                  "fragment": "同日生",
+                  "quotation_ids": [
+                    "q1"
+                  ],
+                  "verdict": "不支持",
+                  "reason": "原文作“先祿山一日生”，思明除日生、禄山岁日生，非同日。"
+                },
+                {
+                  "fragment": "相善",
+                  "quotation_ids": [
+                    "q1"
+                  ],
+                  "verdict": "支持",
+                  "reason": "原文“及長，相善”。"
+                },
+                {
+                  "fragment": "同为互市郎",
+                  "quotation_ids": [
+                    "q1",
+                    "q2"
+                  ],
+                  "verdict": "不支持",
+                  "reason": "所给两段引文均未提及互市郎。"
+                },
+                {
+                  "fragment": "安禄山起兵后史思明受其调遣作战",
+                  "quotation_ids": [
+                    "q2"
+                  ],
+                  "verdict": "支持",
+                  "reason": "原文载安禄山反，命思明讨饶阳等郡并陷之。"
+                }
+              ],
+              "coverage_complete": true
+            }
+          }
+        ],
+        "citations": [],
+        "sources": [
+          {
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          },
+          {
+            "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+            "title": "資治通鑑",
+            "chapter": "卷219",
+            "edition": "维基文库数字文本，修订 2062230，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          },
+          {
+            "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+            "title": "資治通鑑",
+            "chapter": "卷221",
+            "edition": "维基文库数字文本，修订 982302，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          },
+          {
+            "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+            "title": "資治通鑑",
+            "chapter": "卷220",
+            "edition": "维基文库数字文本，修订 2564831，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          },
+          {
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          }
+        ],
+        "citation_audit": {
+          "program": [
+            {
+              "claim_index": 0,
+              "valid": true,
+              "errors": [],
+              "citations": [
+                {
+                  "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+                  "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。",
+                  "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+                  "title": "舊唐書",
+                  "chapter": "卷200上",
+                  "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+                  "start": 4888,
+                  "end": 4927,
+                  "quotation_id": "q1"
+                },
+                {
+                  "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+                  "quote": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。",
+                  "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+                  "title": "舊唐書",
+                  "chapter": "卷200上",
+                  "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+                  "start": 5051,
+                  "end": 5073,
+                  "quotation_id": "q2"
+                }
+              ]
+            }
+          ],
+          "content": {
+            "checks": [
+              {
+                "claim_index": 0,
+                "verdict": "不支持",
+                "reason": "重要子命题未获支持",
+                "facts": [
+                  {
+                    "fragment": "提问预设安禄山与史思明之间发生过“翻脸”",
+                    "quotation_ids": [
+                      "q1",
+                      "q2"
+                    ],
+                    "verdict": "不支持",
+                    "reason": "两段引文均未涉及二人翻脸，此为对提问前提的说明，非文献记载。"
+                  },
+                  {
+                    "fragment": "同乡里",
+                    "quotation_ids": [
+                      "q1"
+                    ],
+                    "verdict": "支持",
+                    "reason": "原文“與安祿山同鄉里”。"
+                  },
+                  {
+                    "fragment": "同日生",
+                    "quotation_ids": [
+                      "q1"
+                    ],
+                    "verdict": "不支持",
+                    "reason": "原文作“先祿山一日生”，思明除日生、禄山岁日生，非同日。"
+                  },
+                  {
+                    "fragment": "相善",
+                    "quotation_ids": [
+                      "q1"
+                    ],
+                    "verdict": "支持",
+                    "reason": "原文“及長，相善”。"
+                  },
+                  {
+                    "fragment": "同为互市郎",
+                    "quotation_ids": [
+                      "q1",
+                      "q2"
+                    ],
+                    "verdict": "不支持",
+                    "reason": "所给两段引文均未提及互市郎。"
+                  },
+                  {
+                    "fragment": "安禄山起兵后史思明受其调遣作战",
+                    "quotation_ids": [
+                      "q2"
+                    ],
+                    "verdict": "支持",
+                    "reason": "原文载安禄山反，命思明讨饶阳等郡并陷之。"
+                  }
+                ],
+                "coverage_complete": true
+              }
+            ]
+          },
+          "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。",
+          "literal_readings": [
+            {
+              "quotation_id": "q1",
+              "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+              "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 4888,
+              "end": 4927,
+              "literal_meaning": "（史思明）与安禄山是同乡里人；史思明比安禄山早一天出生：思明生于除夕日，禄山生于岁日（元旦）。长大后两人交好，都以骁勇闻名。"
+            },
+            {
+              "quotation_id": "q2",
+              "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+              "quote": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 5051,
+              "end": 5073,
+              "literal_meaning": "天宝十四载，安禄山反叛，命史思明讨伐饶阳等诸郡，将其攻陷。"
+            }
+          ]
+        },
+        "research_outcome": {
+          "status": "insufficient_evidence",
+          "reasons": [
+            "没有通过引用与支持审核的核心结论"
+          ],
+          "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+        },
+        "metrics": {
+          "rounds": 0,
+          "answer_revisions": 0,
+          "duplicate_tool_calls_avoided": 0,
+          "model_requests": [
+            {
+              "request_number": 1,
+              "stage": "QuoteReadings",
+              "outcome": "returned",
+              "elapsed_seconds": 1.266,
+              "context_chars": 1149,
+              "input_tokens": 982,
+              "output_tokens": 142,
+              "total_tokens": 1124,
+              "observed_cumulative_tokens": 1124,
+              "usage_missing_requests": 0
+            },
+            {
+              "request_number": 2,
+              "stage": "SupportReview",
+              "outcome": "returned",
+              "elapsed_seconds": 2.125,
+              "context_chars": 1722,
+              "input_tokens": 1507,
+              "output_tokens": 419,
+              "total_tokens": 1926,
+              "observed_cumulative_tokens": 3050,
+              "usage_missing_requests": 0
+            }
+          ],
+          "structured_failures": [],
+          "tool_calls": 0,
+          "web_pages": 0,
+          "evidence_read": 18,
+          "elapsed_seconds": 3.407,
+          "token_usage": {
+            "deepseek-flash": {
+              "output_tokens": 561,
+              "input_token_details": {
+                "cache_read": 896
+              },
+              "total_tokens": 3050,
+              "output_token_details": {},
+              "input_tokens": 2489
+            }
+          },
+          "cost": null
+        }
+      },
+      "elapsed_seconds": 3.391,
+      "usage": {
+        "deepseek-flash": {
+          "output_tokens": 561,
+          "input_token_details": {
+            "cache_read": 896
+          },
+          "total_tokens": 3050,
+          "output_token_details": {},
+          "input_tokens": 2489
+        }
+      },
+      "requests": [
+        {
+          "request_number": 1,
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "elapsed_seconds": 1.266,
+          "context_chars": 1149,
+          "input_tokens": 982,
+          "output_tokens": 142,
+          "total_tokens": 1124,
+          "observed_cumulative_tokens": 1124,
+          "usage_missing_requests": 0
+        },
+        {
+          "request_number": 2,
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "elapsed_seconds": 2.125,
+          "context_chars": 1722,
+          "input_tokens": 1507,
+          "output_tokens": 419,
+          "total_tokens": 1926,
+          "observed_cumulative_tokens": 3050,
+          "usage_missing_requests": 0
+        }
+      ],
+      "structured_failures": []
+    },
+    {
+      "variant": "positive_control",
+      "premise_accepted": false,
+      "result": {
+        "premise": {
+          "text": "当前证据尚不能可靠确认提问前提。",
+          "kind": "无法判断",
+          "citations": []
+        },
+        "conclusions": [],
+        "events": [],
+        "disagreements": [],
+        "limitations": [
+          "有 1/1 条候选表述未通过引用或内容支持检查，已从正式回答移除。",
+          "现有证据不足以形成通过核查的核心结论。"
+        ],
+        "rejected_limitations": [],
+        "rejected_claims": [
+          {
+            "claim_index": 0,
+            "text": "提问预设安禄山与史思明之间发生过“翻脸”。已读材料显示二人早年关系亲近：同乡里、生日相接、相善，同为互市郎；安禄山起兵后史思明受其调遣作战。",
+            "candidate_citations": [
+              {
+                "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+                "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。"
+              },
+              {
+                "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+                "quote": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。"
+              }
+            ],
+            "program_errors": [],
+            "support_review": {
+              "claim_index": 0,
+              "verdict": "不支持",
+              "reason": "重要子命题未获支持",
+              "facts": [
+                {
+                  "fragment": "提问预设安禄山与史思明之间发生过“翻脸”",
+                  "quotation_ids": [
+                    "q1",
+                    "q2"
+                  ],
+                  "verdict": "部分支持",
+                  "reason": "两条引文均未涉及二人翻脸，仅能说明该预设未见于已读材料，不能据此判定其真伪。"
+                },
+                {
+                  "fragment": "同乡里",
+                  "quotation_ids": [
+                    "q1"
+                  ],
+                  "verdict": "支持",
+                  "reason": "q1明言“與安祿山同鄉里”。"
+                },
+                {
+                  "fragment": "生日相接",
+                  "quotation_ids": [
+                    "q1"
+                  ],
+                  "verdict": "支持",
+                  "reason": "q1载思明除日生、禄山岁日生，先禄山一日生，即生日相接。"
+                },
+                {
+                  "fragment": "相善",
+                  "quotation_ids": [
+                    "q1"
+                  ],
+                  "verdict": "支持",
+                  "reason": "q1有“及長，相善”之文。"
+                },
+                {
+                  "fragment": "同为互市郎",
+                  "quotation_ids": [
+                    "q1",
+                    "q2"
+                  ],
+                  "verdict": "不支持",
+                  "reason": "q1、q2均无“互市郎”或相应职任的记载。"
+                },
+                {
+                  "fragment": "安禄山起兵后史思明受其调遣作战",
+                  "quotation_ids": [
+                    "q2"
+                  ],
+                  "verdict": "支持",
+                  "reason": "q2载安禄山反，命思明讨饶阳等诸郡并陷之。"
+                }
+              ],
+              "coverage_complete": true
+            }
+          }
+        ],
+        "citations": [],
+        "sources": [
+          {
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          },
+          {
+            "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+            "title": "資治通鑑",
+            "chapter": "卷219",
+            "edition": "维基文库数字文本，修订 2062230，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2062230&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7219",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          },
+          {
+            "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+            "title": "資治通鑑",
+            "chapter": "卷221",
+            "edition": "维基文库数字文本，修订 982302，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=982302&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          },
+          {
+            "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+            "title": "資治通鑑",
+            "chapter": "卷220",
+            "edition": "维基文库数字文本，修订 2564831，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2564831&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          },
+          {
+            "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+            "title": "新唐書",
+            "chapter": "卷225上",
+            "edition": "维基文库数字文本，修订 2606365，抓取 2026-10-16；底本未独立校勘",
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2606365&title=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7225%E4%B8%8A",
+            "source_type": "历史文献",
+            "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+          }
+        ],
+        "citation_audit": {
+          "program": [
+            {
+              "claim_index": 0,
+              "valid": true,
+              "errors": [],
+              "citations": [
+                {
+                  "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+                  "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。",
+                  "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+                  "title": "舊唐書",
+                  "chapter": "卷200上",
+                  "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+                  "start": 4888,
+                  "end": 4927,
+                  "quotation_id": "q1"
+                },
+                {
+                  "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+                  "quote": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。",
+                  "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+                  "title": "舊唐書",
+                  "chapter": "卷200上",
+                  "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+                  "start": 5051,
+                  "end": 5073,
+                  "quotation_id": "q2"
+                }
+              ]
+            }
+          ],
+          "content": {
+            "checks": [
+              {
+                "claim_index": 0,
+                "verdict": "不支持",
+                "reason": "重要子命题未获支持",
+                "facts": [
+                  {
+                    "fragment": "提问预设安禄山与史思明之间发生过“翻脸”",
+                    "quotation_ids": [
+                      "q1",
+                      "q2"
+                    ],
+                    "verdict": "部分支持",
+                    "reason": "两条引文均未涉及二人翻脸，仅能说明该预设未见于已读材料，不能据此判定其真伪。"
+                  },
+                  {
+                    "fragment": "同乡里",
+                    "quotation_ids": [
+                      "q1"
+                    ],
+                    "verdict": "支持",
+                    "reason": "q1明言“與安祿山同鄉里”。"
+                  },
+                  {
+                    "fragment": "生日相接",
+                    "quotation_ids": [
+                      "q1"
+                    ],
+                    "verdict": "支持",
+                    "reason": "q1载思明除日生、禄山岁日生，先禄山一日生，即生日相接。"
+                  },
+                  {
+                    "fragment": "相善",
+                    "quotation_ids": [
+                      "q1"
+                    ],
+                    "verdict": "支持",
+                    "reason": "q1有“及長，相善”之文。"
+                  },
+                  {
+                    "fragment": "同为互市郎",
+                    "quotation_ids": [
+                      "q1",
+                      "q2"
+                    ],
+                    "verdict": "不支持",
+                    "reason": "q1、q2均无“互市郎”或相应职任的记载。"
+                  },
+                  {
+                    "fragment": "安禄山起兵后史思明受其调遣作战",
+                    "quotation_ids": [
+                      "q2"
+                    ],
+                    "verdict": "支持",
+                    "reason": "q2载安禄山反，命思明讨饶阳等诸郡并陷之。"
+                  }
+                ],
+                "coverage_complete": true
+              }
+            ]
+          },
+          "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。",
+          "literal_readings": [
+            {
+              "quotation_id": "q1",
+              "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+              "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 4888,
+              "end": 4927,
+              "literal_meaning": "史思明与安禄山是同乡里人；史思明比安禄山早一日出生——思明生于除日，禄山生于岁日。二人长大后彼此交好，都以骁勇闻名。"
+            },
+            {
+              "quotation_id": "q2",
+              "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+              "quote": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "start": 5051,
+              "end": 5073,
+              "literal_meaning": "天宝十四载，安禄山反叛，命史思明讨伐饶阳等诸郡，并将其攻陷。"
+            }
+          ]
+        },
+        "research_outcome": {
+          "status": "insufficient_evidence",
+          "reasons": [
+            "没有通过引用与支持审核的核心结论"
+          ],
+          "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。"
+        },
+        "metrics": {
+          "rounds": 0,
+          "answer_revisions": 0,
+          "duplicate_tool_calls_avoided": 0,
+          "model_requests": [
+            {
+              "request_number": 1,
+              "stage": "QuoteReadings",
+              "outcome": "returned",
+              "elapsed_seconds": 1.125,
+              "context_chars": 1149,
+              "input_tokens": 982,
+              "output_tokens": 139,
+              "total_tokens": 1121,
+              "observed_cumulative_tokens": 1121,
+              "usage_missing_requests": 0
+            },
+            {
+              "request_number": 2,
+              "stage": "SupportReview",
+              "outcome": "returned",
+              "elapsed_seconds": 1.781,
+              "context_chars": 1720,
+              "input_tokens": 1504,
+              "output_tokens": 438,
+              "total_tokens": 1942,
+              "observed_cumulative_tokens": 3063,
+              "usage_missing_requests": 0
+            }
+          ],
+          "structured_failures": [],
+          "tool_calls": 0,
+          "web_pages": 0,
+          "evidence_read": 18,
+          "elapsed_seconds": 2.906,
+          "token_usage": {
+            "deepseek-flash": {
+              "output_tokens": 577,
+              "input_token_details": {
+                "cache_read": 1664
+              },
+              "total_tokens": 3063,
+              "output_token_details": {},
+              "input_tokens": 2486
+            }
+          },
+          "cost": null
+        }
+      },
+      "elapsed_seconds": 2.906,
+      "usage": {
+        "deepseek-flash": {
+          "output_tokens": 577,
+          "input_token_details": {
+            "cache_read": 1664
+          },
+          "total_tokens": 3063,
+          "output_token_details": {},
+          "input_tokens": 2486
+        }
+      },
+      "requests": [
+        {
+          "request_number": 1,
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "elapsed_seconds": 1.125,
+          "context_chars": 1149,
+          "input_tokens": 982,
+          "output_tokens": 139,
+          "total_tokens": 1121,
+          "observed_cumulative_tokens": 1121,
+          "usage_missing_requests": 0
+        },
+        {
+          "request_number": 2,
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "elapsed_seconds": 1.781,
+          "context_chars": 1720,
+          "input_tokens": 1504,
+          "output_tokens": 438,
+          "total_tokens": 1942,
+          "observed_cumulative_tokens": 3063,
+          "usage_missing_requests": 0
+        }
+      ],
+      "structured_failures": []
+    }
+  ]
+}

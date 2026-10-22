@@ -1,180 +1,133 @@
 {
-  "checked_at": "2026-10-16T10:39:28.794401+00:00",
-  "status": "blocked_on_model_account_balance",
-  "model_api_probe": {
-    "http_status": 402,
-    "message": "Insufficient Balance",
-    "further_model_calls_stopped": true
+  "checked_at": "2026-10-19T14:13:37.610336+00:00",
+  "status": "executed_pending_independent_human_review",
+  "task_id": "1e0b5ad5-ad8f-42ea-a6cd-315d71ab7805",
+  "task_status": "completed",
+  "research_outcome": {
+    "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+    "status": "partial",
+    "reasons": [
+      "研究达到预算限制"
+    ]
   },
-  "data": {
-    "sources": 8,
-    "ready_sources": 8,
-    "mysql_passages": 509,
-    "milvus_vectors": 509,
-    "id_and_source_links_verified": true
+  "checks": {
+    "real_model": true,
+    "mysql_milvus_sources": 8,
+    "citations_checked": 18,
+    "websocket_disconnect_did_not_cancel": true,
+    "websocket_replay": true,
+    "running_task_cancelled": false
   },
-  "tests": {
-    "passed": 48,
-    "skipped": 0,
-    "scope": "unit tests plus real MySQL Redis Milvus; model protocol tests use explicit fixtures"
+  "metrics": {
+    "cost": null,
+    "rounds": 4,
+    "web_pages": 0,
+    "tool_calls": 15,
+    "token_usage": {
+      "deepseek-flash": {
+        "input_tokens": 85902,
+        "total_tokens": 96778,
+        "output_tokens": 10876,
+        "input_token_details": {
+          "cache_read": 33024
+        },
+        "output_token_details": {}
+      }
+    },
+    "evidence_read": 20,
+    "model_requests": [
+      {
+        "stage": "Analysis",
+        "total_tokens": 942,
+        "context_chars": 382,
+        "elapsed_seconds": 2.062
+      },
+      {
+        "stage": "choose",
+        "total_tokens": 1241,
+        "context_chars": 897,
+        "elapsed_seconds": 1.116
+      },
+      {
+        "stage": "Assessment",
+        "total_tokens": 6012,
+        "context_chars": 7846,
+        "elapsed_seconds": 3.502
+      },
+      {
+        "stage": "choose",
+        "total_tokens": 6653,
+        "context_chars": 8430,
+        "elapsed_seconds": 0.966
+      },
+      {
+        "stage": "Assessment",
+        "total_tokens": 5115,
+        "context_chars": 6198,
+        "elapsed_seconds": 3.625
+      },
+      {
+        "stage": "choose",
+        "total_tokens": 7827,
+        "context_chars": 10247,
+        "elapsed_seconds": 1.289
+      },
+      {
+        "stage": "Assessment",
+        "total_tokens": 6927,
+        "context_chars": 8969,
+        "elapsed_seconds": 3.473
+      },
+      {
+        "stage": "choose",
+        "total_tokens": 6743,
+        "context_chars": 8925,
+        "elapsed_seconds": 0.998
+      },
+      {
+        "stage": "Assessment",
+        "total_tokens": 7994,
+        "context_chars": 10269,
+        "elapsed_seconds": 3.856
+      },
+      {
+        "stage": "Answer",
+        "total_tokens": 10264,
+        "context_chars": 11392,
+        "elapsed_seconds": 6.545
+      },
+      {
+        "stage": "Answer.format_retry",
+        "total_tokens": 10495,
+        "context_chars": 11495,
+        "elapsed_seconds": 6.877
+      },
+      {
+        "stage": "SupportReview",
+        "total_tokens": 7322,
+        "context_chars": 8877,
+        "elapsed_seconds": 6.578
+      },
+      {
+        "stage": "Answer",
+        "total_tokens": 11570,
+        "context_chars": 13168,
+        "elapsed_seconds": 7.481
+      },
+      {
+        "stage": "SupportReview",
+        "total_tokens": 7673,
+        "context_chars": 9886,
+        "elapsed_seconds": 5.225
+      }
+    ],
+    "elapsed_seconds": 65.306,
+    "answer_revisions": 1,
+    "duplicate_tool_calls_avoided": 0
   },
-  "runs": [
-    {
-      "task_id": "e450d07d-9883-4e0f-a556-1717344dc421",
-      "question": "为什么安禄山和史思明会翻脸？",
-      "status": "failed",
-      "metrics": null,
-      "error": "研究失败（APIStatusError）；请检查服务连接和模型配置，修复后新建任务"
-    },
-    {
-      "task_id": "f00ba668-fab2-41f2-8d1c-a736c3950c43",
-      "question": "请对照两唐书核查史思明与安庆绪的关系和先后时序。",
-      "status": "completed",
-      "metrics": {
-        "cost": null,
-        "rounds": 1,
-        "web_pages": 0,
-        "tool_calls": 4,
-        "token_usage": {
-          "deepseek-flash": {
-            "input_tokens": 21279,
-            "total_tokens": 24921,
-            "output_tokens": 3642,
-            "input_token_details": {
-              "cache_read": 4096
-            },
-            "output_token_details": {}
-          }
-        },
-        "evidence_read": 0,
-        "elapsed_seconds": 22.875
-      },
-      "error": null
-    },
-    {
-      "task_id": "98766846-5769-4d06-9822-129bcfb0d5fc",
-      "question": "为什么安禄山和史思明会翻脸？",
-      "status": "completed",
-      "metrics": {
-        "cost": null,
-        "rounds": 4,
-        "web_pages": 0,
-        "tool_calls": 15,
-        "token_usage": {
-          "deepseek-flash": {
-            "input_tokens": 104214,
-            "total_tokens": 111290,
-            "output_tokens": 7076,
-            "input_token_details": {
-              "cache_read": 32512
-            },
-            "output_token_details": {}
-          }
-        },
-        "evidence_read": 8,
-        "elapsed_seconds": 43.304
-      },
-      "error": null
-    },
-    {
-      "task_id": "5698f6f5-056b-4d06-8495-ee43e702de0c",
-      "question": "为什么安禄山和史思明会翻脸？",
-      "status": "completed",
-      "metrics": {
-        "cost": null,
-        "rounds": 4,
-        "web_pages": 0,
-        "tool_calls": 8,
-        "token_usage": {
-          "deepseek-flash": {
-            "input_tokens": 75421,
-            "total_tokens": 82103,
-            "output_tokens": 6682,
-            "input_token_details": {
-              "cache_read": 22400
-            },
-            "output_token_details": {}
-          }
-        },
-        "evidence_read": 4,
-        "elapsed_seconds": 50.96
-      },
-      "error": null
-    },
-    {
-      "task_id": "72319f0d-98f8-4779-986e-c2d57f85b3de",
-      "question": "请对照两唐书核查史思明与安庆绪的关系和先后时序。",
-      "status": "cancelled",
-      "metrics": null,
-      "error": null
-    },
-    {
-      "task_id": "9193bc99-2c5b-4c1c-9eec-afb3b1322682",
-      "question": "为什么安禄山和史思明会翻脸？",
-      "status": "completed",
-      "metrics": {
-        "cost": null,
-        "rounds": 4,
-        "web_pages": 0,
-        "tool_calls": 11,
-        "token_usage": {
-          "deepseek-flash": {
-            "input_tokens": 89332,
-            "total_tokens": 97825,
-            "output_tokens": 8493,
-            "input_token_details": {
-              "cache_read": 29824
-            },
-            "output_token_details": {}
-          }
-        },
-        "evidence_read": 7,
-        "elapsed_seconds": 57.504
-      },
-      "error": null
-    },
-    {
-      "task_id": "79ca7502-3fb1-4656-912b-232edc2d1aee",
-      "question": "为什么安禄山和史思明会翻脸？",
-      "status": "completed",
-      "metrics": {
-        "cost": null,
-        "rounds": 1,
-        "web_pages": 0,
-        "tool_calls": 2,
-        "token_usage": {
-          "deepseek-flash": {
-            "input_tokens": 7668,
-            "total_tokens": 10917,
-            "output_tokens": 3249,
-            "input_token_details": {
-              "cache_read": 1152
-            },
-            "output_token_details": {}
-          }
-        },
-        "evidence_read": 0,
-        "elapsed_seconds": 91.048
-      },
-      "error": null
-    }
-  ],
-  "latest_task": {
-    "task_id": "e450d07d-9883-4e0f-a556-1717344dc421",
-    "question": "为什么安禄山和史思明会翻脸？",
-    "mode": "local",
-    "status": "failed",
-    "cancel_requested": false,
-    "created_at": "2026-10-16T10:34:00Z",
-    "updated_at": "2026-10-16T10:34:28Z",
-    "result": null,
-    "error": "研究失败（APIStatusError）；请检查服务连接和模型配置，修复后新建任务"
-  },
-  "initial_protocol_report": "live-smoke-initial-protocol.json",
-  "final_answer_after_adjacent_evidence_fix_verified": false,
-  "web_search_configured": false,
+  "replayed_events": 57,
   "notes": [
-    "No fabricated evaluation scores or prices.",
-    "The original protocol smoke had checked citations but insufficient answer quality; it is not final acceptance."
+    "Cancellation deliberately skipped in this live run; covered by automated integration tests.",
+    "No claim that content-support review guarantees historical truth."
   ]
 }

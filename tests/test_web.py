@@ -41,7 +41,7 @@ def test_ssrf_rejected_after_dns(monkeypatch, ip):
 
 async def test_missing_search_key_is_explicit():
     with pytest.raises(FetchError, match="SEARCH_API_KEY"):
-        await search_web("史思明", Settings(search_api_key="", _env_file=None))
+        await search_web("史思明", Settings(search_provider="tavily", search_api_key="", _env_file=None))
 
 
 async def test_search_provider_contract_and_normalization(monkeypatch):
@@ -69,7 +69,9 @@ async def test_search_provider_contract_and_normalization(monkeypatch):
         "AsyncClient",
         lambda **kwargs: client_class(transport=httpx.MockTransport(handler), **kwargs),
     )
-    hits = await search_web("史思明", Settings(search_api_key="TEST-ONLY", _env_file=None))
+    hits = await search_web(
+        "史思明", Settings(search_provider="tavily", search_api_key="TEST-ONLY", _env_file=None)
+    )
     assert hits == [{"title": "TEST", "url": "https://example.org/a", "snippet": "TEST-SNIPPET"}]
 
 
@@ -90,4 +92,6 @@ async def test_search_provider_bad_payload_not_fake_success(monkeypatch):
         ),
     )
     with pytest.raises(ValidationError):
-        await search_web("史思明", Settings(search_api_key="TEST-ONLY", _env_file=None))
+        await search_web(
+            "史思明", Settings(search_provider="tavily", search_api_key="TEST-ONLY", _env_file=None)
+        )

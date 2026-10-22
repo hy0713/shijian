@@ -59,7 +59,8 @@ def test_index_failure_is_repairable(corpus, demo_docs):
         corpus.import_document(demo_docs[0])
     with corpus.sessions() as s:
         source = s.scalar(select(Source))
-        assert source.index_status == "pending"
+        assert source.index_status == "failed"
+        assert source.index_error and "ConnectionError" in source.index_error
         sid = source.id
         count = s.scalar(select(func.count()).select_from(Passage))
     assert corpus.search("史思明") == []

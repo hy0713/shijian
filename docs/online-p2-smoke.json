@@ -1,0 +1,31 @@
+{
+  "time_utc": "2026-10-21T14:06:54.164338+00:00",
+  "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+  "task_id": "c077ee22-aec5-45f4-af12-de8bf37f582a",
+  "collection_id": "6e9642a7-35b0-40d0-bbd9-2298156c361f",
+  "source_count": 16,
+  "tasks_first_page": 20,
+  "observed_index_states": [
+    "pending",
+    "indexing",
+    "ready"
+  ],
+  "indexed_passages": 35,
+  "scoped_retrieval_hits": 8,
+  "original_sha256": "eefb3c7c2b35eb826c378f1833e9e45dfd65f0f8d8e5268424fbafbd43810a82",
+  "checks": {
+    "unsaved_source_excluded": true,
+    "source_ids_and_hashes_preserved": true,
+    "outline_and_original_unchanged": true,
+    "evidence_and_task_unchanged": true,
+    "duplicate_membership_idempotent": true,
+    "real_background_index_ready": true,
+    "no_new_research_tasks": true
+  },
+  "paid_requests": {
+    "model": 0,
+    "search": 0,
+    "fetch": 0
+  },
+  "scope": "Existing real source and task; this checks infrastructure, not answer quality."
+}

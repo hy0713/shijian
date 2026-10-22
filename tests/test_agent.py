@@ -34,13 +34,18 @@ async def test_real_langgraph_search_read_then_stop(corpus, demo_docs):
     assert "assess" in agent.graph.get_graph().nodes
 
 
-def test_quote_options_are_exact_substrings_of_read_evidence(demo_docs):
+def test_model_evidence_preserves_original_without_duplicate_context(demo_docs):
     original = demo_docs[0].raw_text[:420]
-    evidence = {"evidence_id": "test", "text": original, "before": "不得引用的相邻正文", "after": ""}
+    evidence = {
+        "evidence_id": "test",
+        "text": original,
+        "before": "重复的相邻正文",
+        "after": "",
+        "context_passages": [{"text": "嵌套相邻原文"}],
+    }
     prepared = answer_evidence([evidence])[0]
-    assert prepared["quote_options"]
-    assert all(option in original for option in prepared["quote_options"])
-    assert prepared["text"] == original and "quote_options" not in evidence
+    assert prepared == {"evidence_id": "test", "text": original}
+    assert "context_passages" in evidence
 
 
 async def test_adjacent_originals_are_registered_with_their_own_ids(corpus, demo_docs):
@@ -117,3 +122,209 @@ async def test_timeout_preserves_evidence_without_fabricated_answer(corpus, demo
     result = await agent.run("超时测试", "local")
     assert evidence and result["sources"]
     assert not result["conclusions"] and "超时" in result["limitations"][0]
+
+
+@pytest.mark.parametrize("failure", ["output", "budget"])
+async def test_revision_failure_keeps_only_previous_checked_result(corpus, demo_docs, failure):
+    from shijian.model import ModelBudgetExceeded, ModelOutputError
+
+    class FailedRevisionModel(ScriptedModel):
+        answers = 0
+
+        async def structured(self, schema, instruction, context):
+            from shijian.schema import Answer
+
+            if schema is Answer:
+                self.answers += 1
+                if self.answers == 2:
+                    error = ModelOutputError if failure == "output" else ModelBudgetExceeded
+                    raise error("TEST private failure body")
+            return await super().structured(schema, instruction, context)
+
+    corpus.import_document(demo_docs[0])
+    model = FailedRevisionModel()
+    agent, _, _ = await make_agent(corpus, model)
+    # Force a genuine program-level invalid premise on the first answer instead of altering graph nodes.
+    original_structured = model.structured
+
+    async def structured(schema, instruction, context):
+        from shijian.schema import Answer, Citation
+
+        answer = await original_structured(schema, instruction, context)
+        if schema is Answer:
+            answer.premise.kind = "文献记载"
+            answer.premise.citations = [Citation(evidence_id="unread", quote="TEST ONLY")]
+        return answer
+
+    model.structured = structured
+    result = await agent.run("TEST revision failure", "local")
+    assert model.answers == 2
+    assert result["conclusions"] and result["citations"]
+    assert any("保留上一版" in text for text in result["limitations"])
+    assert result["metrics"]["answer_revisions"] == 1
+    assert "TEST private" not in str(result)
+
+
+async def test_repeated_tool_is_reused_and_stagnation_stops(corpus, demo_docs, monkeypatch):
+    from langchain_core.messages import AIMessage
+
+    corpus.import_document(demo_docs[0])
+
+    class RepeatingModel(ScriptedModel):
+        async def choose(self, messages, tools):
+            self.calls += 1
+            return AIMessage(
+                content="",
+                tool_calls=[{"name": "search_corpus", "args": {"query": "史思明"}, "id": str(self.calls)}],
+            )
+
+    original = corpus.search
+    calls = []
+
+    def search(*args, **kwargs):
+        calls.append(args)
+        return original(*args, **kwargs)
+
+    monkeypatch.setattr(corpus, "search", search)
+    agent, _, _ = await make_agent(corpus, RepeatingModel(enough_after=20), max_rounds=8)
+    result = await agent.run("测试重复检索", "local")
+    assert len(calls) == 1
+    assert result["metrics"]["rounds"] == 3
+    assert result["metrics"]["duplicate_tool_calls_avoided"] == 2
+    assert result["research_outcome"]["status"] == "insufficient_evidence"
+    assert any("连续两轮" in x for x in result["limitations"])
+
+
+async def test_planning_history_is_bounded_and_keeps_next_queries(corpus, demo_docs):
+    import json
+
+    from langchain_core.messages import HumanMessage
+
+    corpus.import_document(demo_docs[0])
+
+    class RecordingModel(ScriptedModel):
+        def __init__(self):
+            super().__init__(enough_after=20)
+            self.contexts = []
+            self.allowed_tools = []
+
+        async def choose(self, messages, tools):
+            self.contexts.append(messages)
+            self.allowed_tools.append([t.name for t in tools])
+            return await super().choose(messages, tools)
+
+    model = RecordingModel()
+    agent, _, _ = await make_agent(corpus, model, max_rounds=4)
+    await agent.run("上下文测试", "local")
+    assert max(len(m) for m in model.contexts) <= 4
+    assert model.allowed_tools[-1] == ["read_passage"]
+    last = json.loads(next(m.content for m in model.contexts[-1] if isinstance(m, HumanMessage)))
+    assert last["assessment"]["next_queries"] == ["安庆绪"]
+    assert last["completed_tools"] and last["read_evidence"]
+    assert all(len(e["preview"]) <= 180 for e in last["read_evidence"])
+
+
+async def test_invalid_core_revised_once_then_still_rejected(corpus, demo_docs):
+    from shijian.schema import Answer
+
+    corpus.import_document(demo_docs[0])
+
+    class BrokenAnswer(ScriptedModel):
+        def __init__(self):
+            super().__init__()
+            self.answers = 0
+
+        async def structured(self, schema, instruction, context):
+            result = await super().structured(schema, instruction, context)
+            if schema is Answer:
+                self.answers += 1
+                result.conclusions[0].citations[0].quote = "完全捏造的古文摘录"
+            return result
+
+    model = BrokenAnswer()
+    agent, events, _ = await make_agent(corpus, model)
+    result = await agent.run("修订测试", "local")
+    assert model.answers == 2 and result["metrics"]["answer_revisions"] == 1
+    assert not result["conclusions"]
+    assert result["research_outcome"]["status"] == "insufficient_evidence"
+    assert len([e for e in events if e[0] == "step" and "修订" in e[1]["step"]]) == 1
+
+
+async def test_repair_can_restore_core_without_relaxing_checks(corpus, demo_docs):
+    from shijian.schema import Answer
+
+    corpus.import_document(demo_docs[0])
+
+    class RepairingModel(ScriptedModel):
+        def __init__(self):
+            super().__init__()
+            self.answers = 0
+
+        async def structured(self, schema, instruction, context):
+            result = await super().structured(schema, instruction, context)
+            if schema is Answer:
+                self.answers += 1
+                if self.answers == 1:
+                    result.conclusions[0].citations[0].evidence_id = "unread-fabricated"
+            return result
+
+    agent, _, _ = await make_agent(corpus, RepairingModel())
+    result = await agent.run("修复测试", "local")
+    assert result["conclusions"] and result["metrics"]["answer_revisions"] == 1
+    assert all(c["valid"] for c in result["citation_audit"]["program"])
+
+
+async def test_timeout_outcome_is_incomplete(corpus, demo_docs):
+    from shijian.schema import Analysis
+
+    class TimedOut(ScriptedModel):
+        async def structured(self, schema, instruction, context):
+            if schema is Analysis:
+                raise TimeoutError()
+            return await super().structured(schema, instruction, context)
+
+    agent, _, _ = await make_agent(corpus, TimedOut())
+    result = await agent.run("测试超时", "local")
+    assert result["research_outcome"]["status"] == "incomplete"
+
+
+@pytest.mark.parametrize("during_revision", [False, True])
+async def test_budget_during_check_retains_checked_result_only(corpus, demo_docs, during_revision):
+    from shijian.model import ModelBudgetExceeded
+    from shijian.schema import Answer, Citation, QuoteReadings
+
+    corpus.import_document(demo_docs[0])
+
+    class BudgetModel(ScriptedModel):
+        answers = 0
+
+        async def structured(self, schema, instruction, context):
+            if schema is QuoteReadings and self.answers == (2 if during_revision else 1):
+                raise ModelBudgetExceeded("TEST ONLY")
+            result = await super().structured(schema, instruction, context)
+            if schema is Answer:
+                self.answers += 1
+                # Invalid premise triggers revision; core conclusion remains valid in first check.
+                result.premise.kind = "文献记载"
+                result.premise.citations = [Citation(evidence_id="unread", quote="TEST ONLY")]
+            return result
+
+    agent, _, _ = await make_agent(corpus, BudgetModel())
+    result = await agent.run("TEST budget", "local")
+    if during_revision:
+        assert result["conclusions"] and result["citations"]
+        assert any("保留上一版" in text for text in result["limitations"])
+    else:
+        assert not result["conclusions"] and not result["citations"]
+        assert result["research_outcome"]["status"] == "incomplete"
+
+
+async def test_explicit_work_name_scopes_search_in_both_scripts(corpus, demo_docs):
+    import json
+
+    for doc in demo_docs:
+        corpus.import_document(doc)
+    agent, _, _ = await make_agent(corpus, ScriptedModel())
+    for query in ("新唐书 史思明 安禄山", "新唐書 史思明 安祿山"):
+        hits = json.loads(await agent.tools["search_corpus"].ainvoke({"query": query}))
+        assert hits and all(h["title"] == "新唐書" for h in hits)

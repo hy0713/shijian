@@ -3,96 +3,522 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>史鉴 · 历史资料研究</title>
-    <link rel="stylesheet" href="/static/style.css?v=3" />
+    <title>史鉴 · 历史研究工作台</title>
+    <meta name="theme-color" content="#203c35" />
+    <link rel="stylesheet" href="/static/style.css?v=16" />
   </head>
   <body>
-    <header>
-      <div>
-        <span class="seal">史</span>
-        <h1>史鉴</h1>
-        <span>从问题到证据</span>
-      </div>
-      <p>安史之乱专题 · 核查前提，循证作答</p>
-    </header>
-    <main>
-      <aside class="navigation"><a class="new-study" href="/">＋ 新建研究</a>
-        <nav class="nav-links" aria-label="研究导航"><a href="#researchForm">⌕ <span>研究工作台</span></a><a href="#sources">▤ <span>文献知识库</span></a><a href="#importForm">＋ <span>导入文献</span></a></nav><h2>最近研究 <span>RECENT</span></h2>
-        <button id="refresh">刷新列表</button>
-        <div id="history"></div>
-      </aside>
-      <section class="workspace"><div class="workspace-top"><span>研究工作台</span><span>安史之乱 · 专题 01</span></div><div class="welcome"><div class="hero-mark" aria-hidden="true">鉴</div><span class="eyebrow">SHIJIAN · HISTORICAL RESEARCH</span><h2>以史为鉴，<br>让见解有据可循。</h2><p>检索原始文献，交叉核验史料。<br>从一个问题出发，抵达有出处的答案。</p></div>
-        <div id="configNotice" class="notice" hidden></div>
-        <form id="researchForm">
-          <label for="question">从一个值得追问的问题开始</label
-          ><textarea id="question" placeholder="例如：为什么安禄山和史思明会翻脸？" maxlength="1000" required>
-</textarea
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+      <symbol id="icon-research" viewBox="0 0 24 24"><path d="M4 5h10M4 10h7M4 15h6M4 20h12"/><circle cx="16" cy="10" r="4"/><path d="m19 13 3 3"/></symbol>
+      <symbol id="icon-library" viewBox="0 0 24 24"><path d="M4 4h5v16H4zM10 4h5v16h-5zM16 5l4-1 3 15-4 1zM5 8h3M11 8h3"/></symbol>
+      <symbol id="icon-collection" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 4V2M16 4V2M8 14h3M8 17h8"/></symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M4 3v17h17M8 16v-5M13 16V7M18 16V4"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24"><path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Zm0 0v14M6 9h3M15 9h3"/></symbol>
+      <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4 8 9 8 9s8-5 8-9V6zM8 12l3 3 5-6"/></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    </defs></svg>
+    <a class="skip-link" href="#mainContent">跳至主要内容</a>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#/"
+          ><span class="seal">鉴</span
+          ><span><strong>史鉴<span class="brand-dot">.</span></strong><small>SHIJIAN · HISTORY, VERIFIED</small></span></a
+        >
+        <a class="new-study" href="#/"><svg class="icon"><use href="#icon-plus"/></svg> 新建研究 <span class="key-hint">N</span></a>
+        <div class="nav-kicker">工作空间 <span>WORKSPACE</span></div>
+        <nav aria-label="主要导航">
+          <a href="#/" data-nav="home"><svg class="icon"><use href="#icon-research"/></svg><span>研究工作台</span></a
+          ><a href="#/library" data-nav="library"><svg class="icon"><use href="#icon-library"/></svg><span>文献资料库</span></a
+          ><a href="#/collections" data-nav="collections"><svg class="icon"><use href="#icon-collection"/></svg><span>研究专题</span></a
+          ><a href="#/evaluation" data-nav="evaluation"
+            ><svg class="icon"><use href="#icon-chart"/></svg><span>效果评测</span></a
           >
-          <div class="actions">
-            <select id="mode">
-              <option value="local">本地史料</option>
-              <option value="hybrid">本地史料 + 联网</option></select
-            ><button id="start">开始研究</button
-            ><button type="button" id="cancel" disabled>请求取消</button
-            ><span id="status">尚未开始</span>
+        </nav>
+        <div class="nav-label">
+          <span>研究手记 <span class="nav-count" id="historyCount"></span></span
+          ><button
+            id="refreshHistory"
+            class="icon-button"
+            aria-label="刷新历史任务"
+          >
+            ↻
+          </button>
+        </div>
+        <label class="sr-only" for="historyQuery">搜索历史问题</label
+        ><input
+          id="historyQuery"
+          class="history-search"
+          placeholder="查找研究记录…"
+          type="search"
+        />
+        <div id="history" class="history-list"></div>
+        <div class="sidebar-foot">
+          <span class="sidebar-avatar">鉴</span><div><strong>个人研究空间</strong><small>古今中外 · 循证而行</small></div><span class="workspace-indicator" title="个人工作空间" aria-hidden="true"></span>
+        </div>
+      </aside>
+      <button id="navBackdrop" class="nav-backdrop" aria-label="关闭导航" tabindex="-1"></button>
+      <div class="main-shell">
+        <header class="topbar">
+          <div class="topbar-title">
+            <button
+              id="menuToggle"
+              class="icon-button mobile-only"
+              aria-label="展开导航"
+              aria-expanded="false"
+              aria-controls="sidebar"
+            >
+              <svg class="icon"><use href="#icon-menu"/></svg></button
+            ><span id="pageTitle">研究工作台</span
+            ><span id="pageSubtitle" class="muted">从问题到证据</span>
           </div>
-        </form>
-        <div class="explore-label"><span>从这些问题开始</span><span>EXPLORE HISTORY</span></div><div class="suggestions"><button type="button" data-question="为什么安禄山和史思明会翻脸？"><small>前提核查 ↗</small>安禄山与史思明，真的翻脸了吗？</button><button type="button" data-question="请对照两唐书核查史思明与安庆绪的关系和先后时序。"><small>文献互证 ↗</small>从两唐书看史思明与安庆绪</button></div><div id="error" class="error" role="alert" hidden></div>
-        <details class="progress">
-          <summary>研究过程 <span class="muted">步骤与证据摘要</span></summary>
-          <ol id="events"></ol>
-        </details>
-        <article id="answer" aria-live="polite">
-          <div class="empty">
-            <h2>先核查前提，再讨论原因。</h2>
-            <p>
-              研究会展示检索计划、已读来源、证据缺口与引用。引用可点击查看原文及前后上下文。
-            </p>
-          </div>
-        </article>
-      </section>
-      <aside class="library"><div class="collection-mark">文 献 馆 <span>COLLECTION</span></div><div class="panel-heading"><span>文献与引证</span><span class="eyebrow">SOURCES</span></div><p class="panel-note">原始记录，是研究的起点。</p>        <hr />
-        <h2>资料库</h2>
-        <div id="sources"></div>
-        <details>
-          <summary>导入资料</summary>
-          <p>
-            支持 UTF-8 TXT / Markdown /
-            JSON。网页与上传资料先保存原文，执行索引命令后可检索。
-          </p>
-          <form id="importForm">
-            <input id="importTitle" placeholder="标题（TXT / MD 必填）" /><input
-              id="importAuthor"
-              placeholder="作者 / 编纂者"
-            /><input id="importChapter" placeholder="卷章（可空）" /><input
-              id="importUrl"
-              type="url"
-              placeholder="来源 URL（可空）"
-            /><input
-              id="file"
-              type="file"
-              accept=".txt,.md,.json"
-              required
-            /><button>保存资料</button>
-          </form>
-          <form id="pageForm">
-            <input
-              id="pageUrl"
-              type="url"
-              placeholder="网页来源 URL"
-              required
-            /><button>读取并保存网页</button>
-          </form>
-          <p>索引命令：<code>shijian reindex</code></p>
-          <pre id="importNotice"></pre>
-        </details>
-<section id="evidencePanel" hidden><button type="button" id="closeEvidence">收起引证 ×</button><div id="evidenceBody"></div></section></aside>
-    </main>
-    <footer>
-      史料需要校勘，模型辅助审核不保证史实真实。第一版聚焦安史之乱，无扫描件
-      OCR。
-    </footer>
-    <script src="/static/app.js?v=3" defer></script>
+          <div class="topbar-actions"><span class="workspace-tag"><span></span> 历史文献研究 Agent</span><a href="#/library" class="text-link"><svg class="icon"><use href="#icon-book"/></svg> 浏览文献</a></div>
+        </header>
+        <main id="mainContent" tabindex="-1">
+          <div id="globalError" role="alert" class="alert danger" hidden></div>
+          <section id="homeView" class="view home-view">
+            <div class="welcome-caption"><span><i></i> 你的数字历史书房</span><span>READ THE PAST. THINK FORWARD.</span></div>
+            <div class="hero">
+              <div class="hero-copy"><div class="eyebrow">EXPLORE · QUESTION · VERIFY</div>
+              <h1>与历史对话，<br /><em>让见解有据可循。</em></h1>
+              <p>越过时间的距离，回到文字的现场。<br />检索、考证、对照，从一个值得追问的问题开始。</p>
+              <div class="hero-principles"><span><svg class="icon"><use href="#icon-check"/></svg> 先核查，再作答</span><span><svg class="icon"><use href="#icon-book"/></svg> 每个引用，回到原文</span></div></div>
+              <div class="hero-art" aria-label="精选古籍入口"><span class="art-coordinate">THE READING DESK / 001</span><div class="book-shelf">
+                <a class="desk-book book-tongjian" href="#/library?query=资治通鉴" aria-label="浏览资治通鉴"><span class="book-edition">编年 · 通史</span><strong>資治通鑑</strong><small>司馬光</small><span class="book-imprint">史鉴藏读</span></a>
+                <a class="desk-book book-tang" href="#/library?query=旧唐书" aria-label="浏览旧唐书"><span class="book-edition">纪传 · 断代</span><strong>舊唐書</strong><small>劉昫等</small><span class="book-imprint">史鉴藏读</span></a>
+                <a class="desk-book book-newtang" href="#/library?query=新唐书" aria-label="浏览新唐书"><span class="book-edition">纪传 · 断代</span><strong>新唐書</strong><small>歐陽修等</small><span class="book-imprint">史鉴藏读</span></a>
+              </div><span class="art-footnote">循文入史 · 版本与来源可查</span></div>
+            </div>
+            <form id="researchForm" class="composer">
+              <div class="composer-heading"><span class="composer-symbol"><svg class="icon"><use href="#icon-research"/></svg></span><label for="question">今天，想探究哪一段历史？</label><span class="composer-badge">循证研究</span></div
+              ><textarea
+                id="question"
+                maxlength="1000"
+                required
+                placeholder="提出一个历史问题，或从你存疑的一条记载开始…"
+              ></textarea>
+              <div id="scopeControl" class="scope-control" hidden>
+                <label for="researchCollection">资料范围</label>
+                <select id="researchCollection"><option value="">全部已收藏且可检索的资料</option></select>
+                <p id="scopeNotice" class="muted">专题资料必须全部完成索引，开始后固定本次范围。</p>
+              </div>
+              <div class="composer-bottom">
+                <label class="sr-only" for="mode">研究模式</label
+                ><select id="mode">
+                  <option value="online">全网历史研究</option>
+                  <option value="local">限定资料研究（当前资料库）</option>
+                  <option value="hybrid" hidden>
+                    资料库 + 联网（旧模式）
+                  </option></select
+                ><span class="composer-note">检索原文 · 对照来源 · 核查引用</span
+                ><button type="submit" id="start" class="primary">
+                  开始研究 <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+                </button>
+              </div>
+            </form>
+            <details class="connection-details"><summary><span class="connection-dot"></span>研究模式与服务提示<svg class="icon"><use href="#icon-globe"/></svg></summary><div id="configNotice" class="subtle-notice" hidden></div><p>回答以本次读到的资料为依据；证据不足时保留疑问。联网及模型请求会记录用量。</p></details>
+            <div class="section-label">
+              <span><span class="section-number">01</span> 让好问题，成为研究的起点</span
+              ><span class="eyebrow">QUESTIONS WORTH ASKING</span>
+            </div>
+            <div class="suggestions">
+              <button
+                data-question="《凡尔赛条约》是在1919年还是1920年签署？请区分签署与生效，只根据已读来源回答。"
+              >
+                <small><span>前提核查</span><span>↗</span></small
+                ><strong>条约签署与生效，是同一年吗？</strong
+                ><span>区分一个时间点背后的不同事件。</span></button
+              ><button
+                data-question="《辛丑条约》是在1900年还是1901年签订的？请只核对签订年份，并给出可查看的原文。"
+              >
+                <small><span>史实查证</span><span>↗</span></small
+                ><strong>《辛丑条约》究竟何时签订？</strong
+                ><span>回到原始记载，厘清签订年份。</span>
+              </button>
+              <button data-question="为什么安禄山和史思明会翻脸？请先检查问题是否混淆人物，再根据实际读到的史料判断。"><small><span>人物关系</span><span>↗</span></small><strong>安禄山与史思明，真的翻脸了吗？</strong><span>先检验问题，再寻找解释。</span></button>
+              <button data-question="西罗马帝国灭亡是否只有一个原因？请区分文献记载、后人解释和现有材料不足之处。"><small><span>多源考证</span><span>↗</span></small><strong>如何理解西罗马帝国的终结？</strong><span>对照多种来源，看见解释的边界。</span></button>
+            </div>
+            <div class="home-foot">
+              <span><i></i> 不止得到答案，更能看见答案的来处。</span><a href="#/collections">建立你的研究专题 <span>→</span></a>
+            </div>
+          </section>
+          <section id="researchView" class="view" hidden>
+            <div class="research-layout">
+              <div class="research-main">
+                <a href="#/" class="back-link">← 返回工作台</a>
+                <div class="task-heading">
+                  <div class="eyebrow">RESEARCH NOTE</div>
+                  <h1 id="taskQuestion"></h1>
+                  <div id="taskMeta" class="meta-row"></div>
+                </div>
+                <div class="task-toolbar">
+                  <span id="taskStatus" role="status" class="status-pill"></span
+                  ><span id="elapsed" class="muted"></span
+                  ><button id="cancel" class="quiet" hidden>取消研究</button
+                  ><button id="retry" class="primary" hidden>重新研究</button
+                  ><button id="editQuestion" class="quiet">修改问题</button
+                  ><button id="exportAnswer" class="quiet" hidden>
+                    导出 JSON
+                  </button>
+                  <a id="exportMarkdown" class="quiet" hidden>导出 Markdown</a>
+                  <button id="archiveTask" class="quiet">加入专题</button>
+                </div>
+                <section class="progress-card" aria-label="研究阶段">
+                  <div class="card-heading">
+                    <h2>研究进度</h2>
+                    <span id="currentStep" class="muted">等待执行</span>
+                  </div>
+                  <ol id="stages" class="stages"></ol>
+                  <p id="taskUsage" class="muted" role="status" hidden></p>
+                  <p id="webUsage" class="muted" role="status" hidden></p>
+                  <details id="processDetails">
+                    <summary>
+                      查看研究步骤与工具摘要
+                      <span id="eventCount" class="muted"></span>
+                    </summary>
+                    <ol id="events" class="event-log"></ol>
+                  </details>
+                </section>
+                <section
+                  id="taskFailure"
+                  role="alert"
+                  class="alert danger"
+                  hidden
+                ></section>
+                <details id="taskDiagnostics" class="audit" hidden>
+                  <summary>运行诊断与已发生用量</summary>
+                  <p class="muted">
+                    仅展示错误类型、字段与调用统计，不含请求密钥或内部思维过程。
+                  </p>
+                  <pre id="diagnosticData"></pre>
+                </details>
+                <section id="runningHint" class="running-hint" hidden>
+                  <span class="ink-dots" aria-hidden="true"
+                    ><i></i><i></i><i></i
+                  ></span>
+                  <div>
+                    <strong>正在核对史料</strong>
+                    <p>
+                      你可以离开或关闭页面，任务继续在后台运行。重新打开此研究即可恢复进度。
+                    </p>
+                  </div>
+                </section>
+                <article
+                  id="answer"
+                  class="answer-reader"
+                  aria-live="polite"
+                ></article>
+              </div>
+              <aside
+                id="evidenceSidebar"
+                class="evidence-sidebar"
+                aria-label="本次研究证据"
+              >
+                <div class="panel-heading">
+                  <div>
+                    <div class="eyebrow">THE EVIDENCE DESK</div>
+                    <h2><svg class="icon"><use href="#icon-book"/></svg> 本次研究证据</h2>
+                  </div>
+                  <span id="evidenceCount" class="count-badge">0</span>
+                </div>
+                <p class="panel-note">
+                  这里只展示本任务实际读取的片段。<a href="#/library"
+                    >浏览全库 ↗</a
+                  >
+                </p>
+                <details id="webSourcesPanel" class="source-discovery" hidden>
+                  <summary>候选来源与已读网页</summary>
+                  <p class="panel-note">候选摘要不可引用；域名线索不保证真实性。筛选仅改变展示，不触发请求。</p>
+                  <div class="source-filters">
+                    <label>来源线索<select id="leadPublisher"><option value="all">全部候选</option><option value="institutional">机构 / 学术域名</option></select></label>
+                    <label>语言线索<select id="leadLanguage"><option value="all">全部语言</option><option>中文</option><option>英文</option><option>中英混合</option><option>含日文</option></select></label>
+                  </div>
+                  <div id="webCandidates"></div>
+                  <div id="webReadPages"></div>
+                </details>
+                <div class="evidence-toolbar">
+                  <button id="compareEvidence" class="quiet" disabled>
+                    对照已选证据（0/2）</button
+                  ><button id="backEvidence" class="text-button" hidden>
+                    ← 返回证据列表
+                  </button>
+                </div>
+                <div id="evidenceList"></div>
+                <div id="evidenceReader" hidden></div>
+              </aside>
+            </div>
+          </section>
+          <section id="libraryView" class="view library-view" hidden>
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">THE ARCHIVE / 文献与记载</div>
+                <h1>文献资料库</h1>
+                <p>先保留研究快照，值得复用的资料再收藏、建立索引。</p>
+              </div>
+              <button id="openImport" class="primary">＋ 导入资料</button>
+            </div>
+            <form id="libraryFilters" class="filter-bar">
+              <label>保存范围<select name="saved"><option value="true">已收藏资料</option><option value="false">未收藏的研究快照</option><option value="">所有资料与快照</option></select></label>
+              <label
+                >搜索资料<input
+                  name="query"
+                  placeholder="标题、卷章或编纂者"
+                  type="search" /></label
+              ><label
+                >资料类型<select name="source_type">
+                  <option value="">全部类型</option>
+                  <option>历史文献</option>
+                  <option>现代研究</option>
+                  <option>通俗文章</option>
+                  <option>网页</option>
+                  <option>其他</option>
+                </select></label
+              ><label
+                >索引状态<select name="index_status">
+                  <option value="">全部状态</option>
+                  <option value="unrequested">快照未索引</option>
+                  <option value="ready">可检索</option>
+                  <option value="pending">排队中</option>
+                  <option value="indexing">索引中</option>
+                  <option value="failed">索引失败</option>
+                </select></label
+              ><label
+                >人物<input name="person" placeholder="如：史思明" /></label
+              ><label
+                >主题<input name="topic" placeholder="如：安史之乱" /></label
+              ><button class="primary">筛选</button
+              ><button type="reset" class="quiet">重置</button>
+            </form>
+            <div class="section-label">
+              <span id="libraryCount">资料清单</span
+              ><span>原文保留繁简字形与原始位置</span>
+            </div>
+            <div id="sourceGrid" class="source-grid"></div>
+            <div class="pagination">
+              <button id="libraryPrev" class="quiet">上一页</button
+              ><span id="libraryPage"></span
+              ><button id="libraryNext" class="quiet">下一页</button>
+            </div>
+            <section class="discovery-card">
+              <div class="eyebrow">EXPAND WHEN NEEDED</div>
+              <h2>本地没有所需卷章？按需查找。</h2>
+              <p>
+                通过维基文库官方目录检索候选页面，只导入需要的卷章。导入后保留固定修订链接与快照，再异步建立索引。目录摘要不能作为引用。
+              </p>
+              <form id="bookSearchForm" class="inline-form">
+                <label class="sr-only" for="bookQuery">外部文献检索词</label
+                ><input
+                  id="bookQuery"
+                  required
+                  maxlength="200"
+                  placeholder="例如：新唐書 史思明"
+                /><button class="primary">查找外部文献</button>
+              </form>
+              <div id="bookNotice" role="status"></div>
+              <div id="bookResults"></div>
+            </section>
+          </section>
+          <section id="collectionsView" class="view library-view" hidden>
+            <div class="page-heading"><div><div class="eyebrow">A GROWING RESEARCH SHELF</div><h1>研究专题</h1><p>按人物、事件与地区，整理值得继续追问的文献和研究。</p></div><button id="newCollection" class="primary">＋ 新建专题</button></div>
+            <form id="collectionForm" class="form-grid collection-editor" hidden>
+              <label>专题名称<input name="name" required maxlength="100" placeholder="例如：近代东亚条约研究" /></label>
+              <label>说明<textarea name="description" maxlength="1000" placeholder="研究范围、待核对的问题…"></textarea></label>
+              <label>人物（逗号分隔）<input name="people" maxlength="500" /></label>
+              <label>事件（逗号分隔）<input name="events" maxlength="500" /></label>
+              <label>地区（逗号分隔）<input name="regions" maxlength="500" /></label>
+              <div><button class="primary">保存专题</button> <button id="closeCollectionForm" type="button" class="quiet">收起</button></div>
+            </form>
+            <div id="collectionDirectory">
+              <form id="collectionFilters" class="filter-bar"><label>搜索专题<input name="query" type="search" placeholder="名称或说明" /></label><label>人物<input name="person" /></label><label>事件<input name="event" /></label><label>地区<input name="region" /></label><button class="primary">筛选</button><button type="reset" class="quiet">重置</button></form>
+              <div id="collectionGrid" class="source-grid"></div>
+              <div class="pagination"><button id="collectionPrev" class="quiet">上一页</button><span id="collectionPage"></span><button id="collectionNext" class="quiet">下一页</button></div>
+            </div>
+            <div id="collectionDetail" hidden>
+              <a class="back-link" href="#/collections">← 全部专题</a>
+              <div id="collectionHeading"></div>
+              <div id="collectionActions" class="task-toolbar"></div>
+              <section class="discovery-card">
+                <h2>整理已有资料与研究</h2><p class="muted">加入文献会收藏并异步索引；加入研究只保存关联，不发起新的模型调用。</p>
+                <form id="collectionAttachForm" class="inline-form"><label for="collectionAttachKind" class="sr-only">查找类型</label><select id="collectionAttachKind"><option value="sources">文献与快照</option><option value="tasks">研究记录</option></select><label for="collectionAttachQuery" class="sr-only">查找关键词</label><input id="collectionAttachQuery" placeholder="输入标题或历史问题" maxlength="200" /><button class="quiet">查找可加入项</button></form>
+                <div id="collectionAttachResults"></div>
+              </section>
+              <div class="section-label"><span id="collectionSourceCount">专题文献</span><span>移出专题会保留原文与收藏</span></div>
+              <div id="collectionSources" class="source-grid"></div><div id="collectionSourcePages" class="pagination"></div>
+              <div class="section-label"><span id="collectionTaskCount">专题研究</span><span>研究记录保持原样</span></div>
+              <div id="collectionTasks"></div><div id="collectionTaskPages" class="pagination"></div>
+            </div>
+          </section>
+          <section id="sourceView" class="view source-view" hidden>
+            <a href="#/library" class="back-link">← 返回资料库</a>
+            <div id="sourceHeading"></div>
+            <div id="sourceSaveActions" class="task-toolbar"></div>
+            <div id="indexInfo"></div>
+            <details class="metadata-editor">
+              <summary>编辑资料元数据</summary>
+              <form id="metadataForm" class="form-grid"></form>
+            </details>
+            <div class="reader-heading">
+              <h2>保存的原文</h2>
+              <form id="findOriginal" class="inline-form">
+                <label class="sr-only" for="originalQuery">在原文中查找</label
+                ><input id="originalQuery" placeholder="在原文中查找…" /><button
+                  class="quiet"
+                >
+                  查找
+                </button>
+              </form>
+            </div>
+            <details id="sourceOutline" hidden><summary>正文目录（按保存位置识别）</summary><nav id="sourceOutlineLinks" aria-label="正文目录"></nav></details>
+            <p id="originalMatch" class="muted"></p>
+            <div id="sourceOriginal" class="original full-original"></div>
+          </section>
+          <section id="evaluationView" class="view evaluation-view" hidden>
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">MEASURE, THEN IMPROVE</div>
+                <h1>效果评测</h1>
+                <p id="evaluationProtocol">同模型、同语料，比较直接回答、一次检索 RAG 与研究 Agent。</p>
+              </div>
+              <button id="refreshEvaluations" class="quiet">刷新记录</button>
+            </div>
+            <div class="alert">
+              程序校验、模型辅助审核与人工评分分别记录。未评分项保持空白，执行结束不代表内容正确。
+            </div>
+            <div class="inline-form">
+              <label for="evaluationRun">评测批次</label
+              ><select id="evaluationRun"></select>
+            </div>
+            <div id="evaluationSummary"></div>
+            <div id="evaluationTable" class="table-wrap"></div>
+          </section>
+          <section
+            id="evaluationCaseView"
+            class="view evaluation-case-view"
+            hidden
+          >
+            <a id="evaluationBack" class="back-link" href="#/evaluation"
+              >← 返回评测</a
+            >
+            <div id="evaluationCase"></div>
+            <section id="humanReviewSection" class="review-card">
+              <h2>人工核查</h2>
+              <p class="muted">
+                请先阅读原文及评分要点，再由实际核查者提交。系统不会自动填写人工分数。
+              </p>
+              <form id="humanReviewForm" class="form-grid">
+                <label
+                  >核查者<input
+                    name="reviewer"
+                    required
+                    maxlength="80"
+                    autocomplete="name" /></label
+                ><label
+                  >证据支持<select name="evidence_support_0_to_2" required>
+                    <option value="">未评分</option>
+                    <option value="0">0 · 无可靠支持</option>
+                    <option value="1">1 · 部分支持 / 有过度推断</option>
+                    <option value="2">2 · 主要表述有恰当支持</option>
+                  </select></label
+                ><label
+                  >回答完整度<select name="completeness_0_to_2" required>
+                    <option value="">未评分</option>
+                    <option value="0">0 · 未回应</option>
+                    <option value="1">1 · 漏掉主要阶段或局限</option>
+                    <option value="2">2 · 核心问题与局限均覆盖</option>
+                  </select></label
+                ><label
+                  >前提识别<select name="premise_recognition_0_to_2" required>
+                    <option value="">未评分</option>
+                    <option value="0">0 · 迎合错误前提</option>
+                    <option value="1">1 · 提及疑点但未核查</option>
+                    <option value="2">2 · 恰当核查、纠正或保留不确定</option>
+                  </select></label
+                ><label class="span-all"
+                  >核查说明<textarea
+                    name="notes"
+                    maxlength="4000"
+                    placeholder="说明有支持、遗漏或错误的具体表述及对应原文"
+                  ></textarea></label
+                ><button class="primary">保存人工评分</button
+                ><span id="reviewNotice" role="status"></span>
+              </form>
+            </section>
+          </section>
+        </main>
+        <footer><span class="footer-brand">史鉴 <span>SHIJIAN</span></span><span>尊重史料，保留分歧。AI 辅助研究，判断仍需考证。</span><a href="#/evaluation">查看研究评测 ↗</a></footer>
+      </div>
+    </div>
+    <dialog id="importDialog">
+      <div class="dialog-heading">
+        <h2>导入资料</h2>
+        <button
+          class="icon-button"
+          data-close="importDialog"
+          aria-label="关闭导入窗口"
+        >
+          ×
+        </button>
+      </div>
+      <p class="muted">
+        保存原文后自动排队索引，关闭窗口不影响任务。失败可在资料详情重试。
+      </p>
+      <form id="importForm" class="form-grid">
+        <label class="span-all"
+          >UTF-8 TXT / Markdown / JSON<input
+            id="file"
+            type="file"
+            accept=".txt,.md,.json"
+            required /></label
+        ><label>标题<input id="importTitle" maxlength="250" required /></label
+        ><label>作者 / 编纂者<input id="importAuthor" maxlength="250" /></label
+        ><label>卷章<input id="importChapter" maxlength="250" /></label
+        ><label>版本<input id="importEdition" maxlength="500" /></label
+        ><label
+          >资料类型<select id="importType">
+            <option>历史文献</option>
+            <option>现代研究</option>
+            <option>通俗文章</option>
+            <option>网页</option>
+            <option>其他</option>
+          </select></label
+        ><label>来源 URL<input id="importUrl" type="url" /></label
+        ><label>人物（逗号分隔）<input id="importPeople" /></label
+        ><label>主题（逗号分隔）<input id="importTopics" /></label
+        ><button class="primary">保存并建立索引</button>
+      </form>
+      <hr />
+      <h3>按网址导入正文</h3>
+      <p class="muted">
+        HTTP/HTTPS；不支持扫描件、登录墙或脚本渲染页。维基文库链接会固定到取得的修订版本。
+      </p>
+      <form id="pageForm" class="inline-form">
+        <label class="sr-only" for="pageUrl">网页 URL</label
+        ><input
+          id="pageUrl"
+          type="url"
+          required
+          placeholder="https://…"
+        /><button class="primary">读取并索引</button>
+      </form>
+      <div id="importNotice" role="status"></div>
+    </dialog>
+    <dialog id="compareDialog" class="compare-dialog">
+      <div class="dialog-heading">
+        <h2>原文与版本对照</h2>
+        <button
+          class="icon-button"
+          data-close="compareDialog"
+          aria-label="关闭对照"
+        >
+          ×
+        </button>
+      </div>
+      <p class="muted">并列阅读不代表来源相互独立；史源关系需要另行考证。</p>
+      <div id="comparison" class="comparison"></div>
+    </dialog>
+    <dialog id="collectionPicker"><div class="dialog-heading"><h2>加入研究专题</h2><button class="icon-button" data-close="collectionPicker" aria-label="关闭专题选择">×</button></div><p class="muted">加入文献会自动收藏并异步索引。研究记录只建立关联。</p><form id="pickerSearch" class="inline-form"><label class="sr-only" for="pickerQuery">搜索目标专题</label><input id="pickerQuery" placeholder="搜索专题名称" maxlength="100" /><button class="quiet">查找</button></form><form id="pickerForm" class="form-grid"><label>选择专题<select id="pickerCollection" required></select></label><p id="pickerNotice" role="status" class="muted"></p><button id="pickerSubmit" class="primary">加入专题</button><button id="pickerNew" type="button" class="quiet">新建专题</button></form></dialog>
+    <script src="/static/app.js?v=16" defer></script>
   </body>
 </html>
-

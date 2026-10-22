@@ -1,0 +1,64 @@
+{
+  "task_id": "f70eb083-792c-4703-b603-ed4110fb42af",
+  "mode": "hybrid",
+  "provider": "wikisource",
+  "status": "failed",
+  "error": "研究失败（ValueError）；请检查服务连接和模型配置，修复后新建任务",
+  "tool_events": [
+    {
+      "name": "search_corpus",
+      "summary": "资治通鉴 卷222 史思明 骆悦 鹿桥驿",
+      "call_number": 1
+    },
+    {
+      "name": "search_web",
+      "summary": "资治通鉴 卷222 史思明 骆悦 鹿桥驿 原文",
+      "call_number": 2
+    },
+    {
+      "name": "search_web",
+      "summary": "維基文庫 資治通鑑 卷二百二十二 唐紀三十八",
+      "call_number": 3
+    },
+    {
+      "name": "search_web",
+      "summary": "\"史思明\" \"鹿橋驛\" 資治通鑑 駱悅 縊",
+      "call_number": 4
+    },
+    {
+      "name": "fetch_page",
+      "summary": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7222",
+      "call_number": 5
+    },
+    {
+      "name": "fetch_page",
+      "summary": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92_%28%E8%83%A1%E4%B8%89%E7%9C%81%E9%9F%B3%E6%B3%A8%29%2F%E5%8D%B7222",
+      "call_number": 6
+    },
+    {
+      "name": "read_passage",
+      "summary": "6836920b-0019-4b1d-80dc-f7e40e7619e1",
+      "call_number": 7
+    },
+    {
+      "name": "read_passage",
+      "summary": "79f25860-7dbf-4d20-83b0-3dc0e3f03c34",
+      "call_number": 8
+    }
+  ],
+  "tool_errors": [],
+  "evidence_read": 12,
+  "sources": [
+    {
+      "title": "資治通鑒 (胡三省音注)/卷222",
+      "edition": "维基文库数字文本，修订 2113470",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2113470&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92+%28%E8%83%A1%E4%B8%89%E7%9C%81%E9%9F%B3%E6%B3%A8%29%2F%E5%8D%B7222"
+    },
+    {
+      "title": "資治通鑑",
+      "edition": "维基文库数字文本，修订 982271；2026-10-20 取得，底本未独立校勘",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=982271&title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7222"
+    }
+  ],
+  "note": "Actual online search and page reading ran; final research failed. This is not a successful end-to-end hybrid-answer verification."
+}

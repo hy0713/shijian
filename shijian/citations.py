@@ -87,7 +87,17 @@ def checked_result(answer, evidence, checks, support, limitations):
         pos += size
     result.update(
         {
-            "limitations": [*answer.limitations, *limitations],
+            "limitations": [
+                text
+                for i, text in enumerate(answer.limitations)
+                if (review := support_by_id.get(len(all_claims) + i)) is not None and review.verdict == "支持"
+            ]
+            + list(limitations),
+            "rejected_limitations": [
+                {"text": text, "support_review": review.model_dump() if review else None}
+                for i, text in enumerate(answer.limitations)
+                if (review := support_by_id.get(len(all_claims) + i)) is None or review.verdict != "支持"
+            ],
             "rejected_claims": rejected,
             "citations": [ref for i in accepted for ref in checks[i]["citations"]],
             "sources": list(
@@ -102,7 +112,12 @@ def checked_result(answer, evidence, checks, support, limitations):
                             "url",
                             "source_type",
                             "provenance_note",
+                            "language",
+                            "publisher_hint",
+                            "possible_reprint_of",
+                            "independence_note",
                         )
+                        if k in e
                     }
                     for e in evidence.values()
                 }.values()
@@ -120,4 +135,21 @@ def checked_result(answer, evidence, checks, support, limitations):
         )
     if not result["conclusions"]:
         result["limitations"].append("现有证据不足以形成通过核查的核心结论。")
+    reasons = []
+    if not any(c["kind"] != "无法判断" and c["citations"] for c in result["conclusions"]):
+        status = "insufficient_evidence"
+        reasons.append("没有通过引用与支持审核的核心结论")
+    else:
+        if rejected:
+            reasons.append("部分候选表述未通过审核")
+        if limitations:
+            reasons.append("研究达到预算限制")
+        if 0 not in accepted:
+            reasons.append("提问前提未通过审核")
+        status = "partial" if reasons else "answered"
+    result["research_outcome"] = {
+        "status": status,
+        "reasons": reasons,
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+    }
     return result

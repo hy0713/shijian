@@ -40,7 +40,7 @@ def split_text(text: str, limit: int = 420) -> list[tuple[int, int]]:
         while start < end:
             stop = min(start + limit, end)
             if stop < end:
-                boundaries = list(re.finditer(r"[。！？；]", text[start:stop]))
+                boundaries = list(re.finditer(r"[。！？；]|[.!?;](?=\s|$)", text[start:stop]))
                 if boundaries and boundaries[-1].end() >= limit // 2:
                     stop = start + boundaries[-1].end()
             if text[start:stop].strip():
@@ -50,11 +50,25 @@ def split_text(text: str, limit: int = 420) -> list[tuple[int, int]]:
 
 
 class Corpus:
-    def __init__(self, session_factory, vectors):
+    def __init__(self, session_factory, vectors, source_ids=None):
         self.sessions = session_factory
         self.vectors = vectors
+        self.source_scope = None if source_ids is None else set(source_ids)
 
-    def import_document(self, doc: DocumentInput, index: bool = True) -> dict:
+    def mentioned_sources(self, query: str) -> list[str]:
+        """Honor explicitly named local works in either simplified or traditional Chinese."""
+        normalized = _cc.convert(query)
+        with self.sessions() as s:
+            return [
+                source_id
+                for source_id, title in s.execute(
+                    select(Source.id, Source.title).where(Source.saved.is_(True))
+                )
+                if _cc.convert(title) in normalized
+                and (self.source_scope is None or source_id in self.source_scope)
+            ]
+
+    def import_document(self, doc: DocumentInput, index: bool = True, saved: bool = True) -> dict:
         # Whitespace-only republishing is deduplicated, but originals are never normalized in-place.
         body_hash = digest(re.sub(r"\s+", "", doc.raw_text))
         url = canonical_url(str(doc.source_url)) if doc.source_url else None
@@ -64,10 +78,21 @@ class Corpus:
                 source = s.scalar(select(Source).where(Source.content_hash == body_hash))
                 if source:
                     source_id, duplicate = source.id, True
+                    if saved:
+                        source.saved = True
+                        if source.index_status == "unrequested":
+                            source.index_status = "pending"
                 else:
                     source_id = str(uuid4())
                     fields = doc.model_dump(exclude={"source_url"})
-                    source = Source(id=source_id, source_url=url, content_hash=body_hash, **fields)
+                    source = Source(
+                        id=source_id,
+                        source_url=url,
+                        content_hash=body_hash,
+                        saved=saved,
+                        index_status="pending" if saved else "unrequested",
+                        **fields,
+                    )
                     s.add(source)
                     s.flush()
                     spans = split_text(doc.raw_text)
@@ -101,7 +126,7 @@ class Corpus:
                 existing = s.scalar(select(Source).where(Source.content_hash == body_hash))
                 if not existing:
                     raise
-            return self.import_document(doc, index=index)
+            return self.import_document(doc, index=index, saved=saved)
         if index:
             self.index_source(source_id)
         return {
@@ -110,30 +135,49 @@ class Corpus:
             "index_status": "ready" if index else source.index_status,
         }
 
-    def index_source(self, source_id: str):
-        # Commit metadata before Milvus. Deterministic passage IDs make crash repair an idempotent upsert.
-        with self.sessions() as s:
-            source = s.get(Source, source_id)
-            if source is None:
-                raise LookupError("资料不存在")
-            rows = list(
-                s.scalars(select(Passage).where(Passage.source_id == source_id).order_by(Passage.ordinal))
-            )
-        self.vectors.upsert(rows)
-        with self.sessions.begin() as s:
-            source = s.get(Source, source_id)
-            source.index_status = "ready"
-            source.embedding_key = self.vectors.key
+    def index_source(self, source_id: str, owner=None):
+        from shijian.indexing import IndexStore, LostIndexLease
+
+        store = IndexStore(self.sessions)
+        if owner is None:
+            store.request(source_id, force=True)
+            owner = str(uuid4())
+            if not store.claim(source_id, owner):
+                raise LostIndexLease("该资料已由其他索引任务处理")
+        try:
+            with self.sessions() as s:
+                rows = list(
+                    s.scalars(select(Passage).where(Passage.source_id == source_id).order_by(Passage.ordinal))
+                )
+            store.progress(source_id, owner, 0, len(rows))
+            for start in range(0, len(rows), 32):
+                batch = rows[start : start + 32]
+                self.vectors.upsert(batch)
+                store.progress(source_id, owner, start + len(batch), len(rows))
+            with self.sessions.begin() as s:
+                source = s.scalar(select(Source).where(Source.id == source_id).with_for_update())
+                if source.index_owner != owner or source.index_status != "indexing":
+                    raise LostIndexLease("索引租约已失效")
+                source.index_status, source.embedding_key = "ready", self.vectors.key
+                source.index_owner = source.index_lease_until = source.index_error = None
+        except Exception as exc:
+            store.fail(source_id, owner, "索引失败（" + type(exc).__name__ + "）；原文已保留，可重试。")
+            raise
 
     def eligible(self, filters: SearchFilter) -> list[str]:
         with self.sessions() as s:
             rows = s.scalars(
-                select(Source).where(Source.index_status == "ready", Source.embedding_key == self.vectors.key)
+                select(Source).where(
+                    Source.saved.is_(True),
+                    Source.index_status == "ready",
+                    Source.embedding_key == self.vectors.key,
+                )
             )
             return [
                 r.id
                 for r in rows
                 if (not filters.source_ids or r.id in filters.source_ids)
+                and (self.source_scope is None or r.id in self.source_scope)
                 and (
                     not filters.people
                     or set(map(_cc.convert, filters.people)) & set(map(_cc.convert, r.people))
@@ -196,6 +240,17 @@ class Corpus:
                     }
                 )
         return hits
+
+    def page_passages(self, source_id):
+        with self.sessions() as s:
+            return [
+                dict(row._mapping)
+                for row in s.execute(
+                    select(Passage.id, Passage.start, Passage.text)
+                    .where(Passage.source_id == source_id)
+                    .order_by(Passage.ordinal)
+                )
+            ]
 
     def read(self, passage_id: str) -> dict:
         with self.sessions() as s:

@@ -10,6 +10,7 @@ x-app: &app
     MODEL_CACHE: /app/data/cache/models
   volumes:
     - model-cache:/app/data/cache
+    - evaluation-data:/app/data/evaluations
   restart: unless-stopped
 
 services:
@@ -119,6 +120,14 @@ services:
       redis: {condition: service_healthy}
       milvus: {condition: service_healthy}
 
+  index-worker:
+    <<: *app
+    command: ["python", "-m", "shijian.indexing"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+      milvus: {condition: service_healthy}
+
 volumes:
   mysql-data:
   redis-data:
@@ -126,3 +135,4 @@ volumes:
   minio-data:
   milvus-data:
   model-cache:
+  evaluation-data:

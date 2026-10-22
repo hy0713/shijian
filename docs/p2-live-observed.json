@@ -1,0 +1,780 @@
+{
+  "task": {
+    "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+    "question": "《旧唐书》卷200上说史思明和安禄山同日出生吗？请只核对这段记载，不讨论其他生平。",
+    "mode": "local",
+    "status": "completed",
+    "cancel_requested": false,
+    "created_at": "2026-10-20T12:05:56Z",
+    "updated_at": "2026-10-20T12:06:29Z",
+    "error": null,
+    "result": {
+      "events": [],
+      "metrics": {
+        "cost": null,
+        "rounds": 2,
+        "web_pages": 0,
+        "tool_calls": 4,
+        "token_usage": {
+          "deepseek-flash": {
+            "input_tokens": 29285,
+            "total_tokens": 33165,
+            "output_tokens": 3880,
+            "input_token_details": {
+              "cache_read": 12800
+            },
+            "output_token_details": {}
+          }
+        },
+        "evidence_read": 6,
+        "model_requests": [
+          {
+            "stage": "Analysis",
+            "total_tokens": 871,
+            "context_chars": 409,
+            "elapsed_seconds": 1.831
+          },
+          {
+            "stage": "choose",
+            "total_tokens": 1044,
+            "context_chars": 815,
+            "elapsed_seconds": 1.017
+          },
+          {
+            "stage": "Assessment",
+            "total_tokens": 4013,
+            "context_chars": 4802,
+            "elapsed_seconds": 2.146
+          },
+          {
+            "stage": "choose",
+            "total_tokens": 4350,
+            "context_chars": 5171,
+            "elapsed_seconds": 1.56
+          },
+          {
+            "stage": "Assessment",
+            "total_tokens": 3180,
+            "context_chars": 3497,
+            "elapsed_seconds": 2.645
+          },
+          {
+            "stage": "Answer",
+            "total_tokens": 4531,
+            "context_chars": 4498,
+            "elapsed_seconds": 2.904
+          },
+          {
+            "stage": "SupportReview",
+            "total_tokens": 2792,
+            "context_chars": 3102,
+            "elapsed_seconds": 3.408
+          },
+          {
+            "stage": "Answer",
+            "total_tokens": 5012,
+            "context_chars": 5571,
+            "elapsed_seconds": 2.368
+          },
+          {
+            "stage": "Answer.format_retry",
+            "total_tokens": 5114,
+            "context_chars": 5674,
+            "elapsed_seconds": 2.291
+          },
+          {
+            "stage": "SupportReview",
+            "total_tokens": 2258,
+            "context_chars": 2592,
+            "elapsed_seconds": 2.415
+          }
+        ],
+        "elapsed_seconds": 32.969,
+        "answer_revisions": 1,
+        "duplicate_tool_calls_avoided": 0
+      },
+      "premise": {
+        "kind": "推断",
+        "text": "提问前提为《旧唐书》卷200上载史思明与安禄山同日出生。已读该卷史思明传原文作“先祿山一日生，思明除日生，祿山歲日生”，指向二人相差一日，而非同日。",
+        "citations": [
+          {
+            "end": 4915,
+            "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+            "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。",
+            "start": 4888,
+            "title": "舊唐書",
+            "chapter": "卷200上",
+            "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+            "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+          }
+        ],
+        "support_review": {
+          "reason": "所引原文“先祿山一日生，思明除日生，祿山歲日生”确实指向相差一日而非同日；据此判定提问前提有误属合理推断，且已标明为推断。",
+          "verdict": "支持",
+          "claim_index": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+          "title": "舊唐書",
+          "chapter": "卷200上",
+          "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+          "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+          "source_type": "历史文献",
+          "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。"
+        }
+      ],
+      "citations": [
+        {
+          "end": 4915,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+          "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。",
+          "start": 4888,
+          "title": "舊唐書",
+          "chapter": "卷200上",
+          "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+          "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+        },
+        {
+          "end": 4915,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+          "quote": "先祿山一日生，思明除日生，祿山歲日生。",
+          "start": 4896,
+          "title": "舊唐書",
+          "chapter": "卷200上",
+          "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+          "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+        },
+        {
+          "end": 47,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+          "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+          "start": 23,
+          "title": "舊唐書",
+          "chapter": "卷200上",
+          "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+          "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db"
+        }
+      ],
+      "conclusions": [
+        {
+          "kind": "文献记载",
+          "text": "《旧唐书》卷200上史思明传载史思明比安禄山早一日出生，史思明生于除日，安禄山生于岁日。",
+          "citations": [
+            {
+              "end": 4915,
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "quote": "先祿山一日生，思明除日生，祿山歲日生。",
+              "start": 4896,
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+            }
+          ],
+          "support_review": {
+            "reason": "引文与表述一致：史思明先安禄山一日生，思明除日生，禄山岁日生，属忠实释义。",
+            "verdict": "支持",
+            "claim_index": 1
+          }
+        },
+        {
+          "kind": "推断",
+          "text": "就所读该卷安禄山传开篇段落而言，未见出生日期或“同日生”的表述。",
+          "citations": [
+            {
+              "end": 47,
+              "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+              "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+              "start": 23,
+              "title": "舊唐書",
+              "chapter": "卷200上",
+              "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+              "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db"
+            }
+          ],
+          "support_review": {
+            "reason": "所引安禄山传开篇段落仅述籍贯、姓氏、母族、少孤及冒姓为安等，未见出生日期或同日生表述；限定为“所读该卷开篇段落”的推断恰当。",
+            "verdict": "支持",
+            "claim_index": 2
+          }
+        }
+      ],
+      "limitations": [
+        "仅核对《旧唐书》卷200上已读段落，未读全卷及卷次题名，未涉其他史书。",
+        "“除日”“岁日”为原文用语，未作公历换算。",
+        "未提及不等于不存在：本答复不主张该卷他处绝无相关记载。"
+      ],
+      "disagreements": [],
+      "citation_audit": {
+        "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。",
+        "content": {
+          "checks": [
+            {
+              "reason": "所引原文“先祿山一日生，思明除日生，祿山歲日生”确实指向相差一日而非同日；据此判定提问前提有误属合理推断，且已标明为推断。",
+              "verdict": "支持",
+              "claim_index": 0
+            },
+            {
+              "reason": "引文与表述一致：史思明先安禄山一日生，思明除日生，禄山岁日生，属忠实释义。",
+              "verdict": "支持",
+              "claim_index": 1
+            },
+            {
+              "reason": "所引安禄山传开篇段落仅述籍贯、姓氏、母族、少孤及冒姓为安等，未见出生日期或同日生表述；限定为“所读该卷开篇段落”的推断恰当。",
+              "verdict": "支持",
+              "claim_index": 2
+            },
+            {
+              "reason": "缺口说明仅限本次已读段落范围，未夹带未核查的年代、别书记载或史源断言。",
+              "verdict": "支持",
+              "claim_index": 3
+            },
+            {
+              "reason": "“除日”“岁日”确为所引原文用语，声明未作公历换算属范围限制，无未支持内容。",
+              "verdict": "支持",
+              "claim_index": 4
+            },
+            {
+              "reason": "以“未提及不等于不存在”限定结论，未主张该卷他处绝无记载，符合证据缺口说明的规范。",
+              "verdict": "支持",
+              "claim_index": 5
+            }
+          ]
+        },
+        "program": [
+          {
+            "valid": true,
+            "errors": [],
+            "citations": [
+              {
+                "end": 4915,
+                "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+                "quote": "與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。",
+                "start": 4888,
+                "title": "舊唐書",
+                "chapter": "卷200上",
+                "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+                "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+              }
+            ],
+            "claim_index": 0
+          },
+          {
+            "valid": true,
+            "errors": [],
+            "citations": [
+              {
+                "end": 4915,
+                "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+                "quote": "先祿山一日生，思明除日生，祿山歲日生。",
+                "start": 4896,
+                "title": "舊唐書",
+                "chapter": "卷200上",
+                "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+                "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+              }
+            ],
+            "claim_index": 1
+          },
+          {
+            "valid": true,
+            "errors": [],
+            "citations": [
+              {
+                "end": 47,
+                "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+                "quote": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。",
+                "start": 23,
+                "title": "舊唐書",
+                "chapter": "卷200上",
+                "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+                "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db"
+              }
+            ],
+            "claim_index": 2
+          }
+        ]
+      },
+      "rejected_claims": [],
+      "research_outcome": {
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+        "status": "answered",
+        "reasons": []
+      },
+      "rejected_limitations": []
+    }
+  },
+  "events": [
+    {
+      "event_id": 403,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "status",
+      "time": "2026-10-20T12:05:56Z",
+      "data": {
+        "status": "pending"
+      }
+    },
+    {
+      "event_id": 404,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "status",
+      "time": "2026-10-20T12:05:56Z",
+      "data": {
+        "status": "running"
+      }
+    },
+    {
+      "event_id": 405,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:05:56Z",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    },
+    {
+      "event_id": 406,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "plan",
+      "time": "2026-10-20T12:05:58Z",
+      "data": {
+        "subquestions": [
+          "《旧唐书》卷200（第二百卷）的篇目与传主是谁？",
+          "史思明、安禄山在《旧唐书》中的传记分别在哪一卷？",
+          "相关传记中关于二人出生日期的原文如何表述？"
+        ],
+        "premise_status": "待核查",
+        "search_queries": [
+          "旧唐书 卷二百 目录 史思明",
+          "旧唐书 史思明传 同日生 安禄山",
+          "旧唐书 安禄山传 出生 一日"
+        ],
+        "premise_to_check": [
+          "《旧唐书》卷200是否为史思明（或安禄山）传记所在卷次",
+          "该卷是否载有史思明与安禄山同日出生之说",
+          "若载有，原文表述是“同日生”还是仅“同日”其他事件"
+        ]
+      }
+    },
+    {
+      "event_id": 407,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:05:58Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "event_id": 408,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "tool",
+      "time": "2026-10-20T12:05:59Z",
+      "data": {
+        "name": "search_corpus",
+        "summary": "旧唐书 卷二百 史思明传 安禄山 同日生",
+        "call_number": 1
+      }
+    },
+    {
+      "event_id": 409,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "tool",
+      "time": "2026-10-20T12:06:09Z",
+      "data": {
+        "name": "search_corpus",
+        "summary": "旧唐书 史思明 营州 突厥 与安禄山同乡 生",
+        "call_number": 2
+      }
+    },
+    {
+      "event_id": 410,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:06:09Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 411,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "assessment",
+      "time": "2026-10-20T12:06:12Z",
+      "data": {
+        "gaps": [
+          "用户问的是“同日出生”，而原文为“先祿山一日生”，即相差一日；若需确认“同日”是否另有他处表述，可再核卷200上全文，但就本段而言已可判定前提不成立。"
+        ],
+        "summary": "已读《旧唐书》卷200上史思明传开头（evidence b6fd53c8）：原文作“與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生”。即史思明比安禄山早一日出生（除日/岁日），并非同日出生。同卷另有安禄山传（evidence 40a1936f），其开头未载出生日期，也未提“同日生”。故“《旧唐书》卷200上说二人同日出生”这一前提与原文不符，属误记；卷次本身无误（卷200上确为安禄山、史思明等传）。",
+        "sufficient": false,
+        "next_queries": [
+          "旧唐书 卷200上 史思明传 除日生 岁日生",
+          "旧唐书 安禄山传 卷200上 出生 原文"
+        ],
+        "premise_status": "反驳"
+      }
+    },
+    {
+      "event_id": 412,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:06:12Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "event_id": 413,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "tool",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "name": "read_passage",
+        "summary": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+        "call_number": 3
+      }
+    },
+    {
+      "event_id": 414,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "source",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432"
+      }
+    },
+    {
+      "event_id": 415,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "source",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c"
+      }
+    },
+    {
+      "event_id": 416,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "source",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20"
+      }
+    },
+    {
+      "event_id": 417,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "tool",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "name": "read_passage",
+        "summary": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+        "call_number": 4
+      }
+    },
+    {
+      "event_id": 418,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "source",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db"
+      }
+    },
+    {
+      "event_id": 419,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "source",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593"
+      }
+    },
+    {
+      "event_id": 420,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "source",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+        "title": "舊唐書",
+        "chapter": "卷200上",
+        "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+        "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2"
+      }
+    },
+    {
+      "event_id": 421,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:06:13Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 422,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "assessment",
+      "time": "2026-10-20T12:06:16Z",
+      "data": {
+        "gaps": [
+          "未核对卷200上篇目题名与卷次编号的完整对应（现有证据仅见卷内子目“○安祿山子慶緒　高尚　孫孝哲　史思明子朝義”，可确认卷200上为安禄山、史思明合传所在卷，但卷次题名本身未直接读到）",
+          "未核查《新唐书》《资治通鉴》等是否另载“同日生”之说（本题只要求核对《旧唐书》此段，故非必需）"
+        ],
+        "summary": "已读《旧唐书》卷200上原文（evidence b6fd53c8）：史思明传开篇载“與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生”。即二人并非同日出生，而是史思明比安禄山早一日：史思明生于除夕（除日），安禄山生于元旦（岁日）。同卷另有安禄山传（evidence 40a1936f），其开篇述家世、名字由来，未载出生日期，亦无“同日生”之语；卷内子目（evidence 2dc1ab60）显示卷200上为安禄山、史思明（及其子）合传。故用户所提“同日出生”的前提与原文不符，属误读“同日”类表述或记忆偏差。证据足以判定该前提不成立。",
+        "sufficient": true,
+        "next_queries": [
+          "旧唐书 卷二百上 安禄山 史思明 传 卷首题名",
+          "旧唐书 史思明传 除日生 岁日生"
+        ],
+        "premise_status": "反驳"
+      }
+    },
+    {
+      "event_id": 423,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:06:16Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 424,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:06:19Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 425,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:06:22Z",
+      "data": {
+        "step": "根据引用审核修订答案（最多一次）"
+      }
+    },
+    {
+      "event_id": 426,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:06:22Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 427,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "step",
+      "time": "2026-10-20T12:06:27Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 428,
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "type": "completed",
+      "time": "2026-10-20T12:06:29Z",
+      "data": {
+        "error": null,
+        "status": "completed"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "end": 4843,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+      "after": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "start": 4698,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "prev_id": "34f81edd-ae8e-4b0e-a69c-9e6071754fba",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": []
+    },
+    {
+      "end": 304,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "二十年，張守珪為幽州節度，祿山盜羊事覺，守珪剝坐，欲棒殺之，大呼曰：「大夫不欲滅兩蕃耶？何為打殺祿山！」守珪見其肥白，壯其言而釋之。令與鄉人史思明同捉生，行必克獲，拔為偏將。常嫌其肥，以守珪威風素高，畏懼不敢飽食。以驍勇聞，遂養為子。",
+      "after": "",
+      "start": 187,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。道買次男貞節為嵐州別駕，收穫之。年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "0af30f41-f983-42ca-913d-bf3ac02cff1d",
+      "prev_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+      "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": []
+    },
+    {
+      "end": 21,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+      "after": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。道買次男貞節為嵐州別駕，收穫之。年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+      "start": 0,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+      "prev_id": null,
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+      "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": []
+    },
+    {
+      "end": 185,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "安祿山，營州柳城雜種胡人也，本無姓氏，名軋犖山。母阿史德氏，亦突厥巫師，以卜為業。突厥呼鬥戰為軋犖山，遂以名之。少孤，隨母在突厥中，將軍安波至兄延偃妻其母。開元初，與將軍安道買男俱逃出突厥中。道買次男貞節為嵐州別駕，收穫之。年十餘歲，以與其兄及延偃相攜而出，感愧之，約與思順等並為兄弟，冒姓為安。及長，解六蕃語，為互市牙郎。",
+      "after": "二十年，張守珪為幽州節度，祿山盜羊事覺，守珪剝坐，欲棒殺之，大呼曰：「大夫不欲滅兩蕃耶？何為打殺祿山！」守珪見其肥白，壯其言而釋之。令與鄉人史思明同捉生，行必克獲，拔為偏將。常嫌其肥，以守珪威風素高，畏懼不敢飽食。以驍勇聞，遂養為子。",
+      "start": 23,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+      "prev_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+      "evidence_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": [
+        {
+          "end": 21,
+          "text": "○安祿山子慶緒　高尚　孫孝哲　史思明子朝義",
+          "start": 0,
+          "next_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+          "prev_id": null,
+          "passage_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593",
+          "evidence_id": "2dc1ab60-78e8-4b18-a015-2043c86f4593"
+        },
+        {
+          "end": 304,
+          "text": "二十年，張守珪為幽州節度，祿山盜羊事覺，守珪剝坐，欲棒殺之，大呼曰：「大夫不欲滅兩蕃耶？何為打殺祿山！」守珪見其肥白，壯其言而釋之。令與鄉人史思明同捉生，行必克獲，拔為偏將。常嫌其肥，以守珪威風素高，畏懼不敢飽食。以驍勇聞，遂養為子。",
+          "start": 187,
+          "next_id": "0af30f41-f983-42ca-913d-bf3ac02cff1d",
+          "prev_id": "40a1936f-d173-4e90-a3b2-5dbf922850db",
+          "passage_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2",
+          "evidence_id": "28ee2d31-1655-4ef3-9b5d-14dd7d9515f2"
+        }
+      ]
+    },
+    {
+      "end": 5425,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+      "after": "",
+      "start": 5051,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "450dc5f6-b71a-47d0-aeb7-fadb24081428",
+      "prev_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": []
+    },
+    {
+      "end": 5049,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2306918&title=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A",
+      "text": "史思明，本名窣干。營州寧夷州突厥雜種胡人也。姿瘦，少鬚髮，鳶肩傴背，欽目側鼻。性急躁。與安祿山同鄉里，先祿山一日生，思明除日生，祿山歲日生。及長，相善，俱以驍勇聞。初事特進烏知義，每令騎覘賊，必生擒以歸。又解六蕃語，與祿山同為互市郎。張守珪為幽州節度，奏為折沖。天寶初，頻立戰功，至將軍，知平盧軍事。嘗入奏，玄宗賜坐，與語，甚奇之。問其年，曰「四十矣」。玄宗撫其背曰：「卿貴在後，勉之。」遷大將軍、北平太守。",
+      "after": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+      "start": 4845,
+      "title": "舊唐書",
+      "author": "劉昫等奉敕撰",
+      "before": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+      "chapter": "卷200上",
+      "edition": "维基文库数字文本，修订 2306918，抓取 2026-10-16；底本未独立校勘",
+      "next_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+      "prev_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "passage_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "evidence_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+      "source_type": "历史文献",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8",
+      "provenance_note": "后出编纂的历史文献，不能仅凭书名认定为事发时一手记录；维基文库转录可能存在讹误，诸书也可能共享史源。",
+      "context_passages": [
+        {
+          "end": 4843,
+          "text": "孫孝哲，契丹人也。母為祿山所通，因得狎近。及祿山僭逆，偽授殿中監、閑廄使，封王。孝哲尤用事，亞于嚴莊。裘馬華侈，頗事豪貴，每食皆備珍饌。性殘忍，果于殺戮，聞者畏之。祿山使孝哲與張通儒同守西京，妃王宗枝皆罹其酷。與嚴莊爭權不睦。及祿山死，奪其使，以鄧季陽代之。慶緒之奔，莊懼為所圖，因而來奔。",
+          "start": 4698,
+          "next_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+          "prev_id": "34f81edd-ae8e-4b0e-a69c-9e6071754fba",
+          "passage_id": "173b762d-0287-4536-9fa4-d28f60cbf69c",
+          "evidence_id": "173b762d-0287-4536-9fa4-d28f60cbf69c"
+        },
+        {
+          "end": 5425,
+          "text": "十四載，安祿山反，命思明討饒陽等諸郡，陷之。十五載正月六日，思明與蔡希德圍顏杲卿於常山，九日拔之。又圍饒陽，二十九日不能拔。李光弼出土門，拔常山郡，思明解圍而拒光弼。光弼列兵于城南，相持累月。光弼草盡，使精卒以車數乘於旁縣取草，輒被擊之，其後率十匹唯共得兩束草，至剉蒿薦以飼之。初，祿山以賈循為范陽留後，謀歸順，為副留守向潤客所殺，以思明代之。又以征戰在外，令向潤客代其任。四月，朔方節度郭子儀以朔方蕃、漢二萬人自土門而至常山，軍威遂振，南拔趙郡，思明退保博陵。五月十日，子儀、光弼擊之，敗思明於沙河上。又攻之，思明以騎卒奔嘉山，光弼擊之，思明大敗，走入博陵郡。光弼圍之，城幾拔。屬潼關失守，肅宗理兵于朔方，使中官邢廷恩追朔方、河東兵馬。光弼入土門，思明隨後徼擊之。已而回軍並行擊劉正臣，正臣易之。初不設備，遂棄軍保北平，正臣妻子及軍資二千乘盡沒。",
+          "start": 5051,
+          "next_id": "450dc5f6-b71a-47d0-aeb7-fadb24081428",
+          "prev_id": "b6fd53c8-abf2-457d-b4c5-3b13dd6e2432",
+          "passage_id": "920b4f65-72d8-4a35-951e-f91df08f6d20",
+          "evidence_id": "920b4f65-72d8-4a35-951e-f91df08f6d20"
+        }
+      ]
+    }
+  ]
+}

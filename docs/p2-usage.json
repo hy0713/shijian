@@ -1,0 +1,433 @@
+{
+  "scope": "Only paid calls executed in this continuation, including the old-entrypoint run and failed run. No 30-question batch.",
+  "records": [
+    {
+      "kind": "frozen_bad_claim",
+      "artifact": "docs/p2-replay-funded.json",
+      "requests": 2,
+      "usage": {
+        "deepseek-flash": {
+          "output_tokens": 561,
+          "input_token_details": {
+            "cache_read": 896
+          },
+          "total_tokens": 3050,
+          "output_token_details": {},
+          "input_tokens": 2489
+        }
+      },
+      "request_metrics": [
+        {
+          "request_number": 1,
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "elapsed_seconds": 1.266,
+          "context_chars": 1149,
+          "input_tokens": 982,
+          "output_tokens": 142,
+          "total_tokens": 1124,
+          "observed_cumulative_tokens": 1124,
+          "usage_missing_requests": 0
+        },
+        {
+          "request_number": 2,
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "elapsed_seconds": 2.125,
+          "context_chars": 1722,
+          "input_tokens": 1507,
+          "output_tokens": 419,
+          "total_tokens": 1926,
+          "observed_cumulative_tokens": 3050,
+          "usage_missing_requests": 0
+        }
+      ]
+    },
+    {
+      "kind": "positive_control",
+      "artifact": "docs/p2-replay-funded.json",
+      "requests": 2,
+      "usage": {
+        "deepseek-flash": {
+          "output_tokens": 577,
+          "input_token_details": {
+            "cache_read": 1664
+          },
+          "total_tokens": 3063,
+          "output_token_details": {},
+          "input_tokens": 2486
+        }
+      },
+      "request_metrics": [
+        {
+          "request_number": 1,
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "elapsed_seconds": 1.125,
+          "context_chars": 1149,
+          "input_tokens": 982,
+          "output_tokens": 139,
+          "total_tokens": 1121,
+          "observed_cumulative_tokens": 1121,
+          "usage_missing_requests": 0
+        },
+        {
+          "request_number": 2,
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "elapsed_seconds": 1.781,
+          "context_chars": 1720,
+          "input_tokens": 1504,
+          "output_tokens": 438,
+          "total_tokens": 1942,
+          "observed_cumulative_tokens": 3063,
+          "usage_missing_requests": 0
+        }
+      ]
+    },
+    {
+      "kind": "old_entrypoint_task",
+      "artifact": "docs/p2-live-observed.json",
+      "task_id": "d718645c-519f-4278-b344-31f283b0cb41",
+      "status": "completed",
+      "requests": 10,
+      "usage": {
+        "deepseek-flash": {
+          "input_tokens": 29285,
+          "total_tokens": 33165,
+          "output_tokens": 3880,
+          "input_token_details": {
+            "cache_read": 12800
+          },
+          "output_token_details": {}
+        }
+      },
+      "request_metrics": [
+        {
+          "stage": "Analysis",
+          "total_tokens": 871,
+          "context_chars": 409,
+          "elapsed_seconds": 1.831
+        },
+        {
+          "stage": "choose",
+          "total_tokens": 1044,
+          "context_chars": 815,
+          "elapsed_seconds": 1.017
+        },
+        {
+          "stage": "Assessment",
+          "total_tokens": 4013,
+          "context_chars": 4802,
+          "elapsed_seconds": 2.146
+        },
+        {
+          "stage": "choose",
+          "total_tokens": 4350,
+          "context_chars": 5171,
+          "elapsed_seconds": 1.56
+        },
+        {
+          "stage": "Assessment",
+          "total_tokens": 3180,
+          "context_chars": 3497,
+          "elapsed_seconds": 2.645
+        },
+        {
+          "stage": "Answer",
+          "total_tokens": 4531,
+          "context_chars": 4498,
+          "elapsed_seconds": 2.904
+        },
+        {
+          "stage": "SupportReview",
+          "total_tokens": 2792,
+          "context_chars": 3102,
+          "elapsed_seconds": 3.408
+        },
+        {
+          "stage": "Answer",
+          "total_tokens": 5012,
+          "context_chars": 5571,
+          "elapsed_seconds": 2.368
+        },
+        {
+          "stage": "Answer.format_retry",
+          "total_tokens": 5114,
+          "context_chars": 5674,
+          "elapsed_seconds": 2.291
+        },
+        {
+          "stage": "SupportReview",
+          "total_tokens": 2258,
+          "context_chars": 2592,
+          "elapsed_seconds": 2.415
+        }
+      ]
+    },
+    {
+      "kind": "p2_failed_task",
+      "artifact": "docs/p2-live-failure.json",
+      "task_id": "a9edf234-704b-460a-82c3-78e98cdd925f",
+      "status": "failed",
+      "requests": 10,
+      "usage": {
+        "deepseek-flash": {
+          "input_tokens": 22743,
+          "total_tokens": 25533,
+          "output_tokens": 2790,
+          "input_token_details": {
+            "cache_read": 10368
+          },
+          "output_token_details": {}
+        }
+      },
+      "request_metrics": [
+        {
+          "stage": "Analysis",
+          "outcome": "returned",
+          "input_tokens": 639,
+          "total_tokens": 874,
+          "context_chars": 426,
+          "output_tokens": 235,
+          "request_number": 1,
+          "elapsed_seconds": 1.638,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 874
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 903,
+          "total_tokens": 1051,
+          "context_chars": 818,
+          "output_tokens": 148,
+          "request_number": 2,
+          "elapsed_seconds": 1.037,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 1925
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 3382,
+          "total_tokens": 3682,
+          "context_chars": 4555,
+          "output_tokens": 300,
+          "request_number": 3,
+          "elapsed_seconds": 1.923,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 5607
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 3920,
+          "total_tokens": 3979,
+          "context_chars": 4888,
+          "output_tokens": 59,
+          "request_number": 4,
+          "elapsed_seconds": 0.93,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 9586
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 2007,
+          "total_tokens": 2203,
+          "context_chars": 2385,
+          "output_tokens": 196,
+          "request_number": 5,
+          "elapsed_seconds": 1.583,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 11789
+        },
+        {
+          "stage": "Answer",
+          "outcome": "returned",
+          "input_tokens": 2928,
+          "total_tokens": 3257,
+          "context_chars": 3060,
+          "output_tokens": 329,
+          "request_number": 6,
+          "elapsed_seconds": 1.813,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 15046
+        },
+        {
+          "stage": "Answer.format_retry",
+          "outcome": "returned",
+          "input_tokens": 3228,
+          "total_tokens": 3571,
+          "context_chars": 3737,
+          "output_tokens": 343,
+          "request_number": 7,
+          "elapsed_seconds": 2.556,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 18617
+        },
+        {
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "input_tokens": 766,
+          "total_tokens": 843,
+          "context_chars": 778,
+          "output_tokens": 77,
+          "request_number": 8,
+          "elapsed_seconds": 0.951,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 19460
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 1326,
+          "total_tokens": 2042,
+          "context_chars": 1450,
+          "output_tokens": 716,
+          "request_number": 9,
+          "elapsed_seconds": 3.17,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 21502
+        },
+        {
+          "stage": "Answer",
+          "outcome": "returned",
+          "input_tokens": 3644,
+          "total_tokens": 4031,
+          "context_chars": 4568,
+          "output_tokens": 387,
+          "request_number": 10,
+          "elapsed_seconds": 2.146,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 25533
+        }
+      ]
+    },
+    {
+      "kind": "p2_final_task",
+      "artifact": "docs/p2-live-smoke.json",
+      "task_id": "d6709f3e-e20b-42a7-beda-5bbf27700b38",
+      "status": "completed",
+      "requests": 8,
+      "usage": {
+        "deepseek-flash": {
+          "input_tokens": 16802,
+          "total_tokens": 18830,
+          "output_tokens": 2028,
+          "input_token_details": {
+            "cache_read": 4096
+          },
+          "output_token_details": {}
+        }
+      },
+      "request_metrics": [
+        {
+          "stage": "Analysis",
+          "outcome": "returned",
+          "input_tokens": 639,
+          "total_tokens": 875,
+          "context_chars": 426,
+          "output_tokens": 236,
+          "request_number": 1,
+          "elapsed_seconds": 1.509,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 875
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 904,
+          "total_tokens": 997,
+          "context_chars": 818,
+          "output_tokens": 93,
+          "request_number": 2,
+          "elapsed_seconds": 1.044,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 1872
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 3300,
+          "total_tokens": 3614,
+          "context_chars": 4473,
+          "output_tokens": 314,
+          "request_number": 3,
+          "elapsed_seconds": 2.411,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 5486
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 3761,
+          "total_tokens": 3873,
+          "context_chars": 4761,
+          "output_tokens": 112,
+          "request_number": 4,
+          "elapsed_seconds": 0.959,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 9359
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 2464,
+          "total_tokens": 2713,
+          "context_chars": 3100,
+          "output_tokens": 249,
+          "request_number": 5,
+          "elapsed_seconds": 1.672,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 12072
+        },
+        {
+          "stage": "Answer",
+          "outcome": "returned",
+          "input_tokens": 3546,
+          "total_tokens": 3949,
+          "context_chars": 4071,
+          "output_tokens": 403,
+          "request_number": 6,
+          "elapsed_seconds": 2.631,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 16021
+        },
+        {
+          "stage": "QuoteReadings",
+          "outcome": "returned",
+          "input_tokens": 775,
+          "total_tokens": 864,
+          "context_chars": 786,
+          "output_tokens": 89,
+          "request_number": 7,
+          "elapsed_seconds": 0.931,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 16885
+        },
+        {
+          "stage": "SupportReview",
+          "outcome": "returned",
+          "input_tokens": 1413,
+          "total_tokens": 1945,
+          "context_chars": 1605,
+          "output_tokens": 532,
+          "request_number": 8,
+          "elapsed_seconds": 2.108,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 18830
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "input_tokens": 73805,
+    "output_tokens": 9836,
+    "total_tokens": 83641,
+    "requests": 32
+  },
+  "cost": null,
+  "note": "Token usage returned by provider; not a statement of currency deductions. No missing usage in these saved calls."
+}

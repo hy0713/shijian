@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-20",
+  "mode": "online",
+  "methods": [
+    "agent"
+  ],
+  "question_file": "eval/cross_topic.json",
+  "question_sha256": "509d2c133a08b9b582efc3f04eee6e27595120f4d042b4340f2bda72719c76d9",
+  "question_ids": [
+    "Q07",
+    "Q13"
+  ],
+  "total_questions": 30,
+  "not_run_ids": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29",
+    "Q30"
+  ],
+  "human_reviewed": 0,
+  "notes": [
+    "Two real worker runs registered without additional model calls.",
+    "Q07 partial; Q13 insufficient_evidence despite completed execution.",
+    "This is not a three-method comparison or a validated historical-quality score.",
+    "Real worker records precede final offline-only language-hint and concise-answer fixes. Exact per-run source hashes were not captured; delivery hashes are not asserted to be the paid-run version."
+  ],
+  "delivery_code_sha256": {
+    "shijian\\agent.py": "7dcdd6a0ab7f210ab62526587f74ae4926b6b137dc507ea1bcd65211ab47b6d3",
+    "shijian\\source_reading.py": "6d54d1912ea3eb03e6390fab10a20762d6ce4f3837ed740ada84067106f7e4c2"
+  },
+  "real_run_code_sha256": null
+}

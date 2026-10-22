@@ -9,8 +9,9 @@ COPY shijian ./shijian
 COPY migrations ./migrations
 COPY alembic.ini ./
 COPY data/demo ./data/demo
-RUN uv sync --frozen --no-dev --extra embedding --no-editable
+COPY eval ./eval
+RUN uv sync --frozen --no-dev --extra embedding --no-editable --reinstall-package shijian
 ENV PATH="/opt/venv/bin:$PATH"
-RUN useradd -m app && mkdir -p /app/data/cache && chown -R app:app /app/data
+RUN useradd -m app && mkdir -p /app/data/cache /app/data/evaluations && chown -R app:app /app/data
 USER app
 CMD ["uvicorn", "shijian.api:app", "--host", "0.0.0.0", "--port", "8000"]

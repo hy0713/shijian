@@ -1,0 +1,1662 @@
+{
+  "task": {
+    "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+    "question": "《凡尔赛条约》是在1919年还是1920年签署？请区分签署与生效，最多两条结论及必要引文，找到直接记载后停止补查。",
+    "mode": "online",
+    "status": "failed",
+    "cancel_requested": false,
+    "created_at": "2026-10-20T13:03:31Z",
+    "updated_at": "2026-10-20T13:05:35Z",
+    "error": "已达到本任务的模型调用或已观测 Token 上限，已停止继续调用。已读证据保留；请缩小问题后再研究。",
+    "result": null
+  },
+  "evidence": [
+    {
+      "end": 802,
+      "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+      "text": "The Treaty of Versailles was ratified on 10 January 1920\\, and except in the plebiscite areas its territorial provisions came into force on that date\\. The Schleswig plebiscite \\(February and March 1920\\) awarded the north to Denmark and the south to Germany\\, in each case by a decisive majority\\. The East Prussian plebiscite \\(July 1920\\) showed an overwhelming vote for Germany\\. The Upper Silesian plebiscite \\(Marc",
+      "after": "h 1921\\) yielded a majority of nearly two to one in favour of Germany for the province as a whole\\, but a majority for Poland in certain areas of the south and east\\. On the basis of this vote\\, and having regard to the industrial unity of certain disputed areas\\, the principal Allies\\, with the exception of France\\, were of opinion that\\, apart from the south\\-eastern districts of Pless and Rybnik which\\, although t",
+      "start": 382,
+      "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+      "author": null,
+      "before": "THE EXECUTION OF THE TREATY AND THE PLEBISCITES",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "0d30a21a-4aaa-4c6e-abf3-401f0cb42057",
+      "prev_id": "849687de-6c98-4283-be4b-d207ab8bf9b0",
+      "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+      "passage_id": "0b3c7d95-e065-4d15-b0f4-a5a8147126c3",
+      "evidence_id": "0b3c7d95-e065-4d15-b0f4-a5a8147126c3",
+      "source_type": "网页",
+      "content_hash": "e1bd6e2631eb183d7da5ece270442318589fe620cd1903b2d1b418547ba9177d",
+      "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": [
+        {
+          "end": 380,
+          "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+          "text": "THE EXECUTION OF THE TREATY AND THE PLEBISCITES",
+          "start": 333,
+          "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "0b3c7d95-e065-4d15-b0f4-a5a8147126c3",
+          "prev_id": "8d551eca-1ac3-4343-b548-56db7f09b0c3",
+          "passage_id": "849687de-6c98-4283-be4b-d207ab8bf9b0",
+          "evidence_id": "849687de-6c98-4283-be4b-d207ab8bf9b0",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        },
+        {
+          "end": 1222,
+          "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+          "text": "h 1921\\) yielded a majority of nearly two to one in favour of Germany for the province as a whole\\, but a majority for Poland in certain areas of the south and east\\. On the basis of this vote\\, and having regard to the industrial unity of certain disputed areas\\, the principal Allies\\, with the exception of France\\, were of opinion that\\, apart from the south\\-eastern districts of Pless and Rybnik which\\, although t",
+          "start": 802,
+          "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "0564183b-3b0e-4fef-a12b-713115474e79",
+          "prev_id": "0b3c7d95-e065-4d15-b0f4-a5a8147126c3",
+          "passage_id": "0d30a21a-4aaa-4c6e-abf3-401f0cb42057",
+          "evidence_id": "0d30a21a-4aaa-4c6e-abf3-401f0cb42057",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        }
+      ]
+    },
+    {
+      "end": 1222,
+      "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+      "text": "h 1921\\) yielded a majority of nearly two to one in favour of Germany for the province as a whole\\, but a majority for Poland in certain areas of the south and east\\. On the basis of this vote\\, and having regard to the industrial unity of certain disputed areas\\, the principal Allies\\, with the exception of France\\, were of opinion that\\, apart from the south\\-eastern districts of Pless and Rybnik which\\, although t",
+      "after": "",
+      "start": 802,
+      "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+      "author": null,
+      "before": "The Treaty of Versailles was ratified on 10 January 1920\\, and except in the plebiscite areas its territorial provisions came into force on that date\\. The Schleswig plebiscite \\(February and March 1920\\) awarded the north to Denmark and the south to Germany\\, in each case by a decisive majority\\. The East Prussian plebiscite \\(July 1920\\) showed an overwhelming vote for Germany\\. The Upper Silesian plebiscite \\(Marc",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "0564183b-3b0e-4fef-a12b-713115474e79",
+      "prev_id": "0b3c7d95-e065-4d15-b0f4-a5a8147126c3",
+      "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+      "passage_id": "0d30a21a-4aaa-4c6e-abf3-401f0cb42057",
+      "evidence_id": "0d30a21a-4aaa-4c6e-abf3-401f0cb42057",
+      "source_type": "网页",
+      "content_hash": "e1bd6e2631eb183d7da5ece270442318589fe620cd1903b2d1b418547ba9177d",
+      "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 190,
+      "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+      "text": "\\- Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles\\, June 28\\, 1919 TitleSources\\: Cover page \\- official title \\(consulted Oct 2015\\)",
+      "after": "\\- Treaty of Peace between the Allied and Associated Powers and Germany alternateNote\\: There are several of those\\. Source\\: British and Foreign State Papers\\, 1919\\, vol\\. CXII \\(London\\, HM Stationery Office\\, 1922\\)",
+      "start": 14,
+      "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+      "author": null,
+      "before": "\\#\\# English",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "48e341d9-8b13-47bf-a99b-381c76af0e31",
+      "prev_id": "f0079e4e-54a4-4f10-8255-656edc91cd46",
+      "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+      "passage_id": "34c985a5-6d4b-4526-97c2-dcfe1b514dbd",
+      "evidence_id": "34c985a5-6d4b-4526-97c2-dcfe1b514dbd",
+      "source_type": "网页",
+      "content_hash": "ca879b9f5a564ab4a84ae1b3fb9b71eef15e0cc00043db089bf347a6884c2efe",
+      "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": [
+        {
+          "end": 12,
+          "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+          "text": "\\#\\# English",
+          "start": 0,
+          "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "34c985a5-6d4b-4526-97c2-dcfe1b514dbd",
+          "prev_id": null,
+          "passage_id": "f0079e4e-54a4-4f10-8255-656edc91cd46",
+          "evidence_id": "f0079e4e-54a4-4f10-8255-656edc91cd46",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        },
+        {
+          "end": 410,
+          "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+          "text": "\\- Treaty of Peace between the Allied and Associated Powers and Germany alternateNote\\: There are several of those\\. Source\\: British and Foreign State Papers\\, 1919\\, vol\\. CXII \\(London\\, HM Stationery Office\\, 1922\\)",
+          "start": 191,
+          "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "549f5dff-a10a-41eb-af2e-4ce5d96f5ab6",
+          "prev_id": "34c985a5-6d4b-4526-97c2-dcfe1b514dbd",
+          "passage_id": "48e341d9-8b13-47bf-a99b-381c76af0e31",
+          "evidence_id": "48e341d9-8b13-47bf-a99b-381c76af0e31",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        }
+      ]
+    },
+    {
+      "end": 250,
+      "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+      "text": "\\# 2 \\- FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON",
+      "after": "Published online by Cambridge University Press\\: 05 November 2012",
+      "start": 159,
+      "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+      "author": null,
+      "before": "Hostname\\: page\\-component\\-8678677fb7\\-dg9rd Total loading time\\: 0 Render date\\: 2026\\-10\\-20T13\\:04\\:58\\.216Z Has data issue\\: false hasContentIssue false",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "652c812f-2935-4fd8-9f34-f7f01bd84fb5",
+      "prev_id": "7f4be7be-c9bb-4c7f-a859-a0fdd267a317",
+      "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+      "passage_id": "37cd8c38-067b-452a-b5fd-b17ce2d8c3db",
+      "evidence_id": "37cd8c38-067b-452a-b5fd-b17ce2d8c3db",
+      "source_type": "网页",
+      "content_hash": "e1bd6e2631eb183d7da5ece270442318589fe620cd1903b2d1b418547ba9177d",
+      "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": [
+        {
+          "end": 157,
+          "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+          "text": "Hostname\\: page\\-component\\-8678677fb7\\-dg9rd Total loading time\\: 0 Render date\\: 2026\\-10\\-20T13\\:04\\:58\\.216Z Has data issue\\: false hasContentIssue false",
+          "start": 0,
+          "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "37cd8c38-067b-452a-b5fd-b17ce2d8c3db",
+          "prev_id": null,
+          "passage_id": "7f4be7be-c9bb-4c7f-a859-a0fdd267a317",
+          "evidence_id": "7f4be7be-c9bb-4c7f-a859-a0fdd267a317",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        },
+        {
+          "end": 317,
+          "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+          "text": "Published online by Cambridge University Press\\: 05 November 2012",
+          "start": 252,
+          "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "8d551eca-1ac3-4343-b548-56db7f09b0c3",
+          "prev_id": "37cd8c38-067b-452a-b5fd-b17ce2d8c3db",
+          "passage_id": "652c812f-2935-4fd8-9f34-f7f01bd84fb5",
+          "evidence_id": "652c812f-2935-4fd8-9f34-f7f01bd84fb5",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        }
+      ]
+    },
+    {
+      "end": 410,
+      "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+      "text": "\\- Treaty of Peace between the Allied and Associated Powers and Germany alternateNote\\: There are several of those\\. Source\\: British and Foreign State Papers\\, 1919\\, vol\\. CXII \\(London\\, HM Stationery Office\\, 1922\\)",
+      "after": "",
+      "start": 191,
+      "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+      "author": null,
+      "before": "\\- Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles\\, June 28\\, 1919 TitleSources\\: Cover page \\- official title \\(consulted Oct 2015\\)",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "549f5dff-a10a-41eb-af2e-4ce5d96f5ab6",
+      "prev_id": "34c985a5-6d4b-4526-97c2-dcfe1b514dbd",
+      "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+      "passage_id": "48e341d9-8b13-47bf-a99b-381c76af0e31",
+      "evidence_id": "48e341d9-8b13-47bf-a99b-381c76af0e31",
+      "source_type": "网页",
+      "content_hash": "ca879b9f5a564ab4a84ae1b3fb9b71eef15e0cc00043db089bf347a6884c2efe",
+      "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 317,
+      "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+      "text": "Published online by Cambridge University Press\\: 05 November 2012",
+      "after": "",
+      "start": 252,
+      "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+      "author": null,
+      "before": "\\# 2 \\- FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "8d551eca-1ac3-4343-b548-56db7f09b0c3",
+      "prev_id": "37cd8c38-067b-452a-b5fd-b17ce2d8c3db",
+      "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+      "passage_id": "652c812f-2935-4fd8-9f34-f7f01bd84fb5",
+      "evidence_id": "652c812f-2935-4fd8-9f34-f7f01bd84fb5",
+      "source_type": "网页",
+      "content_hash": "e1bd6e2631eb183d7da5ece270442318589fe620cd1903b2d1b418547ba9177d",
+      "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 2539,
+      "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+      "text": "\\- Мирный договор между союзными и объединившимися державами и Германией\\, подписанный в Версале 28 июня 1919 г\\. TitleSource\\: RUTERM \\(просмотр\\: октябрь 2015 года\\)",
+      "after": "\\- Версальский мирный договор alternateSource\\: RUTERM \\(просмотр\\: октябрь 2015 года\\)",
+      "start": 2372,
+      "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+      "author": null,
+      "before": "\\#\\# Russian",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "ab7c9508-c7dc-452f-b5bd-24018a537dc6",
+      "prev_id": "c0e8ed70-8d0f-4085-a874-d9e4e46b5dd1",
+      "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+      "passage_id": "7b1ee552-c913-4dec-825f-e32997c3de1f",
+      "evidence_id": "7b1ee552-c913-4dec-825f-e32997c3de1f",
+      "source_type": "网页",
+      "content_hash": "ca879b9f5a564ab4a84ae1b3fb9b71eef15e0cc00043db089bf347a6884c2efe",
+      "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": [
+        {
+          "end": 2370,
+          "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+          "text": "\\#\\# Russian",
+          "start": 2358,
+          "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "7b1ee552-c913-4dec-825f-e32997c3de1f",
+          "prev_id": "4d61c431-d718-461b-87fa-e92847eaf042",
+          "passage_id": "c0e8ed70-8d0f-4085-a874-d9e4e46b5dd1",
+          "evidence_id": "c0e8ed70-8d0f-4085-a874-d9e4e46b5dd1",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        },
+        {
+          "end": 2627,
+          "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+          "text": "\\- Версальский мирный договор alternateSource\\: RUTERM \\(просмотр\\: октябрь 2015 года\\)",
+          "start": 2540,
+          "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "4d2603c8-6c9e-4daf-bc07-2b8df8dd6ec5",
+          "prev_id": "7b1ee552-c913-4dec-825f-e32997c3de1f",
+          "passage_id": "ab7c9508-c7dc-452f-b5bd-24018a537dc6",
+          "evidence_id": "ab7c9508-c7dc-452f-b5bd-24018a537dc6",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        }
+      ]
+    },
+    {
+      "end": 157,
+      "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+      "text": "Hostname\\: page\\-component\\-8678677fb7\\-dg9rd Total loading time\\: 0 Render date\\: 2026\\-10\\-20T13\\:04\\:58\\.216Z Has data issue\\: false hasContentIssue false",
+      "after": "\\# 2 \\- FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON",
+      "start": 0,
+      "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+      "author": null,
+      "before": "",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "37cd8c38-067b-452a-b5fd-b17ce2d8c3db",
+      "prev_id": null,
+      "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+      "passage_id": "7f4be7be-c9bb-4c7f-a859-a0fdd267a317",
+      "evidence_id": "7f4be7be-c9bb-4c7f-a859-a0fdd267a317",
+      "source_type": "网页",
+      "content_hash": "e1bd6e2631eb183d7da5ece270442318589fe620cd1903b2d1b418547ba9177d",
+      "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 380,
+      "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+      "text": "THE EXECUTION OF THE TREATY AND THE PLEBISCITES",
+      "after": "The Treaty of Versailles was ratified on 10 January 1920\\, and except in the plebiscite areas its territorial provisions came into force on that date\\. The Schleswig plebiscite \\(February and March 1920\\) awarded the north to Denmark and the south to Germany\\, in each case by a decisive majority\\. The East Prussian plebiscite \\(July 1920\\) showed an overwhelming vote for Germany\\. The Upper Silesian plebiscite \\(Marc",
+      "start": 333,
+      "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+      "author": null,
+      "before": "",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "0b3c7d95-e065-4d15-b0f4-a5a8147126c3",
+      "prev_id": "8d551eca-1ac3-4343-b548-56db7f09b0c3",
+      "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+      "passage_id": "849687de-6c98-4283-be4b-d207ab8bf9b0",
+      "evidence_id": "849687de-6c98-4283-be4b-d207ab8bf9b0",
+      "source_type": "网页",
+      "content_hash": "e1bd6e2631eb183d7da5ece270442318589fe620cd1903b2d1b418547ba9177d",
+      "retrieved_at": "2026-10-20T13:05:15.561761+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 86,
+      "url": "https://paperspast.natlib.govt.nz/parliamentary/appendix-to-the-journals-of-the-house-of-representatives/1948/I/1008",
+      "text": "Request unsuccessful\\. Incapsula incident ID\\: 442000190734232284\\-1987495252964541685",
+      "after": "",
+      "start": 0,
+      "title": "paperspast.natlib.govt.nz",
+      "author": null,
+      "before": "",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": null,
+      "prev_id": null,
+      "source_id": "8cc0b381-9b4a-49a9-b734-e9510d777846",
+      "passage_id": "935227c8-c768-438f-a694-c8fd237168e4",
+      "evidence_id": "935227c8-c768-438f-a694-c8fd237168e4",
+      "source_type": "网页",
+      "content_hash": "f972eaa99361500f86ab0c37c1a2f6a806b1e63b9cd9b785ce189175b8990ce8",
+      "retrieved_at": "2026-10-20T13:04:53.235941+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 2627,
+      "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+      "text": "\\- Версальский мирный договор alternateSource\\: RUTERM \\(просмотр\\: октябрь 2015 года\\)",
+      "after": "",
+      "start": 2540,
+      "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+      "author": null,
+      "before": "\\- Мирный договор между союзными и объединившимися державами и Германией\\, подписанный в Версале 28 июня 1919 г\\. TitleSource\\: RUTERM \\(просмотр\\: октябрь 2015 года\\)",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "4d2603c8-6c9e-4daf-bc07-2b8df8dd6ec5",
+      "prev_id": "7b1ee552-c913-4dec-825f-e32997c3de1f",
+      "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+      "passage_id": "ab7c9508-c7dc-452f-b5bd-24018a537dc6",
+      "evidence_id": "ab7c9508-c7dc-452f-b5bd-24018a537dc6",
+      "source_type": "网页",
+      "content_hash": "ca879b9f5a564ab4a84ae1b3fb9b71eef15e0cc00043db089bf347a6884c2efe",
+      "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 2370,
+      "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+      "text": "\\#\\# Russian",
+      "after": "\\- Мирный договор между союзными и объединившимися державами и Германией\\, подписанный в Версале 28 июня 1919 г\\. TitleSource\\: RUTERM \\(просмотр\\: октябрь 2015 года\\)",
+      "start": 2358,
+      "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+      "author": null,
+      "before": "",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "7b1ee552-c913-4dec-825f-e32997c3de1f",
+      "prev_id": "4d61c431-d718-461b-87fa-e92847eaf042",
+      "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+      "passage_id": "c0e8ed70-8d0f-4085-a874-d9e4e46b5dd1",
+      "evidence_id": "c0e8ed70-8d0f-4085-a874-d9e4e46b5dd1",
+      "source_type": "网页",
+      "content_hash": "ca879b9f5a564ab4a84ae1b3fb9b71eef15e0cc00043db089bf347a6884c2efe",
+      "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 12,
+      "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+      "text": "\\#\\# English",
+      "after": "\\- Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles\\, June 28\\, 1919 TitleSources\\: Cover page \\- official title \\(consulted Oct 2015\\)",
+      "start": 0,
+      "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+      "author": null,
+      "before": "",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "34c985a5-6d4b-4526-97c2-dcfe1b514dbd",
+      "prev_id": null,
+      "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+      "passage_id": "f0079e4e-54a4-4f10-8255-656edc91cd46",
+      "evidence_id": "f0079e4e-54a4-4f10-8255-656edc91cd46",
+      "source_type": "网页",
+      "content_hash": "ca879b9f5a564ab4a84ae1b3fb9b71eef15e0cc00043db089bf347a6884c2efe",
+      "retrieved_at": "2026-10-20T13:04:33.509631+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    }
+  ],
+  "events": [
+    {
+      "event_id": 538,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "status",
+      "time": "2026-10-20T13:03:31Z",
+      "data": {
+        "status": "pending"
+      }
+    },
+    {
+      "event_id": 539,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "status",
+      "time": "2026-10-20T13:03:31Z",
+      "data": {
+        "status": "running"
+      }
+    },
+    {
+      "event_id": 540,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:03:31Z",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    },
+    {
+      "event_id": 541,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:03:32Z",
+      "data": {
+        "stage": "Analysis",
+        "outcome": "returned",
+        "input_tokens": 656,
+        "total_tokens": 849,
+        "context_chars": 457,
+        "output_tokens": 193,
+        "request_number": 1,
+        "elapsed_seconds": 1.609,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 849
+      }
+    },
+    {
+      "event_id": 542,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "plan",
+      "time": "2026-10-20T13:03:32Z",
+      "data": {
+        "subquestions": [
+          "《凡尔赛条约》正式签署的日期是哪一天？",
+          "《凡尔赛条约》正式生效（生效条件满足、登记生效）的日期是哪一天？"
+        ],
+        "premise_status": "无明显预设",
+        "search_queries": [
+          "Treaty of Versailles signed 28 June 1919 official text",
+          "Treaty of Versailles entered into force date 1920 ratification"
+        ],
+        "premise_to_check": [
+          "《凡尔赛条约》的签署日期与生效日期是否为不同时间点",
+          "签署年份（1919）与生效年份（1920）是否分别有直接记载"
+        ]
+      }
+    },
+    {
+      "event_id": 543,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:03:32Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "event_id": 544,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:03:34Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 966,
+        "total_tokens": 1057,
+        "context_chars": 1121,
+        "output_tokens": 91,
+        "request_number": 2,
+        "elapsed_seconds": 1.265,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 1906
+      }
+    },
+    {
+      "event_id": 545,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "tool",
+      "time": "2026-10-20T13:03:34Z",
+      "data": {
+        "name": "search_web",
+        "summary": "Treaty of Versailles signed 28 June 1919 entered into force 10 January 1920",
+        "call_number": 1
+      }
+    },
+    {
+      "event_id": 546,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "external_usage",
+      "time": "2026-10-20T13:03:34Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 0,
+          "search_attempts": 1,
+          "recorded_requests": 1,
+          "estimated_tool_cost_cny": "0.005",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 1,
+        "elapsed_seconds": 0.379,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 547,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "tool",
+      "time": "2026-10-20T13:03:34Z",
+      "data": {
+        "name": "search_web",
+        "summary": "Treaty of Versailles came into force 1920 ratification",
+        "call_number": 2
+      }
+    },
+    {
+      "event_id": 548,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "external_usage",
+      "time": "2026-10-20T13:03:35Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 0,
+          "search_attempts": 2,
+          "recorded_requests": 2,
+          "estimated_tool_cost_cny": "0.010",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 2,
+        "elapsed_seconds": 0.334,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 549,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:03:35Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 550,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:03:37Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 2769,
+        "total_tokens": 3107,
+        "context_chars": 7947,
+        "output_tokens": 338,
+        "request_number": 3,
+        "elapsed_seconds": 2.162,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 5013
+      }
+    },
+    {
+      "event_id": 551,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "assessment",
+      "time": "2026-10-20T13:03:37Z",
+      "data": {
+        "gaps": [
+          "尚未阅读任何命中来源的原文，仅有搜索摘要；需 read_passage/fetch_page 登记 evidence_id 后方可引用",
+          "需原文确认签署日期（1919年6月28日）的表述",
+          "需原文确认生效日期（1920年1月10日）及生效依据（最终条款/批准书交存）"
+        ],
+        "summary": "现有命中（UNTERM 术语库、HathiTrust《The Treaty of Versailles and after》注释本、FRUS 1919 Paris 第13卷、Papers Past 议会文件）摘要均显示：条约于1919年6月28日在凡尔赛签署，依最终条款于1920年1月10日下午4:15生效。但以上仅为搜索摘要，尚未阅读原文，不能作为已登记证据引用。前提（签署与生效为不同时间点）在摘要层面得到支持，仍需原文核实。",
+        "sufficient": false,
+        "next_queries": [
+          "HathiTrust annotations Treaty of Versailles signed June 28 1919 entered into force January 10 1920 原文",
+          "history.state.gov FRUS 1919 Paris v13 Treaty of Versailles entered into force January 10 1920"
+        ],
+        "premise_status": "支持"
+      }
+    },
+    {
+      "event_id": 552,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:03:37Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "event_id": 553,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:03:38Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 4831,
+        "total_tokens": 5038,
+        "context_chars": 14202,
+        "output_tokens": 207,
+        "request_number": 4,
+        "elapsed_seconds": 1.229,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 10051
+      }
+    },
+    {
+      "event_id": 554,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "tool",
+      "time": "2026-10-20T13:03:38Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://babel.hathitrust.org/cgi/ssd?id=hvd.32044109641258%3Bpage%3Dssd%3Bview%3Dplaintext%3Bseq%3D51%3Bnum%3D29",
+        "call_number": 3
+      }
+    },
+    {
+      "event_id": 555,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "external_usage",
+      "time": "2026-10-20T13:04:08Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "failed",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 1,
+          "search_attempts": 2,
+          "recorded_requests": 3,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": null,
+        "provider": "deepseek",
+        "http_status": null,
+        "request_number": 3,
+        "elapsed_seconds": 30.001,
+        "estimated_cost_cny": null
+      }
+    },
+    {
+      "event_id": 556,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "tool_error",
+      "time": "2026-10-20T13:04:08Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "fetch_page 调用失败（TimeoutError），请改写查询或说明缺口",
+        "error_type": "TimeoutError"
+      }
+    },
+    {
+      "event_id": 557,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "tool",
+      "time": "2026-10-20T13:04:08Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+        "call_number": 4
+      }
+    },
+    {
+      "event_id": 558,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "external_usage",
+      "time": "2026-10-20T13:04:33Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 2,
+          "search_attempts": 2,
+          "recorded_requests": 4,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 4,
+        "elapsed_seconds": 23.407,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 559,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:04:34Z",
+      "data": {
+        "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+        "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+        "chapter": null,
+        "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+        "evidence_id": "34c985a5-6d4b-4526-97c2-dcfe1b514dbd"
+      }
+    },
+    {
+      "event_id": 560,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:04:34Z",
+      "data": {
+        "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+        "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+        "chapter": null,
+        "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+        "evidence_id": "f0079e4e-54a4-4f10-8255-656edc91cd46"
+      }
+    },
+    {
+      "event_id": 561,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:04:34Z",
+      "data": {
+        "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+        "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+        "chapter": null,
+        "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+        "evidence_id": "48e341d9-8b13-47bf-a99b-381c76af0e31"
+      }
+    },
+    {
+      "event_id": 562,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:04:34Z",
+      "data": {
+        "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+        "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+        "chapter": null,
+        "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+        "evidence_id": "7b1ee552-c913-4dec-825f-e32997c3de1f"
+      }
+    },
+    {
+      "event_id": 563,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:04:34Z",
+      "data": {
+        "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+        "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+        "chapter": null,
+        "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+        "evidence_id": "c0e8ed70-8d0f-4085-a874-d9e4e46b5dd1"
+      }
+    },
+    {
+      "event_id": 564,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:04:34Z",
+      "data": {
+        "url": "https://unterm.un.org/unterm2/en/view/4653e28f-95ed-4bc0-9766-834b14116c2a",
+        "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+        "chapter": null,
+        "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+        "evidence_id": "ab7c9508-c7dc-452f-b5bd-24018a537dc6"
+      }
+    },
+    {
+      "event_id": 565,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:04:34Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 566,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:04:36Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 2124,
+        "total_tokens": 2480,
+        "context_chars": 4210,
+        "output_tokens": 356,
+        "request_number": 5,
+        "elapsed_seconds": 2.552,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 12531
+      }
+    },
+    {
+      "event_id": 567,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "assessment",
+      "time": "2026-10-20T13:04:36Z",
+      "data": {
+        "gaps": [
+          "已有证据仅覆盖签署日期（1919年6月28日），缺少生效日期的直接记载",
+          "生效条件（德国批准书交存、国际联盟秘书处登记等）与生效日期的原文条款未取得",
+          "此前 Hathitrust 全文抓取超时，需换来源"
+        ],
+        "summary": "签署部分已有直接记载：联合国术语库 UNTERM 条目给出条约正式名称「Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919」，俄语条目亦作「подписанный в Версале 28 июня 1919 г.」，可支持签署年份为1919年。生效部分尚无已读证据：现有证据未涉及批准书交存、国际联盟登记或生效日期，故不能判定1920年生效之说是否成立，也不能确认签署与生效确为不同时间点。需补读条约第440条（生效条款）或权威机构（联合国条约集、英国国家档案馆、美国国务院）关于生效日期的记载。",
+        "sufficient": false,
+        "next_queries": [
+          "Treaty of Versailles Article 440 entered into force 10 January 1920",
+          "凡尔赛条约 1920年1月10日 生效 批准书 交存"
+        ],
+        "premise_status": "支持"
+      }
+    },
+    {
+      "event_id": 568,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:04:36Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 3
+      }
+    },
+    {
+      "event_id": 569,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:04:37Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 5679,
+        "total_tokens": 5772,
+        "context_chars": 13156,
+        "output_tokens": 93,
+        "request_number": 6,
+        "elapsed_seconds": 1.027,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 18303
+      }
+    },
+    {
+      "event_id": 570,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "tool",
+      "time": "2026-10-20T13:04:37Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://paperspast.natlib.govt.nz/parliamentary/appendix-to-the-journals-of-the-house-of-representatives/1948/I/1008",
+        "call_number": 5
+      }
+    },
+    {
+      "event_id": 571,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "external_usage",
+      "time": "2026-10-20T13:04:53Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 3,
+          "search_attempts": 2,
+          "recorded_requests": 5,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 5,
+        "elapsed_seconds": 14.753,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 572,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:04:53Z",
+      "data": {
+        "url": "https://paperspast.natlib.govt.nz/parliamentary/appendix-to-the-journals-of-the-house-of-representatives/1948/I/1008",
+        "title": "paperspast.natlib.govt.nz",
+        "chapter": null,
+        "source_id": "8cc0b381-9b4a-49a9-b734-e9510d777846",
+        "evidence_id": "935227c8-c768-438f-a694-c8fd237168e4"
+      }
+    },
+    {
+      "event_id": 573,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:04:53Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 574,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:04:55Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 2247,
+        "total_tokens": 2527,
+        "context_chars": 4531,
+        "output_tokens": 280,
+        "request_number": 7,
+        "elapsed_seconds": 1.914,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 20830
+      }
+    },
+    {
+      "event_id": 575,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "assessment",
+      "time": "2026-10-20T13:04:55Z",
+      "data": {
+        "gaps": [
+          "签署日期已有直接记载（1919年6月28日），但生效日期（1920年1月10日，需德国批准书交存及国际联盟登记）尚无已读证据",
+          "需条约本身关于生效条件的条款原文（如第440条）或权威机构对生效日期的记载"
+        ],
+        "summary": "已读证据（UNTERM 术语库，来源标注为《英国与外国国家文件》1919年第112卷）直接记载条约全称含“signed at Versailles, June 28, 1919”，可支持签署年份为1919。但现有证据未涉及生效日期，无法判断1920年生效之说，故尚不充分。",
+        "sufficient": false,
+        "next_queries": [
+          "Treaty of Versailles Article 440 entry into force deposit of ratifications",
+          "凡尔赛条约 1920年1月10日 生效 批准书 交存"
+        ],
+        "premise_status": "支持"
+      }
+    },
+    {
+      "event_id": 576,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:04:55Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 4
+      }
+    },
+    {
+      "event_id": 577,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:04:57Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 3374,
+        "total_tokens": 3506,
+        "context_chars": 8738,
+        "output_tokens": 132,
+        "request_number": 8,
+        "elapsed_seconds": 1.455,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 24336
+      }
+    },
+    {
+      "event_id": 578,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "tool",
+      "time": "2026-10-20T13:04:57Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+        "call_number": 6
+      }
+    },
+    {
+      "event_id": 579,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "external_usage",
+      "time": "2026-10-20T13:05:15Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 4,
+          "search_attempts": 2,
+          "recorded_requests": 6,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 6,
+        "elapsed_seconds": 18.719,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 580,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:05:16Z",
+      "data": {
+        "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+        "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+        "chapter": null,
+        "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+        "evidence_id": "0b3c7d95-e065-4d15-b0f4-a5a8147126c3"
+      }
+    },
+    {
+      "event_id": 581,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:05:16Z",
+      "data": {
+        "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+        "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+        "chapter": null,
+        "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+        "evidence_id": "849687de-6c98-4283-be4b-d207ab8bf9b0"
+      }
+    },
+    {
+      "event_id": 582,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:05:16Z",
+      "data": {
+        "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+        "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+        "chapter": null,
+        "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+        "evidence_id": "0d30a21a-4aaa-4c6e-abf3-401f0cb42057"
+      }
+    },
+    {
+      "event_id": 583,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:05:16Z",
+      "data": {
+        "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+        "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+        "chapter": null,
+        "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+        "evidence_id": "37cd8c38-067b-452a-b5fd-b17ce2d8c3db"
+      }
+    },
+    {
+      "event_id": 584,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:05:16Z",
+      "data": {
+        "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+        "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+        "chapter": null,
+        "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+        "evidence_id": "7f4be7be-c9bb-4c7f-a859-a0fdd267a317"
+      }
+    },
+    {
+      "event_id": 585,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "source",
+      "time": "2026-10-20T13:05:16Z",
+      "data": {
+        "url": "https://www.cambridge.org/core/books/abs/collected-writings-of-john-maynard-keynes/from-the-ratification-of-the-treaty-of-versailles-to-the-second-ultimatum-of-london/8F95CD85B36C07A434E3AA4F70B4CCFB",
+        "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+        "chapter": null,
+        "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+        "evidence_id": "652c812f-2935-4fd8-9f34-f7f01bd84fb5"
+      }
+    },
+    {
+      "event_id": 586,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:05:16Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 587,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:05:18Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 3641,
+        "total_tokens": 4025,
+        "context_chars": 8240,
+        "output_tokens": 384,
+        "request_number": 9,
+        "elapsed_seconds": 2.617,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 28361
+      }
+    },
+    {
+      "event_id": 588,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "assessment",
+      "time": "2026-10-20T13:05:18Z",
+      "data": {
+        "gaps": [
+          "生效日期目前依据的是凯恩斯著作（后人/参与者记述）中“1920年1月10日批准、领土条款当日生效”的表述，尚未读到条约本身关于生效条件（第440条）的原文；但用户要求“找到直接记载后停止补查”，现有记载已直接给出签署与生效两个时间点，故不再补查。"
+        ],
+        "summary": "签署：1919年。UNTERM 词条以条约正式名称记载“Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919”（evidence 34c985a5），俄文对应条目亦为“подписанный в Версале 28 июня 1919 г.”（evidence 7b1ee552）。生效：1920年。凯恩斯文集该章正文称“The Treaty of Versailles was ratified on 10 January 1920, and except in the plebiscite areas its territorial provisions came into force on that date.”（evidence 0b3c7d95）。故“1919年还是1920年”的二分前提不成立：签署在1919年6月28日，生效（批准并领土条款生效）在1920年1月10日。注意后者为凯恩斯叙述，非条约原文；条约第440条规定的生效条件原文未取得。",
+        "sufficient": true,
+        "next_queries": [],
+        "premise_status": "支持"
+      }
+    },
+    {
+      "event_id": 589,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:05:18Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 590,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:05:22Z",
+      "data": {
+        "stage": "Answer",
+        "outcome": "returned",
+        "input_tokens": 4714,
+        "total_tokens": 5354,
+        "context_chars": 9311,
+        "output_tokens": 640,
+        "request_number": 10,
+        "elapsed_seconds": 3.261,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 33715
+      }
+    },
+    {
+      "event_id": 591,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:05:22Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 592,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:05:23Z",
+      "data": {
+        "stage": "QuoteReadings",
+        "outcome": "returned",
+        "input_tokens": 1585,
+        "total_tokens": 1814,
+        "context_chars": 3130,
+        "output_tokens": 229,
+        "request_number": 11,
+        "elapsed_seconds": 1.731,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 35529
+      }
+    },
+    {
+      "event_id": 593,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:05:27Z",
+      "data": {
+        "stage": "SupportReview",
+        "outcome": "returned",
+        "input_tokens": 2338,
+        "total_tokens": 3160,
+        "context_chars": 4203,
+        "output_tokens": 822,
+        "request_number": 12,
+        "elapsed_seconds": 3.448,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 38689
+      }
+    },
+    {
+      "event_id": 594,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:05:28Z",
+      "data": {
+        "stage": "SupportReview",
+        "outcome": "returned",
+        "input_tokens": 1069,
+        "total_tokens": 1284,
+        "context_chars": 1054,
+        "output_tokens": 215,
+        "request_number": 13,
+        "elapsed_seconds": 1.359,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 39973
+      }
+    },
+    {
+      "event_id": 595,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:05:28Z",
+      "data": {
+        "step": "根据引用审核修订答案（最多一次）"
+      }
+    },
+    {
+      "event_id": 596,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:05:28Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 597,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:05:31Z",
+      "data": {
+        "stage": "Answer",
+        "outcome": "returned",
+        "input_tokens": 5164,
+        "total_tokens": 5670,
+        "context_chars": 10305,
+        "output_tokens": 506,
+        "request_number": 14,
+        "elapsed_seconds": 2.418,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 45643
+      }
+    },
+    {
+      "event_id": 598,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "step",
+      "time": "2026-10-20T13:05:31Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 599,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:05:32Z",
+      "data": {
+        "stage": "QuoteReadings",
+        "outcome": "returned",
+        "input_tokens": 1410,
+        "total_tokens": 1599,
+        "context_chars": 2690,
+        "output_tokens": 189,
+        "request_number": 15,
+        "elapsed_seconds": 1.252,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 47242
+      }
+    },
+    {
+      "event_id": 600,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "model_usage",
+      "time": "2026-10-20T13:05:35Z",
+      "data": {
+        "stage": "SupportReview",
+        "outcome": "returned",
+        "input_tokens": 2097,
+        "total_tokens": 2751,
+        "context_chars": 3654,
+        "output_tokens": 654,
+        "request_number": 16,
+        "elapsed_seconds": 2.924,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 49993
+      }
+    },
+    {
+      "event_id": 601,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "diagnostic",
+      "time": "2026-10-20T13:05:35Z",
+      "data": {
+        "web_usage": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 4,
+          "search_attempts": 2,
+          "recorded_requests": 6,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "error_type": "ModelBudgetExceeded",
+        "token_usage": {
+          "deepseek-flash": {
+            "input_tokens": 44664,
+            "total_tokens": 49993,
+            "output_tokens": 5329,
+            "input_token_details": {
+              "cache_read": 16640
+            },
+            "output_token_details": {}
+          }
+        },
+        "model_requests": [
+          {
+            "stage": "Analysis",
+            "outcome": "returned",
+            "input_tokens": 656,
+            "total_tokens": 849,
+            "context_chars": 457,
+            "output_tokens": 193,
+            "request_number": 1,
+            "elapsed_seconds": 1.609,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 849
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 966,
+            "total_tokens": 1057,
+            "context_chars": 1121,
+            "output_tokens": 91,
+            "request_number": 2,
+            "elapsed_seconds": 1.265,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 1906
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 2769,
+            "total_tokens": 3107,
+            "context_chars": 7947,
+            "output_tokens": 338,
+            "request_number": 3,
+            "elapsed_seconds": 2.162,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 5013
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 4831,
+            "total_tokens": 5038,
+            "context_chars": 14202,
+            "output_tokens": 207,
+            "request_number": 4,
+            "elapsed_seconds": 1.229,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 10051
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 2124,
+            "total_tokens": 2480,
+            "context_chars": 4210,
+            "output_tokens": 356,
+            "request_number": 5,
+            "elapsed_seconds": 2.552,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 12531
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 5679,
+            "total_tokens": 5772,
+            "context_chars": 13156,
+            "output_tokens": 93,
+            "request_number": 6,
+            "elapsed_seconds": 1.027,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 18303
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 2247,
+            "total_tokens": 2527,
+            "context_chars": 4531,
+            "output_tokens": 280,
+            "request_number": 7,
+            "elapsed_seconds": 1.914,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 20830
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 3374,
+            "total_tokens": 3506,
+            "context_chars": 8738,
+            "output_tokens": 132,
+            "request_number": 8,
+            "elapsed_seconds": 1.455,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 24336
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 3641,
+            "total_tokens": 4025,
+            "context_chars": 8240,
+            "output_tokens": 384,
+            "request_number": 9,
+            "elapsed_seconds": 2.617,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 28361
+          },
+          {
+            "stage": "Answer",
+            "outcome": "returned",
+            "input_tokens": 4714,
+            "total_tokens": 5354,
+            "context_chars": 9311,
+            "output_tokens": 640,
+            "request_number": 10,
+            "elapsed_seconds": 3.261,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 33715
+          },
+          {
+            "stage": "QuoteReadings",
+            "outcome": "returned",
+            "input_tokens": 1585,
+            "total_tokens": 1814,
+            "context_chars": 3130,
+            "output_tokens": 229,
+            "request_number": 11,
+            "elapsed_seconds": 1.731,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 35529
+          },
+          {
+            "stage": "SupportReview",
+            "outcome": "returned",
+            "input_tokens": 2338,
+            "total_tokens": 3160,
+            "context_chars": 4203,
+            "output_tokens": 822,
+            "request_number": 12,
+            "elapsed_seconds": 3.448,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 38689
+          },
+          {
+            "stage": "SupportReview",
+            "outcome": "returned",
+            "input_tokens": 1069,
+            "total_tokens": 1284,
+            "context_chars": 1054,
+            "output_tokens": 215,
+            "request_number": 13,
+            "elapsed_seconds": 1.359,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 39973
+          },
+          {
+            "stage": "Answer",
+            "outcome": "returned",
+            "input_tokens": 5164,
+            "total_tokens": 5670,
+            "context_chars": 10305,
+            "output_tokens": 506,
+            "request_number": 14,
+            "elapsed_seconds": 2.418,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 45643
+          },
+          {
+            "stage": "QuoteReadings",
+            "outcome": "returned",
+            "input_tokens": 1410,
+            "total_tokens": 1599,
+            "context_chars": 2690,
+            "output_tokens": 189,
+            "request_number": 15,
+            "elapsed_seconds": 1.252,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 47242
+          },
+          {
+            "stage": "SupportReview",
+            "outcome": "returned",
+            "input_tokens": 2097,
+            "total_tokens": 2751,
+            "context_chars": 3654,
+            "output_tokens": 654,
+            "request_number": 16,
+            "elapsed_seconds": 2.924,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 49993
+          }
+        ],
+        "external_requests": [
+          {
+            "kind": "search",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 1,
+            "elapsed_seconds": 0.379,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "search",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 2,
+            "elapsed_seconds": 0.334,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "fetch",
+            "outcome": "failed",
+            "billable": null,
+            "provider": "deepseek",
+            "http_status": null,
+            "request_number": 3,
+            "elapsed_seconds": 30.001,
+            "estimated_cost_cny": null
+          },
+          {
+            "kind": "fetch",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 4,
+            "elapsed_seconds": 23.407,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "fetch",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 5,
+            "elapsed_seconds": 14.753,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "fetch",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 6,
+            "elapsed_seconds": 18.719,
+            "estimated_cost_cny": "0.005"
+          }
+        ],
+        "structured_failures": []
+      }
+    },
+    {
+      "event_id": 602,
+      "task_id": "663494c9-107f-44cd-94b3-86ec729a7ffe",
+      "type": "failed",
+      "time": "2026-10-20T13:05:35Z",
+      "data": {
+        "error": "已达到本任务的模型调用或已观测 Token 上限，已停止继续调用。已读证据保留；请缩小问题后再研究。",
+        "status": "failed"
+      }
+    }
+  ],
+  "checks": {
+    "verification": "not_completed"
+  }
+}

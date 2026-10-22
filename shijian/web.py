@@ -3,6 +3,7 @@
 import asyncio
 import http.client
 import ipaddress
+import json
 import socket
 import ssl
 import time
@@ -57,7 +58,7 @@ def public_addresses(host: str, port: int):
     return addresses
 
 
-def fetch_sync(url: str, timeout: float, max_bytes: int) -> dict:
+def fetch_sync(url: str, timeout: float, max_bytes: int, json_response=False) -> dict:
     deadline = time.monotonic() + timeout
     for _ in range(5):
         url = canonical_url(url)
@@ -86,9 +87,9 @@ def fetch_sync(url: str, timeout: float, max_bytes: int) -> dict:
                 path,
                 headers={
                     "Host": p.netloc,
-                    "User-Agent": "ShijianResearch/0.1",
+                    "User-Agent": "ShijianResearch/0.1 (https://github.com/hy0713/shijian)",
                     "Accept-Encoding": "identity",
-                    "Accept": "text/html,text/plain",
+                    "Accept": "application/json" if json_response else "text/html,text/plain",
                 },
             )
             response = conn.getresponse()
@@ -101,7 +102,10 @@ def fetch_sync(url: str, timeout: float, max_bytes: int) -> dict:
             if response.status != 200:
                 raise FetchError(f"网页 HTTP 状态 {response.status}")
             content_type = response.getheader("Content-Type", "")
-            if not any(t in content_type.lower() for t in ("text/html", "text/plain", "application/xhtml")):
+            allowed_types = (
+                ("application/json",) if json_response else ("text/html", "text/plain", "application/xhtml")
+            )
+            if not any(t in content_type.lower() for t in allowed_types):
                 raise FetchError("仅支持 HTML 或纯文本网页，不处理 PDF、图片及二进制响应")
             if response.getheader("Content-Encoding", "identity").lower() != "identity":
                 raise FetchError("拒绝压缩响应，避免解压体积绕过限制")
@@ -122,26 +126,57 @@ def fetch_sync(url: str, timeout: float, max_bytes: int) -> dict:
         finally:
             conn.close()
             sock.close()
-        soup = BeautifulSoup(body, "html.parser")
-        title = soup.title.get_text(" ", strip=True)[:250] if soup.title else p.hostname
-        for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
-            tag.decompose()
-        main = max(soup.select(".mw-parser-output"), key=lambda x: len(x.get_text()), default=None)
-        main = main or soup.find("article") or soup.find("main") or soup
-        text = main.get_text("\n", strip=True)
-        if len(text) < 20:
-            raise FetchError("未取得足够正文；可能是登录页或脚本渲染页面")
-        return {"url": url, "title": title, "text": text}
+        if json_response:
+            try:
+                return json.loads(body)
+            except (ValueError, UnicodeError) as exc:
+                raise FetchError("文献 API 返回的 JSON 无效") from exc
+        return extract_html(body, url)
     raise FetchError("重定向次数过多")
 
 
+def extract_html(body, url):
+    soup = BeautifulSoup(body, "html.parser")
+    title = soup.title.get_text(" ", strip=True)[:250] if soup.title else urlsplit(url).hostname
+    for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
+        tag.decompose()
+    main = max(soup.select(".mw-parser-output"), key=lambda x: len(x.get_text()), default=None)
+    main = main or soup.find("article") or soup.find("main") or soup
+    text = main.get_text("\n", strip=True)
+    if len(text) < 20:
+        raise FetchError("未取得足够正文；可能是登录页或脚本渲染页面")
+    return {"url": url, "title": title, "text": text}
+
+
+async def fetch_json(url, config):
+    try:
+        async with asyncio.timeout(config.request_timeout):
+            return await asyncio.to_thread(
+                fetch_sync, url, config.request_timeout, config.fetch_max_bytes, True
+            )
+    except (TimeoutError, OSError) as exc:
+        raise FetchError("文献 API 网络连接失败（" + type(exc).__name__ + "），请检查网络或稍后重试") from exc
+
+
 async def fetch_page(url, config):
+    if urlsplit(url).hostname == "zh.wikisource.org":
+        from shijian.books import read_wikisource
+
+        return await read_wikisource(url, config)
     # DNS resolution is also bounded for the caller. The thread has no persistence side effects.
     async with asyncio.timeout(config.request_timeout):
         return await asyncio.to_thread(fetch_sync, url, config.request_timeout, config.fetch_max_bytes)
 
 
-async def search_web(query: str, config) -> list[dict]:
+async def search_web(query: str, config, on_usage=None) -> list[dict]:
+    if config.search_provider == "deepseek":
+        from shijian.deepseek_web import search
+
+        return await search(query, config, on_usage)
+    if config.search_provider == "wikisource":
+        from shijian.books import search_books
+
+        return await search_books(query, config)
     if not config.search_api_key.get_secret_value():
         raise FetchError("联网模式缺少 SEARCH_API_KEY；搜索服务独立于 DeepSeek")
     async with httpx.AsyncClient(timeout=config.request_timeout, follow_redirects=False) as client:

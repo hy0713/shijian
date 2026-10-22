@@ -44,6 +44,12 @@ class Source(Base):
     imported_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
     index_status: Mapped[str] = mapped_column(String(20), default="pending", index=True)
     embedding_key: Mapped[str | None] = mapped_column(String(500))
+    index_error: Mapped[str | None] = mapped_column(String(500))
+    indexed_passages: Mapped[int] = mapped_column(Integer, default=0, server_default="0")
+    index_total: Mapped[int] = mapped_column(Integer, default=0, server_default="0")
+    index_owner: Mapped[str | None] = mapped_column(String(36))
+    index_lease_until: Mapped[datetime | None] = mapped_column(DateTime)
+    saved: Mapped[bool] = mapped_column(Boolean, default=True, server_default="1", index=True)
 
 
 class SourceLocation(Base):
@@ -90,6 +96,7 @@ class Task(Base):
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow, onupdate=utcnow)
     result: Mapped[dict | None] = mapped_column(JSON)
     error: Mapped[str | None] = mapped_column(Text)
+    source_ids: Mapped[list | None] = mapped_column(JSON)
     __table_args__ = (Index("ix_task_status_lease", "status", "lease_until"),)
 
 
@@ -108,6 +115,29 @@ class TaskEvidence(Base):
     evidence_id: Mapped[str] = mapped_column(String(36), primary_key=True)
     passage_id: Mapped[str] = mapped_column(ForeignKey("passages.id"))
     snapshot: Mapped[dict] = mapped_column(JSON)
+
+
+class Collection(Base):
+    __tablename__ = "collections"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True)
+    name: Mapped[str] = mapped_column(String(100))
+    description: Mapped[str] = mapped_column(String(1000), default="")
+    people: Mapped[list] = mapped_column(JSON, default=list)
+    events: Mapped[list] = mapped_column(JSON, default=list)
+    regions: Mapped[list] = mapped_column(JSON, default=list)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
+
+
+class CollectionSource(Base):
+    __tablename__ = "collection_sources"
+    collection_id: Mapped[str] = mapped_column(ForeignKey("collections.id"), primary_key=True)
+    source_id: Mapped[str] = mapped_column(ForeignKey("sources.id"), primary_key=True)
+
+
+class CollectionTask(Base):
+    __tablename__ = "collection_tasks"
+    collection_id: Mapped[str] = mapped_column(ForeignKey("collections.id"), primary_key=True)
+    task_id: Mapped[str] = mapped_column(ForeignKey("tasks.id"), primary_key=True)
 
 
 @lru_cache

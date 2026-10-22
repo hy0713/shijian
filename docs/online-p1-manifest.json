@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-20",
+  "image": "sha256:6cf2ef953210e808d497d6f6124cf0a2574303a79ad2790d94af153d52842943",
+  "build": "Offline incremental build with existing locked dependencies; forced project wheel reinstall; not a clean build.",
+  "delivery_code_sha256": {
+    "shijian/agent.py": "7dcdd6a0ab7f210ab62526587f74ae4926b6b137dc507ea1bcd65211ab47b6d3",
+    "shijian/source_reading.py": "6d54d1912ea3eb03e6390fab10a20762d6ce4f3837ed740ada84067106f7e4c2",
+    "shijian/schema.py": "7b1e19c43cfd322a0aaa0824d932f89321eda8b243e0b8c1e1f3c7424f432d6f",
+    "shijian/corpus.py": "d96fa56d4413c8409cd3ddff4c94e365eef8eb4bb34500779dcc0eafb9838ec3",
+    "shijian/review.py": "ec838a4fa7039d6155bf749cc3d8dcb55a7af23dacc56a0a215a18e022f3b5f6",
+    "shijian/api.py": "f8b4fe0beec968d25f23919f0b08ef1680cacab507c70e00ab69ceca6b8455a2",
+    "shijian/citations.py": "ccea6f710b75fe102981ef8370729bdce7e3e7f3ee8f5113aa0319abcfc62235",
+    "shijian/export.py": "e0625ab323c18f7984e919c4c5555c68cee0be0849152bc441ed00cc4951a3a5",
+    "shijian/static/app.js": "dbdc9dc5bdf684445e80d3ad0b8ba5900636199a04cdf9453d5ed80b942f712b",
+    "shijian/static/index.html": "3caebcf64ce817fb37d94eef2f85faa2f5a11eff965a31ee6e137e208af579a7",
+    "eval/run.py": "3202ff0e6b0733c153a93913cedf31d00a3c299aeb15a7fa964505ade5545961",
+    "eval/from_smoke.py": "4df0ac7c5bfdae118c58e1920b16f5c3c1a61fd3309a60c2528b953ce88108e9",
+    "eval/cross_topic.json": "509d2c133a08b9b582efc3f04eee6e27595120f4d042b4340f2bda72719c76d9",
+    "scripts/online_report.py": "765e9155c5a54320b0b6e8cf7e5253c02bc93f7a0bdade1fe4e57758bf016009",
+    "Dockerfile": "3755691a693cfa7a843632d548cad10052b624a1527f26bc781bc8b5e8d15f62",
+    "uv.lock": "9f221e00bd3410fea2021627a450fbad00eb3ba1a6e9f7f9527df3881524ca86"
+  },
+  "runtime": {
+    "installed_matches_source": {
+      "agent.py": true,
+      "source_reading.py": true,
+      "schema.py": true,
+      "corpus.py": true,
+      "review.py": true,
+      "api.py": true,
+      "static/app.js": true,
+      "static/index.html": true
+    }
+  },
+  "services": [
+    {
+      "service": "api",
+      "state": "running",
+      "health": "starting"
+    },
+    {
+      "service": "etcd",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "index-worker",
+      "state": "running",
+      "health": ""
+    },
+    {
+      "service": "milvus",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "minio",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "mysql",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "redis",
+      "state": "running",
+      "health": "healthy"
+    },
+    {
+      "service": "worker",
+      "state": "running",
+      "health": ""
+    }
+  ],
+  "source_check": {
+    "original_count": 15,
+    "current_count": 16,
+    "all_original_ids_titles_hashes_unchanged": true
+  },
+  "original_sources": [
+    {
+      "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+      "title": "1901——1910大事记",
+      "content_hash": "f829f946c45c9e2b0023ac4772842e0d11a85b5dd6b380290a3576cf256c761e"
+    },
+    {
+      "source_id": "da29ad8c-0d49-4999-8b07-20e42ba2266c",
+      "title": "FROM THE RATIFICATION OF THE TREATY OF VERSAILLES TO THE SECOND ULTIMATUM OF LONDON (Chapter 2) - The Collected Writings of John Maynard Keynes",
+      "content_hash": "e1bd6e2631eb183d7da5ece270442318589fe620cd1903b2d1b418547ba9177d"
+    },
+    {
+      "source_id": "8cc0b381-9b4a-49a9-b734-e9510d777846",
+      "title": "paperspast.natlib.govt.nz",
+      "content_hash": "f972eaa99361500f86ab0c37c1a2f6a806b1e63b9cd9b785ce189175b8990ce8"
+    },
+    {
+      "source_id": "ca923dff-64c6-409a-960c-00e767a74efa",
+      "title": "UNTERM - Treaty of Peace between the Allied and Associated Powers and Germany signed at Versailles, June 28, 1919",
+      "content_hash": "ca879b9f5a564ab4a84ae1b3fb9b71eef15e0cc00043db089bf347a6884c2efe"
+    },
+    {
+      "source_id": "ca03dcd5-f741-4ef6-95cf-0d0a148e39b5",
+      "title": "資治通鑒 (胡三省音注)/卷222",
+      "content_hash": "abace16222c803c653a77a3f6021b94265fa0c6d019869ac41df2bf3b919c693"
+    },
+    {
+      "source_id": "e61fafcc-fbf7-4baa-ab88-802cf3ce796a",
+      "title": "資治通鑑",
+      "content_hash": "93813be40d4711f9432362c1beac17b87fdd26d3a0bd7cdc037fe5a78d638717"
+    },
+    {
+      "source_id": "a5f2be10-d182-4911-9746-85a726cafbd3",
+      "title": "資治通鑑",
+      "content_hash": "810d826511e85edc50db672a0ae5bc8e02c437280792d2d832c3f6223943a90e"
+    },
+    {
+      "source_id": "31d76dfe-ef7c-4a36-987c-655298b1ef87",
+      "title": "维基百科：史思明",
+      "content_hash": "c5ed74facc87e51c422066f63de03d48e534ca7cc8a6b723d726fe786da7fa94"
+    },
+    {
+      "source_id": "71eb9e41-661d-4924-a8ab-ae85951f6adc",
+      "title": "维基百科：安史之乱",
+      "content_hash": "f9a5915b9a5dc8b865ac3885f1c932231129d566239dec1f2463a97a58c33427"
+    },
+    {
+      "source_id": "8cd3182c-1fde-4d1a-af9f-6fb70aad2f64",
+      "title": "資治通鑑",
+      "content_hash": "c1b669e5afb3bc17c637308f3d02735e755d920505503eea4a20cb1e229ba784"
+    },
+    {
+      "source_id": "3eda9ddc-e1de-4b5d-aa1c-6c6cc3cc0014",
+      "title": "資治通鑑",
+      "content_hash": "02c4772a612e09a6eda9f40dd88994e039845ba41f7d32a0131882bead03c41e"
+    },
+    {
+      "source_id": "656c5239-2312-4744-b8e1-40cf401ab873",
+      "title": "資治通鑑",
+      "content_hash": "a371cd4b10bc058a0e830ff050afbe9be20069196a7b8e26d293613540e37496"
+    },
+    {
+      "source_id": "37c64c78-435b-48ef-be56-a68575f6804e",
+      "title": "新唐書",
+      "content_hash": "a4b361d29d323cc9d308dff8b5c155b1176b79e5a6b293fa87b68aba4e06dcde"
+    },
+    {
+      "source_id": "4366fe87-797b-4f14-b5d1-895bd2d5389d",
+      "title": "資治通鑑",
+      "content_hash": "f984e2486d530e27f2ff6dfb9e378a9d53c6332dd56cba4a8ed97015b562ebdd"
+    },
+    {
+      "source_id": "aa0f4580-2c2b-48ed-8ac3-5bb6d0d5dd7c",
+      "title": "舊唐書",
+      "content_hash": "c06a712e2a8bbb9cb265d3c8eb5b7d9cc205e9afd48b8abdc324cb48f5d359c8"
+    }
+  ],
+  "tests": {
+    "full_suite": {
+      "passed": 117,
+      "failed": 0,
+      "seconds": 38.56,
+      "real_infrastructure_tests": 2,
+      "paid_api_calls": 0
+    },
+    "language_and_answer_fix_targeted": {
+      "passed": 22,
+      "failed": 0,
+      "seconds": 6.89
+    },
+    "final_source_hint_display_export_targeted": {
+      "passed": 16,
+      "failed": 0,
+      "seconds": 3.06
+    },
+    "ruff": "passed",
+    "js_syntax": "passed"
+  },
+  "checks": {
+    "no_active_tasks": true,
+    "markdown_exports_saved": true,
+    "cross_topic_records": 2,
+    "not_run_questions": 28,
+    "human_reviewed": 0,
+    "browser_candidate_filters": true,
+    "browser_heading_offset_highlight": true,
+    "browser_original_translation_comparison": true
+  },
+  "real_runs": [
+    "online-p1-boxer.json",
+    "online-p1-declaration.json"
+  ],
+  "real_run_version_note": "Paid runs preceded final offline source/language hint and concise-answer changes; exact per-run code hashes not captured. Delivery hashes are for final deployment only.",
+  "not_verified": [
+    "Complete real English answer pipeline (Fetch 404 prevented evidence)",
+    "All 30 cross-topic questions",
+    "Independent human quality scores",
+    "Same-version three-method comparison",
+    "Full no-cache Compose build",
+    "Full-page semantic chapter recognition or reliable global reprint detection",
+    "Actual account charges and model currency cost"
+  ]
+}

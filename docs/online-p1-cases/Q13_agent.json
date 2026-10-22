@@ -1,0 +1,1098 @@
+{
+  "question_id": "Q13",
+  "category": "外国史",
+  "question": "《美国独立宣言》是在1776年7月4日由所有代表签完的吗？请只核查通过与签署的区别。",
+  "method": "agent",
+  "mode": "online",
+  "status": "recorded",
+  "error_type": null,
+  "model": "deepseek-flash",
+  "result": {
+    "events": [],
+    "metrics": {
+      "cost": null,
+      "rounds": 3,
+      "web_pages": 2,
+      "web_usage": {
+        "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+        "fetch_attempts": 2,
+        "search_attempts": 2,
+        "recorded_requests": 4,
+        "known_tool_cost_cny": "0.010",
+        "estimated_tool_cost_cny": "0.010",
+        "unknown_billing_requests": 0
+      },
+      "tool_calls": 6,
+      "token_usage": {
+        "deepseek-flash": {
+          "input_tokens": 16576,
+          "total_tokens": 18337,
+          "output_tokens": 1761,
+          "input_token_details": {
+            "cache_read": 4736
+          },
+          "output_token_details": {}
+        }
+      },
+      "evidence_read": 0,
+      "model_requests": [
+        {
+          "stage": "Analysis",
+          "outcome": "returned",
+          "input_tokens": 782,
+          "total_tokens": 1146,
+          "context_chars": 504,
+          "output_tokens": 364,
+          "request_number": 1,
+          "elapsed_seconds": 2.238,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 1146
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 1180,
+          "total_tokens": 1298,
+          "context_chars": 1642,
+          "output_tokens": 118,
+          "request_number": 2,
+          "elapsed_seconds": 0.837,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 2444
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 3199,
+          "total_tokens": 3521,
+          "context_chars": 8879,
+          "output_tokens": 322,
+          "request_number": 3,
+          "elapsed_seconds": 2.386,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 5965
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 5651,
+          "total_tokens": 5788,
+          "context_chars": 15334,
+          "output_tokens": 137,
+          "request_number": 4,
+          "elapsed_seconds": 1.16,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 11753
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 1113,
+          "total_tokens": 1486,
+          "context_chars": 1799,
+          "output_tokens": 373,
+          "request_number": 5,
+          "elapsed_seconds": 2.499,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 13239
+        },
+        {
+          "stage": "choose",
+          "outcome": "returned",
+          "input_tokens": 3418,
+          "total_tokens": 3560,
+          "context_chars": 7857,
+          "output_tokens": 142,
+          "request_number": 6,
+          "elapsed_seconds": 1.428,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 16799
+        },
+        {
+          "stage": "Assessment",
+          "outcome": "returned",
+          "input_tokens": 1233,
+          "total_tokens": 1538,
+          "context_chars": 2194,
+          "output_tokens": 305,
+          "request_number": 7,
+          "elapsed_seconds": 2.199,
+          "usage_missing_requests": 0,
+          "observed_cumulative_tokens": 18337
+        }
+      ],
+      "elapsed_seconds": 30.997,
+      "answer_revisions": 0,
+      "external_requests": [
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 1,
+          "elapsed_seconds": 0.412,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "search",
+          "outcome": "returned",
+          "billable": true,
+          "provider": "deepseek",
+          "http_status": 200,
+          "request_number": 2,
+          "elapsed_seconds": 0.373,
+          "estimated_cost_cny": "0.005"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "failed",
+          "billable": false,
+          "provider": "deepseek",
+          "http_status": 404,
+          "request_number": 3,
+          "elapsed_seconds": 9.202,
+          "estimated_cost_cny": "0.000"
+        },
+        {
+          "kind": "fetch",
+          "outcome": "failed",
+          "billable": false,
+          "provider": "deepseek",
+          "http_status": 404,
+          "request_number": 4,
+          "elapsed_seconds": 6.677,
+          "estimated_cost_cny": "0.000"
+        }
+      ],
+      "structured_failures": [],
+      "duplicate_tool_calls_avoided": 0
+    },
+    "premise": {
+      "kind": "无法判断",
+      "text": "当前证据尚不能可靠确认提问前提。",
+      "citations": []
+    },
+    "sources": [],
+    "citations": [],
+    "conclusions": [],
+    "limitations": [
+      "连续两轮没有新增证据或检索线索，停止重复补查",
+      "有 1/1 条候选表述未通过引用或内容支持检查，已从正式回答移除。",
+      "现有证据不足以形成通过核查的核心结论。"
+    ],
+    "disagreements": [],
+    "citation_audit": {
+      "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。",
+      "content": {
+        "checks": []
+      },
+      "program": [
+        {
+          "valid": true,
+          "errors": [],
+          "citations": [],
+          "claim_index": 0
+        }
+      ],
+      "literal_readings": []
+    },
+    "rejected_claims": [
+      {
+        "text": "未取得可核查的已读证据，暂无法判断。",
+        "claim_index": 0,
+        "program_errors": [],
+        "support_review": null,
+        "candidate_citations": []
+      }
+    ],
+    "research_outcome": {
+      "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+      "status": "insufficient_evidence",
+      "reasons": [
+        "没有通过引用与支持审核的核心结论"
+      ]
+    },
+    "rejected_limitations": [
+      {
+        "text": "未取得已读证据，不使用模型记忆补齐答案。",
+        "support_review": null
+      }
+    ]
+  },
+  "metrics": {
+    "cost": null,
+    "rounds": 3,
+    "web_pages": 2,
+    "web_usage": {
+      "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+      "fetch_attempts": 2,
+      "search_attempts": 2,
+      "recorded_requests": 4,
+      "known_tool_cost_cny": "0.010",
+      "estimated_tool_cost_cny": "0.010",
+      "unknown_billing_requests": 0
+    },
+    "tool_calls": 6,
+    "token_usage": {
+      "deepseek-flash": {
+        "input_tokens": 16576,
+        "total_tokens": 18337,
+        "output_tokens": 1761,
+        "input_token_details": {
+          "cache_read": 4736
+        },
+        "output_token_details": {}
+      }
+    },
+    "evidence_read": 0,
+    "model_requests": [
+      {
+        "stage": "Analysis",
+        "outcome": "returned",
+        "input_tokens": 782,
+        "total_tokens": 1146,
+        "context_chars": 504,
+        "output_tokens": 364,
+        "request_number": 1,
+        "elapsed_seconds": 2.238,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 1146
+      },
+      {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 1180,
+        "total_tokens": 1298,
+        "context_chars": 1642,
+        "output_tokens": 118,
+        "request_number": 2,
+        "elapsed_seconds": 0.837,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 2444
+      },
+      {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 3199,
+        "total_tokens": 3521,
+        "context_chars": 8879,
+        "output_tokens": 322,
+        "request_number": 3,
+        "elapsed_seconds": 2.386,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 5965
+      },
+      {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 5651,
+        "total_tokens": 5788,
+        "context_chars": 15334,
+        "output_tokens": 137,
+        "request_number": 4,
+        "elapsed_seconds": 1.16,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 11753
+      },
+      {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 1113,
+        "total_tokens": 1486,
+        "context_chars": 1799,
+        "output_tokens": 373,
+        "request_number": 5,
+        "elapsed_seconds": 2.499,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 13239
+      },
+      {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 3418,
+        "total_tokens": 3560,
+        "context_chars": 7857,
+        "output_tokens": 142,
+        "request_number": 6,
+        "elapsed_seconds": 1.428,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 16799
+      },
+      {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 1233,
+        "total_tokens": 1538,
+        "context_chars": 2194,
+        "output_tokens": 305,
+        "request_number": 7,
+        "elapsed_seconds": 2.199,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 18337
+      }
+    ],
+    "elapsed_seconds": 30.997,
+    "answer_revisions": 0,
+    "external_requests": [
+      {
+        "kind": "search",
+        "outcome": "returned",
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 1,
+        "elapsed_seconds": 0.412,
+        "estimated_cost_cny": "0.005"
+      },
+      {
+        "kind": "search",
+        "outcome": "returned",
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 2,
+        "elapsed_seconds": 0.373,
+        "estimated_cost_cny": "0.005"
+      },
+      {
+        "kind": "fetch",
+        "outcome": "failed",
+        "billable": false,
+        "provider": "deepseek",
+        "http_status": 404,
+        "request_number": 3,
+        "elapsed_seconds": 9.202,
+        "estimated_cost_cny": "0.000"
+      },
+      {
+        "kind": "fetch",
+        "outcome": "failed",
+        "billable": false,
+        "provider": "deepseek",
+        "http_status": 404,
+        "request_number": 4,
+        "elapsed_seconds": 6.677,
+        "estimated_cost_cny": "0.000"
+      }
+    ],
+    "structured_failures": [],
+    "duplicate_tool_calls_avoided": 0
+  },
+  "evidence": [],
+  "events": [
+    {
+      "event_id": 687,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "status",
+      "time": "2026-10-20T13:31:36Z",
+      "data": {
+        "status": "pending"
+      }
+    },
+    {
+      "event_id": 688,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "status",
+      "time": "2026-10-20T13:31:36Z",
+      "data": {
+        "status": "running"
+      }
+    },
+    {
+      "event_id": 689,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:31:36Z",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    },
+    {
+      "event_id": 690,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "model_usage",
+      "time": "2026-10-20T13:31:38Z",
+      "data": {
+        "stage": "Analysis",
+        "outcome": "returned",
+        "input_tokens": 782,
+        "total_tokens": 1146,
+        "context_chars": 504,
+        "output_tokens": 364,
+        "request_number": 1,
+        "elapsed_seconds": 2.238,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 1146
+      }
+    },
+    {
+      "event_id": 691,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "plan",
+      "time": "2026-10-20T13:31:38Z",
+      "data": {
+        "query_plan": [
+          {
+            "query": "Declaration of Independence adopted July 4 1776 signed August 2 engrossed copy",
+            "purpose": "核查通过日期与签署起始日期的区别（机构正文）",
+            "language": "en"
+          },
+          {
+            "query": "Declaration of Independence who did not sign delegates absent",
+            "purpose": "核查是否全体代表签署及缺席者",
+            "language": "en"
+          },
+          {
+            "query": "独立宣言 7月4日 通过 8月2日 签署",
+            "purpose": "中文可靠来源对通过/签署区分的表述",
+            "language": "zh"
+          }
+        ],
+        "subquestions": [
+          "大陆会议通过决议与通过宣言文本分别发生在哪一天？",
+          "签署（签名）实际从何时开始、持续到何时？",
+          "是否有代表未签署，原因是什么？"
+        ],
+        "premise_status": "可能错误",
+        "search_queries": [
+          "Declaration of Independence adopted July 4 signed August 2",
+          "Declaration of Independence signing date engrossed copy signatures",
+          "National Archives Declaration of Independence how was it signed"
+        ],
+        "premise_to_check": [
+          "1776年7月4日是《独立宣言》被通过（adopted）的日期",
+          "1776年7月4日当天所有代表并未完成签署（signing）",
+          "签署过程延续到7月4日之后，且并非全体代表都签署"
+        ]
+      }
+    },
+    {
+      "event_id": 692,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:31:38Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "event_id": 693,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "model_usage",
+      "time": "2026-10-20T13:31:39Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 1180,
+        "total_tokens": 1298,
+        "context_chars": 1642,
+        "output_tokens": 118,
+        "request_number": 2,
+        "elapsed_seconds": 0.837,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 2444
+      }
+    },
+    {
+      "event_id": 694,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool",
+      "time": "2026-10-20T13:31:39Z",
+      "data": {
+        "name": "search_web",
+        "summary": "Declaration of Independence adopted July 4 1776 signed August 2 engrossed copy",
+        "call_number": 1
+      }
+    },
+    {
+      "event_id": 695,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "external_usage",
+      "time": "2026-10-20T13:31:39Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 0,
+          "search_attempts": 1,
+          "recorded_requests": 1,
+          "known_tool_cost_cny": "0.005",
+          "estimated_tool_cost_cny": "0.005",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 1,
+        "elapsed_seconds": 0.412,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 696,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "search_results",
+      "time": "2026-10-20T13:31:39Z",
+      "data": {
+        "leads": [
+          {
+            "url": "https://www.loc.gov/item/2021667571/",
+            "title": "Engrossed Declaration of Independence.",
+            "snippet": "Book/Printed Material Engrossed Declaration of Independence. ... On July 19, 1776, Congress resolved that the Declaration passed on the 4th be \"fairly engrossed on parchment with the title and stile [sic] ... Although it bears the date \"July 4, 1776,\" the engrossed Declaration was signed on August 2, 1776...",
+            "authority": 4,
+            "rerank_score": 1.9185484647750857,
+            "language_hint": "英文",
+            "publisher_hint": "机构或学术域名线索",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          },
+          {
+            "url": "https://www.loc.gov/resource/gdcwdl.wdl_02705/?sp=2&st=image",
+            "title": "Image 2 of Engrossed Declaration of Independence.",
+            "snippet": "Book/Printed Material Image 2 of Engrossed Declaration of Independence. ... On July 19, 1776 ... \"fairly engrossed on parchment with the title and stile [sic] ... Although it bears the date \"July 4, 1776,\" the engrossed Declaration was signed on August 2, 1776, by members of the Continental Congress who were present that day and later...",
+            "authority": 4,
+            "rerank_score": 1.8881815671920776,
+            "language_hint": "英文",
+            "publisher_hint": "机构或学术域名线索",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/BILLS-110hconres386ih/xml/BILLS-110hconres386ih.xml",
+            "title": "110 HCON 386 IH: Recognizing and celebrating the 232nd - 110 HCON 386 IH: Recognizing and celebrating the 232nd",
+            "snippet": "Whereas the text of the Declaration of Independence was adopted by the Second Continental Congress on July 4, 1776, and the engrossed copy of the Declaration of Independence was signed by most of the delegates in the Second Continental Congress on August 2, 1776...",
+            "authority": 4,
+            "rerank_score": 1.7966705560684204,
+            "language_hint": "英文",
+            "publisher_hint": "机构或学术域名线索",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          },
+          {
+            "url": "https://docsteach.org/topics/declaration/3/",
+            "title": "The Declaration of Independence - DocsTeach",
+            "snippet": "Although it bears the date “July 4, 1776,” the engrossed Declaration was signed on August 2, by members of the Continental Congress who were present that day and later by other members of Congress. John Hancock, the President of the Congress, signed",
+            "authority": 4,
+            "rerank_score": 1.9337319135665896,
+            "language_hint": "英文",
+            "publisher_hint": "来源性质待核查",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          },
+          {
+            "url": "https://www.nytimes.com/1976/07/02/archives/declaration-was-voted-on-july-4.html",
+            "title": "Declaration Was Voted on July 4 (Published 1976)",
+            "snippet": "The Continental Congress voted for independence on July 2. 1776, and from then till July 4 discussed an amended text of Thomas Jefferson's Declaration of Independence. ... signed the much‐amended draft that day. parchment copy was ready by Aug. 2. when most the other members signed.",
+            "authority": 4,
+            "rerank_score": 1.7733055353164673,
+            "language_hint": "英文",
+            "publisher_hint": "来源性质待核查",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          }
+        ],
+        "query": "Declaration of Independence adopted July 4 1776 signed August 2 engrossed copy",
+        "query_language": "en"
+      }
+    },
+    {
+      "event_id": 697,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool",
+      "time": "2026-10-20T13:31:39Z",
+      "data": {
+        "name": "search_web",
+        "summary": "Declaration of Independence who did not sign delegates absent",
+        "call_number": 2
+      }
+    },
+    {
+      "event_id": 698,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "external_usage",
+      "time": "2026-10-20T13:31:40Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 0,
+          "search_attempts": 2,
+          "recorded_requests": 2,
+          "known_tool_cost_cny": "0.010",
+          "estimated_tool_cost_cny": "0.010",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 2,
+        "elapsed_seconds": 0.373,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 699,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "search_results",
+      "time": "2026-10-20T13:31:40Z",
+      "data": {
+        "leads": [
+          {
+            "url": "https://declaration.fas.harvard.edu/files/declaration/files/resources_for_teachers_trumbull.pdf",
+            "title": "Williams was elected to replace Wolcott, who was seriously ill, but there is no record of Williams’ attendance in Congress prior...",
+            "snippet": "Signed Declaration of Independence ... Did not sign Declaration of Independence ... Robert R. Livingston (New York) ... Consider the fact that one ... and was present for the debates and the vote for independence, though he and the other delegates from New York abstained from the vote based on instructions from their constituents. ... Did not sign Declaration of Independence",
+            "authority": 3,
+            "rerank_score": 1.687633991241455,
+            "language_hint": "英文",
+            "publisher_hint": "机构或学术域名线索",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          },
+          {
+            "url": "https://aspace.library.jhu.edu/repositories/5/archival_objects/69228",
+            "title": "McKean, Thomas. Autograph letter signed, 4 pages, 4to. Philadelphia: to Caesar A. Rodney, explaining why he did not sign the Declaration of Independence on 4 July 1776, and giving the motices of other Congressmen who were absent that day or declined ",
+            "snippet": "to Caesar A. Rodney, explaining why he did not sign the Declaration of Independence on 4 July 1776, and giving the motices of other Congressmen who were absent that day or declined to sign the Declaration because of their opposition to the statement., 22 August 1813",
+            "authority": 4,
+            "rerank_score": 1.6259256601333618,
+            "language_hint": "英文",
+            "publisher_hint": "机构或学术域名线索",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CREC-1997-09-17/html/CREC-1997-09-17-pt1-PgH7504.htm",
+            "title": "Congressional Record, Volume 143 Issue 124 (Wednesday, September 17, 1997) - elected later",
+            "snippet": "Mr. KINGSTON. ... The gentleman actually had a fifth delegate named William Churchill Houston who did not sign. And it is interesting, because in Georgia we had a William Houstoun who also did not sign. ... The one in the New Jersey was H-O-U-S-T-O-N and the",
+            "authority": 4,
+            "rerank_score": 1.5951817035675049,
+            "language_hint": "英文",
+            "publisher_hint": "机构或学术域名线索",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          },
+          {
+            "url": "https://www.americanhistory.si.edu/collections/search?edan_fq%5B%5D=-date%3A%221860s%22&edan_fq%5B%5D=-place%3A%22New+Jersey%22&edan_fq%5B%5D=-set_name%3A%22Work+and+Industry%3A+Mechanical+and+Civil+Engineering%22&edan_fq%5B%5D=date%3A%221850s%22&edan_fq%5B%5D=set_name%3A%22Domestic+Furnishings%22&edan_q=%22Advertising%22",
+            "title": "Search collections - - Sarony & Major",
+            "snippet": "Joseph F. Knapp joined the firm in 1857. Sarony ... colleges, libraries, businesses such as an eating establishments, or by a wealthy individuals. - The original artist for this image was Veron Fletcher, a portrait painter, active in Philadelphia between 1848 and 1870, who was most probably Lewis Veron Fletcher (1820-1871), son of silversmith and merchant Thomas Charles Fletcher (1787-1866) and his wife Melinda Degrasse Veron (1798-1874) of Philadelphia. - The lithographer, Edward Moran, (1829-1901) was an English immigrant who came to the United States with his family in 1844. Edward was the ",
+            "authority": 4,
+            "rerank_score": 1.527171015739441,
+            "language_hint": "英文",
+            "publisher_hint": "机构或学术域名线索",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          },
+          {
+            "url": "https://www.history.com/this-day-in-history/August-2/delegates-sign-declaration-of-independence?cmpid=email-hist-tdih-2021-0",
+            "title": "Delegates sign Declaration of Independence | August 2, 1776 | HISTORY - Advertisement",
+            "snippet": "including some who were not present at the vote approving the declaration. ... John Dickinson of Pennsylvania and James Duane, Robert Livingston and John Jay of New York refused to sign. Carter Braxton of Virginia ... Five delegates were absent: Generals George Washington, John Sullivan, James Clinton and Christopher Gadsden and Virginia Governor Patrick Henry.",
+            "authority": 3,
+            "rerank_score": 1.6028677225112915,
+            "language_hint": "英文",
+            "publisher_hint": "来源性质待核查",
+            "selection_note": "域名与搜索评分仅为选源线索，不保证史实真实或属于一手文献。"
+          }
+        ],
+        "query": "Declaration of Independence who did not sign delegates absent",
+        "query_language": "en"
+      }
+    },
+    {
+      "event_id": 700,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:31:40Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 701,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "model_usage",
+      "time": "2026-10-20T13:31:42Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 3199,
+        "total_tokens": 3521,
+        "context_chars": 8879,
+        "output_tokens": 322,
+        "request_number": 3,
+        "elapsed_seconds": 2.386,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 5965
+      }
+    },
+    {
+      "event_id": 702,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "assessment",
+      "time": "2026-10-20T13:31:42Z",
+      "data": {
+        "gaps": [
+          "尚未阅读任何命中页面原文，现有仅为搜索摘要，不能作为证据",
+          "需确认7月4日通过的是宣言文本（adopted），而7月2日通过的是独立决议",
+          "需确认誊写本签署始于8月2日、后续代表陆续补签",
+          "需确认未签署代表的具体人数与原因（缺席、反对、辞职等）"
+        ],
+        "summary": "现有材料仅为搜索摘要（LoC、DocsTeach、govinfo、HISTORY 等），尚未阅读原文，故不能判定前提成立与否。摘要线索一致指向：宣言文本于1776年7月4日被大陆会议通过，而羊皮纸誊写本的签署始于8月2日，由当日到会代表签署、其余代表随后补签；另有部分代表未签署（缺席或反对）。需读原文核实后再下结论。",
+        "sufficient": false,
+        "next_queries": [
+          "loc.gov engrossed Declaration of Independence signed August 2 1776",
+          "archives.gov Declaration of Independence adopted July 4 signed August 2",
+          "Declaration of Independence delegates who did not sign list"
+        ],
+        "premise_status": "未确定"
+      }
+    },
+    {
+      "event_id": 703,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:31:42Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "event_id": 704,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "model_usage",
+      "time": "2026-10-20T13:31:43Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 5651,
+        "total_tokens": 5788,
+        "context_chars": 15334,
+        "output_tokens": 137,
+        "request_number": 4,
+        "elapsed_seconds": 1.16,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 11753
+      }
+    },
+    {
+      "event_id": 705,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool",
+      "time": "2026-10-20T13:31:43Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://www.loc.gov/item/2021667571/",
+        "call_number": 3
+      }
+    },
+    {
+      "event_id": 706,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "external_usage",
+      "time": "2026-10-20T13:31:52Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "failed",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 1,
+          "search_attempts": 2,
+          "recorded_requests": 3,
+          "known_tool_cost_cny": "0.010",
+          "estimated_tool_cost_cny": "0.010",
+          "unknown_billing_requests": 0
+        },
+        "billable": false,
+        "provider": "deepseek",
+        "http_status": 404,
+        "request_number": 3,
+        "elapsed_seconds": 9.202,
+        "estimated_cost_cny": "0.000"
+      }
+    },
+    {
+      "event_id": 707,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool_error",
+      "time": "2026-10-20T13:31:52Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "DeepSeek fetch 返回 HTTP 404；未取得可用资料",
+        "error_type": "WebAPIError"
+      }
+    },
+    {
+      "event_id": 708,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool",
+      "time": "2026-10-20T13:31:52Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://docsteach.org/topics/declaration/3/",
+        "call_number": 4
+      }
+    },
+    {
+      "event_id": 709,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "external_usage",
+      "time": "2026-10-20T13:32:00Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "failed",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 2,
+          "search_attempts": 2,
+          "recorded_requests": 4,
+          "known_tool_cost_cny": "0.010",
+          "estimated_tool_cost_cny": "0.010",
+          "unknown_billing_requests": 0
+        },
+        "billable": false,
+        "provider": "deepseek",
+        "http_status": 404,
+        "request_number": 4,
+        "elapsed_seconds": 6.677,
+        "estimated_cost_cny": "0.000"
+      }
+    },
+    {
+      "event_id": 710,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool_error",
+      "time": "2026-10-20T13:32:00Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "DeepSeek fetch 返回 HTTP 404；未取得可用资料",
+        "error_type": "WebAPIError"
+      }
+    },
+    {
+      "event_id": 711,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:32:00Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 712,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "model_usage",
+      "time": "2026-10-20T13:32:03Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 1113,
+        "total_tokens": 1486,
+        "context_chars": 1799,
+        "output_tokens": 373,
+        "request_number": 5,
+        "elapsed_seconds": 2.499,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 13239
+      }
+    },
+    {
+      "event_id": 713,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "assessment",
+      "time": "2026-10-20T13:32:03Z",
+      "data": {
+        "gaps": [
+          "尚无任何已读证据（evidence 为空），无法确认7月4日通过的是决议还是宣言文本",
+          "缺少签署起始日期（通常记为8月2日誊清本签署）的机构正文证据",
+          "缺少签署延续至后续日期、以及部分代表未签署（缺席/反对等）的证据",
+          "此前两次 fetch_page 均 404，需换来源"
+        ],
+        "summary": "当前无已读证据，无法判断前提。用户问题本身已把\"通过\"与\"签署\"分开，这一区分方向合理，但具体日期与\"是否全体签署\"仍需机构正文核实。计划优先读取美国国家档案馆（archives.gov）关于《独立宣言》的说明页，以及国会图书馆相关页面（换用非404的URL），确认：7月2日决议、7月4日通过文本、7月19日会议命令誊清、8月2日誊清本签署、后续补签及未签署者名单。搜索摘要不作为证据。",
+        "sufficient": false,
+        "next_queries": [
+          "National Archives Declaration of Independence adopted July 4 signed August 2",
+          "archives.gov milestone documents Declaration of Independence engrossed parchment signed",
+          "Declaration of Independence signers who did not sign absent delegates",
+          "独立宣言 1776年7月4日 通过 8月2日 签署 国家档案馆"
+        ],
+        "premise_status": "未确定"
+      }
+    },
+    {
+      "event_id": 714,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:32:03Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 3
+      }
+    },
+    {
+      "event_id": 715,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "model_usage",
+      "time": "2026-10-20T13:32:04Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 3418,
+        "total_tokens": 3560,
+        "context_chars": 7857,
+        "output_tokens": 142,
+        "request_number": 6,
+        "elapsed_seconds": 1.428,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 16799
+      }
+    },
+    {
+      "event_id": 716,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool",
+      "time": "2026-10-20T13:32:04Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://www.archives.gov/founding-docs/declaration/how-was-it-made",
+        "call_number": 5
+      }
+    },
+    {
+      "event_id": 717,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool_error",
+      "time": "2026-10-20T13:32:04Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "仅允许读取本次搜索得到的候选 URL",
+        "error_type": "FetchError"
+      }
+    },
+    {
+      "event_id": 718,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool",
+      "time": "2026-10-20T13:32:04Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "https://www.archives.gov/founding-docs/declaration-history",
+        "call_number": 6
+      }
+    },
+    {
+      "event_id": 719,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "tool_error",
+      "time": "2026-10-20T13:32:04Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "仅允许读取本次搜索得到的候选 URL",
+        "error_type": "FetchError"
+      }
+    },
+    {
+      "event_id": 720,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:32:04Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 721,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "model_usage",
+      "time": "2026-10-20T13:32:07Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 1233,
+        "total_tokens": 1538,
+        "context_chars": 2194,
+        "output_tokens": 305,
+        "request_number": 7,
+        "elapsed_seconds": 2.199,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 18337
+      }
+    },
+    {
+      "event_id": 722,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "assessment",
+      "time": "2026-10-20T13:32:07Z",
+      "data": {
+        "gaps": [
+          "尚无任何已读证据（evidence 为空），无法确认7月4日通过的是决议还是宣言文本",
+          "缺少签署起始日期（通常记为8月2日）的原文依据",
+          "缺少未签署代表（如缺席或反对者）的名单与原因依据",
+          "此前多次 fetch_page 失败（404 或 URL 未在候选内），需换来源"
+        ],
+        "summary": "当前无已登记证据，无法判断前提。需先取得机构正文（如美国国家档案馆、国会图书馆）说明：7月2日通过独立决议、7月4日通过宣言文本、7月19日决定誊写、8月2日开始签署，以及部分代表未签署的情况。检索摘要不作为证据。",
+        "sufficient": false,
+        "next_queries": [
+          "National Archives Declaration of Independence adopted July 4 signed August 2 engrossed parchment",
+          "Declaration of Independence signers who did not sign absent delegates",
+          "大陆会议 1776年7月4日 通过 独立宣言 8月2日 签署"
+        ],
+        "premise_status": "未确定"
+      }
+    },
+    {
+      "event_id": 723,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:32:07Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 724,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "step",
+      "time": "2026-10-20T13:32:07Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 725,
+      "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+      "type": "completed",
+      "time": "2026-10-20T13:32:07Z",
+      "data": {
+        "error": null,
+        "status": "completed"
+      }
+    }
+  ],
+  "elapsed_seconds": 30.997,
+  "automatic": {
+    "evidence_anchor_recall": null,
+    "citation_program_checks": [
+      {
+        "valid": true,
+        "errors": [],
+        "citations": [],
+        "claim_index": 0
+      }
+    ]
+  },
+  "model_assisted": {
+    "support_review": {
+      "checks": []
+    }
+  },
+  "human_review": {
+    "reviewer": null,
+    "evidence_support_0_to_2": null,
+    "completeness_0_to_2": null,
+    "premise_recognition_0_to_2": null,
+    "notes": null
+  },
+  "human_rubric": "区分通过、羊皮纸签署与后续签署；不把某次签署日说成所有人签完。",
+  "provenance": {
+    "task_id": "2bf85067-e72e-4c7c-9e27-1ff380e38512",
+    "smoke_sha256": "b175a2727edd226b8d1cca621ea680a38392f237d4cee415d2a11c43b1598a5d",
+    "smoke_checks": {
+      "verification": "not_completed"
+    },
+    "note": "Registered from a real worker run; registration made no model calls. Human review remains empty."
+  }
+}

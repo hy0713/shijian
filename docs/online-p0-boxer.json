@@ -1,0 +1,2488 @@
+{
+  "task": {
+    "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+    "question": "《辛丑条约》是1900年还是1901年签订？请核查签订日期，最多一条结论，附必要原文引用即可。",
+    "mode": "online",
+    "status": "completed",
+    "cancel_requested": false,
+    "created_at": "2026-10-20T13:08:37Z",
+    "updated_at": "2026-10-20T13:09:41Z",
+    "error": null,
+    "result": {
+      "events": [],
+      "metrics": {
+        "cost": null,
+        "rounds": 2,
+        "web_pages": 2,
+        "web_usage": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 2,
+          "search_attempts": 2,
+          "recorded_requests": 4,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "tool_calls": 4,
+        "token_usage": {
+          "deepseek-flash": {
+            "input_tokens": 24446,
+            "total_tokens": 30202,
+            "output_tokens": 5756,
+            "input_token_details": {
+              "cache_read": 10752
+            },
+            "output_token_details": {}
+          }
+        },
+        "evidence_read": 4,
+        "model_requests": [
+          {
+            "stage": "Analysis",
+            "outcome": "returned",
+            "input_tokens": 648,
+            "total_tokens": 824,
+            "context_chars": 447,
+            "output_tokens": 176,
+            "request_number": 1,
+            "elapsed_seconds": 1.474,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 824
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 941,
+            "total_tokens": 1024,
+            "context_chars": 999,
+            "output_tokens": 83,
+            "request_number": 2,
+            "elapsed_seconds": 0.913,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 1848
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 2329,
+            "total_tokens": 2626,
+            "context_chars": 3880,
+            "output_tokens": 297,
+            "request_number": 3,
+            "elapsed_seconds": 1.982,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 4474
+          },
+          {
+            "stage": "choose",
+            "outcome": "returned",
+            "input_tokens": 4034,
+            "total_tokens": 4202,
+            "context_chars": 6762,
+            "output_tokens": 168,
+            "request_number": 4,
+            "elapsed_seconds": 1.323,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 8676
+          },
+          {
+            "stage": "Assessment",
+            "outcome": "returned",
+            "input_tokens": 1719,
+            "total_tokens": 2115,
+            "context_chars": 2496,
+            "output_tokens": 396,
+            "request_number": 5,
+            "elapsed_seconds": 2.554,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 10791
+          },
+          {
+            "stage": "Answer",
+            "outcome": "returned",
+            "input_tokens": 2826,
+            "total_tokens": 3553,
+            "context_chars": 3451,
+            "output_tokens": 727,
+            "request_number": 6,
+            "elapsed_seconds": 3.025,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 14344
+          },
+          {
+            "stage": "QuoteReadings",
+            "outcome": "returned",
+            "input_tokens": 1145,
+            "total_tokens": 1320,
+            "context_chars": 1630,
+            "output_tokens": 175,
+            "request_number": 7,
+            "elapsed_seconds": 1.101,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 15664
+          },
+          {
+            "stage": "SupportReview",
+            "outcome": "returned",
+            "input_tokens": 1862,
+            "total_tokens": 2799,
+            "context_chars": 2641,
+            "output_tokens": 937,
+            "request_number": 8,
+            "elapsed_seconds": 3.783,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 18463
+          },
+          {
+            "stage": "SupportReview",
+            "outcome": "returned",
+            "input_tokens": 1018,
+            "total_tokens": 1397,
+            "context_chars": 925,
+            "output_tokens": 379,
+            "request_number": 9,
+            "elapsed_seconds": 2.449,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 19860
+          },
+          {
+            "stage": "Answer",
+            "outcome": "returned",
+            "input_tokens": 4125,
+            "total_tokens": 4877,
+            "context_chars": 6160,
+            "output_tokens": 752,
+            "request_number": 10,
+            "elapsed_seconds": 3.23,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 24737
+          },
+          {
+            "stage": "QuoteReadings",
+            "outcome": "returned",
+            "input_tokens": 1013,
+            "total_tokens": 1164,
+            "context_chars": 1341,
+            "output_tokens": 151,
+            "request_number": 11,
+            "elapsed_seconds": 1.223,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 25901
+          },
+          {
+            "stage": "SupportReview",
+            "outcome": "returned",
+            "input_tokens": 1770,
+            "total_tokens": 2891,
+            "context_chars": 2379,
+            "output_tokens": 1121,
+            "request_number": 12,
+            "elapsed_seconds": 4.228,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 28792
+          },
+          {
+            "stage": "SupportReview",
+            "outcome": "returned",
+            "input_tokens": 1016,
+            "total_tokens": 1410,
+            "context_chars": 918,
+            "output_tokens": 394,
+            "request_number": 13,
+            "elapsed_seconds": 2.291,
+            "usage_missing_requests": 0,
+            "observed_cumulative_tokens": 30202
+          }
+        ],
+        "elapsed_seconds": 64.721,
+        "answer_revisions": 1,
+        "external_requests": [
+          {
+            "kind": "search",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 1,
+            "elapsed_seconds": 0.449,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "search",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 2,
+            "elapsed_seconds": 0.323,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "fetch",
+            "outcome": "returned",
+            "billable": true,
+            "provider": "deepseek",
+            "http_status": 200,
+            "request_number": 3,
+            "elapsed_seconds": 3.698,
+            "estimated_cost_cny": "0.005"
+          },
+          {
+            "kind": "fetch",
+            "outcome": "failed",
+            "billable": null,
+            "provider": "deepseek",
+            "http_status": null,
+            "request_number": 4,
+            "elapsed_seconds": 30.005,
+            "estimated_cost_cny": null
+          }
+        ],
+        "structured_failures": [],
+        "duplicate_tool_calls_avoided": 0
+      },
+      "premise": {
+        "kind": "无法判断",
+        "text": "当前证据尚不能可靠确认提问前提。",
+        "citations": []
+      },
+      "sources": [
+        {
+          "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+          "title": "1901——1910大事记",
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+          "source_type": "网页",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        }
+      ],
+      "citations": [
+        {
+          "end": 108,
+          "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+          "quote": "1901年",
+          "start": 103,
+          "title": "1901——1910大事记",
+          "chapter": null,
+          "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+          "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+          "quotation_id": "q1"
+        },
+        {
+          "end": 151,
+          "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+          "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+          "start": 110,
+          "title": "1901——1910大事记",
+          "chapter": null,
+          "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+          "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+          "quotation_id": "q2"
+        }
+      ],
+      "conclusions": [
+        {
+          "kind": "文献记载",
+          "text": "已读材料将《辛丑条约》的签订记于“1901年”条目之下，日期为9月7日，即1901年9月7日。",
+          "citations": [
+            {
+              "end": 108,
+              "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+              "quote": "1901年",
+              "start": 103,
+              "title": "1901——1910大事记",
+              "chapter": null,
+              "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+              "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+              "quotation_id": "q1"
+            },
+            {
+              "end": 151,
+              "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+              "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+              "start": 110,
+              "title": "1901——1910大事记",
+              "chapter": null,
+              "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+              "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+              "quotation_id": "q2"
+            }
+          ],
+          "support_review": {
+            "facts": [
+              {
+                "reason": "q1标1901年，q2为该条目下9月7日签订条。",
+                "verdict": "支持",
+                "fragment": "已读材料将《辛丑条约》的签订记于“1901年”条目之下",
+                "quotation_ids": [
+                  "q1",
+                  "q2"
+                ]
+              },
+              {
+                "reason": "q2明记9月7日。",
+                "verdict": "支持",
+                "fragment": "日期为9月7日",
+                "quotation_ids": [
+                  "q2"
+                ]
+              },
+              {
+                "reason": "条目年份与月日合并，属忠实释义。",
+                "verdict": "支持",
+                "fragment": "即1901年9月7日",
+                "quotation_ids": [
+                  "q1",
+                  "q2"
+                ]
+              }
+            ],
+            "reason": "q1为1901年条目标记，q2在该条目下记9月7日签订，可推出1901年9月7日。",
+            "verdict": "支持",
+            "claim_index": 1,
+            "coverage_complete": true
+          }
+        }
+      ],
+      "limitations": [
+        "所据为二手中文大事记网页，未核对条约原件或《中外旧约章汇编》等一手文本，故不能据以排除1900年之说，只能说明已读材料以1901年9月7日为主。",
+        "有 2/3 条候选表述未通过引用或内容支持检查，已从正式回答移除。"
+      ],
+      "disagreements": [],
+      "citation_audit": {
+        "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。",
+        "content": {
+          "checks": [
+            {
+              "facts": [
+                {
+                  "reason": "所给材料中无题面内容，无法由已登记证据核实。",
+                  "verdict": "不支持",
+                  "fragment": "题面将《辛丑条约》签订年份设为1900年与1901年二选一",
+                  "quotation_ids": []
+                },
+                {
+                  "reason": "q1为1901年条目时间标记，q2紧随其后记9月7日签订《辛丑条约》。",
+                  "verdict": "支持",
+                  "fragment": "已读材料在“1901年”条目下记载9月7日签订该约",
+                  "quotation_ids": [
+                    "q1",
+                    "q2"
+                  ]
+                },
+                {
+                  "reason": "q3原文即“1900年签订《辛丑条约》”，同一来源同一URL。",
+                  "verdict": "支持",
+                  "fragment": "同页另一处则记“1900年签订《辛丑条约》”",
+                  "quotation_ids": [
+                    "q3"
+                  ]
+                },
+                {
+                  "reason": "q2为1901年条目下9月7日，q3为1900年，年份相互矛盾。",
+                  "verdict": "支持",
+                  "fragment": "两处年份不一致",
+                  "quotation_ids": [
+                    "q2",
+                    "q3"
+                  ]
+                }
+              ],
+              "reason": "重要子命题未获支持；子命题未关联到本条有效引文及释读",
+              "verdict": "不支持",
+              "claim_index": 0,
+              "coverage_complete": true
+            },
+            {
+              "facts": [
+                {
+                  "reason": "q1标1901年，q2为该条目下9月7日签订条。",
+                  "verdict": "支持",
+                  "fragment": "已读材料将《辛丑条约》的签订记于“1901年”条目之下",
+                  "quotation_ids": [
+                    "q1",
+                    "q2"
+                  ]
+                },
+                {
+                  "reason": "q2明记9月7日。",
+                  "verdict": "支持",
+                  "fragment": "日期为9月7日",
+                  "quotation_ids": [
+                    "q2"
+                  ]
+                },
+                {
+                  "reason": "条目年份与月日合并，属忠实释义。",
+                  "verdict": "支持",
+                  "fragment": "即1901年9月7日",
+                  "quotation_ids": [
+                    "q1",
+                    "q2"
+                  ]
+                }
+              ],
+              "reason": "q1为1901年条目标记，q2在该条目下记9月7日签订，可推出1901年9月7日。",
+              "verdict": "支持",
+              "claim_index": 1,
+              "coverage_complete": true
+            },
+            {
+              "facts": [
+                {
+                  "reason": "q3记1900年签订，但未提及李鸿章，主体不符。",
+                  "verdict": "部分支持",
+                  "fragment": "同一来源另一处记李鸿章“1900年签订《辛丑条约》”",
+                  "quotation_ids": [
+                    "q3"
+                  ]
+                },
+                {
+                  "reason": "q2为1901年9月7日，q3为1900年，年份冲突。",
+                  "verdict": "支持",
+                  "fragment": "与1901年9月7日条年份不合",
+                  "quotation_ids": [
+                    "q2",
+                    "q3"
+                  ]
+                },
+                {
+                  "reason": "同一来源同一URL两处年份不同，属内部不一致（推断合理）。",
+                  "verdict": "支持",
+                  "fragment": "属该来源内部记载不一致",
+                  "quotation_ids": [
+                    "q2",
+                    "q3"
+                  ]
+                }
+              ],
+              "reason": "重要子命题未获支持",
+              "verdict": "不支持",
+              "claim_index": 2,
+              "coverage_complete": true
+            },
+            {
+              "facts": [
+                {
+                  "reason": "q2出自“1901——1910大事记”网页条目，属二手大事记。",
+                  "verdict": "支持",
+                  "fragment": "所据为二手中文大事记网页",
+                  "quotation_ids": [
+                    "q2"
+                  ]
+                },
+                {
+                  "reason": "已登记证据中无此类一手文本，属本次研究范围内的缺口说明。",
+                  "verdict": "支持",
+                  "fragment": "未核对条约原件或《中外旧约章汇编》等一手文本",
+                  "quotation_ids": []
+                },
+                {
+                  "reason": "q3本身即记1900年，且无一手文本可排除。",
+                  "verdict": "支持",
+                  "fragment": "不能据以排除1900年之说",
+                  "quotation_ids": [
+                    "q3"
+                  ]
+                },
+                {
+                  "reason": "q1、q2构成1901年9月7日的明确条目记载。",
+                  "verdict": "支持",
+                  "fragment": "只能说明已读材料以1901年9月7日为主",
+                  "quotation_ids": [
+                    "q1",
+                    "q2"
+                  ]
+                }
+              ],
+              "reason": "所据确为大事记网页，未登记条约原件或《中外旧约章汇编》证据，缺口说明与已登记材料相符。",
+              "verdict": "支持",
+              "claim_index": 3,
+              "coverage_complete": true
+            },
+            {
+              "facts": [
+                {
+                  "reason": "无来源文本或引文可核对，无法确认两种年份记载并存。",
+                  "verdict": "不支持",
+                  "fragment": "该来源内部存在1900年与1901年两种记载",
+                  "quotation_ids": []
+                },
+                {
+                  "reason": "该判断以未核实的前提为基础，且无引文支持。",
+                  "verdict": "不支持",
+                  "fragment": "何者为误需一手史料判定",
+                  "quotation_ids": []
+                }
+              ],
+              "reason": "本次未提供任何来源或已登记引文，无法核实该来源内部是否并存1900年与1901年两种记载；该缺口说明缺乏可核查依据。",
+              "verdict": "不支持",
+              "claim_index": 4,
+              "coverage_complete": true
+            },
+            {
+              "facts": [
+                {
+                  "reason": "无引文可核对“辛丑”与签署年份的关系。",
+                  "verdict": "不支持",
+                  "fragment": "“辛丑”与签署年份是否对应",
+                  "quotation_ids": []
+                },
+                {
+                  "reason": "未提供已读段落文本，无法核实其是否提及干支纪年。",
+                  "verdict": "不支持",
+                  "fragment": "已读段落未直接说明干支纪年",
+                  "quotation_ids": []
+                },
+                {
+                  "reason": "该条本身即为不作判断的范围说明，与所给材料一致。",
+                  "verdict": "支持",
+                  "fragment": "未作判断",
+                  "quotation_ids": []
+                }
+              ],
+              "reason": "无已读段落或引文登记，无法核实“已读段落未直接说明干支纪年”这一范围陈述。",
+              "verdict": "不支持",
+              "claim_index": 5,
+              "coverage_complete": true
+            }
+          ]
+        },
+        "program": [
+          {
+            "valid": true,
+            "errors": [],
+            "citations": [
+              {
+                "end": 108,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "1901年",
+                "start": 103,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+                "quotation_id": "q1"
+              },
+              {
+                "end": 151,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                "start": 110,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+                "quotation_id": "q2"
+              },
+              {
+                "end": 446,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "1900年签订《辛丑条约》",
+                "start": 433,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+                "quotation_id": "q3"
+              }
+            ],
+            "claim_index": 0
+          },
+          {
+            "valid": true,
+            "errors": [],
+            "citations": [
+              {
+                "end": 108,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "1901年",
+                "start": 103,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+                "quotation_id": "q1"
+              },
+              {
+                "end": 151,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                "start": 110,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+                "quotation_id": "q2"
+              }
+            ],
+            "claim_index": 1
+          },
+          {
+            "valid": true,
+            "errors": [],
+            "citations": [
+              {
+                "end": 446,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "1900年签订《辛丑条约》",
+                "start": 433,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+                "quotation_id": "q3"
+              },
+              {
+                "end": 151,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                "start": 110,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+                "quotation_id": "q2"
+              }
+            ],
+            "claim_index": 2
+          }
+        ],
+        "literal_readings": [
+          {
+            "end": 108,
+            "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+            "quote": "1901年",
+            "start": 103,
+            "title": "1901——1910大事记",
+            "chapter": null,
+            "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+            "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+            "quotation_id": "q1",
+            "literal_meaning": "原文仅标出年份“1901年”，作为该大事记条目的时间标记，未涉及其他内容。"
+          },
+          {
+            "end": 151,
+            "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+            "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+            "start": 110,
+            "title": "1901——1910大事记",
+            "chapter": null,
+            "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+            "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+            "quotation_id": "q2",
+            "literal_meaning": "原文记：9月7日，英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》。"
+          },
+          {
+            "end": 446,
+            "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+            "quote": "1900年签订《辛丑条约》",
+            "start": 433,
+            "title": "1901——1910大事记",
+            "chapter": null,
+            "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+            "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+            "quotation_id": "q3",
+            "literal_meaning": "原文记：《辛丑条约》于1900年签订。"
+          }
+        ]
+      },
+      "rejected_claims": [
+        {
+          "text": "题面将《辛丑条约》签订年份设为1900年与1901年二选一；已读材料在“1901年”条目下记载9月7日签订该约，同页另一处则记“1900年签订《辛丑条约》”，两处年份不一致。",
+          "claim_index": 0,
+          "program_errors": [],
+          "support_review": {
+            "facts": [
+              {
+                "reason": "所给材料中无题面内容，无法由已登记证据核实。",
+                "verdict": "不支持",
+                "fragment": "题面将《辛丑条约》签订年份设为1900年与1901年二选一",
+                "quotation_ids": []
+              },
+              {
+                "reason": "q1为1901年条目时间标记，q2紧随其后记9月7日签订《辛丑条约》。",
+                "verdict": "支持",
+                "fragment": "已读材料在“1901年”条目下记载9月7日签订该约",
+                "quotation_ids": [
+                  "q1",
+                  "q2"
+                ]
+              },
+              {
+                "reason": "q3原文即“1900年签订《辛丑条约》”，同一来源同一URL。",
+                "verdict": "支持",
+                "fragment": "同页另一处则记“1900年签订《辛丑条约》”",
+                "quotation_ids": [
+                  "q3"
+                ]
+              },
+              {
+                "reason": "q2为1901年条目下9月7日，q3为1900年，年份相互矛盾。",
+                "verdict": "支持",
+                "fragment": "两处年份不一致",
+                "quotation_ids": [
+                  "q2",
+                  "q3"
+                ]
+              }
+            ],
+            "reason": "重要子命题未获支持；子命题未关联到本条有效引文及释读",
+            "verdict": "不支持",
+            "claim_index": 0,
+            "coverage_complete": true
+          },
+          "candidate_citations": [
+            {
+              "quote": "1901年",
+              "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366"
+            },
+            {
+              "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+              "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69"
+            },
+            {
+              "quote": "1900年签订《辛丑条约》",
+              "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8"
+            }
+          ]
+        },
+        {
+          "text": "同一来源另一处记李鸿章“1900年签订《辛丑条约》”，与1901年9月7日条年份不合，属该来源内部记载不一致。",
+          "claim_index": 2,
+          "program_errors": [],
+          "support_review": {
+            "facts": [
+              {
+                "reason": "q3记1900年签订，但未提及李鸿章，主体不符。",
+                "verdict": "部分支持",
+                "fragment": "同一来源另一处记李鸿章“1900年签订《辛丑条约》”",
+                "quotation_ids": [
+                  "q3"
+                ]
+              },
+              {
+                "reason": "q2为1901年9月7日，q3为1900年，年份冲突。",
+                "verdict": "支持",
+                "fragment": "与1901年9月7日条年份不合",
+                "quotation_ids": [
+                  "q2",
+                  "q3"
+                ]
+              },
+              {
+                "reason": "同一来源同一URL两处年份不同，属内部不一致（推断合理）。",
+                "verdict": "支持",
+                "fragment": "属该来源内部记载不一致",
+                "quotation_ids": [
+                  "q2",
+                  "q3"
+                ]
+              }
+            ],
+            "reason": "重要子命题未获支持",
+            "verdict": "不支持",
+            "claim_index": 2,
+            "coverage_complete": true
+          },
+          "candidate_citations": [
+            {
+              "quote": "1900年签订《辛丑条约》",
+              "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8"
+            },
+            {
+              "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+              "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69"
+            }
+          ]
+        }
+      ],
+      "research_outcome": {
+        "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+        "status": "partial",
+        "reasons": [
+          "部分候选表述未通过审核",
+          "提问前提未通过审核"
+        ]
+      },
+      "rejected_limitations": [
+        {
+          "text": "该来源内部存在1900年与1901年两种记载，何者为误需一手史料判定。",
+          "support_review": {
+            "facts": [
+              {
+                "reason": "无来源文本或引文可核对，无法确认两种年份记载并存。",
+                "verdict": "不支持",
+                "fragment": "该来源内部存在1900年与1901年两种记载",
+                "quotation_ids": []
+              },
+              {
+                "reason": "该判断以未核实的前提为基础，且无引文支持。",
+                "verdict": "不支持",
+                "fragment": "何者为误需一手史料判定",
+                "quotation_ids": []
+              }
+            ],
+            "reason": "本次未提供任何来源或已登记引文，无法核实该来源内部是否并存1900年与1901年两种记载；该缺口说明缺乏可核查依据。",
+            "verdict": "不支持",
+            "claim_index": 4,
+            "coverage_complete": true
+          }
+        },
+        {
+          "text": "“辛丑”与签署年份是否对应，已读段落未直接说明干支纪年，未作判断。",
+          "support_review": {
+            "facts": [
+              {
+                "reason": "无引文可核对“辛丑”与签署年份的关系。",
+                "verdict": "不支持",
+                "fragment": "“辛丑”与签署年份是否对应",
+                "quotation_ids": []
+              },
+              {
+                "reason": "未提供已读段落文本，无法核实其是否提及干支纪年。",
+                "verdict": "不支持",
+                "fragment": "已读段落未直接说明干支纪年",
+                "quotation_ids": []
+              },
+              {
+                "reason": "该条本身即为不作判断的范围说明，与所给材料一致。",
+                "verdict": "支持",
+                "fragment": "未作判断",
+                "quotation_ids": []
+              }
+            ],
+            "reason": "无已读段落或引文登记，无法核实“已读段落未直接说明干支纪年”这一范围陈述。",
+            "verdict": "不支持",
+            "claim_index": 5,
+            "coverage_complete": true
+          }
+        }
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "end": 108,
+      "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+      "text": "1901年",
+      "after": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》。其主要内容是：中国赔款银4亿5千万两，分39年还清，年息4厘，以海关税、常关税、盐税作抵押；将北京东交民巷划为使馆界，界内由各国驻兵管理，中国人一概不准居住等12项条款。",
+      "start": 103,
+      "title": "1901——1910大事记",
+      "author": null,
+      "before": "",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+      "prev_id": "dbec698b-b809-47a8-892f-e2a6cd1b637c",
+      "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+      "passage_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+      "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+      "source_type": "网页",
+      "content_hash": "f829f946c45c9e2b0023ac4772842e0d11a85b5dd6b380290a3576cf256c761e",
+      "retrieved_at": "2026-10-20T13:08:47.339581+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 448,
+      "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+      "text": "11月7日 李鸿章在北京病逝。李是安徽合肥人。1870年，任直隶总督兼北洋大臣。从此，掌管清朝外交、军事、经济大权。他依靠外国侵略者，扩大洋务事业，利用海关税收购买军火、军舰，扩大军事力量，建立北洋海军。曾多次主持对外交涉，代表清政府签订卖国条约。1876年，与英国签订《烟台条约》、1885年与法国订立《中法新约》、1895年与日本签订《马关条约》、1896年在莫斯科签订《中俄密约》、1900年签订《辛丑条约》等。",
+      "after": "1902年",
+      "start": 239,
+      "title": "1901——1910大事记",
+      "author": null,
+      "before": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》。其主要内容是：中国赔款银4亿5千万两，分39年还清，年息4厘，以海关税、常关税、盐税作抵押；将北京东交民巷划为使馆界，界内由各国驻兵管理，中国人一概不准居住等12项条款。",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "f623fdc3-2307-4f11-beec-de7ee164823d",
+      "prev_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+      "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+      "passage_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+      "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+      "source_type": "网页",
+      "content_hash": "f829f946c45c9e2b0023ac4772842e0d11a85b5dd6b380290a3576cf256c761e",
+      "retrieved_at": "2026-10-20T13:08:47.339581+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": [
+        {
+          "end": 237,
+          "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+          "text": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》。其主要内容是：中国赔款银4亿5千万两，分39年还清，年息4厘，以海关税、常关税、盐税作抵押；将北京东交民巷划为使馆界，界内由各国驻兵管理，中国人一概不准居住等12项条款。",
+          "start": 110,
+          "title": "1901——1910大事记",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+          "prev_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+          "passage_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+          "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:08:47.339581+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        },
+        {
+          "end": 455,
+          "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+          "text": "1902年",
+          "start": 450,
+          "title": "1901——1910大事记",
+          "author": null,
+          "chapter": null,
+          "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+          "next_id": "4db5d5b5-5e05-4505-a370-b87e4d59088a",
+          "prev_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+          "passage_id": "f623fdc3-2307-4f11-beec-de7ee164823d",
+          "evidence_id": "f623fdc3-2307-4f11-beec-de7ee164823d",
+          "source_type": "网页",
+          "retrieved_at": "2026-10-20T13:08:47.339581+00:00",
+          "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+        }
+      ]
+    },
+    {
+      "end": 237,
+      "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+      "text": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》。其主要内容是：中国赔款银4亿5千万两，分39年还清，年息4厘，以海关税、常关税、盐税作抵押；将北京东交民巷划为使馆界，界内由各国驻兵管理，中国人一概不准居住等12项条款。",
+      "after": "11月7日 李鸿章在北京病逝。李是安徽合肥人。1870年，任直隶总督兼北洋大臣。从此，掌管清朝外交、军事、经济大权。他依靠外国侵略者，扩大洋务事业，利用海关税收购买军火、军舰，扩大军事力量，建立北洋海军。曾多次主持对外交涉，代表清政府签订卖国条约。1876年，与英国签订《烟台条约》、1885年与法国订立《中法新约》、1895年与日本签订《马关条约》、1896年在莫斯科签订《中俄密约》、1900年签订《辛丑条约》等。",
+      "start": 110,
+      "title": "1901——1910大事记",
+      "author": null,
+      "before": "",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+      "prev_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+      "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+      "passage_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+      "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+      "source_type": "网页",
+      "content_hash": "f829f946c45c9e2b0023ac4772842e0d11a85b5dd6b380290a3576cf256c761e",
+      "retrieved_at": "2026-10-20T13:08:47.339581+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    },
+    {
+      "end": 455,
+      "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+      "text": "1902年",
+      "after": "",
+      "start": 450,
+      "title": "1901——1910大事记",
+      "author": null,
+      "before": "11月7日 李鸿章在北京病逝。李是安徽合肥人。1870年，任直隶总督兼北洋大臣。从此，掌管清朝外交、军事、经济大权。他依靠外国侵略者，扩大洋务事业，利用海关税收购买军火、军舰，扩大军事力量，建立北洋海军。曾多次主持对外交涉，代表清政府签订卖国条约。1876年，与英国签订《烟台条约》、1885年与法国订立《中法新约》、1895年与日本签订《马关条约》、1896年在莫斯科签订《中俄密约》、1900年签订《辛丑条约》等。",
+      "chapter": null,
+      "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+      "next_id": "4db5d5b5-5e05-4505-a370-b87e4d59088a",
+      "prev_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+      "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+      "passage_id": "f623fdc3-2307-4f11-beec-de7ee164823d",
+      "evidence_id": "f623fdc3-2307-4f11-beec-de7ee164823d",
+      "source_type": "网页",
+      "content_hash": "f829f946c45c9e2b0023ac4772842e0d11a85b5dd6b380290a3576cf256c761e",
+      "retrieved_at": "2026-10-20T13:08:47.339581+00:00",
+      "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。",
+      "context_passages": []
+    }
+  ],
+  "initial_events": [
+    {
+      "event_id": 603,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "status",
+      "time": "2026-10-20T13:08:37Z",
+      "data": {
+        "status": "pending"
+      }
+    },
+    {
+      "event_id": 604,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "status",
+      "time": "2026-10-20T13:08:37Z",
+      "data": {
+        "status": "running"
+      }
+    },
+    {
+      "event_id": 605,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:08:37Z",
+      "data": {
+        "step": "问题分析与前提核查"
+      }
+    }
+  ],
+  "replayed_events": [
+    {
+      "event_id": 606,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:08:38Z",
+      "data": {
+        "stage": "Analysis",
+        "outcome": "returned",
+        "input_tokens": 648,
+        "total_tokens": 824,
+        "context_chars": 447,
+        "output_tokens": 176,
+        "request_number": 1,
+        "elapsed_seconds": 1.474,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 824
+      }
+    },
+    {
+      "event_id": 607,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "plan",
+      "time": "2026-10-20T13:08:38Z",
+      "data": {
+        "subquestions": [
+          "《辛丑条约》正式签署的具体年月日为何？"
+        ],
+        "premise_status": "待核查",
+        "search_queries": [
+          "辛丑条约 签订 1901年9月7日",
+          "辛丑条约 签署日期 光绪二十七年"
+        ],
+        "premise_to_check": [
+          "《辛丑条约》的签订年份是1900年还是1901年（题面隐含二选一，需确认实际签署日期）",
+          "条约名称“辛丑”所指年份与签署年份是否一致"
+        ]
+      }
+    },
+    {
+      "event_id": 608,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:08:38Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 1
+      }
+    },
+    {
+      "event_id": 609,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:08:39Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 941,
+        "total_tokens": 1024,
+        "context_chars": 999,
+        "output_tokens": 83,
+        "request_number": 2,
+        "elapsed_seconds": 0.913,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 1848
+      }
+    },
+    {
+      "event_id": 610,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "tool",
+      "time": "2026-10-20T13:08:39Z",
+      "data": {
+        "name": "search_web",
+        "summary": "辛丑条约 签订 1901年9月7日",
+        "call_number": 1
+      }
+    },
+    {
+      "event_id": 611,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "external_usage",
+      "time": "2026-10-20T13:08:40Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 0,
+          "search_attempts": 1,
+          "recorded_requests": 1,
+          "estimated_tool_cost_cny": "0.005",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 1,
+        "elapsed_seconds": 0.449,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 612,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "tool",
+      "time": "2026-10-20T13:08:40Z",
+      "data": {
+        "name": "search_web",
+        "summary": "辛丑条约 签署日期 光绪二十七年",
+        "call_number": 2
+      }
+    },
+    {
+      "event_id": 613,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "external_usage",
+      "time": "2026-10-20T13:08:40Z",
+      "data": {
+        "kind": "search",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 0,
+          "search_attempts": 2,
+          "recorded_requests": 2,
+          "estimated_tool_cost_cny": "0.010",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 2,
+        "elapsed_seconds": 0.323,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 614,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:08:40Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 615,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:08:42Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 2329,
+        "total_tokens": 2626,
+        "context_chars": 3880,
+        "output_tokens": 297,
+        "request_number": 3,
+        "elapsed_seconds": 1.982,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 4474
+      }
+    },
+    {
+      "event_id": 616,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "assessment",
+      "time": "2026-10-20T13:08:42Z",
+      "data": {
+        "gaps": [
+          "现有材料仅为搜索摘要，尚未通过 read_passage / fetch_page 读取原文，不能作为证据",
+          "需读取至少一份机构正文（如中国社科院近代史所大事记、人民网、光明网）确认签署年月日及中历/西历对应"
+        ],
+        "summary": "题面二选一的前提需核查。目前仅有搜索摘要（中国社科院近代史所大事记、人民网、光明网、国图检索页等）一致指向1901年9月7日（光绪二十七年七月二十五日，辛丑年）签订，但均未读取原文，按规则不构成已登记证据，故暂不能判定充分。下一步应优先读取上述机构正文页面，确认签署日期及中历西历对应关系。",
+        "sufficient": false,
+        "next_queries": [
+          "辛丑条约 1901年9月7日 光绪二十七年七月二十五日 签订",
+          "辛丑条约 最后议定书 签署 奕劻 李鸿章"
+        ],
+        "premise_status": "未确定"
+      }
+    },
+    {
+      "event_id": 617,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:08:42Z",
+      "data": {
+        "step": "选择检索或阅读工具",
+        "round": 2
+      }
+    },
+    {
+      "event_id": 618,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:08:43Z",
+      "data": {
+        "stage": "choose",
+        "outcome": "returned",
+        "input_tokens": 4034,
+        "total_tokens": 4202,
+        "context_chars": 6762,
+        "output_tokens": 168,
+        "request_number": 4,
+        "elapsed_seconds": 1.323,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 8676
+      }
+    },
+    {
+      "event_id": 619,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "tool",
+      "time": "2026-10-20T13:08:43Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+        "call_number": 3
+      }
+    },
+    {
+      "event_id": 620,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "external_usage",
+      "time": "2026-10-20T13:08:47Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "returned",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 1,
+          "search_attempts": 2,
+          "recorded_requests": 3,
+          "estimated_tool_cost_cny": "0.015",
+          "unknown_billing_requests": 0
+        },
+        "billable": true,
+        "provider": "deepseek",
+        "http_status": 200,
+        "request_number": 3,
+        "elapsed_seconds": 3.698,
+        "estimated_cost_cny": "0.005"
+      }
+    },
+    {
+      "event_id": 621,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "source",
+      "time": "2026-10-20T13:08:47Z",
+      "data": {
+        "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+        "title": "1901——1910大事记",
+        "chapter": null,
+        "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+        "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8"
+      }
+    },
+    {
+      "event_id": 622,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "source",
+      "time": "2026-10-20T13:08:47Z",
+      "data": {
+        "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+        "title": "1901——1910大事记",
+        "chapter": null,
+        "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+        "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69"
+      }
+    },
+    {
+      "event_id": 623,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "source",
+      "time": "2026-10-20T13:08:47Z",
+      "data": {
+        "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+        "title": "1901——1910大事记",
+        "chapter": null,
+        "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+        "evidence_id": "f623fdc3-2307-4f11-beec-de7ee164823d"
+      }
+    },
+    {
+      "event_id": 624,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "source",
+      "time": "2026-10-20T13:08:47Z",
+      "data": {
+        "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+        "title": "1901——1910大事记",
+        "chapter": null,
+        "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+        "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366"
+      }
+    },
+    {
+      "event_id": 625,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "tool",
+      "time": "2026-10-20T13:08:47Z",
+      "data": {
+        "name": "fetch_page",
+        "summary": "http://m.people.cn/n4/0/2016/0907/c2771-7536618_3.html",
+        "call_number": 4
+      }
+    },
+    {
+      "event_id": 626,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "external_usage",
+      "time": "2026-10-20T13:09:17Z",
+      "data": {
+        "kind": "fetch",
+        "outcome": "failed",
+        "summary": {
+          "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+          "fetch_attempts": 2,
+          "search_attempts": 2,
+          "recorded_requests": 4,
+          "estimated_tool_cost_cny": null,
+          "unknown_billing_requests": 1
+        },
+        "billable": null,
+        "provider": "deepseek",
+        "http_status": null,
+        "request_number": 4,
+        "elapsed_seconds": 30.005,
+        "estimated_cost_cny": null
+      }
+    },
+    {
+      "event_id": 627,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "tool_error",
+      "time": "2026-10-20T13:09:17Z",
+      "data": {
+        "name": "fetch_page",
+        "message": "fetch_page 调用失败（TimeoutError），请改写查询或说明缺口",
+        "error_type": "TimeoutError"
+      }
+    },
+    {
+      "event_id": 628,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:09:17Z",
+      "data": {
+        "step": "评估证据与缺口"
+      }
+    },
+    {
+      "event_id": 629,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:20Z",
+      "data": {
+        "stage": "Assessment",
+        "outcome": "returned",
+        "input_tokens": 1719,
+        "total_tokens": 2115,
+        "context_chars": 2496,
+        "output_tokens": 396,
+        "request_number": 5,
+        "elapsed_seconds": 2.554,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 10791
+      }
+    },
+    {
+      "event_id": 630,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "assessment",
+      "time": "2026-10-20T13:09:20Z",
+      "data": {
+        "gaps": [
+          "现有证据为二手中文大事记网页，未核对条约原件或《光绪条约》等一手文本；若需精确到签署时刻/换文日期，尚缺一手史料。",
+          "同一网页另一处误将《辛丑条约》系于1900年（李鸿章条目），属该来源内部矛盾，需以条约原件或权威条约汇编排除。"
+        ],
+        "summary": "已读证据（同一大事记网页）在“1901年”条目下明确记载：“9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》”，且该条前后条目分别为“1901年”与“1902年”，可定位签署年份为1901年。同页李鸿章条目却写“1900年签订《辛丑条约》”，系该来源自身错误/矛盾，不足以推翻1901年9月7日之说。结论：签订于1901年（1901年9月7日，光绪二十七年七月二十五日），非1900年；1900年为其所由起的庚子事变年份，“辛丑”指1901年（辛丑年），与签署年份一致。证据为二手大事记，未核一手条约文本。",
+        "sufficient": true,
+        "next_queries": [
+          "《辛丑各国和约》 光绪二十七年七月二十五日 签署",
+          "中外旧约章汇编 辛丑条约 1901年9月7日"
+        ],
+        "premise_status": "支持"
+      }
+    },
+    {
+      "event_id": 631,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:09:20Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 632,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:23Z",
+      "data": {
+        "stage": "Answer",
+        "outcome": "returned",
+        "input_tokens": 2826,
+        "total_tokens": 3553,
+        "context_chars": 3451,
+        "output_tokens": 727,
+        "request_number": 6,
+        "elapsed_seconds": 3.025,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 14344
+      }
+    },
+    {
+      "event_id": 633,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:09:23Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 634,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:24Z",
+      "data": {
+        "stage": "QuoteReadings",
+        "outcome": "returned",
+        "input_tokens": 1145,
+        "total_tokens": 1320,
+        "context_chars": 1630,
+        "output_tokens": 175,
+        "request_number": 7,
+        "elapsed_seconds": 1.101,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 15664
+      }
+    },
+    {
+      "event_id": 635,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:28Z",
+      "data": {
+        "stage": "SupportReview",
+        "outcome": "returned",
+        "input_tokens": 1862,
+        "total_tokens": 2799,
+        "context_chars": 2641,
+        "output_tokens": 937,
+        "request_number": 8,
+        "elapsed_seconds": 3.783,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 18463
+      }
+    },
+    {
+      "event_id": 636,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:30Z",
+      "data": {
+        "stage": "SupportReview",
+        "outcome": "returned",
+        "input_tokens": 1018,
+        "total_tokens": 1397,
+        "context_chars": 925,
+        "output_tokens": 379,
+        "request_number": 9,
+        "elapsed_seconds": 2.449,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 19860
+      }
+    },
+    {
+      "event_id": 637,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:09:30Z",
+      "data": {
+        "step": "根据引用审核修订答案（最多一次）"
+      }
+    },
+    {
+      "event_id": 638,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:09:30Z",
+      "data": {
+        "step": "组织有据可查的回答"
+      }
+    },
+    {
+      "event_id": 639,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:34Z",
+      "data": {
+        "stage": "Answer",
+        "outcome": "returned",
+        "input_tokens": 4125,
+        "total_tokens": 4877,
+        "context_chars": 6160,
+        "output_tokens": 752,
+        "request_number": 10,
+        "elapsed_seconds": 3.23,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 24737
+      }
+    },
+    {
+      "event_id": 640,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "step",
+      "time": "2026-10-20T13:09:34Z",
+      "data": {
+        "step": "核对引用与内容支持"
+      }
+    },
+    {
+      "event_id": 641,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:35Z",
+      "data": {
+        "stage": "QuoteReadings",
+        "outcome": "returned",
+        "input_tokens": 1013,
+        "total_tokens": 1164,
+        "context_chars": 1341,
+        "output_tokens": 151,
+        "request_number": 11,
+        "elapsed_seconds": 1.223,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 25901
+      }
+    },
+    {
+      "event_id": 642,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:39Z",
+      "data": {
+        "stage": "SupportReview",
+        "outcome": "returned",
+        "input_tokens": 1770,
+        "total_tokens": 2891,
+        "context_chars": 2379,
+        "output_tokens": 1121,
+        "request_number": 12,
+        "elapsed_seconds": 4.228,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 28792
+      }
+    },
+    {
+      "event_id": 643,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "model_usage",
+      "time": "2026-10-20T13:09:41Z",
+      "data": {
+        "stage": "SupportReview",
+        "outcome": "returned",
+        "input_tokens": 1016,
+        "total_tokens": 1410,
+        "context_chars": 918,
+        "output_tokens": 394,
+        "request_number": 13,
+        "elapsed_seconds": 2.291,
+        "usage_missing_requests": 0,
+        "observed_cumulative_tokens": 30202
+      }
+    },
+    {
+      "event_id": 644,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "completed",
+      "time": "2026-10-20T13:09:41Z",
+      "data": {
+        "error": null,
+        "status": "completed"
+      }
+    },
+    {
+      "event_id": null,
+      "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+      "type": "snapshot",
+      "time": "2026-10-20T13:09:41Z",
+      "data": {
+        "task_id": "f224d438-2889-46ac-aced-e2e2219ba385",
+        "question": "《辛丑条约》是1900年还是1901年签订？请核查签订日期，最多一条结论，附必要原文引用即可。",
+        "mode": "online",
+        "status": "completed",
+        "cancel_requested": false,
+        "created_at": "2026-10-20T13:08:37Z",
+        "updated_at": "2026-10-20T13:09:41Z",
+        "error": null,
+        "result": {
+          "events": [],
+          "metrics": {
+            "cost": null,
+            "rounds": 2,
+            "web_pages": 2,
+            "web_usage": {
+              "note": "仅为已记录DeepSeek工具费估算，不含模型费用；不是账户扣款账单。",
+              "fetch_attempts": 2,
+              "search_attempts": 2,
+              "recorded_requests": 4,
+              "estimated_tool_cost_cny": null,
+              "unknown_billing_requests": 1
+            },
+            "tool_calls": 4,
+            "token_usage": {
+              "deepseek-flash": {
+                "input_tokens": 24446,
+                "total_tokens": 30202,
+                "output_tokens": 5756,
+                "input_token_details": {
+                  "cache_read": 10752
+                },
+                "output_token_details": {}
+              }
+            },
+            "evidence_read": 4,
+            "model_requests": [
+              {
+                "stage": "Analysis",
+                "outcome": "returned",
+                "input_tokens": 648,
+                "total_tokens": 824,
+                "context_chars": 447,
+                "output_tokens": 176,
+                "request_number": 1,
+                "elapsed_seconds": 1.474,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 824
+              },
+              {
+                "stage": "choose",
+                "outcome": "returned",
+                "input_tokens": 941,
+                "total_tokens": 1024,
+                "context_chars": 999,
+                "output_tokens": 83,
+                "request_number": 2,
+                "elapsed_seconds": 0.913,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 1848
+              },
+              {
+                "stage": "Assessment",
+                "outcome": "returned",
+                "input_tokens": 2329,
+                "total_tokens": 2626,
+                "context_chars": 3880,
+                "output_tokens": 297,
+                "request_number": 3,
+                "elapsed_seconds": 1.982,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 4474
+              },
+              {
+                "stage": "choose",
+                "outcome": "returned",
+                "input_tokens": 4034,
+                "total_tokens": 4202,
+                "context_chars": 6762,
+                "output_tokens": 168,
+                "request_number": 4,
+                "elapsed_seconds": 1.323,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 8676
+              },
+              {
+                "stage": "Assessment",
+                "outcome": "returned",
+                "input_tokens": 1719,
+                "total_tokens": 2115,
+                "context_chars": 2496,
+                "output_tokens": 396,
+                "request_number": 5,
+                "elapsed_seconds": 2.554,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 10791
+              },
+              {
+                "stage": "Answer",
+                "outcome": "returned",
+                "input_tokens": 2826,
+                "total_tokens": 3553,
+                "context_chars": 3451,
+                "output_tokens": 727,
+                "request_number": 6,
+                "elapsed_seconds": 3.025,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 14344
+              },
+              {
+                "stage": "QuoteReadings",
+                "outcome": "returned",
+                "input_tokens": 1145,
+                "total_tokens": 1320,
+                "context_chars": 1630,
+                "output_tokens": 175,
+                "request_number": 7,
+                "elapsed_seconds": 1.101,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 15664
+              },
+              {
+                "stage": "SupportReview",
+                "outcome": "returned",
+                "input_tokens": 1862,
+                "total_tokens": 2799,
+                "context_chars": 2641,
+                "output_tokens": 937,
+                "request_number": 8,
+                "elapsed_seconds": 3.783,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 18463
+              },
+              {
+                "stage": "SupportReview",
+                "outcome": "returned",
+                "input_tokens": 1018,
+                "total_tokens": 1397,
+                "context_chars": 925,
+                "output_tokens": 379,
+                "request_number": 9,
+                "elapsed_seconds": 2.449,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 19860
+              },
+              {
+                "stage": "Answer",
+                "outcome": "returned",
+                "input_tokens": 4125,
+                "total_tokens": 4877,
+                "context_chars": 6160,
+                "output_tokens": 752,
+                "request_number": 10,
+                "elapsed_seconds": 3.23,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 24737
+              },
+              {
+                "stage": "QuoteReadings",
+                "outcome": "returned",
+                "input_tokens": 1013,
+                "total_tokens": 1164,
+                "context_chars": 1341,
+                "output_tokens": 151,
+                "request_number": 11,
+                "elapsed_seconds": 1.223,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 25901
+              },
+              {
+                "stage": "SupportReview",
+                "outcome": "returned",
+                "input_tokens": 1770,
+                "total_tokens": 2891,
+                "context_chars": 2379,
+                "output_tokens": 1121,
+                "request_number": 12,
+                "elapsed_seconds": 4.228,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 28792
+              },
+              {
+                "stage": "SupportReview",
+                "outcome": "returned",
+                "input_tokens": 1016,
+                "total_tokens": 1410,
+                "context_chars": 918,
+                "output_tokens": 394,
+                "request_number": 13,
+                "elapsed_seconds": 2.291,
+                "usage_missing_requests": 0,
+                "observed_cumulative_tokens": 30202
+              }
+            ],
+            "elapsed_seconds": 64.721,
+            "answer_revisions": 1,
+            "external_requests": [
+              {
+                "kind": "search",
+                "outcome": "returned",
+                "billable": true,
+                "provider": "deepseek",
+                "http_status": 200,
+                "request_number": 1,
+                "elapsed_seconds": 0.449,
+                "estimated_cost_cny": "0.005"
+              },
+              {
+                "kind": "search",
+                "outcome": "returned",
+                "billable": true,
+                "provider": "deepseek",
+                "http_status": 200,
+                "request_number": 2,
+                "elapsed_seconds": 0.323,
+                "estimated_cost_cny": "0.005"
+              },
+              {
+                "kind": "fetch",
+                "outcome": "returned",
+                "billable": true,
+                "provider": "deepseek",
+                "http_status": 200,
+                "request_number": 3,
+                "elapsed_seconds": 3.698,
+                "estimated_cost_cny": "0.005"
+              },
+              {
+                "kind": "fetch",
+                "outcome": "failed",
+                "billable": null,
+                "provider": "deepseek",
+                "http_status": null,
+                "request_number": 4,
+                "elapsed_seconds": 30.005,
+                "estimated_cost_cny": null
+              }
+            ],
+            "structured_failures": [],
+            "duplicate_tool_calls_avoided": 0
+          },
+          "premise": {
+            "kind": "无法判断",
+            "text": "当前证据尚不能可靠确认提问前提。",
+            "citations": []
+          },
+          "sources": [
+            {
+              "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+              "title": "1901——1910大事记",
+              "chapter": null,
+              "edition": "DeepSeek Fetch提取的Markdown快照；页面版本未独立核对",
+              "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+              "source_type": "网页",
+              "provenance_note": "正文由DeepSeek Fetch提取，位置基于保存的Markdown；未取得原始HTML或重定向终点，来源及史实仍需核查。"
+            }
+          ],
+          "citations": [
+            {
+              "end": 108,
+              "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+              "quote": "1901年",
+              "start": 103,
+              "title": "1901——1910大事记",
+              "chapter": null,
+              "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+              "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+              "quotation_id": "q1"
+            },
+            {
+              "end": 151,
+              "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+              "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+              "start": 110,
+              "title": "1901——1910大事记",
+              "chapter": null,
+              "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+              "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+              "quotation_id": "q2"
+            }
+          ],
+          "conclusions": [
+            {
+              "kind": "文献记载",
+              "text": "已读材料将《辛丑条约》的签订记于“1901年”条目之下，日期为9月7日，即1901年9月7日。",
+              "citations": [
+                {
+                  "end": 108,
+                  "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                  "quote": "1901年",
+                  "start": 103,
+                  "title": "1901——1910大事记",
+                  "chapter": null,
+                  "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                  "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+                  "quotation_id": "q1"
+                },
+                {
+                  "end": 151,
+                  "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                  "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                  "start": 110,
+                  "title": "1901——1910大事记",
+                  "chapter": null,
+                  "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                  "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+                  "quotation_id": "q2"
+                }
+              ],
+              "support_review": {
+                "facts": [
+                  {
+                    "reason": "q1标1901年，q2为该条目下9月7日签订条。",
+                    "verdict": "支持",
+                    "fragment": "已读材料将《辛丑条约》的签订记于“1901年”条目之下",
+                    "quotation_ids": [
+                      "q1",
+                      "q2"
+                    ]
+                  },
+                  {
+                    "reason": "q2明记9月7日。",
+                    "verdict": "支持",
+                    "fragment": "日期为9月7日",
+                    "quotation_ids": [
+                      "q2"
+                    ]
+                  },
+                  {
+                    "reason": "条目年份与月日合并，属忠实释义。",
+                    "verdict": "支持",
+                    "fragment": "即1901年9月7日",
+                    "quotation_ids": [
+                      "q1",
+                      "q2"
+                    ]
+                  }
+                ],
+                "reason": "q1为1901年条目标记，q2在该条目下记9月7日签订，可推出1901年9月7日。",
+                "verdict": "支持",
+                "claim_index": 1,
+                "coverage_complete": true
+              }
+            }
+          ],
+          "limitations": [
+            "所据为二手中文大事记网页，未核对条约原件或《中外旧约章汇编》等一手文本，故不能据以排除1900年之说，只能说明已读材料以1901年9月7日为主。",
+            "有 2/3 条候选表述未通过引用或内容支持检查，已从正式回答移除。"
+          ],
+          "disagreements": [],
+          "citation_audit": {
+            "note": "内容支持检查由模型辅助完成，不是真实性保证；仍需人工核查原文与史源。",
+            "content": {
+              "checks": [
+                {
+                  "facts": [
+                    {
+                      "reason": "所给材料中无题面内容，无法由已登记证据核实。",
+                      "verdict": "不支持",
+                      "fragment": "题面将《辛丑条约》签订年份设为1900年与1901年二选一",
+                      "quotation_ids": []
+                    },
+                    {
+                      "reason": "q1为1901年条目时间标记，q2紧随其后记9月7日签订《辛丑条约》。",
+                      "verdict": "支持",
+                      "fragment": "已读材料在“1901年”条目下记载9月7日签订该约",
+                      "quotation_ids": [
+                        "q1",
+                        "q2"
+                      ]
+                    },
+                    {
+                      "reason": "q3原文即“1900年签订《辛丑条约》”，同一来源同一URL。",
+                      "verdict": "支持",
+                      "fragment": "同页另一处则记“1900年签订《辛丑条约》”",
+                      "quotation_ids": [
+                        "q3"
+                      ]
+                    },
+                    {
+                      "reason": "q2为1901年条目下9月7日，q3为1900年，年份相互矛盾。",
+                      "verdict": "支持",
+                      "fragment": "两处年份不一致",
+                      "quotation_ids": [
+                        "q2",
+                        "q3"
+                      ]
+                    }
+                  ],
+                  "reason": "重要子命题未获支持；子命题未关联到本条有效引文及释读",
+                  "verdict": "不支持",
+                  "claim_index": 0,
+                  "coverage_complete": true
+                },
+                {
+                  "facts": [
+                    {
+                      "reason": "q1标1901年，q2为该条目下9月7日签订条。",
+                      "verdict": "支持",
+                      "fragment": "已读材料将《辛丑条约》的签订记于“1901年”条目之下",
+                      "quotation_ids": [
+                        "q1",
+                        "q2"
+                      ]
+                    },
+                    {
+                      "reason": "q2明记9月7日。",
+                      "verdict": "支持",
+                      "fragment": "日期为9月7日",
+                      "quotation_ids": [
+                        "q2"
+                      ]
+                    },
+                    {
+                      "reason": "条目年份与月日合并，属忠实释义。",
+                      "verdict": "支持",
+                      "fragment": "即1901年9月7日",
+                      "quotation_ids": [
+                        "q1",
+                        "q2"
+                      ]
+                    }
+                  ],
+                  "reason": "q1为1901年条目标记，q2在该条目下记9月7日签订，可推出1901年9月7日。",
+                  "verdict": "支持",
+                  "claim_index": 1,
+                  "coverage_complete": true
+                },
+                {
+                  "facts": [
+                    {
+                      "reason": "q3记1900年签订，但未提及李鸿章，主体不符。",
+                      "verdict": "部分支持",
+                      "fragment": "同一来源另一处记李鸿章“1900年签订《辛丑条约》”",
+                      "quotation_ids": [
+                        "q3"
+                      ]
+                    },
+                    {
+                      "reason": "q2为1901年9月7日，q3为1900年，年份冲突。",
+                      "verdict": "支持",
+                      "fragment": "与1901年9月7日条年份不合",
+                      "quotation_ids": [
+                        "q2",
+                        "q3"
+                      ]
+                    },
+                    {
+                      "reason": "同一来源同一URL两处年份不同，属内部不一致（推断合理）。",
+                      "verdict": "支持",
+                      "fragment": "属该来源内部记载不一致",
+                      "quotation_ids": [
+                        "q2",
+                        "q3"
+                      ]
+                    }
+                  ],
+                  "reason": "重要子命题未获支持",
+                  "verdict": "不支持",
+                  "claim_index": 2,
+                  "coverage_complete": true
+                },
+                {
+                  "facts": [
+                    {
+                      "reason": "q2出自“1901——1910大事记”网页条目，属二手大事记。",
+                      "verdict": "支持",
+                      "fragment": "所据为二手中文大事记网页",
+                      "quotation_ids": [
+                        "q2"
+                      ]
+                    },
+                    {
+                      "reason": "已登记证据中无此类一手文本，属本次研究范围内的缺口说明。",
+                      "verdict": "支持",
+                      "fragment": "未核对条约原件或《中外旧约章汇编》等一手文本",
+                      "quotation_ids": []
+                    },
+                    {
+                      "reason": "q3本身即记1900年，且无一手文本可排除。",
+                      "verdict": "支持",
+                      "fragment": "不能据以排除1900年之说",
+                      "quotation_ids": [
+                        "q3"
+                      ]
+                    },
+                    {
+                      "reason": "q1、q2构成1901年9月7日的明确条目记载。",
+                      "verdict": "支持",
+                      "fragment": "只能说明已读材料以1901年9月7日为主",
+                      "quotation_ids": [
+                        "q1",
+                        "q2"
+                      ]
+                    }
+                  ],
+                  "reason": "所据确为大事记网页，未登记条约原件或《中外旧约章汇编》证据，缺口说明与已登记材料相符。",
+                  "verdict": "支持",
+                  "claim_index": 3,
+                  "coverage_complete": true
+                },
+                {
+                  "facts": [
+                    {
+                      "reason": "无来源文本或引文可核对，无法确认两种年份记载并存。",
+                      "verdict": "不支持",
+                      "fragment": "该来源内部存在1900年与1901年两种记载",
+                      "quotation_ids": []
+                    },
+                    {
+                      "reason": "该判断以未核实的前提为基础，且无引文支持。",
+                      "verdict": "不支持",
+                      "fragment": "何者为误需一手史料判定",
+                      "quotation_ids": []
+                    }
+                  ],
+                  "reason": "本次未提供任何来源或已登记引文，无法核实该来源内部是否并存1900年与1901年两种记载；该缺口说明缺乏可核查依据。",
+                  "verdict": "不支持",
+                  "claim_index": 4,
+                  "coverage_complete": true
+                },
+                {
+                  "facts": [
+                    {
+                      "reason": "无引文可核对“辛丑”与签署年份的关系。",
+                      "verdict": "不支持",
+                      "fragment": "“辛丑”与签署年份是否对应",
+                      "quotation_ids": []
+                    },
+                    {
+                      "reason": "未提供已读段落文本，无法核实其是否提及干支纪年。",
+                      "verdict": "不支持",
+                      "fragment": "已读段落未直接说明干支纪年",
+                      "quotation_ids": []
+                    },
+                    {
+                      "reason": "该条本身即为不作判断的范围说明，与所给材料一致。",
+                      "verdict": "支持",
+                      "fragment": "未作判断",
+                      "quotation_ids": []
+                    }
+                  ],
+                  "reason": "无已读段落或引文登记，无法核实“已读段落未直接说明干支纪年”这一范围陈述。",
+                  "verdict": "不支持",
+                  "claim_index": 5,
+                  "coverage_complete": true
+                }
+              ]
+            },
+            "program": [
+              {
+                "valid": true,
+                "errors": [],
+                "citations": [
+                  {
+                    "end": 108,
+                    "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                    "quote": "1901年",
+                    "start": 103,
+                    "title": "1901——1910大事记",
+                    "chapter": null,
+                    "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                    "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+                    "quotation_id": "q1"
+                  },
+                  {
+                    "end": 151,
+                    "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                    "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                    "start": 110,
+                    "title": "1901——1910大事记",
+                    "chapter": null,
+                    "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                    "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+                    "quotation_id": "q2"
+                  },
+                  {
+                    "end": 446,
+                    "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                    "quote": "1900年签订《辛丑条约》",
+                    "start": 433,
+                    "title": "1901——1910大事记",
+                    "chapter": null,
+                    "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                    "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+                    "quotation_id": "q3"
+                  }
+                ],
+                "claim_index": 0
+              },
+              {
+                "valid": true,
+                "errors": [],
+                "citations": [
+                  {
+                    "end": 108,
+                    "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                    "quote": "1901年",
+                    "start": 103,
+                    "title": "1901——1910大事记",
+                    "chapter": null,
+                    "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                    "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+                    "quotation_id": "q1"
+                  },
+                  {
+                    "end": 151,
+                    "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                    "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                    "start": 110,
+                    "title": "1901——1910大事记",
+                    "chapter": null,
+                    "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                    "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+                    "quotation_id": "q2"
+                  }
+                ],
+                "claim_index": 1
+              },
+              {
+                "valid": true,
+                "errors": [],
+                "citations": [
+                  {
+                    "end": 446,
+                    "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                    "quote": "1900年签订《辛丑条约》",
+                    "start": 433,
+                    "title": "1901——1910大事记",
+                    "chapter": null,
+                    "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                    "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+                    "quotation_id": "q3"
+                  },
+                  {
+                    "end": 151,
+                    "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                    "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                    "start": 110,
+                    "title": "1901——1910大事记",
+                    "chapter": null,
+                    "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                    "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+                    "quotation_id": "q2"
+                  }
+                ],
+                "claim_index": 2
+              }
+            ],
+            "literal_readings": [
+              {
+                "end": 108,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "1901年",
+                "start": 103,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366",
+                "quotation_id": "q1",
+                "literal_meaning": "原文仅标出年份“1901年”，作为该大事记条目的时间标记，未涉及其他内容。"
+              },
+              {
+                "end": 151,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                "start": 110,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69",
+                "quotation_id": "q2",
+                "literal_meaning": "原文记：9月7日，英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》。"
+              },
+              {
+                "end": 446,
+                "url": "http://jds.cass.cn/ztlm/jdbk/201605/t20160506_5257606.shtml",
+                "quote": "1900年签订《辛丑条约》",
+                "start": 433,
+                "title": "1901——1910大事记",
+                "chapter": null,
+                "source_id": "d658f04d-be46-4b57-bd70-ef8ba683d9c3",
+                "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8",
+                "quotation_id": "q3",
+                "literal_meaning": "原文记：《辛丑条约》于1900年签订。"
+              }
+            ]
+          },
+          "rejected_claims": [
+            {
+              "text": "题面将《辛丑条约》签订年份设为1900年与1901年二选一；已读材料在“1901年”条目下记载9月7日签订该约，同页另一处则记“1900年签订《辛丑条约》”，两处年份不一致。",
+              "claim_index": 0,
+              "program_errors": [],
+              "support_review": {
+                "facts": [
+                  {
+                    "reason": "所给材料中无题面内容，无法由已登记证据核实。",
+                    "verdict": "不支持",
+                    "fragment": "题面将《辛丑条约》签订年份设为1900年与1901年二选一",
+                    "quotation_ids": []
+                  },
+                  {
+                    "reason": "q1为1901年条目时间标记，q2紧随其后记9月7日签订《辛丑条约》。",
+                    "verdict": "支持",
+                    "fragment": "已读材料在“1901年”条目下记载9月7日签订该约",
+                    "quotation_ids": [
+                      "q1",
+                      "q2"
+                    ]
+                  },
+                  {
+                    "reason": "q3原文即“1900年签订《辛丑条约》”，同一来源同一URL。",
+                    "verdict": "支持",
+                    "fragment": "同页另一处则记“1900年签订《辛丑条约》”",
+                    "quotation_ids": [
+                      "q3"
+                    ]
+                  },
+                  {
+                    "reason": "q2为1901年条目下9月7日，q3为1900年，年份相互矛盾。",
+                    "verdict": "支持",
+                    "fragment": "两处年份不一致",
+                    "quotation_ids": [
+                      "q2",
+                      "q3"
+                    ]
+                  }
+                ],
+                "reason": "重要子命题未获支持；子命题未关联到本条有效引文及释读",
+                "verdict": "不支持",
+                "claim_index": 0,
+                "coverage_complete": true
+              },
+              "candidate_citations": [
+                {
+                  "quote": "1901年",
+                  "evidence_id": "3783cf5e-c2cb-4469-ae69-6b488689f366"
+                },
+                {
+                  "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                  "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69"
+                },
+                {
+                  "quote": "1900年签订《辛丑条约》",
+                  "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8"
+                }
+              ]
+            },
+            {
+              "text": "同一来源另一处记李鸿章“1900年签订《辛丑条约》”，与1901年9月7日条年份不合，属该来源内部记载不一致。",
+              "claim_index": 2,
+              "program_errors": [],
+              "support_review": {
+                "facts": [
+                  {
+                    "reason": "q3记1900年签订，但未提及李鸿章，主体不符。",
+                    "verdict": "部分支持",
+                    "fragment": "同一来源另一处记李鸿章“1900年签订《辛丑条约》”",
+                    "quotation_ids": [
+                      "q3"
+                    ]
+                  },
+                  {
+                    "reason": "q2为1901年9月7日，q3为1900年，年份冲突。",
+                    "verdict": "支持",
+                    "fragment": "与1901年9月7日条年份不合",
+                    "quotation_ids": [
+                      "q2",
+                      "q3"
+                    ]
+                  },
+                  {
+                    "reason": "同一来源同一URL两处年份不同，属内部不一致（推断合理）。",
+                    "verdict": "支持",
+                    "fragment": "属该来源内部记载不一致",
+                    "quotation_ids": [
+                      "q2",
+                      "q3"
+                    ]
+                  }
+                ],
+                "reason": "重要子命题未获支持",
+                "verdict": "不支持",
+                "claim_index": 2,
+                "coverage_complete": true
+              },
+              "candidate_citations": [
+                {
+                  "quote": "1900年签订《辛丑条约》",
+                  "evidence_id": "dd4ec505-3f4f-48d1-9129-bd27fadcc2b8"
+                },
+                {
+                  "quote": "9月7日 英、美、法等11国代表与清政府全权代表奕？、李鸿章在北京签订《辛丑条约》",
+                  "evidence_id": "f3d3fd0b-02e7-488b-bdcb-0dc4d80cbe69"
+                }
+              ]
+            }
+          ],
+          "research_outcome": {
+            "note": "状态只描述本次证据覆盖，不保证史实真实；仍需人工核查。",
+            "status": "partial",
+            "reasons": [
+              "部分候选表述未通过审核",
+              "提问前提未通过审核"
+            ]
+          },
+          "rejected_limitations": [
+            {
+              "text": "该来源内部存在1900年与1901年两种记载，何者为误需一手史料判定。",
+              "support_review": {
+                "facts": [
+                  {
+                    "reason": "无来源文本或引文可核对，无法确认两种年份记载并存。",
+                    "verdict": "不支持",
+                    "fragment": "该来源内部存在1900年与1901年两种记载",
+                    "quotation_ids": []
+                  },
+                  {
+                    "reason": "该判断以未核实的前提为基础，且无引文支持。",
+                    "verdict": "不支持",
+                    "fragment": "何者为误需一手史料判定",
+                    "quotation_ids": []
+                  }
+                ],
+                "reason": "本次未提供任何来源或已登记引文，无法核实该来源内部是否并存1900年与1901年两种记载；该缺口说明缺乏可核查依据。",
+                "verdict": "不支持",
+                "claim_index": 4,
+                "coverage_complete": true
+              }
+            },
+            {
+              "text": "“辛丑”与签署年份是否对应，已读段落未直接说明干支纪年，未作判断。",
+              "support_review": {
+                "facts": [
+                  {
+                    "reason": "无引文可核对“辛丑”与签署年份的关系。",
+                    "verdict": "不支持",
+                    "fragment": "“辛丑”与签署年份是否对应",
+                    "quotation_ids": []
+                  },
+                  {
+                    "reason": "未提供已读段落文本，无法核实其是否提及干支纪年。",
+                    "verdict": "不支持",
+                    "fragment": "已读段落未直接说明干支纪年",
+                    "quotation_ids": []
+                  },
+                  {
+                    "reason": "该条本身即为不作判断的范围说明，与所给材料一致。",
+                    "verdict": "支持",
+                    "fragment": "未作判断",
+                    "quotation_ids": []
+                  }
+                ],
+                "reason": "无已读段落或引文登记，无法核实“已读段落未直接说明干支纪年”这一范围陈述。",
+                "verdict": "不支持",
+                "claim_index": 5,
+                "coverage_complete": true
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "checks": {
+    "real_model": true,
+    "mysql_milvus_sources": 14,
+    "citations_checked": 2,
+    "websocket_disconnect_did_not_cancel": true,
+    "websocket_replay": true,
+    "model_usage_events_replayed": 13,
+    "external_usage_events_replayed": 4,
+    "mode": "online",
+    "running_task_cancelled": false
+  },
+  "cancelled_task_id": null
+}
